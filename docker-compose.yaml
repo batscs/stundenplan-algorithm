@@ -3,4 +3,5 @@ services:
         build: .
         volumes:
             - ./output:/app/output
+            - ./resources:/app/src/python/resources
         command: ${COMMAND:--help}

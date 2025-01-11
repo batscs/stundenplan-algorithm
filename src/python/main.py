@@ -1,4 +1,4 @@
-
+import sys
 from argparse import ArgumentParser
 
 
@@ -100,6 +100,7 @@ def main() -> None:
     parser.parse()
     runtime, _, _, _ = genetic_algorithm(1, term)
     estimated_runtime: float = generations * runtime
+
     print(f"Genetic algorithm started (generations = {generations}, term = {term})")
     print(
         f"Estimated runtime up to: {time_utils.seconds_to_formatted_duration(estimated_runtime)}"
@@ -110,7 +111,9 @@ def main() -> None:
     print(f"\nSolution fitness: {fitness}")
     print(f"Generations completed: {generations_completed}")
     print(f"Actual runtime: {time_utils.seconds_to_formatted_duration(runtime)}")
+
     printer.printer_save(parsed_solution, fitness, debug_mode)
+
     exit(0)
 
 
