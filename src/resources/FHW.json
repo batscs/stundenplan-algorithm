@@ -1,0 +1,2935 @@
+{
+"Day":[
+ {
+  "Abbreviation": "MO",
+  "Name": "Montag"
+ },
+ {
+  "Abbreviation": "DI",
+  "Name": "Dienstag"
+ },
+ {
+  "Abbreviation": "MI",
+  "Name": "Mittwoch"
+ },
+ {
+  "Abbreviation": "DO",
+  "Name": "Donnerstag"
+ },
+ {
+  "Abbreviation": "FR",
+  "Name": "Freitag"
+ },
+ {
+  "Abbreviation": "SA",
+  "Name": "Samstag"
+ },
+ {
+  "Abbreviation": "SO",
+  "Name": "Sonntag"
+ }
+],
+"TimeSlot":[
+ {
+  "Start Time": "08:00:00",
+  "End Time": "09:15:00"
+ },
+ {
+  "Start Time": "09:30:00",
+  "End Time": "10:45:00"
+ },
+ {
+  "Start Time": "11:00:00",
+  "End Time": "12:15:00"
+ },
+ {
+  "Start Time": "12:30:00",
+  "End Time": "13:45:00"
+ },
+ {
+  "Start Time": "14:00:00",
+  "End Time": "15:15:00"
+ },
+ {
+  "Start Time": "15:30:00",
+  "End Time": "16:45:00"
+ },
+ {
+  "Start Time": "17:00:00",
+  "End Time": "18:15:00"
+ }
+],
+"EmployeeType":[
+ {
+  "Name": "Dozent(in)"
+ },
+ {
+  "Name": "Lehrbeauftragte(r)"
+ },
+ {
+  "Name": "Verwaltungspersonal"
+ },
+ {
+  "Name": "Wissenschaftliches Personal"
+ }
+],
+"Employee":[
+ {
+  "Abbreviation": "AAH",
+  "First Name": "Afsoon",
+  "Last Name": "Alipour-Hoeft",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "AAN",
+  "First Name": "Annalisa",
+  "Last Name": "Anzioso",
+  "Employee Type": "Wissenschaftliches Personal"
+ },
+ {
+  "Abbreviation": "AFI",
+  "Title": "Prof. Dr.",
+  "First Name": "Alexander",
+  "Last Name": "Fischer",
+  "Employee Type": "Dozent(in)"
+ },
+ {
+  "Abbreviation": "AHA",
+  "Title": "Prof. Dr.",
+  "First Name": "Andreas",
+  "Last Name": "Haase",
+  "Employee Type": "Dozent(in)"
+ },
+ {
+  "Abbreviation": "AHB",
+  "First Name": "Anja",
+  "Last Name": "Haschenburger",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "AHR",
+  "Title": "Dipl.-Inform. (FH)",
+  "First Name": "Dirk",
+  "Last Name": "Ahrens",
+  "Employee Type": "Dozent(in)"
+ },
+ {
+  "Abbreviation": "AKR",
+  "First Name": "Andreas",
+  "Last Name": "Kramp",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "AMK",
+  "Title": "Dr.",
+  "First Name": "Anna-Magdalena",
+  "Last Name": "Kölzer",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "ANN",
+  "Title": "Prof. Dr.",
+  "First Name": "Hendrik",
+  "Last Name": "Annuth",
+  "Employee Type": "Dozent(in)"
+ },
+ {
+  "Abbreviation": "AVH",
+  "First Name": "Alina",
+  "Last Name": "von der Heide",
+  "Employee Type": "Wissenschaftliches Personal"
+ },
+ {
+  "Abbreviation": "AWO",
+  "Title": "Prof. Dr.",
+  "First Name": "Atilla",
+  "Last Name": "Wohllebe",
+  "Employee Type": "Dozent(in)"
+ },
+ {
+  "Abbreviation": "AZE",
+  "Title": "M.Sc.",
+  "First Name": "Anna",
+  "Last Name": "Zeller",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "BA",
+  "Title": "Prof. Dr.",
+  "First Name": "Frank",
+  "Last Name": "Bargel",
+  "Employee Type": "Dozent(in)"
+ },
+ {
+  "Abbreviation": "BAU",
+  "Title": "Prof. Dr.",
+  "First Name": "Sabine",
+  "Last Name": "Baumann",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "BGO",
+  "Title": "Dr.",
+  "First Name": "Björn",
+  "Last Name": "Goerke",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "BO",
+  "Title": "Prof. Dr.",
+  "First Name": "Christian-Arved",
+  "Last Name": "Bohn",
+  "Employee Type": "Dozent(in)"
+ },
+ {
+  "Abbreviation": "BOS",
+  "Title": "Dipl.-Ing. (FH)",
+  "First Name": "Timm",
+  "Last Name": "Bostelmann",
+  "Employee Type": "Wissenschaftliches Personal"
+ },
+ {
+  "Abbreviation": "BRA",
+  "Title": "Dr.",
+  "First Name": "Behrang",
+  "Last Name": "Raji",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "CBU",
+  "Title": "Prof. Dr.",
+  "First Name": "Carsten",
+  "Last Name": "Burmeister",
+  "Employee Type": "Dozent(in)"
+ },
+ {
+  "Abbreviation": "CEI",
+  "Title": "B.Sc.",
+  "First Name": "Cordula",
+  "Last Name": "Eichhorn",
+  "Employee Type": "Wissenschaftliches Personal"
+ },
+ {
+  "Abbreviation": "CEN",
+  "Title": "Dipl.-Kfm. WP\/StB",
+  "First Name": "Christian",
+  "Last Name": "Entringer",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "CH",
+  "Title": "StD",
+  "First Name": "Dirk",
+  "Last Name": "Cholewa",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "CMM",
+  "Title": "Dr.",
+  "First Name": "Claudia",
+  "Last Name": "Marggraf-Micheel",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "CTI",
+  "Title": "Dipl.-Wirtschaftsing. (FH)",
+  "First Name": "Carsten",
+  "Last Name": "Timmermann",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "CZO",
+  "First Name": "Christo",
+  "Last Name": "Zonnev",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "DDE",
+  "First Name": "Daniela",
+  "Last Name": "Derheld",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "DI",
+  "Title": "Dr.",
+  "First Name": "Martin",
+  "Last Name": "Dietze",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "DKO",
+  "First Name": "Denise",
+  "Last Name": "Koch",
+  "Employee Type": "Wissenschaftliches Personal"
+ },
+ {
+  "Abbreviation": "DMA",
+  "Title": "M.A.",
+  "First Name": "Daniel",
+  "Last Name": "Marx",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "DMI",
+  "Title": "Prof. Dr.",
+  "First Name": "Dominik",
+  "Last Name": "Miller",
+  "Employee Type": "Dozent(in)"
+ },
+ {
+  "Abbreviation": "DMT",
+  "First Name": "Dorothea",
+  "Last Name": "Mahlstedt",
+  "Employee Type": "Verwaltungspersonal"
+ },
+ {
+  "Abbreviation": "DPR",
+  "Title": "Dr.",
+  "First Name": "Dennis",
+  "Last Name": "Proppe",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "DSG",
+  "Title": "Prof. Dr.",
+  "First Name": "Dennis",
+  "Last Name": "Säring",
+  "Employee Type": "Dozent(in)"
+ },
+ {
+  "Abbreviation": "EH",
+  "Title": "Prof. Dr.",
+  "First Name": "Eike",
+  "Last Name": "Harms",
+  "Employee Type": "Dozent(in)"
+ },
+ {
+  "Abbreviation": "EV",
+  "Title": "BA (hons)",
+  "First Name": "Byron",
+  "Last Name": "Evans",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "FBO",
+  "Title": "Prof. Dr.",
+  "First Name": "Franziska",
+  "Last Name": "Bönte",
+  "Employee Type": "Dozent(in)"
+ },
+ {
+  "Abbreviation": "FGE",
+  "Title": "WP\/StB, CISA\/CRISC",
+  "First Name": "Frank",
+  "Last Name": "Gerber",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "FHE",
+  "Title": "Dipl.-Medieninform. (FH)",
+  "First Name": "Florian",
+  "Last Name": "Hermsdorf",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "FHU",
+  "Title": "Dr.",
+  "First Name": "Frank",
+  "Last Name": "Huch",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "FKO",
+  "Title": "M.Sc.",
+  "First Name": "Fikret",
+  "Last Name": "Koyuncu",
+  "Employee Type": "Wissenschaftliches Personal"
+ },
+ {
+  "Abbreviation": "FRE",
+  "Title": "Prof. Dr.",
+  "First Name": "Felix",
+  "Last Name": "Reiche",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "GB",
+  "Title": "Prof. Dr.",
+  "First Name": "Gerd",
+  "Last Name": "Beuster",
+  "Employee Type": "Dozent(in)"
+ },
+ {
+  "Abbreviation": "GH",
+  "Title": "Prof. Dr.",
+  "First Name": "Gunnar",
+  "Last Name": "Harms",
+  "Employee Type": "Dozent(in)"
+ },
+ {
+  "Abbreviation": "GI",
+  "Title": "Prof. Dr.",
+  "First Name": "Thorsten",
+  "Last Name": "Giersch",
+  "Employee Type": "Dozent(in)"
+ },
+ {
+  "Abbreviation": "GRE",
+  "Title": "Prof. Dr.",
+  "First Name": "Gerrit",
+  "Last Name": "Remané",
+  "Employee Type": "Dozent(in)"
+ },
+ {
+  "Abbreviation": "HGL",
+  "Title": "Prof. Dr.",
+  "First Name": "Hendrik",
+  "Last Name": "Lam",
+  "Employee Type": "Dozent(in)"
+ },
+ {
+  "Abbreviation": "HI",
+  "Title": "Dipl.-Ing. (FH)",
+  "First Name": "Michael",
+  "Last Name": "Hinck",
+  "Employee Type": "Wissenschaftliches Personal"
+ },
+ {
+  "Abbreviation": "HOE",
+  "Title": "M.Sc.",
+  "First Name": "Herrmann",
+  "Last Name": "Höhne",
+  "Employee Type": "Wissenschaftliches Personal"
+ },
+ {
+  "Abbreviation": "HS",
+  "Title": "Prof. Dr.",
+  "First Name": "Andreas",
+  "Last Name": "Häuslein",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "HW",
+  "First Name": "Gudrun",
+  "Last Name": "Hinz-Warnke",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "INC",
+  "First Name": "Inga Nissen",
+  "Last Name": "Camargo",
+  "Employee Type": "Verwaltungspersonal"
+ },
+ {
+  "Abbreviation": "IW",
+  "Title": "Prof. Dr.",
+  "First Name": "Sebastian",
+  "Last Name": "Iwanowski",
+  "Employee Type": "Dozent(in)"
+ },
+ {
+  "Abbreviation": "JBN",
+  "First Name": "Jochen",
+  "Last Name": "Brunnstein",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "JBU",
+  "First Name": "Jens",
+  "Last Name": "Buschmann",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "JG",
+  "Title": "Dipl.-Ing. (FH)",
+  "First Name": "Jürgen",
+  "Last Name": "Günther",
+  "Employee Type": "Wissenschaftliches Personal"
+ },
+ {
+  "Abbreviation": "JGE",
+  "Title": "Dr.",
+  "First Name": "Judith",
+  "Last Name": "Grummer",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "JHO",
+  "Title": "Dipl.-Kauffrau",
+  "First Name": "Jeanette",
+  "Last Name": "Holzer",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "JOB",
+  "Title": "RA.",
+  "First Name": "Jens O.",
+  "Last Name": "Brelle",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "JPL",
+  "Title": "Prof. Dr.",
+  "First Name": "Jan-Paul",
+  "Last Name": "Lüdtke",
+  "Employee Type": "Dozent(in)"
+ },
+ {
+  "Abbreviation": "JSO",
+  "First Name": "Jonas",
+  "Last Name": "Sorgenfrei",
+  "Employee Type": "Wissenschaftliches Personal"
+ },
+ {
+  "Abbreviation": "KAL",
+  "Title": "Dipl.-Ing. (FH)",
+  "First Name": "Ilja",
+  "Last Name": "Kaleck",
+  "Employee Type": "Dozent(in)"
+ },
+ {
+  "Abbreviation": "KCH",
+  "Title": "Dipl.-Wi.-Inform. (FH)",
+  "First Name": "Thorben",
+  "Last Name": "Koch",
+  "Employee Type": "Wissenschaftliches Personal"
+ },
+ {
+  "Abbreviation": "KFE",
+  "First Name": "Katharina",
+  "Last Name": "Feindler",
+  "Employee Type": "Verwaltungspersonal"
+ },
+ {
+  "Abbreviation": "KIL",
+  "Title": "M.Sc.",
+  "First Name": "Emre",
+  "Last Name": "Kilic",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "KLE",
+  "Title": "Dr.",
+  "First Name": "Harriet",
+  "Last Name": "Kleiminger",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "KLK",
+  "Title": "Dipl.-Ing. (FH)",
+  "First Name": "Gerit",
+  "Last Name": "Kaleck",
+  "Employee Type": "Wissenschaftliches Personal"
+ },
+ {
+  "Abbreviation": "KRG",
+  "Title": "Dipl.-Ing. (FH)",
+  "First Name": "Christian",
+  "Last Name": "Krug",
+  "Employee Type": "Wissenschaftliches Personal"
+ },
+ {
+  "Abbreviation": "KZO",
+  "First Name": "Kristina",
+  "Last Name": "Zöllner",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "MHE",
+  "Title": "M.Sc.",
+  "First Name": "Malte",
+  "Last Name": "Heins",
+  "Employee Type": "Wissenschaftliches Personal"
+ },
+ {
+  "Abbreviation": "MLE",
+  "Title": "M.Sc.",
+  "First Name": "Mathias",
+  "Last Name": "Leonhardt",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "MLO",
+  "First Name": "Michael",
+  "Last Name": "Looft",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "MPA",
+  "Title": "M.Sc.",
+  "First Name": "Marco",
+  "Last Name": "Pawlowski",
+  "Employee Type": "Wissenschaftliches Personal"
+ },
+ {
+  "Abbreviation": "MPG",
+  "Title": "M.Sc.",
+  "First Name": "Marian",
+  "Last Name": "Gajda",
+  "Employee Type": "Wissenschaftliches Personal"
+ },
+ {
+  "Abbreviation": "MRE",
+  "First Name": "Melanie",
+  "Last Name": "Reißmann",
+  "Employee Type": "Wissenschaftliches Personal"
+ },
+ {
+  "Abbreviation": "MRI",
+  "Title": "M.Sc.",
+  "First Name": "Marcus",
+  "Last Name": "Riemer",
+  "Employee Type": "Wissenschaftliches Personal"
+ },
+ {
+  "Abbreviation": "MT",
+  "Title": "Dipl.-Psych.",
+  "First Name": "Claus Peter",
+  "Last Name": "Müller-Thurau",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "MVI",
+  "First Name": "Markus",
+  "Last Name": "Vieregge",
+  "Employee Type": "Wissenschaftliches Personal"
+ },
+ {
+  "Abbreviation": "MWA",
+  "Title": "Prof. Dr.",
+  "First Name": "Markus",
+  "Last Name": "Warg",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "MWO",
+  "First Name": "Marco",
+  "Last Name": "Wodarz-Burmester",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "MZO",
+  "First Name": "Mustapha",
+  "Last Name": "Zorgati",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "NE",
+  "Title": "Dipl.-Medieninform. (FH)",
+  "First Name": "Lars",
+  "Last Name": "Neumann",
+  "Employee Type": "Wissenschaftliches Personal"
+ },
+ {
+  "Abbreviation": "NHO",
+  "First Name": "Nicolas",
+  "Last Name": "Hollmann",
+  "Employee Type": "Wissenschaftliches Personal"
+ },
+ {
+  "Abbreviation": "NVK",
+  "First Name": "Nils Roald Helmut",
+  "Last Name": "van Kan",
+  "Employee Type": "Wissenschaftliches Personal"
+ },
+ {
+  "Abbreviation": "ONA",
+  "Title": "Dr.",
+  "First Name": "Ole",
+  "Last Name": "Nass",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "PF",
+  "Title": "Dipl.-Ing. (FH)",
+  "First Name": "Michael",
+  "Last Name": "Pfeifers",
+  "Employee Type": "Wissenschaftliches Personal"
+ },
+ {
+  "Abbreviation": "PGO",
+  "Title": "Dr.",
+  "First Name": "Panja",
+  "Last Name": "Goerke",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "PMB",
+  "Title": "Dipl.-Wirt.-Inform. (FH)",
+  "First Name": "Paul Maria",
+  "Last Name": "Bartusch",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "PMU",
+  "First Name": "Philipp",
+  "Last Name": "Munz",
+  "Employee Type": "Wissenschaftliches Personal"
+ },
+ {
+  "Abbreviation": "RGI",
+  "Title": "Dr.",
+  "First Name": "René",
+  "Last Name": "Gilster",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "RPO",
+  "Title": "Prof. Dr.",
+  "First Name": "Ronald",
+  "Last Name": "Poppe",
+  "Employee Type": "Dozent(in)"
+ },
+ {
+  "Abbreviation": "SAW",
+  "Title": "Prof. Dr.",
+  "First Name": "Sergei",
+  "Last Name": "Sawitzki",
+  "Employee Type": "Dozent(in)"
+ },
+ {
+  "Abbreviation": "SBA",
+  "Title": "M.Sc.",
+  "First Name": "Sophie",
+  "Last Name": "Baumeister",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "SBR",
+  "First Name": "Sven",
+  "Last Name": "Brose",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "SED",
+  "Title": "StR",
+  "First Name": "Roland",
+  "Last Name": "Sedlmayer",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "SEN",
+  "First Name": "Stephan",
+  "Last Name": "Engel",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "SLA",
+  "First Name": "Stefan",
+  "Last Name": "Lange",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "SMT",
+  "Title": "Prof. Dr.",
+  "First Name": "Mike",
+  "Last Name": "Schmitt",
+  "Employee Type": "Dozent(in)"
+ },
+ {
+  "Abbreviation": "SSC",
+  "First Name": "Stephan",
+  "Last Name": "Schäfer",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "SWA",
+  "First Name": "Stefan",
+  "Last Name": "Wagemann",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "SWE",
+  "Title": "LL.M.",
+  "First Name": "Steffen",
+  "Last Name": "Weiß",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "TBI",
+  "Title": "RA.",
+  "First Name": "Tobias",
+  "Last Name": "Bier",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "TFS",
+  "First Name": "Thomas Fabian",
+  "Last Name": "Starke",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "THS",
+  "Title": "Prof. Dr.",
+  "First Name": "Thomas",
+  "Last Name": "Schnieders",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "TLE",
+  "Title": "Dr.",
+  "First Name": "Thies",
+  "Last Name": "Lentfer",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "TPA",
+  "First Name": "Timo",
+  "Last Name": "Pagel",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "TPF",
+  "First Name": "Thomas",
+  "Last Name": "Pfeuti",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "TTI",
+  "First Name": "Torben",
+  "Last Name": "Tietgen",
+  "Employee Type": "Wissenschaftliches Personal"
+ },
+ {
+  "Abbreviation": "TWE",
+  "First Name": "Tim",
+  "Last Name": "Wetzel",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "UH",
+  "Title": "Prof. Dr.",
+  "First Name": "Ulrich",
+  "Last Name": "Hoffmann",
+  "Employee Type": "Dozent(in)"
+ },
+ {
+  "Abbreviation": "UHL",
+  "Title": "M.Sc.",
+  "First Name": "Christian",
+  "Last Name": "Uhlig",
+  "Employee Type": "Wissenschaftliches Personal"
+ },
+ {
+  "Abbreviation": "VMA",
+  "First Name": "Valena",
+  "Last Name": "Maiwald",
+  "Employee Type": "Wissenschaftliches Personal"
+ },
+ {
+  "Abbreviation": "VOE",
+  "Title": "Dipl.-Ing.",
+  "First Name": "Jörg",
+  "Last Name": "Völker",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "WA",
+  "First Name": "Andreas",
+  "Last Name": "Wand",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "WEB",
+  "Title": "Prof. Dr.",
+  "First Name": "Stefan Christoph",
+  "Last Name": "Weber",
+  "Employee Type": "Dozent(in)"
+ },
+ {
+  "Abbreviation": "WOL",
+  "Title": "Dipl.-Inform. (FH)",
+  "First Name": "Birger",
+  "Last Name": "Wolter",
+  "Employee Type": "Dozent(in)"
+ },
+ {
+  "Abbreviation": "YSI",
+  "First Name": "Yannick",
+  "Last Name": "Sippel",
+  "Employee Type": "Lehrbeauftragte(r)"
+ }
+],
+"ParticipantSize":[
+ {
+  "Name": "Small",
+  "Ordinal": 1
+ },
+ {
+  "Name": "Normal",
+  "Ordinal": 2
+ },
+ {
+  "Name": "Large",
+  "Ordinal": 3
+ }
+],
+"RoomType":[
+ {
+  "Name": "Audiolabor"
+ },
+ {
+  "Name": "CAE-Labor"
+ },
+ {
+  "Name": "Elektroniklabor"
+ },
+ {
+  "Name": "Externes Unternehmen"
+ },
+ {
+  "Name": "Fertigungstechniklabor"
+ },
+ {
+  "Name": "Hörsaal"
+ },
+ {
+  "Name": "Konferenzraum"
+ },
+ {
+  "Name": "Messtechniklabor"
+ },
+ {
+  "Name": "Netzwerkschulungslabor"
+ },
+ {
+  "Name": "Onlineveranstaltung"
+ },
+ {
+  "Name": "Optiklabor"
+ },
+ {
+  "Name": "PC-Pool"
+ },
+ {
+  "Name": "Robotiklabor"
+ },
+ {
+  "Name": "Schaltungstechniklabor"
+ },
+ {
+  "Name": "Seminarraum"
+ },
+ {
+  "Name": "Smart-Project-Labor"
+ },
+ {
+  "Name": "Verfahrenstechniklabor"
+ },
+ {
+  "Name": "Virtual-Reality-Labor"
+ }
+],
+"Room":[
+ {
+  "Abbreviation": "EXT",
+  "Name": "Externes Unternehmen",
+  "Capacity": "Normal",
+  "Room Type": "Externes Unternehmen"
+ },
+ {
+  "Abbreviation": "HS01",
+  "Name": "Hörsaal 1",
+  "Capacity": "Small",
+  "Room Type": "Hörsaal"
+ },
+ {
+  "Abbreviation": "HS02",
+  "Name": "Hörsaal 2",
+  "Capacity": "Small",
+  "Room Type": "Hörsaal"
+ },
+ {
+  "Abbreviation": "HS03",
+  "Name": "Hörsaal 3",
+  "Capacity": "Small",
+  "Room Type": "Hörsaal"
+ },
+ {
+  "Abbreviation": "HS04",
+  "Name": "Hörsaal 4",
+  "Capacity": "Normal",
+  "Room Type": "Hörsaal"
+ },
+ {
+  "Abbreviation": "HS05",
+  "Name": "Hörsaal 5",
+  "Capacity": "Normal",
+  "Room Type": "Hörsaal"
+ },
+ {
+  "Abbreviation": "HS06",
+  "Name": "Hörsaal 6",
+  "Capacity": "Normal",
+  "Room Type": "Hörsaal"
+ },
+ {
+  "Abbreviation": "HS07",
+  "Name": "Audimax",
+  "Capacity": "Large",
+  "Room Type": "Hörsaal"
+ },
+ {
+  "Abbreviation": "LR01",
+  "Name": "Fertigungstechniklabor",
+  "Capacity": "Normal",
+  "Room Type": "Fertigungstechniklabor"
+ },
+ {
+  "Abbreviation": "LR02",
+  "Name": "Messtechniklabor",
+  "Capacity": "Normal",
+  "Room Type": "Messtechniklabor"
+ },
+ {
+  "Abbreviation": "LR03",
+  "Name": "Optiklabor",
+  "Capacity": "Normal",
+  "Room Type": "Optiklabor"
+ },
+ {
+  "Abbreviation": "LR04",
+  "Name": "Smart-Project-Labor",
+  "Capacity": "Normal",
+  "Room Type": "Smart-Project-Labor"
+ },
+ {
+  "Abbreviation": "LR05",
+  "Name": "Elektroniklabor",
+  "Capacity": "Normal",
+  "Room Type": "Elektroniklabor"
+ },
+ {
+  "Abbreviation": "LR06",
+  "Name": "Robotiklabor",
+  "Capacity": "Normal",
+  "Room Type": "Robotiklabor"
+ },
+ {
+  "Abbreviation": "LR07",
+  "Name": "Verfahrenstechniklabor",
+  "Capacity": "Normal",
+  "Room Type": "Verfahrenstechniklabor"
+ },
+ {
+  "Abbreviation": "LR08",
+  "Name": "CAE-Labor",
+  "Capacity": "Normal",
+  "Room Type": "CAE-Labor"
+ },
+ {
+  "Abbreviation": "LR09",
+  "Name": "Schaltungstechniklabor",
+  "Capacity": "Normal",
+  "Room Type": "Schaltungstechniklabor"
+ },
+ {
+  "Abbreviation": "LR10",
+  "Name": "Virtual-Reality-Labor",
+  "Capacity": "Normal",
+  "Room Type": "Virtual-Reality-Labor"
+ },
+ {
+  "Abbreviation": "LR11",
+  "Name": "Netzwerkschulungslabor",
+  "Capacity": "Normal",
+  "Room Type": "Netzwerkschulungslabor"
+ },
+ {
+  "Abbreviation": "LR12",
+  "Name": "Audiolabor",
+  "Capacity": "Normal",
+  "Room Type": "Audiolabor"
+ },
+ {
+  "Abbreviation": "OL01",
+  "Name": "Onlineveranstaltung",
+  "Capacity": "Normal",
+  "Room Type": "Onlineveranstaltung"
+ },
+ {
+  "Abbreviation": "PC01",
+  "Name": "PC-Pool 1",
+  "Capacity": "Normal",
+  "Room Type": "PC-Pool"
+ },
+ {
+  "Abbreviation": "PC02",
+  "Name": "PC-Pool 2",
+  "Capacity": "Small",
+  "Room Type": "PC-Pool"
+ },
+ {
+  "Abbreviation": "PC03",
+  "Name": "PC-Pool 3",
+  "Capacity": "Normal",
+  "Room Type": "PC-Pool"
+ },
+ {
+  "Abbreviation": "PC04",
+  "Name": "PC-Pool 4",
+  "Capacity": "Large",
+  "Room Type": "PC-Pool"
+ },
+ {
+  "Abbreviation": "PC05",
+  "Name": "PC-Pool 5",
+  "Capacity": "Large",
+  "Room Type": "PC-Pool"
+ },
+ {
+  "Abbreviation": "PC06",
+  "Name": "PC-Pool 6",
+  "Capacity": "Small",
+  "Room Type": "PC-Pool"
+ },
+ {
+  "Abbreviation": "SR01",
+  "Name": "Konferenzraum",
+  "Capacity": "Normal",
+  "Room Type": "Konferenzraum"
+ },
+ {
+  "Abbreviation": "SR02",
+  "Name": "Aristoteles",
+  "Capacity": "Small",
+  "Room Type": "Seminarraum"
+ },
+ {
+  "Abbreviation": "SR03",
+  "Name": "Agnesi",
+  "Capacity": "Small",
+  "Room Type": "Seminarraum"
+ },
+ {
+  "Abbreviation": "SR04",
+  "Name": "Archimedes",
+  "Capacity": "Small",
+  "Room Type": "Seminarraum"
+ },
+ {
+  "Abbreviation": "SR05",
+  "Name": "Agnodike",
+  "Capacity": "Normal",
+  "Room Type": "Seminarraum"
+ },
+ {
+  "Abbreviation": "SR06",
+  "Name": "Amperè",
+  "Capacity": "Large",
+  "Room Type": "Seminarraum"
+ },
+ {
+  "Abbreviation": "SR07",
+  "Name": "Bassi",
+  "Capacity": "Normal",
+  "Room Type": "Seminarraum"
+ },
+ {
+  "Abbreviation": "SR08",
+  "Name": "Daimler",
+  "Capacity": "Large",
+  "Room Type": "Seminarraum"
+ },
+ {
+  "Abbreviation": "SR10",
+  "Name": "Doudna",
+  "Capacity": "Normal",
+  "Room Type": "Seminarraum"
+ },
+ {
+  "Abbreviation": "SR11",
+  "Name": "Doppler",
+  "Capacity": "Normal",
+  "Room Type": "Seminarraum"
+ },
+ {
+  "Abbreviation": "SR12",
+  "Name": "Einstein",
+  "Capacity": "Small",
+  "Room Type": "Seminarraum"
+ },
+ {
+  "Abbreviation": "SR13",
+  "Name": "Goodall",
+  "Capacity": "Large",
+  "Room Type": "Seminarraum"
+ }
+],
+"Course":[
+ {
+  "Abbreviation": "B_AWP",
+  "Name": "Angewandte Wirtschaftspsychologie"
+ },
+ {
+  "Abbreviation": "B_BWL",
+  "Name": "Betriebswirtschaftslehre (Bachelor)"
+ },
+ {
+  "Abbreviation": "B_CGT",
+  "Name": "Computer Games Technology"
+ },
+ {
+  "Abbreviation": "B_DSAI",
+  "Name": "Data Science & Artificial Intelligence (Bachelor)"
+ },
+ {
+  "Abbreviation": "B_ECOM",
+  "Name": "E-Commerce (Bachelor)"
+ },
+ {
+  "Abbreviation": "B_IMCA",
+  "Name": "IT-Management, Consulting & Auditing (Bachelor)"
+ },
+ {
+  "Abbreviation": "B_INF",
+  "Name": "Informatik (Bachelor)"
+ },
+ {
+  "Abbreviation": "B_ITE",
+  "Name": "IT-Ingenieurwesen (Bachelor)"
+ },
+ {
+  "Abbreviation": "B_MINF",
+  "Name": "Medieninformatik (Bachelor)"
+ },
+ {
+  "Abbreviation": "B_STEC",
+  "Name": "Smart Technology (Bachelor)"
+ },
+ {
+  "Abbreviation": "B_TINF",
+  "Name": "Technische Informatik (Bachelor)"
+ },
+ {
+  "Abbreviation": "B_WINF",
+  "Name": "Wirtschaftsinformatik (Bachelor)"
+ },
+ {
+  "Abbreviation": "B_WING",
+  "Name": "Wirtschaftsingenieurwesen (Bachelor)"
+ },
+ {
+  "Abbreviation": "ITAM",
+  "Name": "Informationstechnischer Assistent (Medien)"
+ },
+ {
+  "Abbreviation": "ITAS",
+  "Name": "Informationstechnischer Assistent (Softwareentwicklung)"
+ },
+ {
+  "Abbreviation": "ITAT",
+  "Name": "Informationstechnischer Assistent (Technische Informatik)"
+ },
+ {
+  "Abbreviation": "ITAW",
+  "Name": "Informationstechnischer Assistent (Wirtschaft)"
+ },
+ {
+  "Abbreviation": "KAI",
+  "Name": "Kaufmännischer Assistent"
+ },
+ {
+  "Abbreviation": "M_BWL",
+  "Name": "Betriebswirtschaftslehre (Master)"
+ },
+ {
+  "Abbreviation": "M_DSAI",
+  "Name": "Data Science & Artificial Intelligence (Master)"
+ },
+ {
+  "Abbreviation": "M_ECOM",
+  "Name": "E-Commerce (Master)"
+ },
+ {
+  "Abbreviation": "M_INF",
+  "Name": "Informatik (Master)"
+ },
+ {
+  "Abbreviation": "M_ITE",
+  "Name": "IT-Engineering (Master)"
+ },
+ {
+  "Abbreviation": "M_ITS",
+  "Name": "IT-Sicherheit (Master)"
+ },
+ {
+  "Abbreviation": "M_SDBM",
+  "Name": "Sustainable & Digital Business Management (Master)"
+ },
+ {
+  "Abbreviation": "M_WIM",
+  "Name": "Wirtschaftsinformatik\/IT-Management (Master)"
+ },
+ {
+  "Abbreviation": "M_WING",
+  "Name": "Wirtschaftsingenieurwesen (Master)"
+ }
+],
+"Term":[
+ {
+  "Name": "Sommer"
+ },
+ {
+  "Name": "Winter"
+ }
+],
+"Semester":[
+ {
+  "Value": 1
+ },
+ {
+  "Value": 2
+ },
+ {
+  "Value": 3
+ },
+ {
+  "Value": 4
+ },
+ {
+  "Value": 5
+ },
+ {
+  "Value": 6
+ },
+ {
+  "Value": 7
+ }
+],
+"Event":[
+ {
+  "Name": "Accounting Auditing & Taxation (Seminar)",
+  "Employees": "WEB",
+  "Participants": "B_BWL:5;B_IMCA:6",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Sommer",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Category Management",
+  "Employees": "JPL",
+  "Participants": "M_DSAI:1,2;M_ECOM:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Sommer",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Commercial English (Gruppe 1)",
+  "Employees": "EV",
+  "Participants": "B_WING:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Sommer",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Commercial English (Gruppe 2)",
+  "Employees": "EV",
+  "Participants": "B_WING:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Sommer",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Commercial English (Gruppe 3)",
+  "Employees": "EV",
+  "Participants": "KAI:4;B_WING:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Sommer",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Communication Skills",
+  "Employees": "AMK,PGO",
+  "Participants": "B_BWL:6;B_CGT:6;B_DSAI:6;B_ECOM:6;B_IMCA:6;B_INF:5,6;B_MINF:6;B_TINF:6;B_WINF:6;B_WING:3,4",
+  "Participant Size": "Large",
+  "Weekly Blocks": 1,
+  "Term": "Sommer",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Computer Vision (Seminar)",
+  "Employees": "DSG,MPA",
+  "Participants": "M_DSAI:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Sommer",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Cryptography (Workshop)",
+  "Employees": "GB",
+  "Participants": "M_INF:1,2;M_ITE:1,2;M_ITS:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Sommer",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Data Analytics (Seminar)",
+  "Employees": "FBO",
+  "Participants": "B_BWL:5",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Sommer",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Deutsch 2",
+  "Employees": "SED",
+  "Participants": "ITAM:4;ITAS:4",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Sommer",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "E-Commerce (Seminar)",
+  "Employees": "AWO,JPL",
+  "Participants": "B_ECOM:4;M_ECOM:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Sommer",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Englisch 2",
+  "Employees": "HW",
+  "Participants": "ITAM:4;ITAS:4",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Sommer",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Finance & Services (Seminar)",
+  "Employees": "GI",
+  "Participants": "M_BWL:1,2;M_WING:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Sommer",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Große Sprachmodelle (Seminar)",
+  "Employees": "UH",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Sommer",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Grundlagen der Computergrafik",
+  "Employees": "BO,NHO",
+  "Participants": "B_CGT:4,5;B_INF:5,6;B_MINF:4,5;B_STEC:4;B_TINF:4,5",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Sommer",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Grundlagen der Computergrafik (Praktikum)",
+  "Employees": "MPG,MRE,NHO,PMU",
+  "Participants": "B_CGT:4,5;B_INF:5,6;B_MINF:4,5;B_STEC:4;B_TINF:4,5",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 2,
+  "Term": "Sommer",
+  "Room Type": "PC-Pool",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Grundlagen der Linearen Algebra",
+  "Employees": "AHA",
+  "Participants": "B_AWP:1,2;B_BWL:1,2;B_CGT:1,2;B_DSAI:1,2;B_ECOM:1,2,3;B_IMCA:1,2;B_INF:1,2;B_ITE:1,2;B_MINF:2,3;B_STEC:1,2;B_TINF:1,2;B_WINF:1,2;B_WING:1,2",
+  "Participant Size": "Large",
+  "Weekly Blocks": 1,
+  "Term": "Sommer",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Web-Anwendungen (Seminar)",
+  "Employees": "MPG",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Web-Anwendungen (Seminar)",
+  "Employees": "MPG",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Wirkprinzipien und Technologie (Praktikum)",
+  "Employees": "MVI,UH",
+  "Participants": "B_STEC:1,2",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "Smart-Project-Labor",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Wirtschaftsethik 1",
+  "Employees": "CH",
+  "Participants": "ITAM:3;ITAS:3;KAI:3",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ }
+],
+"Priority":[
+ {
+  "Value": 1
+ },
+ {
+  "Value": 2
+ },
+ {
+  "Value": 3
+ },
+ {
+  "Value": 4
+ },
+ {
+  "Value": 5
+ },
+ {
+  "Value": 6
+ },
+ {
+  "Value": 7
+ },
+ {
+  "Value": 8
+ },
+ {
+  "Value": 9
+ },
+ {
+  "Value": 10
+ },
+ {
+  "Value": 11
+ },
+ {
+  "Value": 12
+ },
+ {
+  "Value": 13
+ },
+ {
+  "Value": 14
+ },
+ {
+  "Value": 15
+ },
+ {
+  "Value": 16
+ },
+ {
+  "Value": 17
+ },
+ {
+  "Value": 18
+ },
+ {
+  "Value": 19
+ },
+ {
+  "Value": 20
+ },
+ {
+  "Value": 21
+ },
+ {
+  "Value": 22
+ },
+ {
+  "Value": 23
+ },
+ {
+  "Value": 24
+ },
+ {
+  "Value": 25
+ },
+ {
+  "Value": 26
+ },
+ {
+  "Value": 27
+ },
+ {
+  "Value": 28
+ },
+ {
+  "Value": 29
+ },
+ {
+  "Value": 30
+ },
+ {
+  "Value": 31
+ },
+ {
+  "Value": 32
+ },
+ {
+  "Value": 33
+ },
+ {
+  "Value": 34
+ },
+ {
+  "Value": 35
+ },
+ {
+  "Value": 36
+ },
+ {
+  "Value": 37
+ },
+ {
+  "Value": 38
+ },
+ {
+  "Value": 39
+ },
+ {
+  "Value": 40
+ },
+ {
+  "Value": 41
+ },
+ {
+  "Value": 42
+ },
+ {
+  "Value": 43
+ },
+ {
+  "Value": 44
+ },
+ {
+  "Value": 45
+ },
+ {
+  "Value": 46
+ },
+ {
+  "Value": 47
+ },
+ {
+  "Value": 48
+ },
+ {
+  "Value": 49
+ },
+ {
+  "Value": 50
+ },
+ {
+  "Value": 51
+ },
+ {
+  "Value": 52
+ },
+ {
+  "Value": 53
+ },
+ {
+  "Value": 54
+ },
+ {
+  "Value": 55
+ },
+ {
+  "Value": 56
+ },
+ {
+  "Value": 57
+ },
+ {
+  "Value": 58
+ },
+ {
+  "Value": 59
+ },
+ {
+  "Value": 60
+ },
+ {
+  "Value": 61
+ },
+ {
+  "Value": 62
+ },
+ {
+  "Value": 63
+ },
+ {
+  "Value": 64
+ },
+ {
+  "Value": 65
+ },
+ {
+  "Value": 66
+ },
+ {
+  "Value": 67
+ },
+ {
+  "Value": 68
+ },
+ {
+  "Value": 69
+ },
+ {
+  "Value": 70
+ },
+ {
+  "Value": 71
+ },
+ {
+  "Value": 72
+ },
+ {
+  "Value": 73
+ },
+ {
+  "Value": 74
+ },
+ {
+  "Value": 75
+ },
+ {
+  "Value": 76
+ },
+ {
+  "Value": 77
+ },
+ {
+  "Value": 78
+ },
+ {
+  "Value": 79
+ },
+ {
+  "Value": 80
+ },
+ {
+  "Value": 81
+ },
+ {
+  "Value": 82
+ },
+ {
+  "Value": 83
+ },
+ {
+  "Value": 84
+ },
+ {
+  "Value": 85
+ },
+ {
+  "Value": 86
+ },
+ {
+  "Value": 87
+ },
+ {
+  "Value": 88
+ },
+ {
+  "Value": 89
+ },
+ {
+  "Value": 90
+ },
+ {
+  "Value": 91
+ },
+ {
+  "Value": 92
+ },
+ {
+  "Value": 93
+ },
+ {
+  "Value": 94
+ },
+ {
+  "Value": 95
+ },
+ {
+  "Value": 96
+ },
+ {
+  "Value": 97
+ },
+ {
+  "Value": 98
+ },
+ {
+  "Value": 99
+ },
+ {
+  "Value": 100
+ }
+],
+"EmployeeDislikesDate":[
+ {
+  "Employee Abbreviation": "AHB",
+  "Day Abbreviation": "DI",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "AHB",
+  "Day Abbreviation": "DO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "AHB",
+  "Day Abbreviation": "FR",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "AHB",
+  "Day Abbreviation": "MI",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "AHB",
+  "Day Abbreviation": "MO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "AHB",
+  "Day Abbreviation": "SA",
+  "Time Slot Ids": "6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "AHB",
+  "Day Abbreviation": "SO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "AMK",
+  "Day Abbreviation": "DI",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "AMK",
+  "Day Abbreviation": "DO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "AMK",
+  "Day Abbreviation": "FR",
+  "Time Slot Ids": "5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "AMK",
+  "Day Abbreviation": "MI",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "AMK",
+  "Day Abbreviation": "MO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "AMK",
+  "Day Abbreviation": "SA",
+  "Time Slot Ids": "6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "AMK",
+  "Day Abbreviation": "SO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "CH",
+  "Day Abbreviation": "DI",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "CH",
+  "Day Abbreviation": "DO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "CH",
+  "Day Abbreviation": "FR",
+  "Time Slot Ids": "1;2;3;4",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "CH",
+  "Day Abbreviation": "MI",
+  "Time Slot Ids": "1;2;3;4",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "CH",
+  "Day Abbreviation": "MO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "CH",
+  "Day Abbreviation": "SA",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "CH",
+  "Day Abbreviation": "SO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "CZO",
+  "Day Abbreviation": "DI",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "CZO",
+  "Day Abbreviation": "DO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "CZO",
+  "Day Abbreviation": "FR",
+  "Time Slot Ids": "1;2;3;4;5",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "CZO",
+  "Day Abbreviation": "MI",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "CZO",
+  "Day Abbreviation": "MO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "CZO",
+  "Day Abbreviation": "SA",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "CZO",
+  "Day Abbreviation": "SO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "DI",
+  "Day Abbreviation": "DI",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "DI",
+  "Day Abbreviation": "DO",
+  "Time Slot Ids": "1;2;3;4;5",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "DI",
+  "Day Abbreviation": "FR",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "DI",
+  "Day Abbreviation": "MI",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "DI",
+  "Day Abbreviation": "MO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "DI",
+  "Day Abbreviation": "SA",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "DI",
+  "Day Abbreviation": "SO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "DKO",
+  "Day Abbreviation": "DI",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "DKO",
+  "Day Abbreviation": "DO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "DKO",
+  "Day Abbreviation": "MI",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "DKO",
+  "Day Abbreviation": "MO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "DKO",
+  "Day Abbreviation": "SA",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "DKO",
+  "Day Abbreviation": "SO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "DPR",
+  "Day Abbreviation": "DI",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "DPR",
+  "Day Abbreviation": "DO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "DPR",
+  "Day Abbreviation": "FR",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "DPR",
+  "Day Abbreviation": "MO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "DPR",
+  "Day Abbreviation": "SA",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "DPR",
+  "Day Abbreviation": "SO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "EV",
+  "Day Abbreviation": "DI",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "EV",
+  "Day Abbreviation": "DO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "EV",
+  "Day Abbreviation": "FR",
+  "Time Slot Ids": "1;2;3;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "EV",
+  "Day Abbreviation": "MI",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "EV",
+  "Day Abbreviation": "MO",
+  "Time Slot Ids": "6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "EV",
+  "Day Abbreviation": "SA",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "EV",
+  "Day Abbreviation": "SO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "FHU",
+  "Day Abbreviation": "DI",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "FHU",
+  "Day Abbreviation": "DO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "FHU",
+  "Day Abbreviation": "FR",
+  "Time Slot Ids": "1;2;3;4;5",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "FHU",
+  "Day Abbreviation": "MI",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "FHU",
+  "Day Abbreviation": "MO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "FHU",
+  "Day Abbreviation": "SA",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "FHU",
+  "Day Abbreviation": "SO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "FRE",
+  "Day Abbreviation": "DI",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "FRE",
+  "Day Abbreviation": "DO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "FRE",
+  "Day Abbreviation": "FR",
+  "Time Slot Ids": "1;2;3;4",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "FRE",
+  "Day Abbreviation": "MI",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "FRE",
+  "Day Abbreviation": "MO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "FRE",
+  "Day Abbreviation": "SA",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "FRE",
+  "Day Abbreviation": "SO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "HW",
+  "Day Abbreviation": "DI",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "HW",
+  "Day Abbreviation": "DO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "HW",
+  "Day Abbreviation": "FR",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "HW",
+  "Day Abbreviation": "MI",
+  "Time Slot Ids": "1;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "HW",
+  "Day Abbreviation": "MO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "HW",
+  "Day Abbreviation": "SA",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "HW",
+  "Day Abbreviation": "SO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "JBU",
+  "Day Abbreviation": "DI",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "JBU",
+  "Day Abbreviation": "DO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "JBU",
+  "Day Abbreviation": "FR",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "JBU",
+  "Day Abbreviation": "MI",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "JBU",
+  "Day Abbreviation": "MO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "JBU",
+  "Day Abbreviation": "SA",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "JBU",
+  "Day Abbreviation": "SO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "JHO",
+  "Day Abbreviation": "DI",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "JHO",
+  "Day Abbreviation": "DO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "JHO",
+  "Day Abbreviation": "FR",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "JHO",
+  "Day Abbreviation": "MI",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "JHO",
+  "Day Abbreviation": "MO",
+  "Time Slot Ids": "3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "JHO",
+  "Day Abbreviation": "SA",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "JHO",
+  "Day Abbreviation": "SO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "JOB",
+  "Day Abbreviation": "DI",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "JOB",
+  "Day Abbreviation": "DO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "JOB",
+  "Day Abbreviation": "FR",
+  "Time Slot Ids": "3;4",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "JOB",
+  "Day Abbreviation": "MI",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "JOB",
+  "Day Abbreviation": "MO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "JOB",
+  "Day Abbreviation": "SA",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "JOB",
+  "Day Abbreviation": "SO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "KLE",
+  "Day Abbreviation": "DI",
+  "Time Slot Ids": "3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "KLE",
+  "Day Abbreviation": "DO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "KLE",
+  "Day Abbreviation": "FR",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "KLE",
+  "Day Abbreviation": "MI",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "KLE",
+  "Day Abbreviation": "MO",
+  "Time Slot Ids": "1;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "KLE",
+  "Day Abbreviation": "SA",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "KLE",
+  "Day Abbreviation": "SO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "MLO",
+  "Day Abbreviation": "DI",
+  "Time Slot Ids": "2;3;4;5;6",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "MLO",
+  "Day Abbreviation": "DO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "MLO",
+  "Day Abbreviation": "FR",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "MLO",
+  "Day Abbreviation": "MI",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "MLO",
+  "Day Abbreviation": "MO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "MLO",
+  "Day Abbreviation": "SA",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "MLO",
+  "Day Abbreviation": "SO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "MWO",
+  "Day Abbreviation": "DI",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "MWO",
+  "Day Abbreviation": "DO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "MWO",
+  "Day Abbreviation": "FR",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "MWO",
+  "Day Abbreviation": "MI",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "MWO",
+  "Day Abbreviation": "MO",
+  "Time Slot Ids": "1;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "MWO",
+  "Day Abbreviation": "SO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "MWO",
+  "Day Abbreviation": "SA",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "PGO",
+  "Day Abbreviation": "DI",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "PGO",
+  "Day Abbreviation": "DO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "PGO",
+  "Day Abbreviation": "FR",
+  "Time Slot Ids": "5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "PGO",
+  "Day Abbreviation": "MI",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "PGO",
+  "Day Abbreviation": "MO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "PGO",
+  "Day Abbreviation": "SA",
+  "Time Slot Ids": "6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "PGO",
+  "Day Abbreviation": "SO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "RGI",
+  "Day Abbreviation": "DI",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "RGI",
+  "Day Abbreviation": "DO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "RGI",
+  "Day Abbreviation": "FR",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "RGI",
+  "Day Abbreviation": "MI",
+  "Time Slot Ids": "1;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "RGI",
+  "Day Abbreviation": "MO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "RGI",
+  "Day Abbreviation": "SA",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "RGI",
+  "Day Abbreviation": "SO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "SED",
+  "Day Abbreviation": "DI",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "SED",
+  "Day Abbreviation": "DO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "SED",
+  "Day Abbreviation": "FR",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "SED",
+  "Day Abbreviation": "MI",
+  "Time Slot Ids": "4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "SED",
+  "Day Abbreviation": "MO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "SED",
+  "Day Abbreviation": "SA",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "SED",
+  "Day Abbreviation": "SO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "SEN",
+  "Day Abbreviation": "DI",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "SEN",
+  "Day Abbreviation": "DO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "SEN",
+  "Day Abbreviation": "FR",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "SEN",
+  "Day Abbreviation": "MI",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "SEN",
+  "Day Abbreviation": "MO",
+  "Time Slot Ids": "1;2;3;4;5",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "SEN",
+  "Day Abbreviation": "SA",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "SEN",
+  "Day Abbreviation": "SO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "SWA",
+  "Day Abbreviation": "DI",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "SWA",
+  "Day Abbreviation": "DO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "SWA",
+  "Day Abbreviation": "FR",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "SWA",
+  "Day Abbreviation": "MI",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "SWA",
+  "Day Abbreviation": "MO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "SWA",
+  "Day Abbreviation": "SA",
+  "Time Slot Ids": "6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "SWA",
+  "Day Abbreviation": "SO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "TFS",
+  "Day Abbreviation": "DI",
+  "Time Slot Ids": "1;2;3;4",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "TFS",
+  "Day Abbreviation": "DO",
+  "Time Slot Ids": "1;2;3;4",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "TFS",
+  "Day Abbreviation": "FR",
+  "Time Slot Ids": "1;2;3;4",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "TFS",
+  "Day Abbreviation": "MI",
+  "Time Slot Ids": "1;2;3;4",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "TFS",
+  "Day Abbreviation": "MO",
+  "Time Slot Ids": "1;2;3;4",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "TFS",
+  "Day Abbreviation": "SA",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "TFS",
+  "Day Abbreviation": "SO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "TLE",
+  "Day Abbreviation": "DI",
+  "Time Slot Ids": "1;2;3;4;5",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "TLE",
+  "Day Abbreviation": "DO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "TLE",
+  "Day Abbreviation": "FR",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "TLE",
+  "Day Abbreviation": "MI",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "TLE",
+  "Day Abbreviation": "MO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "TLE",
+  "Day Abbreviation": "SA",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "TLE",
+  "Day Abbreviation": "SO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "TPA",
+  "Day Abbreviation": "DI",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "TPA",
+  "Day Abbreviation": "DO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "TPA",
+  "Day Abbreviation": "FR",
+  "Time Slot Ids": "1;2;3",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "TPA",
+  "Day Abbreviation": "MI",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "TPA",
+  "Day Abbreviation": "MO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "TPA",
+  "Day Abbreviation": "SA",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "TPA",
+  "Day Abbreviation": "SO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "TPF",
+  "Day Abbreviation": "DI",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "TPF",
+  "Day Abbreviation": "DO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "TPF",
+  "Day Abbreviation": "FR",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "TPF",
+  "Day Abbreviation": "MI",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "TPF",
+  "Day Abbreviation": "MO",
+  "Time Slot Ids": "1;2;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "TPF",
+  "Day Abbreviation": "SA",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "TPF",
+  "Day Abbreviation": "SO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "TWE",
+  "Day Abbreviation": "DI",
+  "Time Slot Ids": "1;2;3;4;5",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "TWE",
+  "Day Abbreviation": "DO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "TWE",
+  "Day Abbreviation": "FR",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "TWE",
+  "Day Abbreviation": "MI",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "TWE",
+  "Day Abbreviation": "MO",
+  "Time Slot Ids": "1;2;3;4;5",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "TWE",
+  "Day Abbreviation": "SA",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "TWE",
+  "Day Abbreviation": "SO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ }
+]
+}

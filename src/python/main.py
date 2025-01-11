@@ -4,15 +4,10 @@ from argparse import ArgumentParser
 
 from db.database import Database
 from genetic_algorithm import NUM_GENERATIONS, genetic_algorithm
-from src.python.io import parser_excel
-from utils import path_utils, time_utils
+from utils import time_utils
 from log import logging_config
-from src.python.io.printer_tabular import printer_save
-
-import sys
-print(sys.path)
-
-
+from src.python.io import parser_json as parser
+from src.python.io import printer_json as printer
 
 def parse_arguments() -> tuple[int, str, str, bool]:
     """Parses command-line arguments for the genetic algorithm scheduling program.
@@ -102,7 +97,7 @@ def main() -> None:
     generations, term, output_format, debug_mode = parse_arguments()
     logging_config.configure_logging()
     Database().initialize(delete_database_file=True)
-    parser_excel.parse()
+    parser.parse()
     runtime, _, _, _ = genetic_algorithm(1, term)
     estimated_runtime: float = generations * runtime
     print(f"Genetic algorithm started (generations = {generations}, term = {term})")
@@ -115,7 +110,7 @@ def main() -> None:
     print(f"\nSolution fitness: {fitness}")
     print(f"Generations completed: {generations_completed}")
     print(f"Actual runtime: {time_utils.seconds_to_formatted_duration(runtime)}")
-    printer_save(parsed_solution, fitness, debug_mode)
+    printer.printer_save(parsed_solution, fitness, debug_mode)
     exit(0)
 
 
