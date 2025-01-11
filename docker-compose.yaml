@@ -1,0 +1,6 @@
+services:
+    stundenplan:
+        build: .
+        volumes:
+            - ./output:/app/output
+        command: ${COMMAND:--help}
