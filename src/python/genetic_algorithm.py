@@ -4,7 +4,7 @@ import pygad
 from numpy.typing import NDArray
 from typing import Any, Optional
 
-import excel_parser
+from src.python.io import parser_excel
 from api import api
 from api.models.date import Date
 from api.models.day import Day
@@ -87,7 +87,7 @@ def fitness_function(
         Fitness of the solution.
     """
     lessons, date_x_room, employee_dislikes_date = (
-        instance.variables  # type: ignore Variables is a tuple set by us, which is not a regular member of the instance.
+        instance.variables  # type ignore Variables is a tuple set by us, which is not a regular member of the instance.
     )
     fitness: int = 0
     employee_planned_at_date: set[tuple[int, int]] = set()
@@ -246,7 +246,7 @@ def genetic_algorithm(generations: int = NUM_GENERATIONS, term: str = "Sommer"):
         random_seed=0,
         suppress_warnings=True,
     )
-    ga_instance.variables = (  # type: ignore Variables is a tuple set by us, which is not a regular member of the instance.
+    ga_instance.variables = (  # type ignore Variables is a tuple set by us, which is not a regular member of the instance.
         lessons,
         date_x_room,
         employee_dislikes_date,
@@ -264,7 +264,7 @@ def genetic_algorithm(generations: int = NUM_GENERATIONS, term: str = "Sommer"):
 def main() -> None:
     logging_config.configure_logging()
     Database().initialize(delete_database_file=True)
-    excel_parser.parse()
+    parser_excel.parse()
     runtime, parsed_solution, fitness, generations_completed = genetic_algorithm()
 
 

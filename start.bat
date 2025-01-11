@@ -1,1 +1,1 @@
-$env:COMMAND="-s -g 10 -w -d -t"; docker-compose up
+$env:COMMAND="-s -g 10 -w -d -t"; docker-compose up -d
