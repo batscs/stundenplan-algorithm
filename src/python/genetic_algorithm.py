@@ -15,7 +15,8 @@ from api.models.time_slot import TimeSlot
 from api.models.course import Course
 from api.models.semester import Semester
 from db.database import Database
-from log import logging_config
+
+# TODO logger_ga für genetic algorithm ergänzen und detailierte logs für trainingsprozess
 
 HARD_CONSTRAINT: int = 100
 MID_CONSTRAINT: int = 3
@@ -262,7 +263,6 @@ def genetic_algorithm(generations: int = NUM_GENERATIONS, term: str = "Sommer"):
 
 
 def main() -> None:
-    logging_config.configure_logging()
     Database().initialize(delete_database_file=True)
     parser_excel.parse()
     runtime, parsed_solution, fitness, generations_completed = genetic_algorithm()

@@ -3,7 +3,6 @@ import pandas
 from pandas import DataFrame
 
 from src.python.db.database import Database
-from src.python.log import logging_config
 from src.python.utils import path_utils
 
 from src.python.utils import data_parsing
@@ -57,7 +56,6 @@ def parse(
 
 
 def main() -> None:
-    logging_config.configure_logging()
     Database().initialize(delete_database_file=True)
     parse()
 

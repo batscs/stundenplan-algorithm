@@ -1,5 +1,5 @@
+import inspect
 from pandas import DataFrame
-
 from src.python.db.dao.day_dao import DayDAO
 from src.python.db.dao.time_slot_dao import TimeSlotDAO
 from src.python.db.dao.employee_type_dao import EmployeeTypeDAO
@@ -34,6 +34,7 @@ from src.python.db.dto.priority_dto import PriorityDTO
 from src.python.db.dto.date_dto import DateDTO
 from src.python.db.dto.employee_dislikes_date_dto import EmployeeDislikesDateDTO
 from src.python.db.dto.event_disallows_day_dto import EventDisallowsDayDTO
+from src.python.log.logger import logger_app
 
 
 def parse_days(data_frame: DataFrame, fast_and_least_verbose: bool) -> None:
@@ -46,6 +47,8 @@ def parse_days(data_frame: DataFrame, fast_and_least_verbose: bool) -> None:
     Raises:
         `sqlite3.Error`: If any error occurs while inserting the days in the database.
     """
+    logger_app.debug(f"{inspect.currentframe().f_code.co_name} count: {len(data_frame.index)}")
+
     day_dtos: list[DayDTO] = [
         DayDTO(id=0, abbreviation=row["Abbreviation"], name=row["Name"])
         for row in data_frame.to_dict(orient="records")
@@ -67,6 +70,8 @@ def parse_time_slots(data_frame: DataFrame, fast_and_least_verbose: bool) -> Non
     Raises:
         `sqlite3.Error`: If any error occurs while inserting the time slots in the database.
     """
+    logger_app.debug(f"{inspect.currentframe().f_code.co_name} count: {len(data_frame.index)}")
+
     time_slot_dtos: list[TimeSlotDTO] = [
         TimeSlotDTO(id=0, start_time=row["Start Time"], end_time=row["End Time"])
         for row in data_frame.to_dict(orient="records")
@@ -87,6 +92,7 @@ def insert_dates(fast_and_least_verbose: bool) -> None:
     Raises:
         `sqlite3.Error`: If any error occurs while inserting the dates in the database.
     """
+
     # Cached for efficiency.
     time_slot_dtos: list[TimeSlotDTO] = TimeSlotDAO().select_all()
     date_dtos: list[DateDTO] = [
@@ -112,6 +118,8 @@ def parse_employee_types(data_frame: DataFrame, fast_and_least_verbose: bool) ->
     Raises:
         `sqlite3.Error`: If any error occurs while inserting the employee types in the database.
     """
+    logger_app.debug(f"{inspect.currentframe().f_code.co_name} count: {len(data_frame.index)}")
+
     employee_type_dtos: list[EmployeeTypeDTO] = [
         EmployeeTypeDTO(id=0, name=row["Name"])
         for row in data_frame.to_dict(orient="records")
@@ -133,6 +141,8 @@ def parse_employees(data_frame: DataFrame, fast_and_least_verbose: bool) -> None
     Raises:
         `sqlite3.Error`: If any error occurs while inserting the employees in the database.
     """
+    logger_app.debug(f"{inspect.currentframe().f_code.co_name} count: {len(data_frame.index)}")
+
     employee_types_by_name: dict[str, EmployeeTypeDTO] = {
         employee_type_dto.name: employee_type_dto
         for employee_type_dto in EmployeeTypeDAO().select_all()
@@ -168,6 +178,8 @@ def parse_participant_sizes(
     Raises:
         `sqlite3.Error`: If any error occurs while inserting the participant sizes in the database.
     """
+    logger_app.debug(f"{inspect.currentframe().f_code.co_name} count: {len(data_frame.index)}")
+
     participant_size_dtos: list[ParticipantSizeDTO] = [
         ParticipantSizeDTO(id=0, name=row["Name"], ordinal=row["Ordinal"])
         for row in data_frame.to_dict(orient="records")
@@ -189,6 +201,8 @@ def parse_room_types(data_frame: DataFrame, fast_and_least_verbose: bool) -> Non
     Raises:
         `sqlite3.Error`: If any error occurs while inserting the room types in the database.
     """
+    logger_app.debug(f"{inspect.currentframe().f_code.co_name} count: {len(data_frame.index)}")
+
     room_type_dtos: list[RoomTypeDTO] = [
         RoomTypeDTO(id=0, name=row["Name"])
         for row in data_frame.to_dict(orient="records")
@@ -210,6 +224,8 @@ def parse_rooms(data_frame: DataFrame, fast_and_least_verbose: bool) -> None:
     Raises:
         `sqlite3.Error`: If any error occurs while inserting the rooms in the database.
     """
+    logger_app.debug(f"{inspect.currentframe().f_code.co_name} count: {len(data_frame.index)}")
+
     participant_sizes_by_name: dict[str, ParticipantSizeDTO] = {
         participant_size_dto.name: participant_size_dto
         for participant_size_dto in ParticipantSizeDAO().select_all()
@@ -245,6 +261,8 @@ def parse_courses(data_frame: DataFrame, fast_and_least_verbose: bool) -> None:
     Raises:
         `sqlite3.Error`: If any error occurs while inserting the courses in the database.
     """
+    logger_app.debug(f"{inspect.currentframe().f_code.co_name} count: {len(data_frame.index)}")
+
     course_dtos: list[CourseDTO] = [
         CourseDTO(id=0, abbreviation=row["Abbreviation"], name=row["Name"])
         for row in data_frame.to_dict(orient="records")
@@ -266,6 +284,8 @@ def parse_terms(data_frame: DataFrame, fast_and_least_verbose: bool) -> None:
     Raises:
         `sqlite3.Error`: If any error occurs while inserting the terms in the database.
     """
+    logger_app.debug(f"{inspect.currentframe().f_code.co_name} count: {len(data_frame.index)}")
+
     term_dtos: list[TermDTO] = [
         TermDTO(id=0, name=row["Name"]) for row in data_frame.to_dict(orient="records")
     ]
@@ -286,6 +306,8 @@ def parse_semesters(data_frame: DataFrame, fast_and_least_verbose: bool) -> None
     Raises:
         `sqlite3.Error`: If any error occurs while inserting the semesters in the database.
     """
+    logger_app.debug(f"{inspect.currentframe().f_code.co_name} count: {len(data_frame.index)}")
+
     semester_dtos: list[SemesterDTO] = [
         SemesterDTO(id=0, value=row["Value"])
         for row in data_frame.to_dict(orient="records")
@@ -307,6 +329,8 @@ def parse_events(data_frame: DataFrame, fast_and_least_verbose: bool) -> None:
     Raises:
         `sqlite3.Error`: If any error occurs while inserting the events in the database.
     """
+    logger_app.debug(f"{inspect.currentframe().f_code.co_name} count: {len(data_frame.index)}")
+
     courses_by_abbreviation: dict[str, CourseDTO] = {
         course_dto.abbreviation: course_dto for course_dto in CourseDAO().select_all()
     }
@@ -413,6 +437,8 @@ def parse_priorities(data_frame: DataFrame, fast_and_least_verbose: bool) -> Non
     Raises:
         `sqlite3.Error`: If any error occurs while inserting the priorities in the database.
     """
+    logger_app.debug(f"{inspect.currentframe().f_code.co_name} count: {len(data_frame.index)}")
+
     priority_dtos: list[PriorityDTO] = [
         PriorityDTO(id=0, value=row["Value"])
         for row in data_frame.to_dict(orient="records")
@@ -437,6 +463,8 @@ def parse_employee_dislikes_date(
     Raises:
         `sqlite3.Error`: If any error occurs while inserting the disliked dates in the database.
     """
+    logger_app.debug(f"{inspect.currentframe().f_code.co_name} count: {len(data_frame.index)}")
+
     employees_by_abbreviation: dict[str, EmployeeDTO] = {
         employee_dto.abbreviation: employee_dto
         for employee_dto in EmployeeDAO().select_all()

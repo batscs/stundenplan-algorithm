@@ -5,7 +5,7 @@ from argparse import ArgumentParser
 from db.database import Database
 from genetic_algorithm import NUM_GENERATIONS, genetic_algorithm
 from utils import time_utils
-from log import logging_config
+from src.python.log.logger import logger_app
 from src.python.io import parser_json as parser
 from src.python.io import printer_json as printer
 
@@ -94,8 +94,9 @@ def parse_arguments() -> tuple[int, str, str, bool]:
 
 
 def main() -> None:
+    logger_app.debug("Starting Application")
+
     generations, term, output_format, debug_mode = parse_arguments()
-    logging_config.configure_logging()
     Database().initialize(delete_database_file=True)
     parser.parse()
     runtime, _, _, _ = genetic_algorithm(1, term)

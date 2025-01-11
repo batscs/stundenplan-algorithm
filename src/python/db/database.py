@@ -1,5 +1,4 @@
 import atexit
-import logging
 import os
 import sqlite3
 from logging import Logger
@@ -10,6 +9,7 @@ from queue import Queue
 from typing import Any, Generator, Optional, Self, final
 
 from src.python.utils import path_utils, time_utils
+from src.python.log.logger import logger_db
 
 
 @final
@@ -143,7 +143,7 @@ class Database:
         if self.__class__.__is_initialized:
             return
         self.__class__.__is_initialized = True
-        self.__logger: Logger = logging.getLogger(__name__)
+        self.__logger: Logger = logger_db
         self.__connection_pool: Optional[Queue[Connection]] = None
         # We use the named style, which avoids issues with the order and count of query parameters.
         sqlite3.paramstyle = "named"

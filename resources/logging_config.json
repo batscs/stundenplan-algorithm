@@ -3,6 +3,9 @@
     "disable_existing_loggers": false,
     "formatters": {
         "normal": {
+            "format": "%(asctime)s [%(levelname)-5s] %(name)s - %(message)s"
+        },
+        "detailed": {
             "format": "%(asctime)s | %(levelname)-5s | %(name)s | %(funcName)s | %(lineno)s | %(message)s"
         }
     },
@@ -13,20 +16,34 @@
             "formatter": "normal",
             "stream": "ext://sys.stdout"
         },
-        "file": {
+        "logfile_application": {
             "class": "logging.FileHandler",
             "level": "DEBUG",
             "formatter": "normal",
-            "filename": "debug.log",
+            "filename": "/app/src/python/resources/logs/application.log",
+            "mode": "w",
+            "encoding": "utf8"
+        },
+        "logfile_database": {
+            "class": "logging.FileHandler",
+            "level": "DEBUG",
+            "formatter": "normal",
+            "filename": "/app/src/python/resources/logs/database.log",
+            "mode": "w",
             "encoding": "utf8"
         }
     },
     "loggers": {
-        "root": {
-            "level": "INFO",
+        "application": {
+            "level": "DEBUG",
             "handlers": [
-                "console",
-                "file"
+                "logfile_application"
+            ]
+        },
+        "database": {
+            "level": "DEBUG",
+            "handlers": [
+                "logfile_database"
             ]
         }
     }
