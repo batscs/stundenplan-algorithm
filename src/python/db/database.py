@@ -9,7 +9,7 @@ from datetime import time
 from queue import Queue
 from typing import Any, Generator, Optional, Self, final
 
-from utils import path_utils, time_utils
+from src.python.utils import path_utils, time_utils
 
 
 @final
@@ -102,35 +102,30 @@ class Database:
             raise
 
     def __clean_connection_pool(self) -> None:
-        """Cleans the connection pool by closing all existing connections to the database.
-
-        Note that this method must only be called if a connection pool exists and after all
-        connections have been returned.
+        """Cleans the connection pool by closing all existing connections.
 
         Raises:
-            `RuntimeError`: If no connection pool exists or not all connections have been returned.
+            `RuntimeError`: If no connection pool exists.
         """
         if self.__connection_pool is None:
-            error: Exception = RuntimeError("No connection pool exists.")
-            self.__logger.exception(error)
-            raise error
-        if self.__connection_pool.qsize() < self.__class__.MAX_CONNECTIONS:
-            error: Exception = RuntimeError(
-                f"Not all connections have been returned to the connection pool. "
-                + f"Expected {self.__class__.MAX_CONNECTIONS} connections in the pool, "
-                + f"but it only has {self.__connection_pool.qsize()}."
-            )
-            self.__logger.exception(error)
-            raise error
-        # Queue does not implement Iterable[T], so we can't use enumerate and have to increment
-        # the index ourselves.
-        i: int = 0
-        while self.__connection_pool.qsize() > 0:
-            connection: Connection = self.__connection_pool.get()
-            self.__logger.debug(f"Closing connection {i}: {connection}")
-            connection.close()
-            self.__logger.debug(f"Closed connection {i}")
-            i += 1
+            self.__logger.warning("Connection pool is already cleaned or does not exist.")
+            return
+
+        self.__logger.debug("Cleaning the connection pool.")
+        try:
+            i = 0
+            while not self.__connection_pool.empty():
+                connection: Connection = self.__connection_pool.get()
+                self.__logger.debug(f"Closing connection {i}: {connection}")
+                connection.close()
+                i += 1
+
+            self.__connection_pool = None
+            self.__logger.debug("Connection pool cleaned successfully.")
+
+        except Exception as error:
+            self.__logger.exception(f"Error while cleaning connection pool: {error}")
+            raise
 
     def initialize(self, delete_database_file: bool = False) -> None:
         """Initializes the one and only `Database` instance at runtime.
@@ -160,7 +155,7 @@ class Database:
             self.__delete_database_file()
         self.__initialize_connection_pool()
         # Make sure to be nice and close all existing connections on exit.
-        atexit.register(self.__clean_connection_pool)
+        atexit.register(self.stop)
 
     @contextmanager
     def create_connection(
@@ -197,3 +192,47 @@ class Database:
         finally:
             self.__connection_pool.put(connection)
             # self.__logger.debug(f"Returned connection {connection}")
+
+    def stop(self) -> None:
+        """Stops the `Database` by cleaning up the connection pool and deleting the database file.
+
+        Ensures resources are cleaned up and the database file is removed. This method can be safely
+        called multiple times, and it handles cases where resources are partially cleaned up.
+
+        Raises:
+            `RuntimeError`: If the `Database` is not initialized.
+        """
+        if not self.__class__.__is_initialized:
+            self.__logger.warning("The database is already stopped or not initialized.")
+            return
+
+        self.__logger.debug("Stopping the database.")
+
+        try:
+            # Step 1: Clean the connection pool if it exists
+            if self.__connection_pool is not None:
+                if self.__connection_pool.qsize() < self.__class__.MAX_CONNECTIONS:
+                    self.__logger.warning(
+                        "Not all connections have been returned to the pool. "
+                        f"Current pool size: {self.__connection_pool.qsize()} / {self.__class__.MAX_CONNECTIONS}"
+                    )
+                    # Attempt to forcibly close any remaining connections
+                    while not self.__connection_pool.empty():
+                        connection = self.__connection_pool.get()
+                        self.__logger.debug(f"Forcibly closing connection: {connection}")
+                        connection.close()
+
+                self.__clean_connection_pool()
+
+            # Step 2: Delete the database file
+            self.__delete_database_file()
+
+            # Step 3: Mark the database as uninitialized
+            self.__class__.__is_initialized = False
+            self.__logger.debug("Database stopped successfully.")
+
+        except Exception as e:
+            self.__logger.exception(f"Error while stopping the database: {e}")
+        finally:
+            # Cleanup state regardless of errors
+            self.__connection_pool = None
