@@ -1,3 +1,11 @@
+# Todos
+
+1. aktuelle datenbank hat für events eintrag ob ss oder ws -> auch wichtig beim starten vom algo = frage: kann raus oder? algo soll stundenplan machen zu was auch immer wir übergeben
+   (json format für eingabe abklären)
+2. Cool wäre noch eine liste von satisfied und unsatisfied constraints in json result
+   (json format für ausgabe abklären, was für infos wollen wir)
+3. Bohn Fragen für noch eine repo und ob wir docker image hosten dürfen
+
 # Run Instructions
 
 ## Run Stundenplan via Docker Compose (Linux and Windows)
