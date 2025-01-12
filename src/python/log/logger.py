@@ -6,9 +6,7 @@ from typing import Any
 
 from src.python.utils import path_utils
 
-LOGGING_CONFIG_PATH: str = os.path.join(
-    path_utils.RESOURCES_PATH, "logging_config.json"
-)
+LOGGING_CONFIG_PATH: str = os.path.join(path_utils.RESOURCE_CONFIG_PATH, "logging_config.json")
 """Path of the logging config file."""
 
 _is_logging_configured = False

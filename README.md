@@ -5,6 +5,7 @@
 2. Cool wäre noch eine liste von satisfied und unsatisfied constraints in json result
    (json format für ausgabe abklären, was für infos wollen wir)
 3. Bohn Fragen für noch eine repo und ob wir docker image hosten dürfen
+4. stundenplan_config.json verwenden statt parameter für main.py
 
 # Run Instructions
 

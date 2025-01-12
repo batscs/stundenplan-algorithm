@@ -10,10 +10,10 @@ from src.python.utils import data_parsing
 
 from src.python.utils import path_utils
 
-JSON_FILE_NAME: str = "FHW.json"
+JSON_FILE_NAME: str = "FHW_DEV.json"
 """Name of the excel file to parse."""
 
-DEFAULT_JSON_FILE_PATH: str = os.path.join(path_utils.RESOURCES_PATH, JSON_FILE_NAME)
+DEFAULT_JSON_FILE_PATH: str = os.path.join(path_utils.RESOURCE_INPUT_PATH, JSON_FILE_NAME)
 """Default path of the excel file containing the data to parse."""
 
 def _convert_to_dataframe(data: list[dict[str, Any]]) -> DataFrame:

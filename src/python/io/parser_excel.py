@@ -7,10 +7,10 @@ from src.python.utils import path_utils
 
 from src.python.utils import data_parsing
 
-EXCEL_FILE_NAME: str = "FHW.xlsm"
+EXCEL_FILE_NAME: str = "FHW_DEV.xlsm"
 """Name of the excel file to parse."""
 
-DEFAULT_EXCEL_FILE_PATH: str = os.path.join(path_utils.RESOURCES_PATH, EXCEL_FILE_NAME)
+DEFAULT_EXCEL_FILE_PATH: str = os.path.join(path_utils.RESOURCE_INPUT_PATH, EXCEL_FILE_NAME)
 """Default path of the excel file containing the data to parse."""
 
 def parse(

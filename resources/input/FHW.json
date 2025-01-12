@@ -1,0 +1,7875 @@
+{
+"Day":[
+ {
+  "Abbreviation": "MO",
+  "Name": "Montag"
+ },
+ {
+  "Abbreviation": "DI",
+  "Name": "Dienstag"
+ },
+ {
+  "Abbreviation": "MI",
+  "Name": "Mittwoch"
+ },
+ {
+  "Abbreviation": "DO",
+  "Name": "Donnerstag"
+ },
+ {
+  "Abbreviation": "FR",
+  "Name": "Freitag"
+ },
+ {
+  "Abbreviation": "SA",
+  "Name": "Samstag"
+ },
+ {
+  "Abbreviation": "SO",
+  "Name": "Sonntag"
+ }
+],
+"TimeSlot":[
+ {
+  "Start Time": "08:00:00",
+  "End Time": "09:15:00"
+ },
+ {
+  "Start Time": "09:30:00",
+  "End Time": "10:45:00"
+ },
+ {
+  "Start Time": "11:00:00",
+  "End Time": "12:15:00"
+ },
+ {
+  "Start Time": "12:30:00",
+  "End Time": "13:45:00"
+ },
+ {
+  "Start Time": "14:00:00",
+  "End Time": "15:15:00"
+ },
+ {
+  "Start Time": "15:30:00",
+  "End Time": "16:45:00"
+ },
+ {
+  "Start Time": "17:00:00",
+  "End Time": "18:15:00"
+ }
+],
+"EmployeeType":[
+ {
+  "Name": "Dozent(in)"
+ },
+ {
+  "Name": "Lehrbeauftragte(r)"
+ },
+ {
+  "Name": "Verwaltungspersonal"
+ },
+ {
+  "Name": "Wissenschaftliches Personal"
+ }
+],
+"Employee":[
+ {
+  "Abbreviation": "AAH",
+  "First Name": "Afsoon",
+  "Last Name": "Alipour-Hoeft",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "AAN",
+  "First Name": "Annalisa",
+  "Last Name": "Anzioso",
+  "Employee Type": "Wissenschaftliches Personal"
+ },
+ {
+  "Abbreviation": "AFI",
+  "Title": "Prof. Dr.",
+  "First Name": "Alexander",
+  "Last Name": "Fischer",
+  "Employee Type": "Dozent(in)"
+ },
+ {
+  "Abbreviation": "AHA",
+  "Title": "Prof. Dr.",
+  "First Name": "Andreas",
+  "Last Name": "Haase",
+  "Employee Type": "Dozent(in)"
+ },
+ {
+  "Abbreviation": "AHB",
+  "First Name": "Anja",
+  "Last Name": "Haschenburger",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "AHR",
+  "Title": "Dipl.-Inform. (FH)",
+  "First Name": "Dirk",
+  "Last Name": "Ahrens",
+  "Employee Type": "Dozent(in)"
+ },
+ {
+  "Abbreviation": "AKR",
+  "First Name": "Andreas",
+  "Last Name": "Kramp",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "AMK",
+  "Title": "Dr.",
+  "First Name": "Anna-Magdalena",
+  "Last Name": "Kölzer",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "ANN",
+  "Title": "Prof. Dr.",
+  "First Name": "Hendrik",
+  "Last Name": "Annuth",
+  "Employee Type": "Dozent(in)"
+ },
+ {
+  "Abbreviation": "AVH",
+  "First Name": "Alina",
+  "Last Name": "von der Heide",
+  "Employee Type": "Wissenschaftliches Personal"
+ },
+ {
+  "Abbreviation": "AWO",
+  "Title": "Prof. Dr.",
+  "First Name": "Atilla",
+  "Last Name": "Wohllebe",
+  "Employee Type": "Dozent(in)"
+ },
+ {
+  "Abbreviation": "AZE",
+  "Title": "M.Sc.",
+  "First Name": "Anna",
+  "Last Name": "Zeller",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "BA",
+  "Title": "Prof. Dr.",
+  "First Name": "Frank",
+  "Last Name": "Bargel",
+  "Employee Type": "Dozent(in)"
+ },
+ {
+  "Abbreviation": "BAU",
+  "Title": "Prof. Dr.",
+  "First Name": "Sabine",
+  "Last Name": "Baumann",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "BGO",
+  "Title": "Dr.",
+  "First Name": "Björn",
+  "Last Name": "Goerke",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "BO",
+  "Title": "Prof. Dr.",
+  "First Name": "Christian-Arved",
+  "Last Name": "Bohn",
+  "Employee Type": "Dozent(in)"
+ },
+ {
+  "Abbreviation": "BOS",
+  "Title": "Dipl.-Ing. (FH)",
+  "First Name": "Timm",
+  "Last Name": "Bostelmann",
+  "Employee Type": "Wissenschaftliches Personal"
+ },
+ {
+  "Abbreviation": "BRA",
+  "Title": "Dr.",
+  "First Name": "Behrang",
+  "Last Name": "Raji",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "CBU",
+  "Title": "Prof. Dr.",
+  "First Name": "Carsten",
+  "Last Name": "Burmeister",
+  "Employee Type": "Dozent(in)"
+ },
+ {
+  "Abbreviation": "CEI",
+  "Title": "B.Sc.",
+  "First Name": "Cordula",
+  "Last Name": "Eichhorn",
+  "Employee Type": "Wissenschaftliches Personal"
+ },
+ {
+  "Abbreviation": "CEN",
+  "Title": "Dipl.-Kfm. WP\/StB",
+  "First Name": "Christian",
+  "Last Name": "Entringer",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "CH",
+  "Title": "StD",
+  "First Name": "Dirk",
+  "Last Name": "Cholewa",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "CMM",
+  "Title": "Dr.",
+  "First Name": "Claudia",
+  "Last Name": "Marggraf-Micheel",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "CTI",
+  "Title": "Dipl.-Wirtschaftsing. (FH)",
+  "First Name": "Carsten",
+  "Last Name": "Timmermann",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "CZO",
+  "First Name": "Christo",
+  "Last Name": "Zonnev",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "DDE",
+  "First Name": "Daniela",
+  "Last Name": "Derheld",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "DI",
+  "Title": "Dr.",
+  "First Name": "Martin",
+  "Last Name": "Dietze",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "DKO",
+  "First Name": "Denise",
+  "Last Name": "Koch",
+  "Employee Type": "Wissenschaftliches Personal"
+ },
+ {
+  "Abbreviation": "DMA",
+  "Title": "M.A.",
+  "First Name": "Daniel",
+  "Last Name": "Marx",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "DMI",
+  "Title": "Prof. Dr.",
+  "First Name": "Dominik",
+  "Last Name": "Miller",
+  "Employee Type": "Dozent(in)"
+ },
+ {
+  "Abbreviation": "DMT",
+  "First Name": "Dorothea",
+  "Last Name": "Mahlstedt",
+  "Employee Type": "Verwaltungspersonal"
+ },
+ {
+  "Abbreviation": "DPR",
+  "Title": "Dr.",
+  "First Name": "Dennis",
+  "Last Name": "Proppe",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "DSG",
+  "Title": "Prof. Dr.",
+  "First Name": "Dennis",
+  "Last Name": "Säring",
+  "Employee Type": "Dozent(in)"
+ },
+ {
+  "Abbreviation": "EH",
+  "Title": "Prof. Dr.",
+  "First Name": "Eike",
+  "Last Name": "Harms",
+  "Employee Type": "Dozent(in)"
+ },
+ {
+  "Abbreviation": "EV",
+  "Title": "BA (hons)",
+  "First Name": "Byron",
+  "Last Name": "Evans",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "FBO",
+  "Title": "Prof. Dr.",
+  "First Name": "Franziska",
+  "Last Name": "Bönte",
+  "Employee Type": "Dozent(in)"
+ },
+ {
+  "Abbreviation": "FGE",
+  "Title": "WP\/StB, CISA\/CRISC",
+  "First Name": "Frank",
+  "Last Name": "Gerber",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "FHE",
+  "Title": "Dipl.-Medieninform. (FH)",
+  "First Name": "Florian",
+  "Last Name": "Hermsdorf",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "FHU",
+  "Title": "Dr.",
+  "First Name": "Frank",
+  "Last Name": "Huch",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "FKO",
+  "Title": "M.Sc.",
+  "First Name": "Fikret",
+  "Last Name": "Koyuncu",
+  "Employee Type": "Wissenschaftliches Personal"
+ },
+ {
+  "Abbreviation": "FRE",
+  "Title": "Prof. Dr.",
+  "First Name": "Felix",
+  "Last Name": "Reiche",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "GB",
+  "Title": "Prof. Dr.",
+  "First Name": "Gerd",
+  "Last Name": "Beuster",
+  "Employee Type": "Dozent(in)"
+ },
+ {
+  "Abbreviation": "GH",
+  "Title": "Prof. Dr.",
+  "First Name": "Gunnar",
+  "Last Name": "Harms",
+  "Employee Type": "Dozent(in)"
+ },
+ {
+  "Abbreviation": "GI",
+  "Title": "Prof. Dr.",
+  "First Name": "Thorsten",
+  "Last Name": "Giersch",
+  "Employee Type": "Dozent(in)"
+ },
+ {
+  "Abbreviation": "GRE",
+  "Title": "Prof. Dr.",
+  "First Name": "Gerrit",
+  "Last Name": "Remané",
+  "Employee Type": "Dozent(in)"
+ },
+ {
+  "Abbreviation": "HGL",
+  "Title": "Prof. Dr.",
+  "First Name": "Hendrik",
+  "Last Name": "Lam",
+  "Employee Type": "Dozent(in)"
+ },
+ {
+  "Abbreviation": "HI",
+  "Title": "Dipl.-Ing. (FH)",
+  "First Name": "Michael",
+  "Last Name": "Hinck",
+  "Employee Type": "Wissenschaftliches Personal"
+ },
+ {
+  "Abbreviation": "HOE",
+  "Title": "M.Sc.",
+  "First Name": "Herrmann",
+  "Last Name": "Höhne",
+  "Employee Type": "Wissenschaftliches Personal"
+ },
+ {
+  "Abbreviation": "HS",
+  "Title": "Prof. Dr.",
+  "First Name": "Andreas",
+  "Last Name": "Häuslein",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "HW",
+  "First Name": "Gudrun",
+  "Last Name": "Hinz-Warnke",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "INC",
+  "First Name": "Inga Nissen",
+  "Last Name": "Camargo",
+  "Employee Type": "Verwaltungspersonal"
+ },
+ {
+  "Abbreviation": "IW",
+  "Title": "Prof. Dr.",
+  "First Name": "Sebastian",
+  "Last Name": "Iwanowski",
+  "Employee Type": "Dozent(in)"
+ },
+ {
+  "Abbreviation": "JBN",
+  "First Name": "Jochen",
+  "Last Name": "Brunnstein",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "JBU",
+  "First Name": "Jens",
+  "Last Name": "Buschmann",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "JG",
+  "Title": "Dipl.-Ing. (FH)",
+  "First Name": "Jürgen",
+  "Last Name": "Günther",
+  "Employee Type": "Wissenschaftliches Personal"
+ },
+ {
+  "Abbreviation": "JGE",
+  "Title": "Dr.",
+  "First Name": "Judith",
+  "Last Name": "Grummer",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "JHO",
+  "Title": "Dipl.-Kauffrau",
+  "First Name": "Jeanette",
+  "Last Name": "Holzer",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "JOB",
+  "Title": "RA.",
+  "First Name": "Jens O.",
+  "Last Name": "Brelle",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "JPL",
+  "Title": "Prof. Dr.",
+  "First Name": "Jan-Paul",
+  "Last Name": "Lüdtke",
+  "Employee Type": "Dozent(in)"
+ },
+ {
+  "Abbreviation": "JSO",
+  "First Name": "Jonas",
+  "Last Name": "Sorgenfrei",
+  "Employee Type": "Wissenschaftliches Personal"
+ },
+ {
+  "Abbreviation": "KAL",
+  "Title": "Dipl.-Ing. (FH)",
+  "First Name": "Ilja",
+  "Last Name": "Kaleck",
+  "Employee Type": "Dozent(in)"
+ },
+ {
+  "Abbreviation": "KCH",
+  "Title": "Dipl.-Wi.-Inform. (FH)",
+  "First Name": "Thorben",
+  "Last Name": "Koch",
+  "Employee Type": "Wissenschaftliches Personal"
+ },
+ {
+  "Abbreviation": "KFE",
+  "First Name": "Katharina",
+  "Last Name": "Feindler",
+  "Employee Type": "Verwaltungspersonal"
+ },
+ {
+  "Abbreviation": "KIL",
+  "Title": "M.Sc.",
+  "First Name": "Emre",
+  "Last Name": "Kilic",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "KLE",
+  "Title": "Dr.",
+  "First Name": "Harriet",
+  "Last Name": "Kleiminger",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "KLK",
+  "Title": "Dipl.-Ing. (FH)",
+  "First Name": "Gerit",
+  "Last Name": "Kaleck",
+  "Employee Type": "Wissenschaftliches Personal"
+ },
+ {
+  "Abbreviation": "KRG",
+  "Title": "Dipl.-Ing. (FH)",
+  "First Name": "Christian",
+  "Last Name": "Krug",
+  "Employee Type": "Wissenschaftliches Personal"
+ },
+ {
+  "Abbreviation": "KZO",
+  "First Name": "Kristina",
+  "Last Name": "Zöllner",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "MHE",
+  "Title": "M.Sc.",
+  "First Name": "Malte",
+  "Last Name": "Heins",
+  "Employee Type": "Wissenschaftliches Personal"
+ },
+ {
+  "Abbreviation": "MLE",
+  "Title": "M.Sc.",
+  "First Name": "Mathias",
+  "Last Name": "Leonhardt",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "MLO",
+  "First Name": "Michael",
+  "Last Name": "Looft",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "MPA",
+  "Title": "M.Sc.",
+  "First Name": "Marco",
+  "Last Name": "Pawlowski",
+  "Employee Type": "Wissenschaftliches Personal"
+ },
+ {
+  "Abbreviation": "MPG",
+  "Title": "M.Sc.",
+  "First Name": "Marian",
+  "Last Name": "Gajda",
+  "Employee Type": "Wissenschaftliches Personal"
+ },
+ {
+  "Abbreviation": "MRE",
+  "First Name": "Melanie",
+  "Last Name": "Reißmann",
+  "Employee Type": "Wissenschaftliches Personal"
+ },
+ {
+  "Abbreviation": "MRI",
+  "Title": "M.Sc.",
+  "First Name": "Marcus",
+  "Last Name": "Riemer",
+  "Employee Type": "Wissenschaftliches Personal"
+ },
+ {
+  "Abbreviation": "MT",
+  "Title": "Dipl.-Psych.",
+  "First Name": "Claus Peter",
+  "Last Name": "Müller-Thurau",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "MVI",
+  "First Name": "Markus",
+  "Last Name": "Vieregge",
+  "Employee Type": "Wissenschaftliches Personal"
+ },
+ {
+  "Abbreviation": "MWA",
+  "Title": "Prof. Dr.",
+  "First Name": "Markus",
+  "Last Name": "Warg",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "MWO",
+  "First Name": "Marco",
+  "Last Name": "Wodarz-Burmester",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "MZO",
+  "First Name": "Mustapha",
+  "Last Name": "Zorgati",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "NE",
+  "Title": "Dipl.-Medieninform. (FH)",
+  "First Name": "Lars",
+  "Last Name": "Neumann",
+  "Employee Type": "Wissenschaftliches Personal"
+ },
+ {
+  "Abbreviation": "NHO",
+  "First Name": "Nicolas",
+  "Last Name": "Hollmann",
+  "Employee Type": "Wissenschaftliches Personal"
+ },
+ {
+  "Abbreviation": "NVK",
+  "First Name": "Nils Roald Helmut",
+  "Last Name": "van Kan",
+  "Employee Type": "Wissenschaftliches Personal"
+ },
+ {
+  "Abbreviation": "ONA",
+  "Title": "Dr.",
+  "First Name": "Ole",
+  "Last Name": "Nass",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "PF",
+  "Title": "Dipl.-Ing. (FH)",
+  "First Name": "Michael",
+  "Last Name": "Pfeifers",
+  "Employee Type": "Wissenschaftliches Personal"
+ },
+ {
+  "Abbreviation": "PGO",
+  "Title": "Dr.",
+  "First Name": "Panja",
+  "Last Name": "Goerke",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "PMB",
+  "Title": "Dipl.-Wirt.-Inform. (FH)",
+  "First Name": "Paul Maria",
+  "Last Name": "Bartusch",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "PMU",
+  "First Name": "Philipp",
+  "Last Name": "Munz",
+  "Employee Type": "Wissenschaftliches Personal"
+ },
+ {
+  "Abbreviation": "RGI",
+  "Title": "Dr.",
+  "First Name": "René",
+  "Last Name": "Gilster",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "RPO",
+  "Title": "Prof. Dr.",
+  "First Name": "Ronald",
+  "Last Name": "Poppe",
+  "Employee Type": "Dozent(in)"
+ },
+ {
+  "Abbreviation": "SAW",
+  "Title": "Prof. Dr.",
+  "First Name": "Sergei",
+  "Last Name": "Sawitzki",
+  "Employee Type": "Dozent(in)"
+ },
+ {
+  "Abbreviation": "SBA",
+  "Title": "M.Sc.",
+  "First Name": "Sophie",
+  "Last Name": "Baumeister",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "SBR",
+  "First Name": "Sven",
+  "Last Name": "Brose",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "SED",
+  "Title": "StR",
+  "First Name": "Roland",
+  "Last Name": "Sedlmayer",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "SEN",
+  "First Name": "Stephan",
+  "Last Name": "Engel",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "SLA",
+  "First Name": "Stefan",
+  "Last Name": "Lange",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "SMT",
+  "Title": "Prof. Dr.",
+  "First Name": "Mike",
+  "Last Name": "Schmitt",
+  "Employee Type": "Dozent(in)"
+ },
+ {
+  "Abbreviation": "SSC",
+  "First Name": "Stephan",
+  "Last Name": "Schäfer",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "SWA",
+  "First Name": "Stefan",
+  "Last Name": "Wagemann",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "SWE",
+  "Title": "LL.M.",
+  "First Name": "Steffen",
+  "Last Name": "Weiß",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "TBI",
+  "Title": "RA.",
+  "First Name": "Tobias",
+  "Last Name": "Bier",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "TFS",
+  "First Name": "Thomas Fabian",
+  "Last Name": "Starke",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "THS",
+  "Title": "Prof. Dr.",
+  "First Name": "Thomas",
+  "Last Name": "Schnieders",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "TLE",
+  "Title": "Dr.",
+  "First Name": "Thies",
+  "Last Name": "Lentfer",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "TPA",
+  "First Name": "Timo",
+  "Last Name": "Pagel",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "TPF",
+  "First Name": "Thomas",
+  "Last Name": "Pfeuti",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "TTI",
+  "First Name": "Torben",
+  "Last Name": "Tietgen",
+  "Employee Type": "Wissenschaftliches Personal"
+ },
+ {
+  "Abbreviation": "TWE",
+  "First Name": "Tim",
+  "Last Name": "Wetzel",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "UH",
+  "Title": "Prof. Dr.",
+  "First Name": "Ulrich",
+  "Last Name": "Hoffmann",
+  "Employee Type": "Dozent(in)"
+ },
+ {
+  "Abbreviation": "UHL",
+  "Title": "M.Sc.",
+  "First Name": "Christian",
+  "Last Name": "Uhlig",
+  "Employee Type": "Wissenschaftliches Personal"
+ },
+ {
+  "Abbreviation": "VMA",
+  "First Name": "Valena",
+  "Last Name": "Maiwald",
+  "Employee Type": "Wissenschaftliches Personal"
+ },
+ {
+  "Abbreviation": "VOE",
+  "Title": "Dipl.-Ing.",
+  "First Name": "Jörg",
+  "Last Name": "Völker",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "WA",
+  "First Name": "Andreas",
+  "Last Name": "Wand",
+  "Employee Type": "Lehrbeauftragte(r)"
+ },
+ {
+  "Abbreviation": "WEB",
+  "Title": "Prof. Dr.",
+  "First Name": "Stefan Christoph",
+  "Last Name": "Weber",
+  "Employee Type": "Dozent(in)"
+ },
+ {
+  "Abbreviation": "WOL",
+  "Title": "Dipl.-Inform. (FH)",
+  "First Name": "Birger",
+  "Last Name": "Wolter",
+  "Employee Type": "Dozent(in)"
+ },
+ {
+  "Abbreviation": "YSI",
+  "First Name": "Yannick",
+  "Last Name": "Sippel",
+  "Employee Type": "Lehrbeauftragte(r)"
+ }
+],
+"ParticipantSize":[
+ {
+  "Name": "Small",
+  "Ordinal": 1
+ },
+ {
+  "Name": "Normal",
+  "Ordinal": 2
+ },
+ {
+  "Name": "Large",
+  "Ordinal": 3
+ }
+],
+"RoomType":[
+ {
+  "Name": "Audiolabor"
+ },
+ {
+  "Name": "CAE-Labor"
+ },
+ {
+  "Name": "Elektroniklabor"
+ },
+ {
+  "Name": "Externes Unternehmen"
+ },
+ {
+  "Name": "Fertigungstechniklabor"
+ },
+ {
+  "Name": "Hörsaal"
+ },
+ {
+  "Name": "Konferenzraum"
+ },
+ {
+  "Name": "Messtechniklabor"
+ },
+ {
+  "Name": "Netzwerkschulungslabor"
+ },
+ {
+  "Name": "Onlineveranstaltung"
+ },
+ {
+  "Name": "Optiklabor"
+ },
+ {
+  "Name": "PC-Pool"
+ },
+ {
+  "Name": "Robotiklabor"
+ },
+ {
+  "Name": "Schaltungstechniklabor"
+ },
+ {
+  "Name": "Seminarraum"
+ },
+ {
+  "Name": "Smart-Project-Labor"
+ },
+ {
+  "Name": "Verfahrenstechniklabor"
+ },
+ {
+  "Name": "Virtual-Reality-Labor"
+ }
+],
+"Room":[
+ {
+  "Abbreviation": "EXT",
+  "Name": "Externes Unternehmen",
+  "Capacity": "Normal",
+  "Room Type": "Externes Unternehmen"
+ },
+ {
+  "Abbreviation": "HS01",
+  "Name": "Hörsaal 1",
+  "Capacity": "Small",
+  "Room Type": "Hörsaal"
+ },
+ {
+  "Abbreviation": "HS02",
+  "Name": "Hörsaal 2",
+  "Capacity": "Small",
+  "Room Type": "Hörsaal"
+ },
+ {
+  "Abbreviation": "HS03",
+  "Name": "Hörsaal 3",
+  "Capacity": "Small",
+  "Room Type": "Hörsaal"
+ },
+ {
+  "Abbreviation": "HS04",
+  "Name": "Hörsaal 4",
+  "Capacity": "Normal",
+  "Room Type": "Hörsaal"
+ },
+ {
+  "Abbreviation": "HS05",
+  "Name": "Hörsaal 5",
+  "Capacity": "Normal",
+  "Room Type": "Hörsaal"
+ },
+ {
+  "Abbreviation": "HS06",
+  "Name": "Hörsaal 6",
+  "Capacity": "Normal",
+  "Room Type": "Hörsaal"
+ },
+ {
+  "Abbreviation": "HS07",
+  "Name": "Audimax",
+  "Capacity": "Large",
+  "Room Type": "Hörsaal"
+ },
+ {
+  "Abbreviation": "LR01",
+  "Name": "Fertigungstechniklabor",
+  "Capacity": "Normal",
+  "Room Type": "Fertigungstechniklabor"
+ },
+ {
+  "Abbreviation": "LR02",
+  "Name": "Messtechniklabor",
+  "Capacity": "Normal",
+  "Room Type": "Messtechniklabor"
+ },
+ {
+  "Abbreviation": "LR03",
+  "Name": "Optiklabor",
+  "Capacity": "Normal",
+  "Room Type": "Optiklabor"
+ },
+ {
+  "Abbreviation": "LR04",
+  "Name": "Smart-Project-Labor",
+  "Capacity": "Normal",
+  "Room Type": "Smart-Project-Labor"
+ },
+ {
+  "Abbreviation": "LR05",
+  "Name": "Elektroniklabor",
+  "Capacity": "Normal",
+  "Room Type": "Elektroniklabor"
+ },
+ {
+  "Abbreviation": "LR06",
+  "Name": "Robotiklabor",
+  "Capacity": "Normal",
+  "Room Type": "Robotiklabor"
+ },
+ {
+  "Abbreviation": "LR07",
+  "Name": "Verfahrenstechniklabor",
+  "Capacity": "Normal",
+  "Room Type": "Verfahrenstechniklabor"
+ },
+ {
+  "Abbreviation": "LR08",
+  "Name": "CAE-Labor",
+  "Capacity": "Normal",
+  "Room Type": "CAE-Labor"
+ },
+ {
+  "Abbreviation": "LR09",
+  "Name": "Schaltungstechniklabor",
+  "Capacity": "Normal",
+  "Room Type": "Schaltungstechniklabor"
+ },
+ {
+  "Abbreviation": "LR10",
+  "Name": "Virtual-Reality-Labor",
+  "Capacity": "Normal",
+  "Room Type": "Virtual-Reality-Labor"
+ },
+ {
+  "Abbreviation": "LR11",
+  "Name": "Netzwerkschulungslabor",
+  "Capacity": "Normal",
+  "Room Type": "Netzwerkschulungslabor"
+ },
+ {
+  "Abbreviation": "LR12",
+  "Name": "Audiolabor",
+  "Capacity": "Normal",
+  "Room Type": "Audiolabor"
+ },
+ {
+  "Abbreviation": "OL01",
+  "Name": "Onlineveranstaltung",
+  "Capacity": "Normal",
+  "Room Type": "Onlineveranstaltung"
+ },
+ {
+  "Abbreviation": "PC01",
+  "Name": "PC-Pool 1",
+  "Capacity": "Normal",
+  "Room Type": "PC-Pool"
+ },
+ {
+  "Abbreviation": "PC02",
+  "Name": "PC-Pool 2",
+  "Capacity": "Small",
+  "Room Type": "PC-Pool"
+ },
+ {
+  "Abbreviation": "PC03",
+  "Name": "PC-Pool 3",
+  "Capacity": "Normal",
+  "Room Type": "PC-Pool"
+ },
+ {
+  "Abbreviation": "PC04",
+  "Name": "PC-Pool 4",
+  "Capacity": "Large",
+  "Room Type": "PC-Pool"
+ },
+ {
+  "Abbreviation": "PC05",
+  "Name": "PC-Pool 5",
+  "Capacity": "Large",
+  "Room Type": "PC-Pool"
+ },
+ {
+  "Abbreviation": "PC06",
+  "Name": "PC-Pool 6",
+  "Capacity": "Small",
+  "Room Type": "PC-Pool"
+ },
+ {
+  "Abbreviation": "SR01",
+  "Name": "Konferenzraum",
+  "Capacity": "Normal",
+  "Room Type": "Konferenzraum"
+ },
+ {
+  "Abbreviation": "SR02",
+  "Name": "Aristoteles",
+  "Capacity": "Small",
+  "Room Type": "Seminarraum"
+ },
+ {
+  "Abbreviation": "SR03",
+  "Name": "Agnesi",
+  "Capacity": "Small",
+  "Room Type": "Seminarraum"
+ },
+ {
+  "Abbreviation": "SR04",
+  "Name": "Archimedes",
+  "Capacity": "Small",
+  "Room Type": "Seminarraum"
+ },
+ {
+  "Abbreviation": "SR05",
+  "Name": "Agnodike",
+  "Capacity": "Normal",
+  "Room Type": "Seminarraum"
+ },
+ {
+  "Abbreviation": "SR06",
+  "Name": "Amperè",
+  "Capacity": "Large",
+  "Room Type": "Seminarraum"
+ },
+ {
+  "Abbreviation": "SR07",
+  "Name": "Bassi",
+  "Capacity": "Normal",
+  "Room Type": "Seminarraum"
+ },
+ {
+  "Abbreviation": "SR08",
+  "Name": "Daimler",
+  "Capacity": "Large",
+  "Room Type": "Seminarraum"
+ },
+ {
+  "Abbreviation": "SR10",
+  "Name": "Doudna",
+  "Capacity": "Normal",
+  "Room Type": "Seminarraum"
+ },
+ {
+  "Abbreviation": "SR11",
+  "Name": "Doppler",
+  "Capacity": "Normal",
+  "Room Type": "Seminarraum"
+ },
+ {
+  "Abbreviation": "SR12",
+  "Name": "Einstein",
+  "Capacity": "Small",
+  "Room Type": "Seminarraum"
+ },
+ {
+  "Abbreviation": "SR13",
+  "Name": "Goodall",
+  "Capacity": "Large",
+  "Room Type": "Seminarraum"
+ }
+],
+"Course":[
+ {
+  "Abbreviation": "B_AWP",
+  "Name": "Angewandte Wirtschaftspsychologie"
+ },
+ {
+  "Abbreviation": "B_BWL",
+  "Name": "Betriebswirtschaftslehre (Bachelor)"
+ },
+ {
+  "Abbreviation": "B_CGT",
+  "Name": "Computer Games Technology"
+ },
+ {
+  "Abbreviation": "B_DSAI",
+  "Name": "Data Science & Artificial Intelligence (Bachelor)"
+ },
+ {
+  "Abbreviation": "B_ECOM",
+  "Name": "E-Commerce (Bachelor)"
+ },
+ {
+  "Abbreviation": "B_IMCA",
+  "Name": "IT-Management, Consulting & Auditing (Bachelor)"
+ },
+ {
+  "Abbreviation": "B_INF",
+  "Name": "Informatik (Bachelor)"
+ },
+ {
+  "Abbreviation": "B_ITE",
+  "Name": "IT-Ingenieurwesen (Bachelor)"
+ },
+ {
+  "Abbreviation": "B_MINF",
+  "Name": "Medieninformatik (Bachelor)"
+ },
+ {
+  "Abbreviation": "B_STEC",
+  "Name": "Smart Technology (Bachelor)"
+ },
+ {
+  "Abbreviation": "B_TINF",
+  "Name": "Technische Informatik (Bachelor)"
+ },
+ {
+  "Abbreviation": "B_WINF",
+  "Name": "Wirtschaftsinformatik (Bachelor)"
+ },
+ {
+  "Abbreviation": "B_WING",
+  "Name": "Wirtschaftsingenieurwesen (Bachelor)"
+ },
+ {
+  "Abbreviation": "ITAM",
+  "Name": "Informationstechnischer Assistent (Medien)"
+ },
+ {
+  "Abbreviation": "ITAS",
+  "Name": "Informationstechnischer Assistent (Softwareentwicklung)"
+ },
+ {
+  "Abbreviation": "ITAT",
+  "Name": "Informationstechnischer Assistent (Technische Informatik)"
+ },
+ {
+  "Abbreviation": "ITAW",
+  "Name": "Informationstechnischer Assistent (Wirtschaft)"
+ },
+ {
+  "Abbreviation": "KAI",
+  "Name": "Kaufmännischer Assistent"
+ },
+ {
+  "Abbreviation": "M_BWL",
+  "Name": "Betriebswirtschaftslehre (Master)"
+ },
+ {
+  "Abbreviation": "M_DSAI",
+  "Name": "Data Science & Artificial Intelligence (Master)"
+ },
+ {
+  "Abbreviation": "M_ECOM",
+  "Name": "E-Commerce (Master)"
+ },
+ {
+  "Abbreviation": "M_INF",
+  "Name": "Informatik (Master)"
+ },
+ {
+  "Abbreviation": "M_ITE",
+  "Name": "IT-Engineering (Master)"
+ },
+ {
+  "Abbreviation": "M_ITS",
+  "Name": "IT-Sicherheit (Master)"
+ },
+ {
+  "Abbreviation": "M_SDBM",
+  "Name": "Sustainable & Digital Business Management (Master)"
+ },
+ {
+  "Abbreviation": "M_WIM",
+  "Name": "Wirtschaftsinformatik\/IT-Management (Master)"
+ },
+ {
+  "Abbreviation": "M_WING",
+  "Name": "Wirtschaftsingenieurwesen (Master)"
+ }
+],
+"Term":[
+ {
+  "Name": "Sommer"
+ },
+ {
+  "Name": "Winter"
+ }
+],
+"Semester":[
+ {
+  "Value": 1
+ },
+ {
+  "Value": 2
+ },
+ {
+  "Value": 3
+ },
+ {
+  "Value": 4
+ },
+ {
+  "Value": 5
+ },
+ {
+  "Value": 6
+ },
+ {
+  "Value": 7
+ }
+],
+"Event":[
+ {
+  "Name": "Accounting Auditing & Taxation (Seminar)",
+  "Employees": "WEB",
+  "Participants": "B_BWL:5;B_IMCA:6",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Sommer",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Category Management",
+  "Employees": "JPL",
+  "Participants": "M_DSAI:1,2;M_ECOM:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Sommer",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Commercial English (Gruppe 1)",
+  "Employees": "EV",
+  "Participants": "B_WING:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Sommer",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Commercial English (Gruppe 2)",
+  "Employees": "EV",
+  "Participants": "B_WING:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Sommer",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Commercial English (Gruppe 3)",
+  "Employees": "EV",
+  "Participants": "KAI:4;B_WING:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Sommer",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Communication Skills",
+  "Employees": "AMK,PGO",
+  "Participants": "B_BWL:6;B_CGT:6;B_DSAI:6;B_ECOM:6;B_IMCA:6;B_INF:5,6;B_MINF:6;B_TINF:6;B_WINF:6;B_WING:3,4",
+  "Participant Size": "Large",
+  "Weekly Blocks": 1,
+  "Term": "Sommer",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Computer Vision (Seminar)",
+  "Employees": "DSG,MPA",
+  "Participants": "M_DSAI:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Sommer",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Cryptography (Workshop)",
+  "Employees": "GB",
+  "Participants": "M_INF:1,2;M_ITE:1,2;M_ITS:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Sommer",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Data Analytics (Seminar)",
+  "Employees": "FBO",
+  "Participants": "B_BWL:5",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Sommer",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Deutsch 2",
+  "Employees": "SED",
+  "Participants": "ITAM:4;ITAS:4",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Sommer",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "E-Commerce (Seminar)",
+  "Employees": "AWO,JPL",
+  "Participants": "B_ECOM:4;M_ECOM:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Sommer",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Englisch 2",
+  "Employees": "HW",
+  "Participants": "ITAM:4;ITAS:4",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Sommer",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Finance & Services (Seminar)",
+  "Employees": "GI",
+  "Participants": "M_BWL:1,2;M_WING:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Sommer",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Große Sprachmodelle (Seminar)",
+  "Employees": "UH",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Sommer",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Grundlagen der Computergrafik",
+  "Employees": "BO,NHO",
+  "Participants": "B_CGT:4,5;B_INF:5,6;B_MINF:4,5;B_STEC:4;B_TINF:4,5",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Sommer",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Grundlagen der Computergrafik (Praktikum)",
+  "Employees": "MPG,MRE,NHO,PMU",
+  "Participants": "B_CGT:4,5;B_INF:5,6;B_MINF:4,5;B_STEC:4;B_TINF:4,5",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 2,
+  "Term": "Sommer",
+  "Room Type": "PC-Pool",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Grundlagen der Linearen Algebra",
+  "Employees": "AHA",
+  "Participants": "B_AWP:1,2;B_BWL:1,2;B_CGT:1,2;B_DSAI:1,2;B_ECOM:1,2,3;B_IMCA:1,2;B_INF:1,2;B_ITE:1,2;B_MINF:2,3;B_STEC:1,2;B_TINF:1,2;B_WINF:1,2;B_WING:1,2",
+  "Participant Size": "Large",
+  "Weekly Blocks": 1,
+  "Term": "Sommer",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Halbleiterschaltungstechnik",
+  "Employees": "SAW",
+  "Participants": "B_ITE:6;B_STEC:4;B_TINF:4,5",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Sommer",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Halbleiterschaltungstechnik",
+  "Employees": "SAW",
+  "Participants": "B_ITE:6;B_STEC:4;B_TINF:4,5",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Sommer",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Halbleiterschaltungstechnik + Elektronik (Übung)",
+  "Employees": "BOS",
+  "Participants": "B_ITE:6;B_STEC:4;B_TINF:4,5",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Sommer",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Halbleiterschaltungstechnik + Elektronik (Übung)",
+  "Employees": "BOS",
+  "Participants": "B_ITE:6;B_STEC:4;B_TINF:4,5",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Sommer",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Human Resources Management",
+  "Employees": "KLE",
+  "Participants": "KAI:4;B_AWP:1,2;B_BWL:3,4,5",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Sommer",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "IMCA-Projekt",
+  "Employees": "GRE",
+  "Participants": "B_IMCA:6",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 0,
+  "Term": "Sommer",
+  "Room Type": "Externes Unternehmen",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Industrial IoT",
+  "Employees": "AHA,BOS,CBU",
+  "Participants": "M_ITE:1,2",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 1,
+  "Term": "Sommer",
+  "Room Type": "CAE-Labor",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Industrial IoT (Lab)",
+  "Employees": "AHA,BOS,CBU",
+  "Participants": "M_ITE:1,2",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 1,
+  "Term": "Sommer",
+  "Room Type": "CAE-Labor",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Industrie 4.0",
+  "Employees": "CBU",
+  "Participants": "B_DSAI:4,5;B_ITE:4,5;B_WING:3,4",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 2,
+  "Term": "Sommer",
+  "Room Type": "CAE-Labor",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Industrie 4.0 (Praktikum)",
+  "Employees": "CBU",
+  "Participants": "B_DSAI:4,5;B_ITE:4,5;B_WING:3,4",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 1,
+  "Term": "Sommer",
+  "Room Type": "CAE-Labor",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Industrie 4.0 (Seminar)",
+  "Employees": "CBU",
+  "Participants": "B_WING:5,6",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Sommer",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Industrie 4.0 (Seminar)",
+  "Employees": "CBU",
+  "Participants": "B_WING:5,6",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Sommer",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Informationsmanagement (Seminar)",
+  "Employees": "HGL",
+  "Participants": "B_WING:5,6",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Sommer",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Informationsmanagement (Seminar)",
+  "Employees": "HGL",
+  "Participants": "B_WING:5,6",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Sommer",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Interaktive Geometrische Modellierung (Praktikum)",
+  "Employees": "SWA",
+  "Participants": "B_CGT:1;B_MINF:1,2,5",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Sommer",
+  "Room Type": "PC-Pool",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Interface-Technologie",
+  "Employees": "DSG",
+  "Participants": "B_INF:5,6;B_ITE:4;B_MINF:4;B_TINF:3,4",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Sommer",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Internationale Wirtschaft",
+  "Employees": "GI",
+  "Participants": "M_BWL:1,2;M_WING:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Sommer",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "IT Security (Seminar)",
+  "Employees": "GB",
+  "Participants": "M_ITE:1,2;M_ITS:1,2;M_WING:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Sommer",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "IT-Architekturmanagement",
+  "Employees": "RPO",
+  "Participants": "M_WIM:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 3,
+  "Term": "Sommer",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "IT-Audit (Workshop)",
+  "Employees": "WEB",
+  "Participants": "B_BWL:4,5;B_IMCA:4,5",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 0,
+  "Term": "Sommer",
+  "Room Type": "Externes Unternehmen",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "ITAx (Seminar)",
+  "Employees": "AHR,WOL",
+  "Participants": "ITAM:4;ITAS:4",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Sommer",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "ITAx (Seminar)",
+  "Employees": "AHR,WOL",
+  "Participants": "ITAM:4;ITAS:4",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Sommer",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "IT-Consulting Methoden und Fallstudien",
+  "Employees": "GRE",
+  "Participants": "M_WIM:1,2",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 3,
+  "Term": "Sommer",
+  "Room Type": "Externes Unternehmen",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "IT-Management (Seminar)",
+  "Employees": "GRE",
+  "Participants": "M_BWL:1,2;M_WING:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Sommer",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "IT-Management (Seminar)",
+  "Employees": "GRE",
+  "Participants": "M_BWL:1,2;M_WING:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Sommer",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "IT-Sicherheit",
+  "Employees": "GB",
+  "Participants": "B_IMCA:3,4;B_INF:3,6;B_ITE:5,6;B_MINF:6;B_WINF:5,6",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Sommer",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "KAI (Seminar)",
+  "Employees": "WOL",
+  "Participants": "KAI:4",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Sommer",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "KAI (Seminar)",
+  "Employees": "WOL",
+  "Participants": "KAI:4",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Sommer",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "KI und Mathematik (Seminar)",
+  "Employees": "IW",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Sommer",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "KI und Mathematik (Seminar)",
+  "Employees": "IW",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Sommer",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Kolloquium",
+  "Employees": "VMA",
+  "Participants": "ITAM:2,4;ITAS:2,4;ITAW:2;KAI:4;B_AWP:1,2;B_BWL:1,2,3,4,5,6,7;M_BWL:1,2,3,4;B_CGT:1,2,3,4,5,6,7;B_DSAI:1,2,3,4,5,6,7;M_DSAI:1,2,3;B_ECOM:1,2,3,4,5,6,7;M_ECOM:1,2,3;B_IMCA:1,2,3,4,5,6,7;B_INF:1,2,3,4,5,6,7;M_INF:1,2,3;B_ITE:1,2,4,5,6;M_ITE:1,2,3;M_ITS:1,2,3;B_MINF:1,2,3,4,5,6,7;M_SDBM:1,2,3,4;B_STEC:1,2,4;B_TINF:1,2,3,4,5,6;B_WINF:1,2,3,4,5,6,7;M_WIM:1,2,3;B_WING:1,2,3,4,5,6,7;M_WING:1,2,3",
+  "Participant Size": "Large",
+  "Weekly Blocks": 1,
+  "Term": "Sommer",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Konzernrechnungslegung",
+  "Employees": "WEB",
+  "Participants": "B_BWL:5,6;B_IMCA:4,5",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Sommer",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Konzernrechnungslegung",
+  "Employees": "WEB",
+  "Participants": "B_BWL:5,6;B_IMCA:4,5",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Sommer",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Kreativitätstechniken",
+  "Employees": "MT",
+  "Participants": "M_BWL:1,2;M_ECOM:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Sommer",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Laborprojekt",
+  "Employees": "SAW",
+  "Participants": "B_TINF:6",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 0,
+  "Term": "Sommer",
+  "Room Type": "Schaltungstechniklabor",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Laser Engineering",
+  "Employees": "DMI",
+  "Participants": "M_ITE:1,2;M_WING:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Sommer",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Learning & Softcomputing",
+  "Employees": "BO",
+  "Participants": "M_DSAI:1,2;M_INF:1,2;M_ITS:1,2;M_WIM:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Sommer",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Level-Design (Praktikum)",
+  "Employees": "MRE,NHO,PMU",
+  "Participants": "B_CGT:4;B_MINF:4",
+  "Participant Size": "Small",
+  "Weekly Blocks": 3,
+  "Term": "Sommer",
+  "Room Type": "PC-Pool",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Logistikmanagement",
+  "Employees": "GH",
+  "Participants": "B_BWL:5,6;B_ECOM:1;B_WINF:5,6;B_WING:5,6",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Sommer",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Machine Learning",
+  "Employees": "MPA",
+  "Participants": "B_DSAI:4,5",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Sommer",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Machine Learning (Übung)",
+  "Employees": "MPA",
+  "Participants": "B_DSAI:4,5",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Sommer",
+  "Room Type": "PC-Pool",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Management von Dienstleistungen",
+  "Employees": "GI",
+  "Participants": "B_BWL:5,6",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Sommer",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Management von Dienstleistungen",
+  "Employees": "GI",
+  "Participants": "B_BWL:5,6",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Sommer",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Management von Produktionssystemen",
+  "Employees": "GH",
+  "Participants": "B_BWL:4,5;B_WINF:5,6;B_WING:3,4",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Sommer",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Marketing & Medien (Seminar)",
+  "Employees": "AFI",
+  "Participants": "M_BWL:1,2;M_WING:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Sommer",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Marketing & Medien (Seminar)",
+  "Employees": "AFI",
+  "Participants": "M_BWL:1,2;M_WING:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Sommer",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Marketing & Vertrieb (Seminar)",
+  "Employees": "AFI",
+  "Participants": "B_BWL:5",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Sommer",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Marketing & Vertrieb (Seminar)",
+  "Employees": "AFI",
+  "Participants": "B_BWL:5",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Sommer",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Materialtechnik",
+  "Employees": "SMT",
+  "Participants": "B_ITE:2;B_WING:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Sommer",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Mathematik (+ Übung)",
+  "Employees": "WOL",
+  "Participants": "ITAM:2;ITAS:2;ITAW:2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Sommer",
+  "Room Type": "PC-Pool",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Medienrecht",
+  "Employees": "JOB",
+  "Participants": "ITAM:2;B_CGT:1,2;B_ECOM:2;B_MINF:1,4,6",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Sommer",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Medientechnik 2",
+  "Employees": "HI",
+  "Participants": "ITAM:2",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 2,
+  "Term": "Sommer",
+  "Room Type": "Audiolabor",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Medientechnik 2",
+  "Employees": "HI",
+  "Participants": "ITAM:2",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 0,
+  "Term": "Sommer",
+  "Room Type": "Audiolabor",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Medientechnik 2",
+  "Employees": "HI",
+  "Participants": "ITAM:2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Sommer",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Messtechnik (Workshop)",
+  "Employees": "CBU",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 0,
+  "Term": "Sommer",
+  "Room Type": "Messtechniklabor",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Modellierung und Simulation",
+  "Employees": "HS,UHL",
+  "Participants": "M_ECOM:1,2;M_WIM:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Sommer",
+  "Room Type": "PC-Pool",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Modellierung und Simulation",
+  "Employees": "HS,UHL",
+  "Participants": "M_ECOM:1,2;M_WIM:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Sommer",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Moderne Softwarearchitekturen",
+  "Employees": "UH",
+  "Participants": "M_INF:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Sommer",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Moderne Softwarearchitekturen",
+  "Employees": "UH",
+  "Participants": "M_INF:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Sommer",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Netzwerkprogrammierung (+ Übung)",
+  "Employees": "AHR",
+  "Participants": "ITAM:2;ITAS:2;ITAW:2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 3,
+  "Term": "Sommer",
+  "Room Type": "PC-Pool",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Netzwerkprogrammierung (+ Übung)",
+  "Employees": "AHR",
+  "Participants": "ITAM:2;ITAS:2;ITAW:2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 3,
+  "Term": "Sommer",
+  "Room Type": "PC-Pool",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Office-Anwendungen",
+  "Employees": "FKO",
+  "Participants": "B_AWP:2;B_BWL:2,3",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Sommer",
+  "Room Type": "PC-Pool",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Office-Anwendungen",
+  "Employees": "NE",
+  "Participants": "KAI:4;B_DSAI:2,3;B_ECOM:2,3;B_WING:3,4",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Sommer",
+  "Room Type": "PC-Pool",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Ökonometrie",
+  "Employees": "FBO",
+  "Participants": "M_DSAI:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Sommer",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Online-Plattform (Betrieb & Optimierung)",
+  "Employees": "AWO",
+  "Participants": "B_ECOM:5,6",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Sommer",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Online-Plattform (Betrieb & Optimierung)",
+  "Employees": "AWO",
+  "Participants": "B_ECOM:5,6",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Sommer",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Operations Research",
+  "Employees": "IW",
+  "Participants": "B_ECOM:3;B_INF:5,6;B_WINF:3,4;B_WING:3,4",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Sommer",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Operatives Marketing- und Vertriebsmanagement",
+  "Employees": "AFI",
+  "Participants": "B_BWL:5,6;B_WING:5,6",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Sommer",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Operatives Marketing- und Vertriebsmanagement",
+  "Employees": "AFI",
+  "Participants": "B_BWL:5,6;B_WING:5,6",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Sommer",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Optik",
+  "Employees": "AHA",
+  "Participants": "B_ITE:1,2;B_MINF:4;B_TINF:2,3;B_WING:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Sommer",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Optik (Praktikum)",
+  "Employees": "AHA",
+  "Participants": "B_MINF:4",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 0,
+  "Term": "Sommer",
+  "Room Type": "Optiklabor",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "PCB-Design (Praktikum)",
+  "Employees": "BOS",
+  "Participants": "B_STEC:4;B_TINF:5,6",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 3,
+  "Term": "Sommer",
+  "Room Type": "Schaltungstechniklabor",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Physikalisches Praktikum",
+  "Employees": "HGL,JG,KRG",
+  "Participants": "B_ITE:2;B_WING:2",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 4,
+  "Term": "Sommer",
+  "Room Type": "Elektroniklabor",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Praxisprojekt E-Commerce",
+  "Employees": "AWO",
+  "Participants": "B_ECOM:5,6",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Sommer",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Praxisprojekt E-Commerce",
+  "Employees": "AWO",
+  "Participants": "B_ECOM:5,6",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Sommer",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Produktentwicklung",
+  "Employees": "JHO",
+  "Participants": "B_WING:3,4",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Sommer",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Produktentwicklung",
+  "Employees": "MWO",
+  "Participants": "B_WING:3,4",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Sommer",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Produktionstechnisches Projekt",
+  "Employees": "BA,JG",
+  "Participants": "B_ITE:6;B_WING:5,6",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Sommer",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Produktionstechnisches Projekt",
+  "Employees": "BA,JG",
+  "Participants": "B_ITE:6;B_WING:5,6",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Sommer",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Produktionstechnisches Projekt",
+  "Employees": "BA,JG",
+  "Participants": "B_ITE:6;B_WING:5,6",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Sommer",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Produktionstechnisches Projekt",
+  "Employees": "BA,JG",
+  "Participants": "B_ITE:6;B_WING:5,6",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Sommer",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Prognose und Simulation (Workshop)",
+  "Employees": "FBO,FKO",
+  "Participants": "B_BWL:4,5;B_DSAI:5,6",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Sommer",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Program Structures Project",
+  "Employees": "NVK",
+  "Participants": "M_ITE:2",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 0,
+  "Term": "Sommer",
+  "Room Type": "Onlineveranstaltung",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Programmieren 2 (+ Übung)",
+  "Employees": "AHR",
+  "Participants": "ITAM:2;ITAS:2;ITAW:2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 3,
+  "Term": "Sommer",
+  "Room Type": "PC-Pool",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Programmieren 2 (+ Übung)",
+  "Employees": "AHR",
+  "Participants": "ITAM:2;ITAS:2;ITAW:2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 3,
+  "Term": "Sommer",
+  "Room Type": "PC-Pool",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Programmierpraktikum",
+  "Employees": "CEI,KLK,MRE,NVK",
+  "Participants": "B_IMCA:5",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 0,
+  "Term": "Sommer",
+  "Room Type": "Onlineveranstaltung",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Programmierpraktikum",
+  "Employees": "CEI,KLK,MRE,NVK",
+  "Participants": "B_ECOM:4,5",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 0,
+  "Term": "Sommer",
+  "Room Type": "Onlineveranstaltung",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Programmierpraktikum",
+  "Employees": "CEI,KLK,MRE,NVK",
+  "Participants": "B_WINF:3",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 0,
+  "Term": "Sommer",
+  "Room Type": "Onlineveranstaltung",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Programmierpraktikum",
+  "Employees": "CEI,KLK,MRE,NVK",
+  "Participants": "B_INF:2",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 0,
+  "Term": "Sommer",
+  "Room Type": "Onlineveranstaltung",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Programmierpraktikum",
+  "Employees": "CEI,KLK,MRE,NVK",
+  "Participants": "B_CGT:2",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 0,
+  "Term": "Sommer",
+  "Room Type": "Onlineveranstaltung",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Programmstrukturen 1",
+  "Employees": "DPR",
+  "Participants": "B_CGT:1;B_DSAI:1;B_ECOM:1;B_IMCA:1;B_INF:1;B_ITE:1;B_MINF:1;B_STEC:1;B_TINF:1;B_WINF:1",
+  "Participant Size": "Large",
+  "Weekly Blocks": 2,
+  "Term": "Sommer",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Programmstrukturen 1 (Abnahmen)",
+  "Employees": "AHR,MPG,MRE,NE",
+  "Participants": "B_CGT:1;B_DSAI:1;B_ECOM:1;B_IMCA:1;B_INF:1;B_ITE:1;B_MINF:1;B_STEC:1;B_TINF:1;B_WINF:1",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 3,
+  "Term": "Sommer",
+  "Room Type": "Onlineveranstaltung",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Programmstrukturen 1 (Betreuung)",
+  "Employees": "MPG,MRE,NE",
+  "Participants": "B_CGT:1;B_DSAI:1;B_ECOM:1;B_IMCA:1;B_INF:1;B_ITE:1;B_MINF:1;B_STEC:1;B_TINF:1;B_WINF:1",
+  "Participant Size": "Large",
+  "Weekly Blocks": 2,
+  "Term": "Sommer",
+  "Room Type": "PC-Pool",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Programmstrukturen 2",
+  "Employees": "DPR",
+  "Participants": "ITAM:4;ITAS:4;B_CGT:2;B_DSAI:2;B_ECOM:2;B_IMCA:2;B_INF:2;B_ITE:2;B_MINF:2;B_STEC:2;B_TINF:2;B_WINF:2",
+  "Participant Size": "Large",
+  "Weekly Blocks": 2,
+  "Term": "Sommer",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Programmstrukturen 2 (Aufgabenvorstellung)",
+  "Employees": "KLK",
+  "Participants": "ITAM:4;ITAS:4;B_CGT:2;B_DSAI:2;B_ECOM:2;B_IMCA:2;B_INF:2;B_ITE:2;B_MINF:2;B_STEC:2;B_TINF:2;B_WINF:2",
+  "Participant Size": "Large",
+  "Weekly Blocks": 1,
+  "Term": "Sommer",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Programmstrukturen 2 (Gruppe 1)",
+  "Employees": "CEI,KLK,NVK",
+  "Participants": "B_CGT:2;B_MINF:2",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 1,
+  "Term": "Sommer",
+  "Room Type": "Onlineveranstaltung",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Programmstrukturen 2 (Gruppe 2)",
+  "Employees": "CEI,KLK,NVK",
+  "Participants": "B_CGT:2;B_MINF:2",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 1,
+  "Term": "Sommer",
+  "Room Type": "Onlineveranstaltung",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Programmstrukturen 2 (Gruppe 3)",
+  "Employees": "CEI,KLK,NVK",
+  "Participants": "B_ECOM:2;B_IMCA:2;B_ITE:2",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 1,
+  "Term": "Sommer",
+  "Room Type": "Onlineveranstaltung",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Programmstrukturen 2 (Gruppe 4)",
+  "Employees": "CEI,KLK,NVK",
+  "Participants": "B_DSAI:2;B_WINF:2",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 1,
+  "Term": "Sommer",
+  "Room Type": "Onlineveranstaltung",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Programmstrukturen 2 (Gruppe 5)",
+  "Employees": "CEI,KLK,NVK",
+  "Participants": "B_DSAI:2;B_WINF:2",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 1,
+  "Term": "Sommer",
+  "Room Type": "Onlineveranstaltung",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Programmstrukturen 2 (Gruppe 6)",
+  "Employees": "CEI,KLK,NVK",
+  "Participants": "B_INF:2;B_STEC:2;B_TINF:2",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 1,
+  "Term": "Sommer",
+  "Room Type": "Onlineveranstaltung",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Programmstrukturen 2 (Gruppe 7)",
+  "Employees": "CEI,KLK,NVK",
+  "Participants": "B_INF:2;B_STEC:2;B_TINF:2",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 1,
+  "Term": "Sommer",
+  "Room Type": "Onlineveranstaltung",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Programmstrukturen 2 (Gruppe 8)",
+  "Employees": "CEI,KLK,NVK",
+  "Participants": "ITAM:4;ITAS:4",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 1,
+  "Term": "Sommer",
+  "Room Type": "Onlineveranstaltung",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Projekt Data Science",
+  "Employees": "MPA",
+  "Participants": "B_DSAI:5,6",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 0,
+  "Term": "Sommer",
+  "Room Type": "Externes Unternehmen",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Projekt Game-Design",
+  "Employees": "DKO,NHO",
+  "Participants": "B_CGT:4,5",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Sommer",
+  "Room Type": "PC-Pool",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Projekt Industrie 4.0",
+  "Employees": "AHA,CBU",
+  "Participants": "B_WING:5,6",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Sommer",
+  "Room Type": "PC-Pool",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Projekt IT-Ingenieurwesen",
+  "Employees": "UH",
+  "Participants": "B_ITE:6",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Sommer",
+  "Room Type": "PC-Pool",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Projekt Mikrocontroller",
+  "Employees": "BOS",
+  "Participants": "B_STEC:4;B_TINF:5,6",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 2,
+  "Term": "Sommer",
+  "Room Type": "Schaltungstechniklabor",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Projektmanagement",
+  "Employees": "GRE",
+  "Participants": "B_BWL:5,6;B_DSAI:5,6;B_ECOM:5,6;B_IMCA:5,6;B_INF:5,6;B_ITE:6;B_MINF:5,6;B_TINF:5,6;B_WINF:5,6;B_WING:5,6",
+  "Participant Size": "Large",
+  "Weekly Blocks": 1,
+  "Term": "Sommer",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Projektstudie Produktionstechnik",
+  "Employees": "AHA,HGL,JG",
+  "Participants": "M_WING:1,2",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 0,
+  "Term": "Sommer",
+  "Room Type": "Optiklabor",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Projektstudie Produktionstechnik",
+  "Employees": "BA,BOS,CBU,DMI",
+  "Participants": "M_WING:1,2",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 0,
+  "Term": "Sommer",
+  "Room Type": "Fertigungstechniklabor",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Projektstudie Produktionstechnik",
+  "Employees": "KRG,SMT",
+  "Participants": "M_WING:1,2",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 0,
+  "Term": "Sommer",
+  "Room Type": "Verfahrenstechniklabor",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Proseminar",
+  "Employees": "MT",
+  "Participants": "B_WING:3,4",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Sommer",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Prozessmodellimplementation",
+  "Employees": "UHL",
+  "Participants": "B_IMCA:5,6;B_WINF:5,6",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Sommer",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Prüfungswesen",
+  "Employees": "TLE",
+  "Participants": "B_BWL:4,5;B_IMCA:4,5",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Sommer",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Prüfungswesen",
+  "Employees": "TLE",
+  "Participants": "B_BWL:4,5;B_IMCA:4,5",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Sommer",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Qualitätsmanagement",
+  "Employees": "JBU",
+  "Participants": "B_WING:3,4",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Sommer",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Rapid Manufacturing (Workshop)",
+  "Employees": "UH",
+  "Participants": "B_STEC:4",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 2,
+  "Term": "Sommer",
+  "Room Type": "Smart-Project-Labor",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Rechnergestützter Entwurf digitaler Systeme",
+  "Employees": "SAW",
+  "Participants": "B_TINF:6",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Sommer",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Rechnergestützter Entwurf digitaler Systeme",
+  "Employees": "SAW",
+  "Participants": "B_TINF:6",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Sommer",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Rechnergestützter Entwurf digitaler Systeme (Praktikum)",
+  "Employees": "SAW",
+  "Participants": "B_TINF:6",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Sommer",
+  "Room Type": "PC-Pool",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Rechnernetze",
+  "Employees": "KAL",
+  "Participants": "B_CGT:3;B_IMCA:3;B_ITE:4,5",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Sommer",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Rechnernetze",
+  "Employees": "KAL",
+  "Participants": "ITAM:2;ITAS:2;ITAW:2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Sommer",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Rechnernetze (Praktikum)",
+  "Employees": "KAL,KCH",
+  "Participants": "B_CGT:4;B_INF:3,4;B_TINF:3",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 2,
+  "Term": "Sommer",
+  "Room Type": "Netzwerkschulungslabor",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Rechnernetze (Praktikum)",
+  "Employees": "KAL,KCH",
+  "Participants": "B_IMCA:4;B_TINF:6;B_WINF:3,4",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 2,
+  "Term": "Sommer",
+  "Room Type": "Netzwerkschulungslabor",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Rechnernetze (Workshop)",
+  "Employees": "KAL",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 0,
+  "Term": "Sommer",
+  "Room Type": "Netzwerkschulungslabor",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Rechnerstrukturen",
+  "Employees": "DSG",
+  "Participants": "B_INF:2,3;B_ITE:2;B_STEC:2;B_TINF:2,3",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Sommer",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Rechnungswesen",
+  "Employees": "WOL",
+  "Participants": "ITAW:2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Sommer",
+  "Room Type": "PC-Pool",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Robotics",
+  "Employees": "UH",
+  "Participants": "M_DSAI:1,2;M_INF:1,2;M_ITE:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Sommer",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Robotics (Laboratory)",
+  "Employees": "HOE",
+  "Participants": "M_ITE:1,2",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 0,
+  "Term": "Sommer",
+  "Room Type": "Robotiklabor",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Robotics (Laboratory)",
+  "Employees": "HOE",
+  "Participants": "M_DSAI:1,2;M_INF:1,2",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 0,
+  "Term": "Sommer",
+  "Room Type": "Robotiklabor",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "SC&OM (Seminar)",
+  "Employees": "GH",
+  "Participants": "B_BWL:5",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Sommer",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "SC&OM (Seminar)",
+  "Employees": "GH",
+  "Participants": "B_BWL:5",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Sommer",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Schaltungstechnik (Praktikum)",
+  "Employees": "TFS",
+  "Participants": "B_STEC:4;B_TINF:5,6",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 0,
+  "Term": "Sommer",
+  "Room Type": "Elektroniklabor",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "SDBM (Seminar)",
+  "Employees": "AFI,WEB",
+  "Participants": "M_SDBM:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Sommer",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "SDBM (Seminar)",
+  "Employees": "AFI,WEB",
+  "Participants": "M_SDBM:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Sommer",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Security Engineering",
+  "Employees": "GB",
+  "Participants": "M_ITE:1,2;M_ITS:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Sommer",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Servicemanagement (Seminar)",
+  "Employees": "GI",
+  "Participants": "B_BWL:5",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Sommer",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Servicemanagement (Seminar)",
+  "Employees": "GI",
+  "Participants": "B_BWL:5",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Sommer",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Servicemärkte: Wettbewerb Strategien und Branchen",
+  "Employees": "GI",
+  "Participants": "B_BWL:4,5;B_DSAI:4,5;B_ECOM:4,5",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Sommer",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Smart Data",
+  "Employees": "DPR",
+  "Participants": "M_ECOM:1,2;M_WIM:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Sommer",
+  "Room Type": "PC-Pool",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Software-Design",
+  "Employees": "UHL",
+  "Participants": "B_CGT:5,6;B_IMCA:4,5;B_INF:4,5;B_MINF:5;B_TINF:4,5;B_WINF:4,5",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 2,
+  "Term": "Sommer",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Softwareprojekt",
+  "Employees": "BO",
+  "Participants": "B_INF:6;B_MINF:6;B_WINF:6",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Sommer",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Strategisches IT-Management",
+  "Employees": "GRE",
+  "Participants": "B_IMCA:4,5",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Sommer",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Strategisches Marketing- und Vertriebsmanagement",
+  "Employees": "AFI",
+  "Participants": "B_BWL:4,5;B_ECOM:5,6;B_WING:3,4",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Sommer",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Strömungs- und Wärmelehre",
+  "Employees": "AHA",
+  "Participants": "B_ITE:1,2;B_WING:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Sommer",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Sustainable & Digital Brand & Performance Marketing",
+  "Employees": "AFI",
+  "Participants": "M_BWL:1,2;M_DSAI:1,2;M_SDBM:1,2;M_WING:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Sommer",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Sustainable Transformation",
+  "Employees": "SEN",
+  "Participants": "M_SDBM:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Sommer",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Systementwurf mit VHDL",
+  "Employees": "SAW",
+  "Participants": "B_TINF:5,6",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Sommer",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Systementwurf mit VHDL",
+  "Employees": "SAW",
+  "Participants": "B_TINF:5,6",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Sommer",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Systemtheorie Signal and Systems",
+  "Employees": "CBU",
+  "Participants": "B_ITE:4;M_ITE:1,2;B_STEC:4;B_TINF:4,5;B_WING:5,6",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Sommer",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Technical English (Gruppe 1)",
+  "Employees": "EV",
+  "Participants": "B_WING:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Sommer",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Technical English (Gruppe 1)",
+  "Employees": "EV",
+  "Participants": "B_WING:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Sommer",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Technical English (Gruppe 2)",
+  "Employees": "EV",
+  "Participants": "B_WING:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Sommer",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Technical English (Gruppe 2)",
+  "Employees": "EV",
+  "Participants": "B_WING:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Sommer",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Technical English (Gruppe 3)",
+  "Employees": "EV",
+  "Participants": "KAI:4;B_WING:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Sommer",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Technical English (Gruppe 3)",
+  "Employees": "EV",
+  "Participants": "KAI:4;B_WING:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Sommer",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Technical Optics",
+  "Employees": "TPF",
+  "Participants": "M_ITE:1,2;M_WING:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Sommer",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Technical Optics",
+  "Employees": "TPF",
+  "Participants": "M_ITE:1,2;M_WING:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Sommer",
+  "Room Type": "PC-Pool",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Technical Optics",
+  "Employees": "TPF",
+  "Participants": "M_ITE:1,2;M_WING:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Sommer",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Technik (Seminar)",
+  "Employees": "DMI,SMT",
+  "Participants": "M_WING:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Sommer",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Technik (Seminar)",
+  "Employees": "DMI,SMT",
+  "Participants": "M_WING:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Sommer",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Technisches Zeichnen",
+  "Employees": "JG",
+  "Participants": "B_ITE:2;B_STEC:1,2;B_WING:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Sommer",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Übertragungstechnik",
+  "Employees": "CBU",
+  "Participants": "B_ITE:4;B_STEC:2;B_TINF:2,3;B_WING:3,4",
+  "Participant Size": "Small",
+  "Weekly Blocks": 3,
+  "Term": "Sommer",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Umwelttechnik",
+  "Employees": "SMT",
+  "Participants": "B_ITE:6;M_SDBM:1,2;M_WING:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Sommer",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "UNIX",
+  "Employees": "DI",
+  "Participants": "ITAM:4;ITAS:4;B_CGT:2,3;B_DSAI:2,3;B_INF:2,3;B_MINF:2,3;B_TINF:2,3;B_WINF:2,3",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 2,
+  "Term": "Sommer",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "UNIX (Betreuung)",
+  "Employees": "AAN,AVH,MHE,TTI",
+  "Participants": "ITAM:4;ITAS:4;B_CGT:2,3;B_DSAI:2,3;B_INF:2,3;B_MINF:2,3;B_TINF:2,3;B_WINF:2,3",
+  "Participant Size": "Large",
+  "Weekly Blocks": 1,
+  "Term": "Sommer",
+  "Room Type": "PC-Pool",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "UNIX (Gruppe 1)",
+  "Employees": "AAN,AVH,MHE,MRE,TTI",
+  "Participants": "B_INF:2,3;B_TINF:2,3",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 1,
+  "Term": "Sommer",
+  "Room Type": "Onlineveranstaltung",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "UNIX (Gruppe 2)",
+  "Employees": "AAN,AVH,MHE,MRE,TTI",
+  "Participants": "B_INF:2,3;B_TINF:2,3",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 1,
+  "Term": "Sommer",
+  "Room Type": "Onlineveranstaltung",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "UNIX (Gruppe 3)",
+  "Employees": "AAN,AVH,MHE,MRE,TTI",
+  "Participants": "ITAM:4;ITAS:4;B_DSAI:2,3;B_WINF:2,3",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 1,
+  "Term": "Sommer",
+  "Room Type": "Onlineveranstaltung",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "UNIX (Gruppe 4)",
+  "Employees": "AAN,AVH,MHE,MRE,TTI",
+  "Participants": "B_DSAI:2,3;B_WINF:2,3",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 1,
+  "Term": "Sommer",
+  "Room Type": "Onlineveranstaltung",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "UNIX (Gruppe 5)",
+  "Employees": "AAN,AVH,MHE,MRE,TTI",
+  "Participants": "B_CGT:2,3;B_MINF:2,3",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 1,
+  "Term": "Sommer",
+  "Room Type": "Onlineveranstaltung",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "UNIX (Gruppe 6)",
+  "Employees": "AAN,AVH,MHE,MRE,TTI",
+  "Participants": "B_CGT:2,3;B_MINF:2,3",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 1,
+  "Term": "Sommer",
+  "Room Type": "Onlineveranstaltung",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Unternehmensbesteuerung 2",
+  "Employees": "TLE",
+  "Participants": "B_BWL:5,6;B_IMCA:4,5",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Sommer",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Unternehmensbesteuerung 2",
+  "Employees": "TLE",
+  "Participants": "B_BWL:5,6;B_IMCA:4,5",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Sommer",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Unternehmensplanspiel \/ Venture-Challenge",
+  "Employees": "JPL",
+  "Participants": "B_AWP:1,2;B_BWL:1,2;B_ECOM:1,4",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Sommer",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Verfahrenstechnik",
+  "Employees": "SMT",
+  "Participants": "B_ITE:4;B_WING:3,4",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Sommer",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Verfahrenstechnik (Praktikum)",
+  "Employees": "KRG",
+  "Participants": "B_ITE:4;B_WING:3,4",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 0,
+  "Term": "Sommer",
+  "Room Type": "Verfahrenstechniklabor",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Verhandlungsführung (Wochenendseminar)",
+  "Employees": "MT",
+  "Participants": "M_BWL:1,2;M_ECOM:1,2;M_WING:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 7,
+  "Term": "Sommer",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "MO;DI;MI;DO;FR;SO"
+ },
+ {
+  "Name": "Verhandlungsführung (Wochenendseminar)",
+  "Employees": "MT",
+  "Participants": "M_BWL:1,2;M_ECOM:1,2;M_WING:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 7,
+  "Term": "Sommer",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "MO;DI;MI;DO;FR;SA"
+ },
+ {
+  "Name": "VHDL (Workshop)",
+  "Employees": "BOS",
+  "Participants": "B_TINF:5,6",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 2,
+  "Term": "Sommer",
+  "Room Type": "CAE-Labor",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Virtual and Augmented Reality",
+  "Employees": "BO",
+  "Participants": "B_CGT:5;B_MINF:5",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Sommer",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Virtual Reality (Praktikum)",
+  "Employees": "MPG,NHO",
+  "Participants": "B_CGT:6;B_MINF:5",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 0,
+  "Term": "Sommer",
+  "Room Type": "Virtual-Reality-Labor",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Virtuelle Realität und Simulation (Praktikum)",
+  "Employees": "NHO",
+  "Participants": "M_INF:1,2",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 0,
+  "Term": "Sommer",
+  "Room Type": "Virtual-Reality-Labor",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Web- & App-Analytics",
+  "Employees": "AWO",
+  "Participants": "B_DSAI:4,5;B_ECOM:1,2,3,4;B_MINF:4",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Sommer",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Web- und Applikationssicherheit",
+  "Employees": "TPA",
+  "Participants": "M_ITS:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Sommer",
+  "Room Type": "PC-Pool",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Web-Anwendungen",
+  "Employees": "MPG",
+  "Participants": "B_CGT:3,6;B_DSAI:3,4;B_IMCA:3,4;B_INF:3,4;B_ITE:6;B_MINF:3,4;B_WINF:3,4",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 2,
+  "Term": "Sommer",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Web-Anwendungen (Seminar)",
+  "Employees": "MPG",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Sommer",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Web-Anwendungen (Seminar)",
+  "Employees": "MPG",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Sommer",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Web-Anwendungen (Übung)",
+  "Employees": "MPG",
+  "Participants": "B_CGT:3,6;B_DSAI:3,4;B_IMCA:3,4;B_INF:3,4;B_ITE:6;B_MINF:3,4;B_WINF:3,4",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 2,
+  "Term": "Sommer",
+  "Room Type": "PC-Pool",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Web-Technologien",
+  "Employees": "MPG",
+  "Participants": "ITAM:4;ITAS:4;KAI:4;B_ECOM:2,3;B_WING:5,6",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Sommer",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Web-Technologien (Tutorium)",
+  "Employees": "MPG",
+  "Participants": "ITAM:4;ITAS:4;KAI:4;B_ECOM:2,3;B_WING:5,6",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 1,
+  "Term": "Sommer",
+  "Room Type": "PC-Pool",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Web-Technologien (Übung)",
+  "Employees": "MPG,PMU",
+  "Participants": "ITAM:4;ITAS:4;KAI:4;B_ECOM:2,3;B_WING:5,6",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 2,
+  "Term": "Sommer",
+  "Room Type": "PC-Pool",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Wirtschaftliches Fertigen",
+  "Employees": "BA",
+  "Participants": "B_ITE:4,5;B_WING:3,4",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Sommer",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Wirtschaftliches Fertigen",
+  "Employees": "BA",
+  "Participants": "B_ITE:4,5;B_WING:3,4",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Sommer",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Wirtschaftliches Fertigen",
+  "Employees": "BA",
+  "Participants": "B_ITE:4,5;B_WING:3,4",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Sommer",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Wirtschaftsethik 2",
+  "Employees": "CH",
+  "Participants": "ITAM:4;ITAS:4;KAI:4",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Sommer",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Wirtschaftsprivatrecht",
+  "Employees": "FRE",
+  "Participants": "B_AWP:1,2;B_BWL:1,4,6;B_DSAI:1,6;B_IMCA:1,2;B_INF:1,4;B_WINF:1,2;B_WING:5,6",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 2,
+  "Term": "Sommer",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Accounting Auditing & Taxation (Seminar)",
+  "Employees": "WEB",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Accounting Auditing & Taxation (Seminar)",
+  "Employees": "WEB",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Advanced Digital Marketing",
+  "Employees": "JPL",
+  "Participants": "B_ECOM:5,6",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Advanced Digital Marketing",
+  "Employees": "JPL",
+  "Participants": "B_ECOM:5,6",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "AG Smart Technology",
+  "Employees": "MVI,UH",
+  "Participants": "B_STEC:1,2,3,4",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Smart-Project-Labor",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Agiles Projektmanagement",
+  "Employees": "SLA",
+  "Participants": "M_BWL:1,2;M_DSAI:1,2;M_ECOM:1,2;M_SDBM:1,2;M_WIM:1,2;M_WING:1,2",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 7,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Agiles Projektmanagement",
+  "Employees": "SLA",
+  "Participants": "M_BWL:1,2;M_DSAI:1,2;M_ECOM:1,2;M_SDBM:1,2;M_WIM:1,2;M_WING:1,2",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 7,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Aktuelle Entwicklungen in der Informatik",
+  "Employees": "UH",
+  "Participants": "M_INF:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Algorithmen und Datenstrukturen",
+  "Employees": "UHL",
+  "Participants": "B_CGT:3,4;B_DSAI:3,4;B_ECOM:3,4;B_IMCA:3,4;B_INF:3,4;B_ITE:3,4;B_MINF:4;B_STEC:3,4;B_TINF:3,4;B_WINF:3,4",
+  "Participant Size": "Large",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Algorithmen und Datenstrukturen (Aufgabenvorstellung)",
+  "Employees": "AAN,AVH,MHE,MRE,TTI,UHL",
+  "Participants": "B_CGT:3,4;B_DSAI:3,4;B_ECOM:3,4;B_IMCA:3,4;B_INF:3,4;B_ITE:3,4;B_MINF:4;B_STEC:3,4;B_TINF:3,4;B_WINF:3,4",
+  "Participant Size": "Large",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Algorithmen und Datenstrukturen (Gruppe 1)",
+  "Employees": "AAN,AVH,MHE,MRE,TTI",
+  "Participants": "B_CGT:3,4;B_MINF:4",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Onlineveranstaltung",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Algorithmen und Datenstrukturen (Gruppe 2)",
+  "Employees": "AAN,AVH,MHE,MRE,TTI",
+  "Participants": "B_CGT:3,4;B_MINF:4",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Onlineveranstaltung",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Algorithmen und Datenstrukturen (Gruppe 3)",
+  "Employees": "AAN,AVH,MHE,MRE,TTI",
+  "Participants": "B_INF:3,4",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Onlineveranstaltung",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Algorithmen und Datenstrukturen (Gruppe 4)",
+  "Employees": "AAN,AVH,MHE,MRE,TTI",
+  "Participants": "B_INF:3,4",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Onlineveranstaltung",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Algorithmen und Datenstrukturen (Gruppe 5)",
+  "Employees": "AAN,AVH,MHE,MRE,TTI",
+  "Participants": "B_ITE:3,4;B_STEC:3,4;B_TINF:3,4",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Onlineveranstaltung",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Algorithmen und Datenstrukturen (Gruppe 6)",
+  "Employees": "AAN,AVH,MHE,MRE,TTI",
+  "Participants": "B_DSAI:3,4;B_WINF:3,4",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Onlineveranstaltung",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Algorithmen und Datenstrukturen (Gruppe 7)",
+  "Employees": "AAN,AVH,MHE,MRE,TTI",
+  "Participants": "B_DSAI:4;B_WINF:3,4",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Onlineveranstaltung",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Algorithmen und Datenstrukturen (Gruppe 8)",
+  "Employees": "AAN,AVH,MHE,MRE,TTI",
+  "Participants": "B_ECOM:3,4;B_IMCA:3,4",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Onlineveranstaltung",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Algorithmen und Datenstrukturen \/ Systemnahe Programmierung (Betreuung)",
+  "Employees": "AAN,AVH,MHE,MRE,TTI",
+  "Participants": "ITAM:3;ITAS:3;B_CGT:3,4;B_DSAI:3,4;B_ECOM:3,4;B_IMCA:3,4;B_INF:3,4;B_ITE:3,4;B_MINF:3,4;B_STEC:3,4;B_TINF:3,4;B_WINF:3,4",
+  "Participant Size": "Large",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "PC-Pool",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Allgemeine BWL",
+  "Employees": "WOL",
+  "Participants": "ITAM:1;ITAS:1;ITAW:1;KAI:1",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Analysis",
+  "Employees": "HGL",
+  "Participants": "B_BWL:1;B_CGT:1;B_DSAI:1;B_IMCA:1;B_INF:1;B_ITE:1;B_MINF:1;B_TINF:1;B_WINF:1;B_WING:1,2",
+  "Participant Size": "Large",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Analysis (Übung)",
+  "Employees": "FKO",
+  "Participants": "B_BWL:1;B_CGT:1;B_DSAI:1;B_IMCA:1;B_INF:1;B_ITE:1;B_MINF:1;B_TINF:1;B_WINF:1;B_WING:1,2",
+  "Participant Size": "Large",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Anwendungen der KI (Applications of AI)",
+  "Employees": "IW",
+  "Participants": "B_CGT:4,5;B_DSAI:4,5;B_INF:5,6;B_ITE:4,5;M_ITE:1,2;B_MINF:5,6;B_TINF:5;B_WINF:4,5",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Anwendungsentwicklung in ERP-Systemen (+ Übung)",
+  "Employees": "KIL,WOL",
+  "Participants": "ITAS:5;ITAW:5;B_IMCA:5,6;B_INF:5,6;B_WINF:5,6",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 3,
+  "Term": "Winter",
+  "Room Type": "PC-Pool",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Audio-Bearbeitung (Workshop)",
+  "Employees": "HI",
+  "Participants": "ITAM:3;B_CGT:1,2;B_MINF:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Audio-Bearbeitung (Workshop)",
+  "Employees": "HI",
+  "Participants": "ITAM:3;B_CGT:1,2;B_MINF:1,2",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 4,
+  "Term": "Winter",
+  "Room Type": "Audiolabor",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Automatisierung in der Fertigung",
+  "Employees": "AHA",
+  "Participants": "M_DSAI:1,2;M_WING:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Beratungskompetenz",
+  "Employees": "SBR",
+  "Participants": "B_IMCA:4,5",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Beratungskompetenz",
+  "Employees": "RPO",
+  "Participants": "B_IMCA:4,5",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Berechenbarkeit und Komplexität",
+  "Employees": "IW",
+  "Participants": "M_INF:1,2;M_ITS:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Berechenbarkeit und Komplexität \/ Formale Spezifikation und Verifikation (Übung)",
+  "Employees": "IW,UH",
+  "Participants": "M_INF:1,2;M_ITS:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Bildbearbeitung",
+  "Employees": "NE",
+  "Participants": "ITAM:3",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Bildbearbeitung (Praktikum)",
+  "Employees": "NE",
+  "Participants": "ITAM:3",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "PC-Pool",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Business English (Gruppe 1)",
+  "Employees": "EV",
+  "Participants": "B_BWL:1",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Business English (Gruppe 1)",
+  "Employees": "EV",
+  "Participants": "B_BWL:1",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Business English (Gruppe 2)",
+  "Employees": "EV",
+  "Participants": "B_AWP:1;B_BWL:2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Business English (Gruppe 2)",
+  "Employees": "EV",
+  "Participants": "B_AWP:1;B_BWL:2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Business Planning",
+  "Employees": "GH,UHL",
+  "Participants": "B_BWL:3,4",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "PC-Pool",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Change Management",
+  "Employees": "AAH",
+  "Participants": "M_BWL:1,2;M_DSAI:1,2;M_ECOM:1,2;M_SDBM:1,2;M_WIM:1,2;M_WING:1,2",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 7,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Chemie \/ Chemietechnik",
+  "Employees": "SMT",
+  "Participants": "B_ITE:1,2;B_WING:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "CNC (Workshop)",
+  "Employees": "JG",
+  "Participants": "M_DSAI:1,2;M_WING:1,2",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 0,
+  "Term": "Winter",
+  "Room Type": "Fertigungstechniklabor",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Commercial English (Gruppe 1)",
+  "Employees": "EV",
+  "Participants": "B_BWL:1",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Commercial English (Gruppe 1)",
+  "Employees": "EV",
+  "Participants": "B_BWL:1",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Commercial English (Gruppe 2)",
+  "Employees": "EV",
+  "Participants": "B_AWP:1;B_BWL:2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Commercial English (Gruppe 2)",
+  "Employees": "EV",
+  "Participants": "B_AWP:1;B_BWL:2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Communication Skills",
+  "Employees": "AMK,PGO",
+  "Participants": "KAI:3;B_BWL:4;B_CGT:4;B_DSAI:6;B_IMCA:6;B_ITE:5;B_STEC:2,3;B_WINF:6",
+  "Participant Size": "Large",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Communication Skills",
+  "Employees": "AMK,PGO",
+  "Participants": "KAI:3;B_BWL:4;B_CGT:4;B_DSAI:6;B_IMCA:6;B_ITE:5;B_STEC:2,3;B_WINF:6",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Communication Skills",
+  "Employees": "AMK,PGO",
+  "Participants": "KAI:3;B_BWL:4;B_CGT:4;B_DSAI:6;B_IMCA:6;B_ITE:5;B_STEC:2,3;B_WINF:6",
+  "Participant Size": "Large",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Compositing Projekt",
+  "Employees": "HI,JSO",
+  "Participants": "B_MINF:3,4",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "PC-Pool",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Computergrafik Games und VR (Seminar)",
+  "Employees": "BO",
+  "Participants": "B_CGT:5,6",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Controlling (Übung)",
+  "Employees": "FBO,FKO",
+  "Participants": "B_DSAI:5,6",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "PC-Pool",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Data Engineering (Workshop)",
+  "Employees": "ANN,MPA",
+  "Participants": "B_DSAI:5,6",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Data Engineering (Workshop)",
+  "Employees": "ANN,MPA",
+  "Participants": "B_DSAI:5,6",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Data Literacy",
+  "Employees": "ANN",
+  "Participants": "B_AWP:1;B_BWL:3,4;B_DSAI:1,2;B_ECOM:1,2,5;B_MINF:3;B_WING:3,4",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Data Science (Seminar)",
+  "Employees": "ANN,MPA",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Data Science (Seminar)",
+  "Employees": "ANN,MPA",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Data Science (Übung)",
+  "Employees": "KIL",
+  "Participants": "B_AWP:1;B_BWL:3,4;B_DSAI:1,2;B_ECOM:1,2,5;B_MINF:3;B_WING:3,4",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 4,
+  "Term": "Winter",
+  "Room Type": "PC-Pool",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Datenbanken",
+  "Employees": "MPA",
+  "Participants": "ITAM:3;ITAS:3;KAI:3;B_BWL:3,4;B_CGT:3,4;B_DSAI:3,4;B_ECOM:3,4;B_IMCA:2,3;B_INF:3,4;B_ITE:5;B_MINF:1,2,3,4;B_STEC:2,3;B_TINF:5;B_WINF:2,3;B_WING:3,4",
+  "Participant Size": "Large",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Datenbanken (Gruppe 1)",
+  "Employees": "MPG,MZO",
+  "Participants": "ITAM:3;ITAS:3;KAI:3",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Onlineveranstaltung",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Datenbanken (Gruppe 2)",
+  "Employees": "MPG,MZO",
+  "Participants": "B_BWL:3,4;B_DSAI:3,4",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Onlineveranstaltung",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Datenbanken (Gruppe 3)",
+  "Employees": "MPG,MZO",
+  "Participants": "B_ITE:5;B_WING:3,4",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Onlineveranstaltung",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Datenbanken (Gruppe 4)",
+  "Employees": "MPG,MZO",
+  "Participants": "B_ECOM:3,4",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Onlineveranstaltung",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Datenbanken (Gruppe 5)",
+  "Employees": "MPG,MZO",
+  "Participants": "B_STEC:2,3",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Onlineveranstaltung",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Datenbanken (Gruppe 6)",
+  "Employees": "MPG,MZO",
+  "Participants": "B_MINF:1,2,3,4",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Onlineveranstaltung",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Datenbanken (Gruppe 7)",
+  "Employees": "MPG,MZO",
+  "Participants": "B_INF:3,4;B_TINF:5",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Onlineveranstaltung",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Datenbanken (Gruppe 8)",
+  "Employees": "MPG,MZO",
+  "Participants": "B_IMCA:2,3;B_WINF:2,3",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Onlineveranstaltung",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Datenbanken (Gruppe 9)",
+  "Employees": "MPG,MZO",
+  "Participants": "B_CGT:3,4",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Onlineveranstaltung",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Datenbanktechnologie (+ Übung)",
+  "Employees": "TWE",
+  "Participants": "M_DSAI:1,2;M_INF:1,2;M_ITS:1,2;M_WIM:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Datenbanktechnologie (+ Übung)",
+  "Employees": "TWE",
+  "Participants": "M_DSAI:1,2;M_INF:1,2;M_ITS:1,2;M_WIM:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Winter",
+  "Room Type": "PC-Pool",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Datenvisualisierung \/ Feature Engineering",
+  "Employees": "ANN",
+  "Participants": "B_DSAI:3,4;B_MINF:5,6",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Deutsch 1",
+  "Employees": "SED",
+  "Participants": "ITAM:3;ITAS:3;KAI:1",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Deutsch 1",
+  "Employees": "SED",
+  "Participants": "ITAM:3;ITAS:3;KAI:1",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Digital Transformation (+ Übung)",
+  "Employees": "GRE",
+  "Participants": "M_BWL:1,2;M_DSAI:1,2;M_SDBM:1,2;M_WIM:1,2;M_WING:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Digitale Kommunikationssysteme",
+  "Employees": "SAW",
+  "Participants": "M_INF:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Digitale Kommunikationssysteme",
+  "Employees": "SAW",
+  "Participants": "M_INF:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Digitale Medien",
+  "Employees": "BAU",
+  "Participants": "M_BWL:1,2;M_DSAI:1,2;M_WING:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 4,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Digital-Marketing",
+  "Employees": "JPL",
+  "Participants": "B_CGT:3,4;B_DSAI:4,5;B_ECOM:2,3",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Digitaltechnik (Praktikum)",
+  "Employees": "TFS",
+  "Participants": "B_INF:1",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 0,
+  "Term": "Winter",
+  "Room Type": "Elektroniklabor",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Digitaltechnik (Praktikum)",
+  "Employees": "TFS",
+  "Participants": "B_ITE:1;B_STEC:1;B_TINF:1",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 0,
+  "Term": "Winter",
+  "Room Type": "Elektroniklabor",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Digitaltechnik 1",
+  "Employees": "SAW",
+  "Participants": "ITAM:1;ITAS:1;ITAW:1;KAI:1;B_INF:1;B_ITE:1;B_STEC:1;B_TINF:1",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Discrete Mathematics",
+  "Employees": "IW",
+  "Participants": "M_ITE:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 3,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Diskrete Mathematik",
+  "Employees": "IW",
+  "Participants": "ITAS:3;B_CGT:1;B_DSAI:1;B_ECOM:1;B_IMCA:1;B_INF:1;B_ITE:1;B_MINF:1;B_STEC:1;B_TINF:1;B_WINF:1",
+  "Participant Size": "Large",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Diskrete Mathematik (Übung)",
+  "Employees": "CEI",
+  "Participants": "ITAS:3;B_CGT:1;B_DSAI:1;B_ECOM:1;B_IMCA:1;B_INF:1;B_ITE:1;B_MINF:1;B_STEC:1;B_TINF:1;B_WINF:1",
+  "Participant Size": "Large",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Diskrete Regelungstechnik",
+  "Employees": "CBU",
+  "Participants": "B_TINF:7",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Winter",
+  "Room Type": "PC-Pool",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Distributed Systems",
+  "Employees": "UH",
+  "Participants": "M_INF:1,2;M_ITE:1,2;M_ITS:1,2;M_WIM:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Distributed Systems (Tutorial)",
+  "Employees": "UH",
+  "Participants": "M_INF:1,2;M_ITE:1,2;M_ITS:1,2;M_WIM:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Winter",
+  "Room Type": "PC-Pool",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Documentation",
+  "Employees": "HW,WOL",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Winter",
+  "Room Type": "PC-Pool",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Dynamical Systems",
+  "Employees": "CBU",
+  "Participants": "M_ITE:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Dynamical Systems",
+  "Employees": "CBU",
+  "Participants": "M_ITE:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "E-Commerce (Seminar)",
+  "Employees": "JPL",
+  "Participants": "B_ECOM:6",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "E-Commerce (Seminar)",
+  "Employees": "JPL",
+  "Participants": "B_ECOM:6",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "E-Commerce Datenmanagement",
+  "Employees": "SBA",
+  "Participants": "B_ECOM:5,6",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "E-Commerce Geschäftsmodelle",
+  "Employees": "JPL,THS",
+  "Participants": "M_DSAI:1,2;M_ECOM:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 3,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "E-Commerce Plattform-Architektur",
+  "Employees": "MPG",
+  "Participants": "M_ECOM:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "E-Commerce Plattform-Architektur",
+  "Employees": "MPG",
+  "Participants": "M_ECOM:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "E-Commerce Plattform-Architektur (Workshop)",
+  "Employees": "MPG",
+  "Participants": "M_ECOM:1,2",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "Externes Unternehmen",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Einführung in die Betriebswirtschaft",
+  "Employees": "FKO",
+  "Participants": "B_CGT:3;B_DSAI:1,2;B_INF:2,3;B_STEC:4;B_TINF:2,5",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Einführung in die Konstruktion",
+  "Employees": "BA",
+  "Participants": "B_ITE:3,4;B_WING:3,4",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Einführung in die Konstruktion (+ Übung)",
+  "Employees": "BA,JG",
+  "Participants": "B_ITE:3,4;B_WING:3,4",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Einführung in die Programmierung (+ Übung Gruppe 1)",
+  "Employees": "AHR,KRG,MPA,MPG",
+  "Participants": "KAI:3;B_BWL:1,2;B_WING:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 4,
+  "Term": "Winter",
+  "Room Type": "PC-Pool",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Einführung in die Programmierung (+ Übung Gruppe 2)",
+  "Employees": "AHR,KRG,MPA,MPG",
+  "Participants": "B_AWP:1;B_ECOM:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 4,
+  "Term": "Winter",
+  "Room Type": "PC-Pool",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Einführung in die Robotik",
+  "Employees": "UH",
+  "Participants": "B_ITE:5;B_MINF:5,6;B_TINF:5",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Einführung in die Robotik (Praktikum)",
+  "Employees": "HOE,UH",
+  "Participants": "B_ITE:5",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 0,
+  "Term": "Winter",
+  "Room Type": "Robotiklabor",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Einführung in die Robotik (Praktikum)",
+  "Employees": "HOE,UH",
+  "Participants": "B_MINF:5,6;B_TINF:5",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 0,
+  "Term": "Winter",
+  "Room Type": "Robotiklabor",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Einführung in die VWL",
+  "Employees": "GI",
+  "Participants": "KAI:3;B_BWL:1,2;B_DSAI:1,2;B_ECOM:3,4;B_IMCA:2,3;B_WINF:3,4;B_WING:3,4",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Einführung IT-Management & Prüfung (+ Übung)",
+  "Employees": "GRE",
+  "Participants": "B_IMCA:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Einführung IT-Management & Prüfung (+ Übung)",
+  "Employees": "GRE",
+  "Participants": "B_IMCA:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Einkauf und Supply Management",
+  "Employees": "GH",
+  "Participants": "B_BWL:3,4;B_WING:3,4",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Einkauf und Supply Management",
+  "Employees": "GH",
+  "Participants": "B_BWL:3,4;B_WING:3,4",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Elektronik",
+  "Employees": "SAW",
+  "Participants": "B_ITE:5;B_STEC:3,4;B_TINF:3,4",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Embedded Systems (Workshop)",
+  "Employees": "BOS",
+  "Participants": "M_ITE:1,2",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 3,
+  "Term": "Winter",
+  "Room Type": "CAE-Labor",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Energietechnik",
+  "Employees": "SMT",
+  "Participants": "B_ITE:5;M_SDBM:1,2;M_WING:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Englisch 1",
+  "Employees": "HW",
+  "Participants": "ITAM:3;ITAS:3;KAI:1",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Englisch 1",
+  "Employees": "HW",
+  "Participants": "ITAM:3;ITAS:3;KAI:1",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Entre- und Intrapreneurship",
+  "Employees": "VMA",
+  "Participants": "B_WINF:5,6",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Entre- und Intrapreneurship",
+  "Employees": "VMA",
+  "Participants": "B_WINF:5,6",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "ERP-Grundlagen 1",
+  "Employees": "WOL",
+  "Participants": "ITAS:1;ITAW:1;KAI:1",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "PC-Pool",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Exploratory Data Analysis (Übung)",
+  "Employees": "MPA",
+  "Participants": "B_DSAI:3,4;B_MINF:5,6",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Winter",
+  "Room Type": "PC-Pool",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Finance & Services (Seminar)",
+  "Employees": "GI",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Finance & Services (Seminar)",
+  "Employees": "GI",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Formale Spezifikation und Verifikation",
+  "Employees": "UH",
+  "Participants": "M_INF:1,2;M_ITS:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Fortgeschrittene Interaktive Modellierung (Praktikum)",
+  "Employees": "SWA",
+  "Participants": "B_CGT:3;B_MINF:2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Winter",
+  "Room Type": "PC-Pool",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Fotorealismus und Simulation",
+  "Employees": "BO",
+  "Participants": "M_INF:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Fundamental Programming Structures",
+  "Employees": "CEI",
+  "Participants": "M_ITE:1",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Fundamental Programming Structures",
+  "Employees": "CEI",
+  "Participants": "M_ITE:1",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Fundamental Programming Structures (Lab Course)",
+  "Employees": "CEI,HOE,NVK",
+  "Participants": "M_ITE:1",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "PC-Pool",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Gemeinschaftskunde 1",
+  "Employees": "CH",
+  "Participants": "ITAM:1;ITAS:1;ITAW:1;KAI:1",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Geometrie",
+  "Employees": "CH",
+  "Participants": "ITAM:1",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Geometrische Modellierung und Computeranimation",
+  "Employees": "BO,NE",
+  "Participants": "B_CGT:5,6;B_MINF:5,6",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Geometrische Modellierung und Computeranimation (Praktikum)",
+  "Employees": "MPG,NE,NHO,PMU",
+  "Participants": "B_CGT:5,6;B_MINF:5,6",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "PC-Pool",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Großintegrierte Systeme",
+  "Employees": "DSG",
+  "Participants": "B_TINF:4,5",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Großintegrierte Systeme",
+  "Employees": "DSG",
+  "Participants": "B_TINF:4,5",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Grundlagen der Betriebswirtschaftslehre",
+  "Employees": "AFI,FBO,GH,GI,WEB",
+  "Participants": "B_AWP:1;B_BWL:1,2;B_ECOM:1,2;B_IMCA:1,2;B_WINF:1,2;B_WING:1,2",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Grundlagen der Elektrotechnik",
+  "Employees": "CBU",
+  "Participants": "B_DSAI:3,4;B_ITE:2,3;B_MINF:3;B_STEC:1,2;B_TINF:1,2;B_WING:1,2",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Grundlagen der funktionalen Programmierung",
+  "Employees": "TTI",
+  "Participants": "ITAS:5;B_INF:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Grundlagen der funktionalen Programmierung (Übung)",
+  "Employees": "AAN,AVH,MHE,TTI",
+  "Participants": "ITAS:5;B_INF:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "PC-Pool",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Grundlagen der Mediengestaltung",
+  "Employees": "MLO",
+  "Participants": "ITAM:3;B_CGT:1,2;B_MINF:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Grundlagen der Mediengestaltung (Praktikum)",
+  "Employees": "MLO",
+  "Participants": "ITAM:3;B_CGT:1,2;B_MINF:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "PC-Pool",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Grundlagen der Wirtschaftspsychologie",
+  "Employees": "AFI,GI",
+  "Participants": "B_AWP:1;B_BWL:3,4",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Grundlagen des E-Commerce",
+  "Employees": "AZE",
+  "Participants": "KAI:3;B_DSAI:3,4;B_ECOM:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Grundlagen Marketing- und Vertriebsmanagement",
+  "Employees": "AFI",
+  "Participants": "KAI:3;B_BWL:3,4;B_DSAI:3,4;B_ECOM:3,4;B_MINF:5,6;B_WINF:4,5;B_WING:3,4",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Grundlagen Rechnungswesen",
+  "Employees": "WEB",
+  "Participants": "B_AWP:1;B_BWL:1,2;B_ECOM:1,2;B_IMCA:1,2;B_WINF:1,2;B_WING:1,2",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Grundlagen Servicemanagement",
+  "Employees": "GI",
+  "Participants": "KAI:3;B_BWL:3,4;B_DSAI:3,4;B_ECOM:3,4;B_MINF:5,6;B_WINF:4,5;B_WING:3,4",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Grundlagen von Computer-Games und interaktiven Medien",
+  "Employees": "DKO",
+  "Participants": "B_CGT:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Induktive Statistik",
+  "Employees": "FBO",
+  "Participants": "B_BWL:2,3;B_CGT:3,4;B_DSAI:2,3;B_ECOM:3,4;B_IMCA:4,5;B_INF:5,6;B_WINF:3,4;B_WING:3,4",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Informatik (Seminar)",
+  "Employees": "UH",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Informatik (Seminar)",
+  "Employees": "UH",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Informationstechnik",
+  "Employees": "DSG",
+  "Participants": "B_CGT:1,2;B_DSAI:3,4;B_INF:1,2;B_ITE:1,2;B_MINF:1,2;B_STEC:1,2;B_TINF:1,2;B_WINF:1,2;B_WING:3,4",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Ingenieurmathematik",
+  "Employees": "HGL",
+  "Participants": "B_ITE:2,3;B_STEC:2,3;B_TINF:3,4;B_WING:3,4",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Integrierte Berichterstattung",
+  "Employees": "WEB",
+  "Participants": "B_BWL:3,4;B_IMCA:3,4",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Integrierte Berichterstattung",
+  "Employees": "WEB",
+  "Participants": "B_BWL:3,4;B_IMCA:3,4",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Interaktive Geometrische Modellierung (Praktikum)",
+  "Employees": "SWA",
+  "Participants": "B_CGT:3,6;B_MINF:2,5,6",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Winter",
+  "Room Type": "PC-Pool",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "International Service Business Concepts & Cases",
+  "Employees": "GI",
+  "Participants": "M_BWL:1,2;M_WING:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "IT Security (Seminar)",
+  "Employees": "GB",
+  "Participants": "B_INF:5,6;B_WINF:5,6;B_WING:5,6",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "IT Security (Seminar)",
+  "Employees": "GB",
+  "Participants": "M_INF:1,2;M_ITE:1,2;M_ITS:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "ITAx (Seminar)",
+  "Employees": "AHR,WOL",
+  "Participants": "ITAM:5;ITAS:5;ITAW:5",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "ITAx (Seminar)",
+  "Employees": "AHR,WOL",
+  "Participants": "ITAM:5;ITAS:5;ITAW:5",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "IT-Management (Seminar)",
+  "Employees": "GRE",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "IT-Management (Seminar)",
+  "Employees": "GRE",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "IT-Steuerung und IT-gestütztes BPM",
+  "Employees": "RPO",
+  "Participants": "B_IMCA:5,6",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "KAI (Seminar)",
+  "Employees": "AHR",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "KAI (Seminar)",
+  "Employees": "AHR",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "KI und Mathematik (Seminar)",
+  "Employees": "IW",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "KI und Mathematik (Seminar)",
+  "Employees": "IW",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Kolloquium",
+  "Employees": "DMT,INC,KFE",
+  "Participants": "ITAM:1,3,5;ITAS:1,3,5;ITAW:1,5;KAI:1,3;B_AWP:1;B_BWL:1,2,3,4,5,6,7;M_BWL:1,2,3,4;B_CGT:1,2,3,4,5,6,7;B_DSAI:1,2,3,4,5,6,7;M_DSAI:1,2,3;B_ECOM:1,2,3,4,5,6,7;M_ECOM:1,2,3;B_IMCA:1,2,3,4,5,6,7;B_INF:1,2,3,4,5,6,7;M_INF:1,2,3;B_ITE:1,2,3,5,7;M_ITE:1,2,3;M_ITS:1,2,3;B_MINF:1,2,3,4,5,6,7;M_SDBM:1,2,3;B_STEC:1,2,3,4,7;B_TINF:1,2,3,4,5,7;B_WINF:1,2,3,4,5,6,7;M_WIM:1,2,3;B_WING:1,2,3,4,5,6,7;M_WING:1,2,3",
+  "Participant Size": "Large",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Lebenszyklus von IT-Systemen (+ Übung)",
+  "Employees": "GRE",
+  "Participants": "B_IMCA:3,4",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Lineare Algebra",
+  "Employees": "AHA",
+  "Participants": "B_CGT:2,3;B_DSAI:2,3;B_INF:3,4;B_ITE:2,3;B_MINF:3,4;B_TINF:2,3",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Marketing (Seminar)",
+  "Employees": "AFI",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Marketing (Seminar)",
+  "Employees": "AFI",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Marketing (Seminar)",
+  "Employees": "AFI",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Marketing (Seminar)",
+  "Employees": "AFI",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Marktforschung",
+  "Employees": "AFI",
+  "Participants": "M_BWL:1,2;M_WING:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Mathematik (+ Übung)",
+  "Employees": "WOL",
+  "Participants": "ITAM:1;ITAS:1;ITAW:1;KAI:1",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Winter",
+  "Room Type": "PC-Pool",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Mechanische Grundlagen",
+  "Employees": "AHA",
+  "Participants": "B_DSAI:3,4;B_ITE:2,3;B_MINF:3;B_STEC:1,2;B_TINF:1,2;B_WING:1,2",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Medical Engineering",
+  "Employees": "DSG",
+  "Participants": "M_ITE:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Medical Engineering",
+  "Employees": "DSG",
+  "Participants": "M_ITE:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "PC-Pool",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Medical Engineering",
+  "Employees": "DSG",
+  "Participants": "M_ITE:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Medientechnik 1",
+  "Employees": "HI",
+  "Participants": "ITAM:1",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Medientechnik 1",
+  "Employees": "HI",
+  "Participants": "ITAM:1",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Medientechnik 1",
+  "Employees": "HI",
+  "Participants": "ITAM:1",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Merger & Acquisitions",
+  "Employees": "CEN,YSI",
+  "Participants": "M_BWL:1,2;M_WIM:1,2;M_WING:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Messtechnik (Workshop)",
+  "Employees": "CBU",
+  "Participants": "B_TINF:5",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 0,
+  "Term": "Winter",
+  "Room Type": "Messtechniklabor",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Methoden der Künstlichen Intelligenz",
+  "Employees": "GB",
+  "Participants": "M_DSAI:1,2;M_INF:1,2;M_WIM:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Mikroprozessor (Workshop) \/ Mikrocontroller (Seminar)",
+  "Employees": "VOE",
+  "Participants": "B_TINF:4,5",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "PC-Pool",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Mobile Commerce",
+  "Employees": "FHE,PMB",
+  "Participants": "B_ECOM:3,4;B_MINF:2,3",
+  "Participant Size": "Small",
+  "Weekly Blocks": 3,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Multi Channel Retailing",
+  "Employees": "DDE",
+  "Participants": "B_DSAI:5;B_ECOM:5,6",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Netzwerksicherheit (Workshop)",
+  "Employees": "KAL",
+  "Participants": "M_ITS:1,2",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 0,
+  "Term": "Winter",
+  "Room Type": "Netzwerkschulungslabor",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Office-Software",
+  "Employees": "NE",
+  "Participants": "ITAM:1;ITAS:1;ITAW:1;KAI:1",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "PC-Pool",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Online-Plattform (Konzeption & Aufbau)",
+  "Employees": "MPG",
+  "Participants": "B_ECOM:4,5",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Organisationslehre",
+  "Employees": "FBO",
+  "Participants": "M_BWL:1,2;M_DSAI:1,2;M_ECOM:1,2;M_WING:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "PCB-Design (Praktikum)",
+  "Employees": "BOS",
+  "Participants": "B_TINF:7",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 0,
+  "Term": "Winter",
+  "Room Type": "Schaltungstechniklabor",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Physik für Computer Games",
+  "Employees": "BO",
+  "Participants": "B_CGT:5,6",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Physikalisches Praktikum",
+  "Employees": "HGL,JG,KRG,MVI",
+  "Participants": "B_ITE:2;B_WING:2",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 3,
+  "Term": "Winter",
+  "Room Type": "Elektroniklabor",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Problemlösungs- und Kreativitätstechniken",
+  "Employees": "AKR",
+  "Participants": "B_STEC:2,3",
+  "Participant Size": "Small",
+  "Weekly Blocks": 4,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Problemlösungs- und Kreativitätstechniken",
+  "Employees": "AKR",
+  "Participants": "B_STEC:2,3",
+  "Participant Size": "Small",
+  "Weekly Blocks": 4,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Produktionsplanung und -steuerung",
+  "Employees": "GH",
+  "Participants": "B_BWL:3,4;B_WINF:4,5;B_WING:3,4",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Produktionstechnisches Projekt",
+  "Employees": "BA,HOE,JG",
+  "Participants": "B_WING:5,6",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Produktionstechnisches Projekt",
+  "Employees": "BA,HOE,JG",
+  "Participants": "B_WING:5,6",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Produktionstechnisches Projekt (Kickoff)",
+  "Employees": "BA,HOE,JG",
+  "Participants": "B_WING:5,6",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Programmierpraktikum",
+  "Employees": "NE",
+  "Participants": "ITAM:3;ITAS:3",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 0,
+  "Term": "Winter",
+  "Room Type": "Onlineveranstaltung",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Programmierpraktikum",
+  "Employees": "CEI,KLK",
+  "Participants": "B_IMCA:5;B_WINF:3",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 0,
+  "Term": "Winter",
+  "Room Type": "Onlineveranstaltung",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Programmierpraktikum",
+  "Employees": "MRE,NVK",
+  "Participants": "B_CGT:2",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 0,
+  "Term": "Winter",
+  "Room Type": "Onlineveranstaltung",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Programmierpraktikum",
+  "Employees": "MRE,NVK",
+  "Participants": "B_INF:2;B_TINF:3,4",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 0,
+  "Term": "Winter",
+  "Room Type": "Onlineveranstaltung",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Programmierpraktikum",
+  "Employees": "MRE,NVK",
+  "Participants": "B_IMCA:5;B_WINF:3",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 0,
+  "Term": "Winter",
+  "Room Type": "Onlineveranstaltung",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Programmierpraktikum",
+  "Employees": "CEI,KLK",
+  "Participants": "B_CGT:2",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 0,
+  "Term": "Winter",
+  "Room Type": "Onlineveranstaltung",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Programmierpraktikum",
+  "Employees": "CEI,KLK",
+  "Participants": "B_INF:2;B_TINF:3,4",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 0,
+  "Term": "Winter",
+  "Room Type": "Onlineveranstaltung",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Programmierung 1",
+  "Employees": "AHR",
+  "Participants": "ITAM:1;ITAS:1;ITAW:1",
+  "Participant Size": "Small",
+  "Weekly Blocks": 3,
+  "Term": "Winter",
+  "Room Type": "PC-Pool",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Programmierung 1",
+  "Employees": "AHR",
+  "Participants": "ITAM:1;ITAS:1;ITAW:1",
+  "Participant Size": "Small",
+  "Weekly Blocks": 3,
+  "Term": "Winter",
+  "Room Type": "PC-Pool",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Programming Structures Project",
+  "Employees": "NVK",
+  "Participants": "M_ITE:2",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 0,
+  "Term": "Winter",
+  "Room Type": "Onlineveranstaltung",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Programmstrukturen 1",
+  "Employees": "DPR",
+  "Participants": "B_CGT:1;B_DSAI:1;B_ECOM:1;B_IMCA:1;B_INF:1;B_ITE:1;B_MINF:1;B_STEC:1;B_TINF:1;B_WINF:1",
+  "Participant Size": "Large",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Programmstrukturen 1 (Abnahmen)",
+  "Employees": "KLK,MPG,MZO,NE,PMU",
+  "Participants": "B_CGT:1;B_DSAI:1;B_ECOM:1;B_IMCA:1;B_INF:1;B_ITE:1;B_MINF:1;B_STEC:1;B_TINF:1;B_WINF:1",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 3,
+  "Term": "Winter",
+  "Room Type": "Onlineveranstaltung",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Programmstrukturen 1 (Betreuung)",
+  "Employees": "KLK,MPG,MZO,NE,PMU",
+  "Participants": "B_CGT:1;B_DSAI:1;B_ECOM:1;B_IMCA:1;B_INF:1;B_ITE:1;B_MINF:1;B_STEC:1;B_TINF:1;B_WINF:1",
+  "Participant Size": "Large",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "PC-Pool",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Programmstrukturen 2",
+  "Employees": "HS",
+  "Participants": "B_CGT:2;B_DSAI:2;B_ECOM:2;B_IMCA:2;B_INF:2;B_ITE:2;B_MINF:2;B_STEC:2;B_TINF:2;B_WINF:2",
+  "Participant Size": "Large",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Programmstrukturen 2 (Aufgabenvorstellung)",
+  "Employees": "KLK",
+  "Participants": "B_CGT:2;B_DSAI:2;B_ECOM:2;B_IMCA:2;B_INF:2;B_ITE:2;B_MINF:2;B_STEC:2;B_TINF:2;B_WINF:2",
+  "Participant Size": "Large",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Programmstrukturen 2 (Gruppe 1)",
+  "Employees": "CEI,KLK,NVK",
+  "Participants": "B_CGT:2;B_MINF:2",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Onlineveranstaltung",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Programmstrukturen 2 (Gruppe 2)",
+  "Employees": "CEI,KLK,NVK",
+  "Participants": "B_DSAI:2;B_IMCA:2;B_WINF:2",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Onlineveranstaltung",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Programmstrukturen 2 (Gruppe 3)",
+  "Employees": "CEI,KLK,NVK",
+  "Participants": "B_ECOM:2;B_ITE:2",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Onlineveranstaltung",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Programmstrukturen 2 (Gruppe 4)",
+  "Employees": "CEI,KLK,NVK",
+  "Participants": "B_INF:2;B_STEC:2;B_TINF:2",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Onlineveranstaltung",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Project IT-Engineering",
+  "Employees": "CBU",
+  "Participants": "M_ITE:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Winter",
+  "Room Type": "PC-Pool",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Projekt Beschichtungstechnologie",
+  "Employees": "HGL",
+  "Participants": "M_WING:1,2",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 0,
+  "Term": "Winter",
+  "Room Type": "Fertigungstechniklabor",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Projekt Data Science",
+  "Employees": "ANN,MPA",
+  "Participants": "B_DSAI:6",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Winter",
+  "Room Type": "PC-Pool",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Projekt Deep Learning",
+  "Employees": "ANN,MPA",
+  "Participants": "M_DSAI:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Winter",
+  "Room Type": "PC-Pool",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Projekt E-Commerce",
+  "Employees": "JPL",
+  "Participants": "M_ECOM:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Projekt E-Commerce",
+  "Employees": "JPL",
+  "Participants": "M_ECOM:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Projekt Eingebettete Software",
+  "Employees": "BOS,UH",
+  "Participants": "B_STEC:3,4",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Projekt Eingebettete Software",
+  "Employees": "BOS,UH",
+  "Participants": "B_STEC:3,4",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Projekt Industrie 4.0",
+  "Employees": "CBU",
+  "Participants": "B_DSAI:6",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Winter",
+  "Room Type": "PC-Pool",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Projekt Informatik",
+  "Participants": "M_INF:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Winter",
+  "Room Type": "PC-Pool",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Projekt IT-Consulting",
+  "Employees": "GRE",
+  "Participants": "M_WIM:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Projekt IT-Consulting",
+  "Employees": "GRE",
+  "Participants": "M_WIM:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Projekt IT-Sicherheit",
+  "Employees": "GB",
+  "Participants": "M_ITS:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Projekt IT-Sicherheit",
+  "Employees": "GB",
+  "Participants": "M_ITS:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Projekt Medieninformatik (App- und Web-Development)",
+  "Employees": "MPG",
+  "Participants": "B_MINF:5",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Winter",
+  "Room Type": "PC-Pool",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Projekt Mikrocontroller",
+  "Employees": "BOS",
+  "Participants": "B_TINF:7",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 0,
+  "Term": "Winter",
+  "Room Type": "Schaltungstechniklabor",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Projekt Smart Technology",
+  "Employees": "UH",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 0,
+  "Term": "Winter",
+  "Room Type": "Smart-Project-Labor",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Projektstudie Technik",
+  "Employees": "AHA,CBU,HGL",
+  "Participants": "M_WING:1,2",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 0,
+  "Term": "Winter",
+  "Room Type": "Fertigungstechniklabor",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Projektstudie Technik",
+  "Employees": "KRG,SMT",
+  "Participants": "M_WING:1,2",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 0,
+  "Term": "Winter",
+  "Room Type": "Fertigungstechniklabor",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Prozessmodellierung (+ Übung)",
+  "Employees": "FKO,KIL",
+  "Participants": "B_DSAI:5,6;B_ECOM:5,6;B_IMCA:4,5;B_INF:4,5;B_WINF:4,5;B_WING:3,4",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 3,
+  "Term": "Winter",
+  "Room Type": "PC-Pool",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Prozessmodellierung (+ Übung)",
+  "Employees": "KIL,UHL",
+  "Participants": "B_DSAI:5,6;B_ECOM:5,6;B_IMCA:4,5;B_INF:4,5;B_WINF:4,5;B_WING:3,4",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 3,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Quantitative BWL (Seminar)",
+  "Employees": "FBO",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Quantitative BWL (Seminar)",
+  "Employees": "FBO",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Rechnernetze",
+  "Employees": "KAL",
+  "Participants": "B_CGT:3;B_IMCA:3;B_INF:2,3;B_TINF:2,5;B_WINF:2,3",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Rechnernetze (Praktikum)",
+  "Employees": "KAL,KCH",
+  "Participants": "B_CGT:4;B_IMCA:4;B_ITE:5;B_STEC:4",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "Netzwerkschulungslabor",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Rechnernetze (Praktikum)",
+  "Employees": "KAL,KCH",
+  "Participants": "ITAM:3;ITAS:3;KAI:3",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "Netzwerkschulungslabor",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Rechnernetze (Workshop)",
+  "Employees": "KAL",
+  "Participants": "B_TINF:5",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 0,
+  "Term": "Winter",
+  "Room Type": "Netzwerkschulungslabor",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Reconfigurable Computing",
+  "Employees": "SAW",
+  "Participants": "M_INF:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Reconfigurable Computing",
+  "Employees": "SAW",
+  "Participants": "M_INF:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Reconfigurable Computing (Seminar)",
+  "Employees": "SAW",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Reconfigurable Computing (Seminar)",
+  "Employees": "SAW",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Regelungstechnik",
+  "Employees": "CBU",
+  "Participants": "B_ITE:4,5;B_TINF:5",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Regelungstechnik (Übung)",
+  "Employees": "CBU",
+  "Participants": "B_ITE:4,5;B_TINF:5",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "PC-Pool",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "SDBM (Seminar)",
+  "Employees": "AFI,WEB",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "SDBM (Seminar)",
+  "Employees": "AFI,WEB",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Security Management",
+  "Employees": "GB",
+  "Participants": "M_BWL:1,2;M_ITE:1,2;M_ITS:1,2;M_WIM:1,2;M_WING:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Sensortechnik",
+  "Employees": "AHA",
+  "Participants": "M_WING:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Sensortechnik",
+  "Employees": "AHA",
+  "Participants": "M_WING:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Servicemanagement (Seminar)",
+  "Employees": "GI",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Servicemanagement (Seminar)",
+  "Employees": "GI",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Simulationssoftware (Übung)",
+  "Employees": "CBU",
+  "Participants": "B_ITE:4,5",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Winter",
+  "Room Type": "PC-Pool",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Simulationssoftware (Übung)",
+  "Employees": "CBU",
+  "Participants": "B_TINF:5",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Winter",
+  "Room Type": "PC-Pool",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Softwareprojekt",
+  "Employees": "ANN,BO,MPA,WOL",
+  "Participants": "B_INF:6;B_MINF:6;B_WINF:6",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Softwarequalität",
+  "Employees": "JBN",
+  "Participants": "B_IMCA:3,4;B_INF:4,5;B_ITE:4,5;B_MINF:5,6;B_WINF:4,5",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Special Effects and Movies (Workshop)",
+  "Participants": "B_MINF:3",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Winter",
+  "Room Type": "PC-Pool",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Special Effects und Shaderprogrammierung",
+  "Employees": "JSO",
+  "Participants": "B_CGT:5,6",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Special Effects und Shaderprogrammierung (Praktikum)",
+  "Employees": "AAN,AVH,NHO,PMU",
+  "Participants": "B_CGT:5,6",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "PC-Pool",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "SPS (Workshop)",
+  "Employees": "SSC",
+  "Participants": "M_DSAI:1,2;M_WING:1,2",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 0,
+  "Term": "Winter",
+  "Room Type": "Fertigungstechniklabor",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Startup Strategy & Business Plan - A Simulation Game",
+  "Employees": "FKO",
+  "Participants": "M_BWL:1,2;M_WING:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Steuerungstechnik (Workshop)",
+  "Employees": "BOS",
+  "Participants": "M_DSAI:1,2;M_WING:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Steuerungstechnik (Workshop)",
+  "Employees": "BOS",
+  "Participants": "M_DSAI:1,2;M_WING:1,2",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "CAE-Labor",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Strategisches Management",
+  "Employees": "FBO",
+  "Participants": "M_BWL:1,2;M_DSAI:1,2;M_ECOM:1,2;M_WING:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Supply Chain & Operations Management (Seminar)",
+  "Employees": "GH",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Supply Chain & Operations Management (Seminar)",
+  "Employees": "GH",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Sustainability Economics & Digital Platforms",
+  "Employees": "GI",
+  "Participants": "M_BWL:1,2;M_SDBM:1,2;M_WING:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Sustainable & Digital Consumer Behavior",
+  "Employees": "AFI",
+  "Participants": "M_SDBM:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Sustainable Corporate Governance",
+  "Employees": "WEB",
+  "Participants": "M_BWL:1,2;M_SDBM:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Sustainable Technologies & Climate Change",
+  "Employees": "DMI",
+  "Participants": "M_SDBM:1,2;M_WING:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Systemanalyse",
+  "Employees": "HS",
+  "Participants": "B_DSAI:5,6;B_ECOM:5,6;B_IMCA:4,5;B_INF:4,5;B_WINF:4,5;B_WING:3,4",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Systemnahe Programmierung",
+  "Employees": "UHL",
+  "Participants": "ITAM:3;ITAS:3;B_CGT:3,4;B_INF:3,4;B_ITE:3,4;B_MINF:3,4;B_STEC:3,4;B_TINF:3,4",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Systemnahe Programmierung (Aufgabenvorstellung)",
+  "Employees": "AAN,AVH,MHE,MRE,TTI,UHL",
+  "Participants": "ITAM:3;ITAS:3;B_CGT:3,4;B_INF:3,4;B_ITE:3,4;B_MINF:3,4;B_STEC:3,4;B_TINF:3,4",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Systemnahe Programmierung (Gruppe 1)",
+  "Employees": "AAN,AVH,MHE,MRE,TTI",
+  "Participants": "B_CGT:3,4",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Onlineveranstaltung",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Systemnahe Programmierung (Gruppe 2)",
+  "Employees": "AAN,AVH,MHE,MRE,TTI",
+  "Participants": "B_CGT:3,4",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Onlineveranstaltung",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Systemnahe Programmierung (Gruppe 3)",
+  "Employees": "AAN,AVH,MHE,MRE,TTI",
+  "Participants": "B_INF:3,4",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Onlineveranstaltung",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Systemnahe Programmierung (Gruppe 4)",
+  "Employees": "AAN,AVH,MHE,MRE,TTI",
+  "Participants": "B_INF:3,4",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Onlineveranstaltung",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Systemnahe Programmierung (Gruppe 5)",
+  "Employees": "AAN,AVH,MHE,MRE,TTI",
+  "Participants": "B_ITE:3,4;B_STEC:3,4;B_TINF:3,4",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Onlineveranstaltung",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Systemnahe Programmierung (Gruppe 6)",
+  "Employees": "AAN,AVH,MHE,MRE,TTI",
+  "Participants": "B_MINF:3,4",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Onlineveranstaltung",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Systemnahe Programmierung (Tutorium)",
+  "Employees": "BOS",
+  "Participants": "ITAM:3;ITAS:3",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Systemnahe Programmierung (Übung)",
+  "Employees": "AAN,AVH,MHE,MRE,TTI",
+  "Participants": "ITAM:3;ITAS:3",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Onlineveranstaltung",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Technik (Seminar)",
+  "Employees": "SMT",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Technik (Seminar)",
+  "Employees": "SMT",
+  "Participants": "M_WING:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Technik (Seminar)",
+  "Employees": "SMT",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Technik (Seminar)",
+  "Employees": "SMT",
+  "Participants": "M_WING:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Technologie Mediengestaltung und GUI-Programmierung",
+  "Employees": "ONA",
+  "Participants": "B_MINF:5,6",
+  "Participant Size": "Small",
+  "Weekly Blocks": 3,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Unternehmensbesteuerung 1",
+  "Employees": "FRE",
+  "Participants": "B_BWL:3,4;B_IMCA:3,4",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Unternehmensbesteuerung 1",
+  "Employees": "FRE",
+  "Participants": "B_BWL:3,4;B_IMCA:3,4",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Unternehmensplanspiel",
+  "Employees": "WOL",
+  "Participants": "KAI:3",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Winter",
+  "Room Type": "PC-Pool",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "User Experience",
+  "Employees": "KZO,WA",
+  "Participants": "B_ECOM:3,4;B_MINF:2,3",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Verfahrenstechnik (Praktikum)",
+  "Employees": "KRG",
+  "Participants": "B_ITE:5;B_WING:4,5",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 0,
+  "Term": "Winter",
+  "Room Type": "Verfahrenstechniklabor",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "VHDL (Workshop)",
+  "Employees": "BOS",
+  "Participants": "B_TINF:7",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 0,
+  "Term": "Winter",
+  "Room Type": "CAE-Labor",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Virtual Reality (Praktikum)",
+  "Employees": "NHO",
+  "Participants": "B_CGT:6;B_MINF:5",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 0,
+  "Term": "Winter",
+  "Room Type": "Virtual-Reality-Labor",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Visualisierung",
+  "Employees": "BO",
+  "Participants": "M_INF:1,2",
+  "Participant Size": "Small",
+  "Weekly Blocks": 1,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Web-Anwendungen (Seminar)",
+  "Employees": "MPG",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Web-Anwendungen (Seminar)",
+  "Employees": "MPG",
+  "Participant Size": "Small",
+  "Weekly Blocks": 0,
+  "Term": "Winter",
+  "Room Type": "Seminarraum",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Wirkprinzipien und Technologie (Praktikum)",
+  "Employees": "MVI,UH",
+  "Participants": "B_STEC:1,2",
+  "Participant Size": "Normal",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "Smart-Project-Labor",
+  "Disallowed Days": "SA;SO"
+ },
+ {
+  "Name": "Wirtschaftsethik 1",
+  "Employees": "CH",
+  "Participants": "ITAM:3;ITAS:3;KAI:3",
+  "Participant Size": "Small",
+  "Weekly Blocks": 2,
+  "Term": "Winter",
+  "Room Type": "Hörsaal",
+  "Disallowed Days": "SA;SO"
+ }
+],
+"Priority":[
+ {
+  "Value": 1
+ },
+ {
+  "Value": 2
+ },
+ {
+  "Value": 3
+ },
+ {
+  "Value": 4
+ },
+ {
+  "Value": 5
+ },
+ {
+  "Value": 6
+ },
+ {
+  "Value": 7
+ },
+ {
+  "Value": 8
+ },
+ {
+  "Value": 9
+ },
+ {
+  "Value": 10
+ },
+ {
+  "Value": 11
+ },
+ {
+  "Value": 12
+ },
+ {
+  "Value": 13
+ },
+ {
+  "Value": 14
+ },
+ {
+  "Value": 15
+ },
+ {
+  "Value": 16
+ },
+ {
+  "Value": 17
+ },
+ {
+  "Value": 18
+ },
+ {
+  "Value": 19
+ },
+ {
+  "Value": 20
+ },
+ {
+  "Value": 21
+ },
+ {
+  "Value": 22
+ },
+ {
+  "Value": 23
+ },
+ {
+  "Value": 24
+ },
+ {
+  "Value": 25
+ },
+ {
+  "Value": 26
+ },
+ {
+  "Value": 27
+ },
+ {
+  "Value": 28
+ },
+ {
+  "Value": 29
+ },
+ {
+  "Value": 30
+ },
+ {
+  "Value": 31
+ },
+ {
+  "Value": 32
+ },
+ {
+  "Value": 33
+ },
+ {
+  "Value": 34
+ },
+ {
+  "Value": 35
+ },
+ {
+  "Value": 36
+ },
+ {
+  "Value": 37
+ },
+ {
+  "Value": 38
+ },
+ {
+  "Value": 39
+ },
+ {
+  "Value": 40
+ },
+ {
+  "Value": 41
+ },
+ {
+  "Value": 42
+ },
+ {
+  "Value": 43
+ },
+ {
+  "Value": 44
+ },
+ {
+  "Value": 45
+ },
+ {
+  "Value": 46
+ },
+ {
+  "Value": 47
+ },
+ {
+  "Value": 48
+ },
+ {
+  "Value": 49
+ },
+ {
+  "Value": 50
+ },
+ {
+  "Value": 51
+ },
+ {
+  "Value": 52
+ },
+ {
+  "Value": 53
+ },
+ {
+  "Value": 54
+ },
+ {
+  "Value": 55
+ },
+ {
+  "Value": 56
+ },
+ {
+  "Value": 57
+ },
+ {
+  "Value": 58
+ },
+ {
+  "Value": 59
+ },
+ {
+  "Value": 60
+ },
+ {
+  "Value": 61
+ },
+ {
+  "Value": 62
+ },
+ {
+  "Value": 63
+ },
+ {
+  "Value": 64
+ },
+ {
+  "Value": 65
+ },
+ {
+  "Value": 66
+ },
+ {
+  "Value": 67
+ },
+ {
+  "Value": 68
+ },
+ {
+  "Value": 69
+ },
+ {
+  "Value": 70
+ },
+ {
+  "Value": 71
+ },
+ {
+  "Value": 72
+ },
+ {
+  "Value": 73
+ },
+ {
+  "Value": 74
+ },
+ {
+  "Value": 75
+ },
+ {
+  "Value": 76
+ },
+ {
+  "Value": 77
+ },
+ {
+  "Value": 78
+ },
+ {
+  "Value": 79
+ },
+ {
+  "Value": 80
+ },
+ {
+  "Value": 81
+ },
+ {
+  "Value": 82
+ },
+ {
+  "Value": 83
+ },
+ {
+  "Value": 84
+ },
+ {
+  "Value": 85
+ },
+ {
+  "Value": 86
+ },
+ {
+  "Value": 87
+ },
+ {
+  "Value": 88
+ },
+ {
+  "Value": 89
+ },
+ {
+  "Value": 90
+ },
+ {
+  "Value": 91
+ },
+ {
+  "Value": 92
+ },
+ {
+  "Value": 93
+ },
+ {
+  "Value": 94
+ },
+ {
+  "Value": 95
+ },
+ {
+  "Value": 96
+ },
+ {
+  "Value": 97
+ },
+ {
+  "Value": 98
+ },
+ {
+  "Value": 99
+ },
+ {
+  "Value": 100
+ }
+],
+"EmployeeDislikesDate":[
+ {
+  "Employee Abbreviation": "AHB",
+  "Day Abbreviation": "DI",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "AHB",
+  "Day Abbreviation": "DO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "AHB",
+  "Day Abbreviation": "FR",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "AHB",
+  "Day Abbreviation": "MI",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "AHB",
+  "Day Abbreviation": "MO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "AHB",
+  "Day Abbreviation": "SA",
+  "Time Slot Ids": "6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "AHB",
+  "Day Abbreviation": "SO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "AMK",
+  "Day Abbreviation": "DI",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "AMK",
+  "Day Abbreviation": "DO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "AMK",
+  "Day Abbreviation": "FR",
+  "Time Slot Ids": "5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "AMK",
+  "Day Abbreviation": "MI",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "AMK",
+  "Day Abbreviation": "MO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "AMK",
+  "Day Abbreviation": "SA",
+  "Time Slot Ids": "6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "AMK",
+  "Day Abbreviation": "SO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "CH",
+  "Day Abbreviation": "DI",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "CH",
+  "Day Abbreviation": "DO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "CH",
+  "Day Abbreviation": "FR",
+  "Time Slot Ids": "1;2;3;4",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "CH",
+  "Day Abbreviation": "MI",
+  "Time Slot Ids": "1;2;3;4",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "CH",
+  "Day Abbreviation": "MO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "CH",
+  "Day Abbreviation": "SA",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "CH",
+  "Day Abbreviation": "SO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "CZO",
+  "Day Abbreviation": "DI",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "CZO",
+  "Day Abbreviation": "DO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "CZO",
+  "Day Abbreviation": "FR",
+  "Time Slot Ids": "1;2;3;4;5",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "CZO",
+  "Day Abbreviation": "MI",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "CZO",
+  "Day Abbreviation": "MO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "CZO",
+  "Day Abbreviation": "SA",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "CZO",
+  "Day Abbreviation": "SO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "DI",
+  "Day Abbreviation": "DI",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "DI",
+  "Day Abbreviation": "DO",
+  "Time Slot Ids": "1;2;3;4;5",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "DI",
+  "Day Abbreviation": "FR",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "DI",
+  "Day Abbreviation": "MI",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "DI",
+  "Day Abbreviation": "MO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "DI",
+  "Day Abbreviation": "SA",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "DI",
+  "Day Abbreviation": "SO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "DKO",
+  "Day Abbreviation": "DI",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "DKO",
+  "Day Abbreviation": "DO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "DKO",
+  "Day Abbreviation": "MI",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "DKO",
+  "Day Abbreviation": "MO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "DKO",
+  "Day Abbreviation": "SA",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "DKO",
+  "Day Abbreviation": "SO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "DPR",
+  "Day Abbreviation": "DI",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "DPR",
+  "Day Abbreviation": "DO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "DPR",
+  "Day Abbreviation": "FR",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "DPR",
+  "Day Abbreviation": "MO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "DPR",
+  "Day Abbreviation": "SA",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "DPR",
+  "Day Abbreviation": "SO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "EV",
+  "Day Abbreviation": "DI",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "EV",
+  "Day Abbreviation": "DO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "EV",
+  "Day Abbreviation": "FR",
+  "Time Slot Ids": "1;2;3;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "EV",
+  "Day Abbreviation": "MI",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "EV",
+  "Day Abbreviation": "MO",
+  "Time Slot Ids": "6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "EV",
+  "Day Abbreviation": "SA",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "EV",
+  "Day Abbreviation": "SO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "FHU",
+  "Day Abbreviation": "DI",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "FHU",
+  "Day Abbreviation": "DO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "FHU",
+  "Day Abbreviation": "FR",
+  "Time Slot Ids": "1;2;3;4;5",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "FHU",
+  "Day Abbreviation": "MI",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "FHU",
+  "Day Abbreviation": "MO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "FHU",
+  "Day Abbreviation": "SA",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "FHU",
+  "Day Abbreviation": "SO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "FRE",
+  "Day Abbreviation": "DI",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "FRE",
+  "Day Abbreviation": "DO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "FRE",
+  "Day Abbreviation": "FR",
+  "Time Slot Ids": "1;2;3;4",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "FRE",
+  "Day Abbreviation": "MI",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "FRE",
+  "Day Abbreviation": "MO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "FRE",
+  "Day Abbreviation": "SA",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "FRE",
+  "Day Abbreviation": "SO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "HW",
+  "Day Abbreviation": "DI",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "HW",
+  "Day Abbreviation": "DO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "HW",
+  "Day Abbreviation": "FR",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "HW",
+  "Day Abbreviation": "MI",
+  "Time Slot Ids": "1;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "HW",
+  "Day Abbreviation": "MO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "HW",
+  "Day Abbreviation": "SA",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "HW",
+  "Day Abbreviation": "SO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "JBU",
+  "Day Abbreviation": "DI",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "JBU",
+  "Day Abbreviation": "DO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "JBU",
+  "Day Abbreviation": "FR",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "JBU",
+  "Day Abbreviation": "MI",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "JBU",
+  "Day Abbreviation": "MO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "JBU",
+  "Day Abbreviation": "SA",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "JBU",
+  "Day Abbreviation": "SO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "JHO",
+  "Day Abbreviation": "DI",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "JHO",
+  "Day Abbreviation": "DO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "JHO",
+  "Day Abbreviation": "FR",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "JHO",
+  "Day Abbreviation": "MI",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "JHO",
+  "Day Abbreviation": "MO",
+  "Time Slot Ids": "3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "JHO",
+  "Day Abbreviation": "SA",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "JHO",
+  "Day Abbreviation": "SO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "JOB",
+  "Day Abbreviation": "DI",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "JOB",
+  "Day Abbreviation": "DO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "JOB",
+  "Day Abbreviation": "FR",
+  "Time Slot Ids": "3;4",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "JOB",
+  "Day Abbreviation": "MI",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "JOB",
+  "Day Abbreviation": "MO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "JOB",
+  "Day Abbreviation": "SA",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "JOB",
+  "Day Abbreviation": "SO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "KLE",
+  "Day Abbreviation": "DI",
+  "Time Slot Ids": "3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "KLE",
+  "Day Abbreviation": "DO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "KLE",
+  "Day Abbreviation": "FR",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "KLE",
+  "Day Abbreviation": "MI",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "KLE",
+  "Day Abbreviation": "MO",
+  "Time Slot Ids": "1;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "KLE",
+  "Day Abbreviation": "SA",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "KLE",
+  "Day Abbreviation": "SO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "MLO",
+  "Day Abbreviation": "DI",
+  "Time Slot Ids": "2;3;4;5;6",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "MLO",
+  "Day Abbreviation": "DO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "MLO",
+  "Day Abbreviation": "FR",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "MLO",
+  "Day Abbreviation": "MI",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "MLO",
+  "Day Abbreviation": "MO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "MLO",
+  "Day Abbreviation": "SA",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "MLO",
+  "Day Abbreviation": "SO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "MWO",
+  "Day Abbreviation": "DI",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "MWO",
+  "Day Abbreviation": "DO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "MWO",
+  "Day Abbreviation": "FR",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "MWO",
+  "Day Abbreviation": "MI",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "MWO",
+  "Day Abbreviation": "MO",
+  "Time Slot Ids": "1;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "MWO",
+  "Day Abbreviation": "SO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "MWO",
+  "Day Abbreviation": "SA",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "PGO",
+  "Day Abbreviation": "DI",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "PGO",
+  "Day Abbreviation": "DO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "PGO",
+  "Day Abbreviation": "FR",
+  "Time Slot Ids": "5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "PGO",
+  "Day Abbreviation": "MI",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "PGO",
+  "Day Abbreviation": "MO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "PGO",
+  "Day Abbreviation": "SA",
+  "Time Slot Ids": "6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "PGO",
+  "Day Abbreviation": "SO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "RGI",
+  "Day Abbreviation": "DI",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "RGI",
+  "Day Abbreviation": "DO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "RGI",
+  "Day Abbreviation": "FR",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "RGI",
+  "Day Abbreviation": "MI",
+  "Time Slot Ids": "1;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "RGI",
+  "Day Abbreviation": "MO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "RGI",
+  "Day Abbreviation": "SA",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "RGI",
+  "Day Abbreviation": "SO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "SED",
+  "Day Abbreviation": "DI",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "SED",
+  "Day Abbreviation": "DO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "SED",
+  "Day Abbreviation": "FR",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "SED",
+  "Day Abbreviation": "MI",
+  "Time Slot Ids": "4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "SED",
+  "Day Abbreviation": "MO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "SED",
+  "Day Abbreviation": "SA",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "SED",
+  "Day Abbreviation": "SO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "SEN",
+  "Day Abbreviation": "DI",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "SEN",
+  "Day Abbreviation": "DO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "SEN",
+  "Day Abbreviation": "FR",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "SEN",
+  "Day Abbreviation": "MI",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "SEN",
+  "Day Abbreviation": "MO",
+  "Time Slot Ids": "1;2;3;4;5",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "SEN",
+  "Day Abbreviation": "SA",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "SEN",
+  "Day Abbreviation": "SO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "SWA",
+  "Day Abbreviation": "DI",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "SWA",
+  "Day Abbreviation": "DO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "SWA",
+  "Day Abbreviation": "FR",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "SWA",
+  "Day Abbreviation": "MI",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "SWA",
+  "Day Abbreviation": "MO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "SWA",
+  "Day Abbreviation": "SA",
+  "Time Slot Ids": "6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "SWA",
+  "Day Abbreviation": "SO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "TFS",
+  "Day Abbreviation": "DI",
+  "Time Slot Ids": "1;2;3;4",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "TFS",
+  "Day Abbreviation": "DO",
+  "Time Slot Ids": "1;2;3;4",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "TFS",
+  "Day Abbreviation": "FR",
+  "Time Slot Ids": "1;2;3;4",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "TFS",
+  "Day Abbreviation": "MI",
+  "Time Slot Ids": "1;2;3;4",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "TFS",
+  "Day Abbreviation": "MO",
+  "Time Slot Ids": "1;2;3;4",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "TFS",
+  "Day Abbreviation": "SA",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "TFS",
+  "Day Abbreviation": "SO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "TLE",
+  "Day Abbreviation": "DI",
+  "Time Slot Ids": "1;2;3;4;5",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "TLE",
+  "Day Abbreviation": "DO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "TLE",
+  "Day Abbreviation": "FR",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "TLE",
+  "Day Abbreviation": "MI",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "TLE",
+  "Day Abbreviation": "MO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "TLE",
+  "Day Abbreviation": "SA",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "TLE",
+  "Day Abbreviation": "SO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "TPA",
+  "Day Abbreviation": "DI",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "TPA",
+  "Day Abbreviation": "DO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "TPA",
+  "Day Abbreviation": "FR",
+  "Time Slot Ids": "1;2;3",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "TPA",
+  "Day Abbreviation": "MI",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "TPA",
+  "Day Abbreviation": "MO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "TPA",
+  "Day Abbreviation": "SA",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "TPA",
+  "Day Abbreviation": "SO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "TPF",
+  "Day Abbreviation": "DI",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "TPF",
+  "Day Abbreviation": "DO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "TPF",
+  "Day Abbreviation": "FR",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "TPF",
+  "Day Abbreviation": "MI",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "TPF",
+  "Day Abbreviation": "MO",
+  "Time Slot Ids": "1;2;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "TPF",
+  "Day Abbreviation": "SA",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "TPF",
+  "Day Abbreviation": "SO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "TWE",
+  "Day Abbreviation": "DI",
+  "Time Slot Ids": "1;2;3;4;5",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "TWE",
+  "Day Abbreviation": "DO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "TWE",
+  "Day Abbreviation": "FR",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "TWE",
+  "Day Abbreviation": "MI",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "TWE",
+  "Day Abbreviation": "MO",
+  "Time Slot Ids": "1;2;3;4;5",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "TWE",
+  "Day Abbreviation": "SA",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ },
+ {
+  "Employee Abbreviation": "TWE",
+  "Day Abbreviation": "SO",
+  "Time Slot Ids": "1;2;3;4;5;6;7",
+  "Priority Value": 100
+ }
+]
+}

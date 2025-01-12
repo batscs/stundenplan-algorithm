@@ -17,7 +17,7 @@ from src.python.db.database import Database
 from src.python.log.logger import logger_ga
 
 from src.python.ga.constraints import (
-    fitness_function, evaluate_constraints_core, evaluate_constraints_hard,
+    fitness_function, evaluate_constraints_core, evaluate_constraints_hard, evaluate_constraints_soft,
 )
 
 HARD_CONSTRAINT: int = 100
@@ -173,7 +173,7 @@ def genetic_algorithm(generations: int = NUM_GENERATIONS, term: str = "Sommer"):
 
         _, violated_core, _ = evaluate_constraints_core(best_solution, lessons, date_x_room)
         _, violated_hard, _ = evaluate_constraints_hard(best_solution, lessons, date_x_room, employee_dislikes_date)
-        _, violated_soft, _ = evaluate_constraints_core(best_solution, lessons, date_x_room)
+        _, violated_soft, _ = evaluate_constraints_soft()
 
         logger_ga.info(f"Generation {instance.generations_completed} with Fitness {fitness}")
         logger_ga.info(f"Core Constraints conflicts: {violated_core}")

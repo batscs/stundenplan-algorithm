@@ -376,7 +376,7 @@ def parse_events(data_frame: DataFrame, fast_and_least_verbose: bool) -> None:
         )
         # Events are allowed to have no employees. A common example are course projects that
         # can't really be assigned to a specific employee.
-        if row["Employees"]:
+        if row["Employees"] and str(row["Employees"]) != "nan":
             for employee_abbreviation in row["Employees"].split(","):
                 employee_holds_event_dtos.append(
                     EmployeeHoldsEventDTO(

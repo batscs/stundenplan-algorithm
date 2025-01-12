@@ -34,3 +34,7 @@ SRC_PATH: str = find_absolute_directory_path_upwards("src")
 
 RESOURCES_PATH: str = find_absolute_directory_path_upwards("resources")
 """Absolute path of the resources folder."""
+
+RESOURCE_INPUT_PATH: str = os.path.join(RESOURCES_PATH, "input")
+
+RESOURCE_CONFIG_PATH: str = os.path.join(RESOURCES_PATH, "config")
