@@ -31,6 +31,14 @@
             "filename": "/app/src/python/resources/logs/database.log",
             "mode": "w",
             "encoding": "utf8"
+        },
+        "logfile_algorithm": {
+            "class": "logging.FileHandler",
+            "level": "DEBUG",
+            "formatter": "normal",
+            "filename": "/app/src/python/resources/logs/algorithm.log",
+            "mode": "w",
+            "encoding": "utf8"
         }
     },
     "loggers": {
@@ -44,6 +52,12 @@
             "level": "DEBUG",
             "handlers": [
                 "logfile_database"
+            ]
+        },
+        "algorithm": {
+            "level": "DEBUG",
+            "handlers": [
+                "logfile_algorithm"
             ]
         }
     }

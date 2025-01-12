@@ -1,22 +1,24 @@
 import time
 import numpy as np
 import pygad
-from numpy.typing import NDArray
 from typing import Any, Optional
 
 from src.python.io import parser_excel
-from api import api
-from api.models.date import Date
-from api.models.day import Day
-from api.models.event import Event
-from api.models.priority import Priority
-from api.models.room import Room
-from api.models.time_slot import TimeSlot
-from api.models.course import Course
-from api.models.semester import Semester
-from db.database import Database
+from src.python.api import api
+from src.python.api.models.date import Date
+from src.python.api.models.day import Day
+from src.python.api.models.event import Event
+from src.python.api.models.priority import Priority
+from src.python.api.models.room import Room
+from src.python.api.models.time_slot import TimeSlot
+from src.python.api.models.course import Course
+from src.python.api.models.semester import Semester
+from src.python.db.database import Database
+from src.python.log.logger import logger_ga
 
-# TODO logger_ga für genetic algorithm ergänzen und detailierte logs für trainingsprozess
+from src.python.ga.constraints import (
+    fitness_function, evaluate_constraints_core, evaluate_constraints_hard,
+)
 
 HARD_CONSTRAINT: int = 100
 MID_CONSTRAINT: int = 3
@@ -47,9 +49,12 @@ def prepare(
     lessons: list[Event] = [
         event
         for event in api.get_events_by_id().values()
-        if event.term.name == term
-        for _ in range(event.weekly_blocks)
+            if event.term.name == term
+                for _ in range(event.weekly_blocks)
     ]
+
+    logger_ga.debug(f"Prepared lessons count: {len(lessons)}")
+
     date_x_room: list[tuple[tuple[int, Date], tuple[int, Room]]] = [
         (d, r)
         for d in api.get_dates_by_id().items()
@@ -64,67 +69,6 @@ def prepare(
         ), priority_id in api.get_employee_dislikes_date().items()
     }
     return lessons, date_x_room, employee_dislikes_date
-
-
-def fitness_function(
-    instance: pygad.GA, solution: NDArray[np.uint32], solution_idx: int
-) -> int:
-    """Fitness function that evaluates individual solutions.
-
-    The higher the fitness, the better the solution, with `fitness == 0` indicating an optimal
-    solution.
-
-    The solutions are represented within PyGad as integer arrays where the position in the array
-    corresponds to a lecture unit, and the values correspond to a room-time pair. This creates a
-    mapping from lecture unit -> (timeslot, room).
-
-    Args:
-        instance: PyGad instance using the fitness_function, which holds the necessary data
-            structures for the calculation.
-        solution: Solution for which the fitness is to be calculated.
-        solution_idx: Index of the solution in the current generation (currently not used).
-
-    Returns:
-        Fitness of the solution.
-    """
-    lessons, date_x_room, employee_dislikes_date = (
-        instance.variables  # type ignore Variables is a tuple set by us, which is not a regular member of the instance.
-    )
-    fitness: int = 0
-    employee_planned_at_date: set[tuple[int, int]] = set()
-    date_x_students: set[tuple[int, int, int]] = set()
-    for event, date_x_room_id in zip(lessons, solution):
-        (date_id, date), (room_id, room) = date_x_room[date_x_room_id]
-        # Check if date matches the event.
-        if date.day in event.disallowed_days:
-            fitness += HARD_CONSTRAINT
-        for employee_id in event.employee_ids:
-            # Check if employee already has an event scheduled at this date.
-            employee_x_date: tuple[int, int] = (employee_id, date_id)
-            if employee_x_date in employee_planned_at_date:
-                fitness += HARD_CONSTRAINT
-            employee_planned_at_date.add(employee_x_date)
-            # Check if employee dislikes this date.
-            priority: Optional[Priority] = employee_dislikes_date.get(employee_x_date)
-            if priority is not None:
-                fitness += priority.value
-        # Check if room fits to estimated participant size.
-        if room.participant_size < event.participant_size:
-            fitness += HARD_CONSTRAINT
-        # Check if room fits to the one required by the event.
-        if room.room_type != event.room_type:
-            fitness += HARD_CONSTRAINT
-        # Check if students would have to participate in multiple events at the same time.
-        for course_id, semester_id in [
-            (course_id, semester_id)
-            for course_id, semester_ids in event.participants.items()
-            for semester_id in semester_ids
-        ]:
-            date_x_student = (date_id, course_id, semester_id)
-            if date_x_student in date_x_students:
-                fitness += HARD_CONSTRAINT
-            date_x_students.add(date_x_student)
-    return -fitness
 
 
 def genetic_algorithm(generations: int = NUM_GENERATIONS, term: str = "Sommer"):
@@ -143,7 +87,9 @@ def genetic_algorithm(generations: int = NUM_GENERATIONS, term: str = "Sommer"):
         fitness: Fitness of the best solution.
         generations_completed: Number of generations completed by the algorithm.
     """
+    logger_ga.info(f"Starting genetic algorithm for term {term} with {generations} generations")
     lessons, date_x_room, employee_dislikes_date = prepare(term)
+    logger_ga.info(f"Data preparation complete.")
 
     def parse_pygad_solution_for_print(
         pygad_solution: list[np.uint16],
@@ -220,46 +166,53 @@ def genetic_algorithm(generations: int = NUM_GENERATIONS, term: str = "Sommer"):
             }
         return result
 
-    gene_space: dict[str, int] = {"low": 0, "high": len(date_x_room)}
-    # Initialize and run genetic algorithm.
+    def on_generation(instance: pygad.GA):
+        """Callback to log constraint violations of the best solution after each generation."""
+        best_solution, fitness, _ = instance.best_solution()  # type: ignore
+        lessons, date_x_room, employee_dislikes_date = instance.variables  # type: ignore
+
+        _, violated_core, _ = evaluate_constraints_core(best_solution, lessons, date_x_room)
+        _, violated_hard, _ = evaluate_constraints_hard(best_solution, lessons, date_x_room, employee_dislikes_date)
+        _, violated_soft, _ = evaluate_constraints_core(best_solution, lessons, date_x_room)
+
+        logger_ga.info(f"Generation {instance.generations_completed} with Fitness {fitness}")
+        logger_ga.info(f"Core Constraints conflicts: {violated_core}")
+        logger_ga.info(f"Hard Constraints conflicts: {violated_hard}")
+        logger_ga.info(f"Soft Constraints conflicts: {violated_soft}")
+
     ga_instance = pygad.GA(
         num_genes=len(lessons),
         gene_type=np.uint32,  # type: ignore
-        gene_space=gene_space,
+        gene_space={"low": 0, "high": len(date_x_room)},
         allow_duplicate_genes=False,
         fitness_func=fitness_function,
-        # "save_solutions":True,
-        # Instance Size
         num_generations=generations,
         sol_per_pop=SOL_PER_POP,
-        # Mutation
         mutation_type="adaptive",
         mutation_probability=(0.1, 0.01),
-        # Parent Selection
         num_parents_mating=10,
         parent_selection_type="tournament",
         K_tournament=30,
-        # Crossover
         crossover_type="scattered",
-        # crossover_probability=0.5,
         stop_criteria="reach_0",
         keep_elitism=1,
         random_seed=0,
         suppress_warnings=True,
+        on_generation=on_generation,  # Add callback here
     )
-    ga_instance.variables = (  # type ignore Variables is a tuple set by us, which is not a regular member of the instance.
-        lessons,
-        date_x_room,
-        employee_dislikes_date,
-    )
-    runtime: float = time.perf_counter()
+    ga_instance.variables = (lessons, date_x_room, employee_dislikes_date)  # type: ignore
+
+    logger_ga.info("Running genetic algorithm...")
+    start_time = time.perf_counter()
     ga_instance.run()
-    runtime = time.perf_counter() - runtime
+    runtime = time.perf_counter() - start_time
+    logger_ga.info(f"Genetic algorithm completed in {runtime:.2f} seconds")
+
     best_solution = ga_instance.best_solution()
-    parsed_solution: dict[str, Any] = parse_pygad_solution_for_print(best_solution[0])  # type: ignore
-    fitness: int = best_solution[1]  # type: ignore
-    # ga_instance.plot_fitness()
-    return runtime, parsed_solution, fitness, ga_instance.generations_completed
+    logger_ga.info(f"Best fitness: {best_solution[1]}")  # type: ignore
+
+    parsed_solution = parse_pygad_solution_for_print(best_solution[0])  # type: ignore
+    return runtime, parsed_solution, best_solution[1], ga_instance.generations_completed
 
 
 def main() -> None:

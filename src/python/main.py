@@ -3,8 +3,8 @@ from argparse import ArgumentParser
 
 
 from db.database import Database
-from genetic_algorithm import NUM_GENERATIONS, genetic_algorithm
 from utils import time_utils
+from src.python.ga.genetic_algorithm import NUM_GENERATIONS, genetic_algorithm
 from src.python.log.logger import logger_app
 from src.python.io import parser_json as parser
 from src.python.io import printer_json as printer
@@ -99,16 +99,14 @@ def main() -> None:
     generations, term, output_format, debug_mode = parse_arguments()
     Database().initialize(delete_database_file=True)
     parser.parse()
-    runtime, _, _, _ = genetic_algorithm(1, term)
-    estimated_runtime: float = generations * runtime
-
     print(f"Genetic algorithm started (generations = {generations}, term = {term})")
-    print(
-        f"Estimated runtime up to: {time_utils.seconds_to_formatted_duration(estimated_runtime)}"
-    )
-    runtime, parsed_solution, fitness, generations_completed = genetic_algorithm(
-        generations, term
-    )
+
+    # ------ RUNTIME ESTIMATION - commented out to avoid logging
+    #runtime, _, _, _ = genetic_algorithm(1, term)
+    #estimated_runtime: float = generations * runtime
+    #print(f"Estimated runtime up to: {time_utils.seconds_to_formatted_duration(estimated_runtime)}")
+
+    runtime, parsed_solution, fitness, generations_completed = genetic_algorithm(generations, term)
     print(f"\nSolution fitness: {fitness}")
     print(f"Generations completed: {generations_completed}")
     print(f"Actual runtime: {time_utils.seconds_to_formatted_duration(runtime)}")

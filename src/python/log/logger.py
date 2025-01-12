@@ -33,3 +33,4 @@ configure_logging()
 
 logger_app: Logger = logging.getLogger("application")
 logger_db: Logger = logging.getLogger("database")
+logger_ga: Logger = logging.getLogger("algorithm")
