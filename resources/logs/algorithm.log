@@ -1,0 +1,26 @@
+2025-01-13 19:44:42,452 [INFO ] algorithm - Starting genetic algorithm for term Winter with 10 generations
+2025-01-13 19:44:42,479 [DEBUG] algorithm - Prepared lessons count: 4
+2025-01-13 19:44:42,725 [INFO ] algorithm - Data preparation complete.
+2025-01-13 19:44:42,733 [INFO ] algorithm - Running genetic algorithm...
+2025-01-13 19:44:42,803 [INFO ] algorithm - Generation 1 with Fitness -200
+2025-01-13 19:44:42,803 [INFO ] algorithm - Core Constraints conflicts: {'employee_conflicts': 0, 'student_conflicts': 0, 'room_capacity': 0, 'room_type': 2}
+2025-01-13 19:44:42,804 [INFO ] algorithm - Hard Constraints conflicts: {'disallowed_days': 0, 'employee_dislikes': 0}
+2025-01-13 19:44:42,804 [INFO ] algorithm - Soft Constraints conflicts: {}
+2025-01-13 19:44:42,849 [INFO ] algorithm - Generation 2 with Fitness -100
+2025-01-13 19:44:42,850 [INFO ] algorithm - Core Constraints conflicts: {'employee_conflicts': 0, 'student_conflicts': 0, 'room_capacity': 0, 'room_type': 0}
+2025-01-13 19:44:42,850 [INFO ] algorithm - Hard Constraints conflicts: {'disallowed_days': 0, 'employee_dislikes': 1}
+2025-01-13 19:44:42,851 [INFO ] algorithm - Soft Constraints conflicts: {}
+2025-01-13 19:44:42,881 [INFO ] algorithm - Generation 3 with Fitness -100
+2025-01-13 19:44:42,882 [INFO ] algorithm - Core Constraints conflicts: {'employee_conflicts': 0, 'student_conflicts': 0, 'room_capacity': 0, 'room_type': 0}
+2025-01-13 19:44:42,882 [INFO ] algorithm - Hard Constraints conflicts: {'disallowed_days': 0, 'employee_dislikes': 1}
+2025-01-13 19:44:42,882 [INFO ] algorithm - Soft Constraints conflicts: {}
+2025-01-13 19:44:42,913 [INFO ] algorithm - Generation 4 with Fitness -100
+2025-01-13 19:44:42,914 [INFO ] algorithm - Core Constraints conflicts: {'employee_conflicts': 0, 'student_conflicts': 0, 'room_capacity': 0, 'room_type': 1}
+2025-01-13 19:44:42,914 [INFO ] algorithm - Hard Constraints conflicts: {'disallowed_days': 0, 'employee_dislikes': 0}
+2025-01-13 19:44:42,914 [INFO ] algorithm - Soft Constraints conflicts: {}
+2025-01-13 19:44:42,958 [INFO ] algorithm - Generation 5 with Fitness 0
+2025-01-13 19:44:42,958 [INFO ] algorithm - Core Constraints conflicts: {'employee_conflicts': 0, 'student_conflicts': 0, 'room_capacity': 0, 'room_type': 0}
+2025-01-13 19:44:42,959 [INFO ] algorithm - Hard Constraints conflicts: {'disallowed_days': 0, 'employee_dislikes': 0}
+2025-01-13 19:44:42,960 [INFO ] algorithm - Soft Constraints conflicts: {}
+2025-01-13 19:44:42,965 [INFO ] algorithm - Genetic algorithm completed in 0.23 seconds
+2025-01-13 19:44:42,976 [INFO ] algorithm - Best fitness: 0

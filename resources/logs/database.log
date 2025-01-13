@@ -1,0 +1,10 @@
+2025-01-13 19:44:41,737 [DEBUG] database - Deleting database file FHW.db if it exists
+2025-01-13 19:44:41,741 [DEBUG] database - Deleted database file FHW.db
+2025-01-13 19:44:41,742 [DEBUG] database - Creating connection 0
+2025-01-13 19:44:41,749 [DEBUG] database - Created connection 0: <sqlite3.Connection object at 0x7f3d59aefd30>
+2025-01-13 19:44:41,750 [DEBUG] database - Creating connection 1
+2025-01-13 19:44:41,753 [DEBUG] database - Created connection 1: <sqlite3.Connection object at 0x7f3d59aeeb60>
+2025-01-13 19:44:41,753 [DEBUG] database - Creating connection 2
+2025-01-13 19:44:41,758 [DEBUG] database - Created connection 2: <sqlite3.Connection object at 0x7f3d59aef790>
+2025-01-13 19:44:41,758 [DEBUG] database - Creating connection 3
+2025-01-13 19:44:41,761 [DEBUG] database - Created connection 3: <sqlite3.Connection object at 0x7f3d59aef6a0>

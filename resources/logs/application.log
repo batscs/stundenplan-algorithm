@@ -1,0 +1,16 @@
+2025-01-13 19:44:34,808 [DEBUG] application - Starting Server
+2025-01-13 19:44:41,732 [DEBUG] application - Incoming Request: Run Algorithm
+2025-01-13 19:44:41,733 [DEBUG] application - Running Genetic Algorithm in a separate thread
+2025-01-13 19:44:41,779 [DEBUG] application - parse_days count: 7
+2025-01-13 19:44:41,839 [DEBUG] application - parse_time_slots count: 7
+2025-01-13 19:44:41,902 [DEBUG] application - parse_employee_types count: 4
+2025-01-13 19:44:41,935 [DEBUG] application - parse_employees count: 116
+2025-01-13 19:44:41,981 [DEBUG] application - parse_participant_sizes count: 3
+2025-01-13 19:44:42,007 [DEBUG] application - parse_room_types count: 18
+2025-01-13 19:44:42,034 [DEBUG] application - parse_rooms count: 39
+2025-01-13 19:44:42,069 [DEBUG] application - parse_courses count: 27
+2025-01-13 19:44:42,099 [DEBUG] application - parse_terms count: 2
+2025-01-13 19:44:42,131 [DEBUG] application - parse_semesters count: 7
+2025-01-13 19:44:42,163 [DEBUG] application - parse_events count: 21
+2025-01-13 19:44:42,298 [DEBUG] application - parse_priorities count: 100
+2025-01-13 19:44:42,329 [DEBUG] application - parse_employee_dislikes_date count: 187
