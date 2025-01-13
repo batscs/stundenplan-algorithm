@@ -10,7 +10,7 @@ from src.python.utils import data_parsing
 
 from src.python.utils import path_utils
 
-JSON_FILE_NAME: str = "FHW_DEV.json"
+JSON_FILE_NAME: str = path_utils.INPUT_JSON_FILENAME
 """Name of the excel file to parse."""
 
 DEFAULT_JSON_FILE_PATH: str = os.path.join(path_utils.RESOURCE_INPUT_PATH, JSON_FILE_NAME)
