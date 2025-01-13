@@ -14,6 +14,11 @@ app = Flask(__name__)
 algorithm_lock = threading.Lock()
 is_running = False
 
+# TODO logger_server
+
+# TODO /run geht nur einmal, danach nicht wegen sqlite database
+
+# TODO /config POST und GET wäre auch praktisch, ähnlich zu logging_config.json
 
 def run_genetic_algorithm_thread(generations, term, output_format, debug_mode):
     global is_running
