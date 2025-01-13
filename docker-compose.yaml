@@ -1,8 +1,9 @@
 services:
     stundenplan:
+        container_name: "stundenplan"
         build: .
         volumes:
             - ./resources:/app/src/python/resources
         command: ${COMMAND:--help}
         ports:
-            - "8888:80"
+            - "1111:80"
