@@ -38,3 +38,7 @@ RESOURCES_PATH: str = find_absolute_directory_path_upwards("resources")
 RESOURCE_INPUT_PATH: str = os.path.join(RESOURCES_PATH, "input")
 
 RESOURCE_CONFIG_PATH: str = os.path.join(RESOURCES_PATH, "config")
+
+RESOURCE_OUTPUT_PATH: str = os.path.join(RESOURCES_PATH, "output")
+
+INPUT_JSON_FILENAME: str = "FHW_DEV.json"

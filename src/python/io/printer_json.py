@@ -64,7 +64,7 @@ def printer_save(
             .strftime("%Y-%m-%d_%H-%M-%S")
         )
         solution_filename: str = f"parsed_solution_{current_time}.json"
-        solution_directory: str = os.path.join(path_utils.SRC_PATH, "..", "output")
+        solution_directory: str = path_utils.RESOURCE_OUTPUT_PATH
         os.makedirs(solution_directory, exist_ok=True)
 
         solution_filepath: str = os.path.join(solution_directory, solution_filename)

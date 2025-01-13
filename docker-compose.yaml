@@ -2,6 +2,7 @@ services:
     stundenplan:
         build: .
         volumes:
-            - ./output:/app/output
             - ./resources:/app/src/python/resources
         command: ${COMMAND:--help}
+        ports:
+            - "8888:80"
