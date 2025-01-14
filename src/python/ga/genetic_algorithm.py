@@ -43,7 +43,7 @@ def prepare():
 
     return lessons, date_x_room, employee_dislikes_date
 
-def parse_pygad_solution_for_print(
+def parse_solution_into_timetable(
     pygad_solution: list[np.uint16],
     date_x_room,
     lessons
@@ -88,16 +88,45 @@ def parse_pygad_solution_for_print(
             for course_id, semesters_ids in event["Participants"].items()
         }
 
+    return result
 
-    _, core_unsatisfied, core_satisfied = constraints.evaluate_constraints_core(pygad_solution, lessons, date_x_room)
 
-    result["constraints"] = {}
-    result["constraints"]["core"] = {
-        "unsatisfied": core_unsatisfied,
-        "satisfied": core_satisfied,
+def parse_solution_for_print(best_solution, fitness, date_x_room, lessons):
+    result = {}
+
+    timetable = parse_solution_into_timetable(best_solution, date_x_room, lessons)  # type: ignore
+
+    core_fitness, core_unsatisfied, core_satisfied = (
+        constraints.evaluate_constraints_core(best_solution, lessons, date_x_room))
+
+    hard_fitness, hard_unsatisfied, hard_satisfied = (
+        constraints.evaluate_constraints_hard(best_solution, lessons, date_x_room))
+
+    soft_fitness, soft_unsatisfied, soft_satisfied = (
+        constraints.evaluate_constraints_soft(best_solution, lessons, date_x_room))
+
+    result["fitness"] = fitness
+    result["timetable"] = timetable
+    result["constraints"] = {
+        "core": {
+            "fitness": core_fitness,
+            "unsatisfied": core_unsatisfied,
+            "satisfied": core_satisfied,
+        },
+        "hard": {
+            "fitness": hard_fitness,
+            "unsatisfied": hard_unsatisfied,
+            "satisfied": hard_satisfied,
+        },
+        "soft": {
+            "fitness": soft_fitness,
+            "unsatisfied": soft_unsatisfied,
+            "satisfied": soft_satisfied,
+        }
     }
 
     return result
+
 
 def genetic_algorithm(generations: int = NUM_GENERATIONS):
     """Executes a genetic algorithm using PyGad to find the optimal scheduling of events for a given
@@ -164,9 +193,10 @@ def genetic_algorithm(generations: int = NUM_GENERATIONS):
     best_solution, fitness, _ = ga_instance.best_solution()
     logger_ga.info(f"Best fitness: {fitness}")  # type: ignore
 
-    parsed_solution = parse_pygad_solution_for_print(best_solution, date_x_room, lessons)  # type: ignore
+    # ----------
+    result = parse_solution_for_print(best_solution, fitness, date_x_room, lessons)
 
-    return runtime, parsed_solution, fitness, ga_instance.generations_completed
+    return runtime, result, fitness, ga_instance.generations_completed
 
 def main() -> None:
     parser_json.parse()

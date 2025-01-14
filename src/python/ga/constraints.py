@@ -67,6 +67,18 @@ def evaluate_constraints_core(
 
     return fitness, constraint_violations, constraints_satisfied
 
+def evaluate_constraints_hard(solution: NDArray[np.uint32], lessons, date_x_room):
+    violations = []
+    satisfied = []
+
+    return 0, violations, satisfied
+
+def evaluate_constraints_soft(solution: NDArray[np.uint32], lessons, date_x_room):
+    violations = []
+    satisfied = []
+
+    return 0, violations, satisfied
+
 def fitness_function(
     instance: Any, solution: NDArray[np.uint32], solution_idx: int
 ) -> int:

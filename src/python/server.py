@@ -34,7 +34,7 @@ def run_genetic_algorithm_thread(generations, output_format, debug_mode):
         print(f"Generations completed: {generations_completed}")
         print(f"Actual runtime: {time_utils.seconds_to_formatted_duration(runtime)}")
 
-        printer.printer_save(parsed_solution, fitness, debug_mode)
+        printer.printer_save(parsed_solution)
 
     except Exception as e:
         logger_app.error(f"Error during algorithm execution: {str(e)}")

@@ -109,7 +109,7 @@ def main() -> None:
     print(f"Generations completed: {generations_completed}")
     print(f"Actual runtime: {time_utils.seconds_to_formatted_duration(runtime)}")
 
-    printer.printer_save(parsed_solution, fitness, debug_mode)
+    printer.printer_save(parsed_solution)
 
     exit(0)
 
