@@ -10,6 +10,6 @@ COPY ./src ./src
 
 ENV PYTHONPATH="/app/src:${PYTHONPATH}"
 
-ENTRYPOINT ["python", "-u", "src/python/server.py"]
+ENTRYPOINT ["python", "-u", "src/python/main.py"]
 
 CMD ["--help"]

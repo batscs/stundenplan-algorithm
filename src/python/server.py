@@ -1,7 +1,6 @@
 from flask import Flask, request, jsonify
-from db.database import Database
 from utils import time_utils
-from src.python.ga.genetic_algorithm import genetic_algorithm
+from src.python.ga import genetic_algorithm
 from src.python.io import parser_json as parser
 from src.python.io import printer_json as printer
 from src.python.utils import path_utils
@@ -20,17 +19,16 @@ is_running = False
 
 # TODO /config POST und GET wäre auch praktisch, ähnlich zu logging_config.json
 
-def run_genetic_algorithm_thread(generations, term, output_format, debug_mode):
+def run_genetic_algorithm_thread(generations, output_format, debug_mode):
     global is_running
 
     try:
         logger_app.debug("Running Genetic Algorithm in a separate thread")
-        Database().initialize(delete_database_file=True)
         parser.parse()
 
-        print(f"Genetic algorithm started (generations = {generations}, term = {term})")
+        print(f"Genetic algorithm started (generations = {generations})")
 
-        runtime, parsed_solution, fitness, generations_completed = genetic_algorithm(generations, term)
+        runtime, parsed_solution, fitness, generations_completed = genetic_algorithm.genetic_algorithm(generations)
 
         print(f"\nSolution fitness: {fitness}")
         print(f"Generations completed: {generations_completed}")
@@ -54,7 +52,6 @@ def run_algorithm():
     try:
         logger_app.debug("Incoming Request: Run Algorithm")
         generations = 10
-        term = "Winter"
         output_format = "Tabular"
         debug_mode = False
 
@@ -63,7 +60,7 @@ def run_algorithm():
             is_running = True
             threading.Thread(
                 target=run_genetic_algorithm_thread,
-                args=(generations, term, output_format, debug_mode),
+                args=(generations, output_format, debug_mode),
                 daemon=True
             ).start()
 

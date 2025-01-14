@@ -7,7 +7,6 @@ from typing import Any
 import numpy as np
 import pytz
 
-from src.python.api.models import day
 from src.python.utils import path_utils
 
 def printer_save(
@@ -31,7 +30,8 @@ def printer_save(
             An ordered dictionary containing the sorted data of the time table.
         """
         result: OrderedDict[str, Any] = OrderedDict()
-        for day_name in day.NAMES:
+        days = ["Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag", "Sonntag"]
+        for day_name in days:
             if day_name in parsed_solution:
                 sorted_timeslots: OrderedDict[str, Any] = OrderedDict(
                     sorted(parsed_solution[day_name].items())
@@ -73,6 +73,7 @@ def printer_save(
         json_data = {
             "fitness": fitness,
             "complete_time_table": sorted_time_table,
+            "constraints": parsed_solution["constraints"]
         }
 
         def custom_encoder(obj):

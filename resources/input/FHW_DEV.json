@@ -850,309 +850,239 @@
   "Employee Type": "Lehrbeauftragte(r)"
  }
 ],
-"ParticipantSize":[
- {
-  "Name": "Small",
-  "Ordinal": 1
- },
- {
-  "Name": "Normal",
-  "Ordinal": 2
- },
- {
-  "Name": "Large",
-  "Ordinal": 3
- }
-],
-"RoomType":[
- {
-  "Name": "Audiolabor"
- },
- {
-  "Name": "CAE-Labor"
- },
- {
-  "Name": "Elektroniklabor"
- },
- {
-  "Name": "Externes Unternehmen"
- },
- {
-  "Name": "Fertigungstechniklabor"
- },
- {
-  "Name": "Hörsaal"
- },
- {
-  "Name": "Konferenzraum"
- },
- {
-  "Name": "Messtechniklabor"
- },
- {
-  "Name": "Netzwerkschulungslabor"
- },
- {
-  "Name": "Onlineveranstaltung"
- },
- {
-  "Name": "Optiklabor"
- },
- {
-  "Name": "PC-Pool"
- },
- {
-  "Name": "Robotiklabor"
- },
- {
-  "Name": "Schaltungstechniklabor"
- },
- {
-  "Name": "Seminarraum"
- },
- {
-  "Name": "Smart-Project-Labor"
- },
- {
-  "Name": "Verfahrenstechniklabor"
- },
- {
-  "Name": "Virtual-Reality-Labor"
- }
-],
 "Room":[
  {
   "Abbreviation": "EXT",
   "Name": "Externes Unternehmen",
-  "Capacity": "Normal",
+  "Capacity": 20,
   "Room Type": "Externes Unternehmen"
  },
  {
   "Abbreviation": "HS01",
   "Name": "Hörsaal 1",
-  "Capacity": "Small",
+  "Capacity": 10,
   "Room Type": "Hörsaal"
  },
  {
   "Abbreviation": "HS02",
   "Name": "Hörsaal 2",
-  "Capacity": "Small",
+  "Capacity": 10,
   "Room Type": "Hörsaal"
  },
  {
   "Abbreviation": "HS03",
   "Name": "Hörsaal 3",
-  "Capacity": "Small",
+  "Capacity": 10,
   "Room Type": "Hörsaal"
  },
  {
   "Abbreviation": "HS04",
   "Name": "Hörsaal 4",
-  "Capacity": "Normal",
+  "Capacity": 20,
   "Room Type": "Hörsaal"
  },
  {
   "Abbreviation": "HS05",
   "Name": "Hörsaal 5",
-  "Capacity": "Normal",
+  "Capacity": 20,
   "Room Type": "Hörsaal"
  },
  {
   "Abbreviation": "HS06",
   "Name": "Hörsaal 6",
-  "Capacity": "Normal",
+  "Capacity": 20,
   "Room Type": "Hörsaal"
  },
  {
   "Abbreviation": "HS07",
   "Name": "Audimax",
-  "Capacity": "Large",
+  "Capacity": 30,
   "Room Type": "Hörsaal"
  },
  {
   "Abbreviation": "LR01",
   "Name": "Fertigungstechniklabor",
-  "Capacity": "Normal",
+  "Capacity": 20,
   "Room Type": "Fertigungstechniklabor"
  },
  {
   "Abbreviation": "LR02",
   "Name": "Messtechniklabor",
-  "Capacity": "Normal",
+  "Capacity": 20,
   "Room Type": "Messtechniklabor"
  },
  {
   "Abbreviation": "LR03",
   "Name": "Optiklabor",
-  "Capacity": "Normal",
+  "Capacity": 20,
   "Room Type": "Optiklabor"
  },
  {
   "Abbreviation": "LR04",
   "Name": "Smart-Project-Labor",
-  "Capacity": "Normal",
+  "Capacity": 20,
   "Room Type": "Smart-Project-Labor"
  },
  {
   "Abbreviation": "LR05",
   "Name": "Elektroniklabor",
-  "Capacity": "Normal",
+  "Capacity": 20,
   "Room Type": "Elektroniklabor"
  },
  {
   "Abbreviation": "LR06",
   "Name": "Robotiklabor",
-  "Capacity": "Normal",
+  "Capacity": 20,
   "Room Type": "Robotiklabor"
  },
  {
   "Abbreviation": "LR07",
   "Name": "Verfahrenstechniklabor",
-  "Capacity": "Normal",
+  "Capacity": 20,
   "Room Type": "Verfahrenstechniklabor"
  },
  {
   "Abbreviation": "LR08",
   "Name": "CAE-Labor",
-  "Capacity": "Normal",
+  "Capacity": 20,
   "Room Type": "CAE-Labor"
  },
  {
   "Abbreviation": "LR09",
   "Name": "Schaltungstechniklabor",
-  "Capacity": "Normal",
+  "Capacity": 20,
   "Room Type": "Schaltungstechniklabor"
  },
  {
   "Abbreviation": "LR10",
   "Name": "Virtual-Reality-Labor",
-  "Capacity": "Normal",
+  "Capacity": 20,
   "Room Type": "Virtual-Reality-Labor"
  },
  {
   "Abbreviation": "LR11",
   "Name": "Netzwerkschulungslabor",
-  "Capacity": "Normal",
+  "Capacity": 20,
   "Room Type": "Netzwerkschulungslabor"
  },
  {
   "Abbreviation": "LR12",
   "Name": "Audiolabor",
-  "Capacity": "Normal",
+  "Capacity": 20,
   "Room Type": "Audiolabor"
  },
  {
   "Abbreviation": "OL01",
   "Name": "Onlineveranstaltung",
-  "Capacity": "Normal",
+  "Capacity": 20,
   "Room Type": "Onlineveranstaltung"
  },
  {
   "Abbreviation": "PC01",
   "Name": "PC-Pool 1",
-  "Capacity": "Normal",
+  "Capacity": 20,
   "Room Type": "PC-Pool"
  },
  {
   "Abbreviation": "PC02",
   "Name": "PC-Pool 2",
-  "Capacity": "Small",
+  "Capacity": 10,
   "Room Type": "PC-Pool"
  },
  {
   "Abbreviation": "PC03",
   "Name": "PC-Pool 3",
-  "Capacity": "Normal",
+  "Capacity": 20,
   "Room Type": "PC-Pool"
  },
  {
   "Abbreviation": "PC04",
   "Name": "PC-Pool 4",
-  "Capacity": "Large",
+  "Capacity": 30,
   "Room Type": "PC-Pool"
  },
  {
   "Abbreviation": "PC05",
   "Name": "PC-Pool 5",
-  "Capacity": "Large",
+  "Capacity": 30,
   "Room Type": "PC-Pool"
  },
  {
   "Abbreviation": "PC06",
   "Name": "PC-Pool 6",
-  "Capacity": "Small",
+  "Capacity": 10,
   "Room Type": "PC-Pool"
  },
  {
   "Abbreviation": "SR01",
   "Name": "Konferenzraum",
-  "Capacity": "Normal",
+  "Capacity": 20,
   "Room Type": "Konferenzraum"
  },
  {
   "Abbreviation": "SR02",
   "Name": "Aristoteles",
-  "Capacity": "Small",
+  "Capacity": 10,
   "Room Type": "Seminarraum"
  },
  {
   "Abbreviation": "SR03",
   "Name": "Agnesi",
-  "Capacity": "Small",
+  "Capacity": 10,
   "Room Type": "Seminarraum"
  },
  {
   "Abbreviation": "SR04",
   "Name": "Archimedes",
-  "Capacity": "Small",
+  "Capacity": 10,
   "Room Type": "Seminarraum"
  },
  {
   "Abbreviation": "SR05",
   "Name": "Agnodike",
-  "Capacity": "Normal",
+  "Capacity": 20,
   "Room Type": "Seminarraum"
  },
  {
   "Abbreviation": "SR06",
   "Name": "Amperè",
-  "Capacity": "Large",
+  "Capacity": 30,
   "Room Type": "Seminarraum"
  },
  {
   "Abbreviation": "SR07",
   "Name": "Bassi",
-  "Capacity": "Normal",
+  "Capacity": 20,
   "Room Type": "Seminarraum"
  },
  {
   "Abbreviation": "SR08",
   "Name": "Daimler",
-  "Capacity": "Large",
+  "Capacity": 30,
   "Room Type": "Seminarraum"
  },
  {
   "Abbreviation": "SR10",
   "Name": "Doudna",
-  "Capacity": "Normal",
+  "Capacity": 20,
   "Room Type": "Seminarraum"
  },
  {
   "Abbreviation": "SR11",
   "Name": "Doppler",
-  "Capacity": "Normal",
+  "Capacity": 20,
   "Room Type": "Seminarraum"
  },
  {
   "Abbreviation": "SR12",
   "Name": "Einstein",
-  "Capacity": "Small",
+  "Capacity": 10,
   "Room Type": "Seminarraum"
  },
  {
   "Abbreviation": "SR13",
   "Name": "Goodall",
-  "Capacity": "Large",
+  "Capacity": 30,
   "Room Type": "Seminarraum"
  }
 ],
@@ -1299,159 +1229,10 @@
 ],
 "Event":[
  {
-  "Name": "Accounting Auditing & Taxation (Seminar)",
-  "Employees": "WEB",
-  "Participants": "B_BWL:5;B_IMCA:6",
-  "Participant Size": "Small",
-  "Weekly Blocks": 0,
-  "Term": "Sommer",
-  "Room Type": "Seminarraum",
-  "Disallowed Days": "SA;SO"
- },
- {
-  "Name": "Category Management",
-  "Employees": "JPL",
-  "Participants": "M_DSAI:1,2;M_ECOM:1,2",
-  "Participant Size": "Small",
-  "Weekly Blocks": 2,
-  "Term": "Sommer",
-  "Room Type": "Seminarraum",
-  "Disallowed Days": "SA;SO"
- },
- {
-  "Name": "Commercial English (Gruppe 1)",
-  "Employees": "EV",
-  "Participants": "B_WING:1,2",
-  "Participant Size": "Small",
-  "Weekly Blocks": 1,
-  "Term": "Sommer",
-  "Room Type": "Seminarraum",
-  "Disallowed Days": "SA;SO"
- },
- {
-  "Name": "Commercial English (Gruppe 2)",
-  "Employees": "EV",
-  "Participants": "B_WING:1,2",
-  "Participant Size": "Small",
-  "Weekly Blocks": 1,
-  "Term": "Sommer",
-  "Room Type": "Seminarraum",
-  "Disallowed Days": "SA;SO"
- },
- {
-  "Name": "Commercial English (Gruppe 3)",
-  "Employees": "EV",
-  "Participants": "KAI:4;B_WING:1,2",
-  "Participant Size": "Small",
-  "Weekly Blocks": 1,
-  "Term": "Sommer",
-  "Room Type": "Seminarraum",
-  "Disallowed Days": "SA;SO"
- },
- {
-  "Name": "Communication Skills",
-  "Employees": "AMK,PGO",
-  "Participants": "B_BWL:6;B_CGT:6;B_DSAI:6;B_ECOM:6;B_IMCA:6;B_INF:5,6;B_MINF:6;B_TINF:6;B_WINF:6;B_WING:3,4",
-  "Participant Size": "Large",
-  "Weekly Blocks": 1,
-  "Term": "Sommer",
-  "Room Type": "Seminarraum",
-  "Disallowed Days": "SA;SO"
- },
- {
-  "Name": "Computer Vision (Seminar)",
-  "Employees": "DSG,MPA",
-  "Participants": "M_DSAI:1,2",
-  "Participant Size": "Small",
-  "Weekly Blocks": 0,
-  "Term": "Sommer",
-  "Room Type": "Seminarraum",
-  "Disallowed Days": "SA;SO"
- },
- {
-  "Name": "Cryptography (Workshop)",
-  "Employees": "GB",
-  "Participants": "M_INF:1,2;M_ITE:1,2;M_ITS:1,2",
-  "Participant Size": "Small",
-  "Weekly Blocks": 2,
-  "Term": "Sommer",
-  "Room Type": "Seminarraum",
-  "Disallowed Days": "SA;SO"
- },
- {
-  "Name": "Data Analytics (Seminar)",
-  "Employees": "FBO",
-  "Participants": "B_BWL:5",
-  "Participant Size": "Small",
-  "Weekly Blocks": 0,
-  "Term": "Sommer",
-  "Room Type": "Seminarraum",
-  "Disallowed Days": "SA;SO"
- },
- {
-  "Name": "Deutsch 2",
-  "Employees": "SED",
-  "Participants": "ITAM:4;ITAS:4",
-  "Participant Size": "Small",
-  "Weekly Blocks": 2,
-  "Term": "Sommer",
-  "Room Type": "Seminarraum",
-  "Disallowed Days": "SA;SO"
- },
- {
-  "Name": "E-Commerce (Seminar)",
-  "Employees": "AWO,JPL",
-  "Participants": "B_ECOM:4;M_ECOM:1,2",
-  "Participant Size": "Small",
-  "Weekly Blocks": 0,
-  "Term": "Sommer",
-  "Room Type": "Seminarraum",
-  "Disallowed Days": "SA;SO"
- },
- {
-  "Name": "Englisch 2",
-  "Employees": "HW",
-  "Participants": "ITAM:4;ITAS:4",
-  "Participant Size": "Small",
-  "Weekly Blocks": 2,
-  "Term": "Sommer",
-  "Room Type": "Seminarraum",
-  "Disallowed Days": "SA;SO"
- },
- {
-  "Name": "Finance & Services (Seminar)",
-  "Employees": "GI",
-  "Participants": "M_BWL:1,2;M_WING:1,2",
-  "Participant Size": "Small",
-  "Weekly Blocks": 0,
-  "Term": "Sommer",
-  "Room Type": "Seminarraum",
-  "Disallowed Days": "SA;SO"
- },
- {
-  "Name": "Große Sprachmodelle (Seminar)",
-  "Employees": "UH",
-  "Participant Size": "Small",
-  "Weekly Blocks": 0,
-  "Term": "Sommer",
-  "Room Type": "Seminarraum",
-  "Disallowed Days": "SA;SO"
- },
- {
-  "Name": "Grundlagen der Computergrafik",
-  "Employees": "BO,NHO",
-  "Participants": "B_CGT:4,5;B_INF:5,6;B_MINF:4,5;B_STEC:4;B_TINF:4,5",
-  "Participant Size": "Small",
-  "Weekly Blocks": 1,
-  "Term": "Sommer",
-  "Room Type": "Hörsaal",
-  "Disallowed Days": "SA;SO"
- },
- {
   "Name": "Grundlagen der Computergrafik (Praktikum)",
   "Employees": "MPG,MRE,NHO,PMU",
   "Participants": "B_CGT:4,5;B_INF:5,6;B_MINF:4,5;B_STEC:4;B_TINF:4,5",
-  "Participant Size": "Normal",
+  "Participant Size": 20,
   "Weekly Blocks": 2,
   "Term": "Sommer",
   "Room Type": "PC-Pool",
@@ -1461,7 +1242,7 @@
   "Name": "Grundlagen der Linearen Algebra",
   "Employees": "AHA",
   "Participants": "B_AWP:1,2;B_BWL:1,2;B_CGT:1,2;B_DSAI:1,2;B_ECOM:1,2,3;B_IMCA:1,2;B_INF:1,2;B_ITE:1,2;B_MINF:2,3;B_STEC:1,2;B_TINF:1,2;B_WINF:1,2;B_WING:1,2",
-  "Participant Size": "Large",
+  "Participant Size": 30,
   "Weekly Blocks": 1,
   "Term": "Sommer",
   "Room Type": "Hörsaal",
@@ -1470,16 +1251,7 @@
  {
   "Name": "Web-Anwendungen (Seminar)",
   "Employees": "MPG",
-  "Participant Size": "Small",
-  "Weekly Blocks": 0,
-  "Term": "Winter",
-  "Room Type": "Seminarraum",
-  "Disallowed Days": "SA;SO"
- },
- {
-  "Name": "Web-Anwendungen (Seminar)",
-  "Employees": "MPG",
-  "Participant Size": "Small",
+  "Participant Size": 10,
   "Weekly Blocks": 0,
   "Term": "Winter",
   "Room Type": "Seminarraum",
@@ -1489,7 +1261,7 @@
   "Name": "Wirkprinzipien und Technologie (Praktikum)",
   "Employees": "MVI,UH",
   "Participants": "B_STEC:1,2",
-  "Participant Size": "Normal",
+  "Participant Size": 20,
   "Weekly Blocks": 2,
   "Term": "Winter",
   "Room Type": "Smart-Project-Labor",
@@ -1499,7 +1271,7 @@
   "Name": "Wirtschaftsethik 1",
   "Employees": "CH",
   "Participants": "ITAM:3;ITAS:3;KAI:3",
-  "Participant Size": "Small",
+  "Participant Size": 10,
   "Weekly Blocks": 2,
   "Term": "Winter",
   "Room Type": "Hörsaal",

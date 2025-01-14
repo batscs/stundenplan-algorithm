@@ -2,9 +2,8 @@ import sys
 from argparse import ArgumentParser
 
 
-from db.database import Database
 from utils import time_utils
-from src.python.ga.genetic_algorithm import NUM_GENERATIONS, genetic_algorithm
+from src.python.ga import genetic_algorithm
 from src.python.log.logger import logger_app
 from src.python.io import parser_json as parser
 from src.python.io import printer_json as printer
@@ -37,8 +36,8 @@ def parse_arguments() -> tuple[int, str, str, bool]:
         "--generations",
         metavar="N",
         type=int,
-        default=NUM_GENERATIONS,
-        help=f"Set number of generations (defaults to {NUM_GENERATIONS})",
+        default=genetic_algorithm.NUM_GENERATIONS,
+        help=f"Set number of generations (defaults to {genetic_algorithm.NUM_GENERATIONS})",
     )
     parser.add_argument(
         "-s",
@@ -96,17 +95,16 @@ def parse_arguments() -> tuple[int, str, str, bool]:
 def main() -> None:
     logger_app.debug("Starting Application")
 
-    generations, term, output_format, debug_mode = parse_arguments()
-    Database().initialize(delete_database_file=True)
+    generations, _, output_format, debug_mode = parse_arguments()
     parser.parse()
-    print(f"Genetic algorithm started (generations = {generations}, term = {term})")
+    print(f"Genetic algorithm started (generations = {generations})")
 
     # ------ RUNTIME ESTIMATION - commented out to avoid logging
     #runtime, _, _, _ = genetic_algorithm(1, term)
     #estimated_runtime: float = generations * runtime
     #print(f"Estimated runtime up to: {time_utils.seconds_to_formatted_duration(estimated_runtime)}")
 
-    runtime, parsed_solution, fitness, generations_completed = genetic_algorithm(generations, term)
+    runtime, parsed_solution, fitness, generations_completed = genetic_algorithm.genetic_algorithm(generations)
     print(f"\nSolution fitness: {fitness}")
     print(f"Generations completed: {generations_completed}")
     print(f"Actual runtime: {time_utils.seconds_to_formatted_duration(runtime)}")
