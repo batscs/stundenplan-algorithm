@@ -1,9 +1,8 @@
 {
   "input": {
-    "type": "json",
     "filename": "FHW_DEV.json"
   },
   "algorithm": {
-    "generations": 20
+    "generations": 200
   }
 }

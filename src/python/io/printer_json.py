@@ -9,7 +9,11 @@ import pytz
 
 from src.python.utils import path_utils
 
-def printer_save(
+def save(data, filepath):
+    with open(filepath, "w", encoding="UTF8") as file:
+        json.dump(data, file, ensure_ascii=False, indent=4)
+
+def save_solution(
     parsed_solution: dict[str, Any]
 ) -> None:
     """Saves the parsed solution as a JSON file.
@@ -25,6 +29,8 @@ def printer_save(
         .astimezone(pytz.timezone("Europe/Berlin"))
         .strftime("%Y-%m-%d_%H-%M-%S")
     )
+
+    # TODO solution filename als parameter übergeben lassen und util funktion dafür in path_utils
     solution_filename: str = f"parsed_solution_{current_time}.json"
     solution_directory: str = path_utils.RESOURCE_OUTPUT_PATH
     os.makedirs(solution_directory, exist_ok=True)

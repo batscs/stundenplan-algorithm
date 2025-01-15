@@ -1,0 +1,201 @@
+{
+    "fitness": 0,
+    "timetable": {
+        "Donnerstag": {
+            "14:00:00 - 15:15:00": {
+                "Grundlagen der Computergrafik (Praktikum)": {
+                    "PC-Pool 4": {
+                        "B_CGT": [
+                            4,
+                            5
+                        ],
+                        "B_INF": [
+                            5,
+                            6
+                        ],
+                        "B_MINF": [
+                            4,
+                            5
+                        ],
+                        "B_STEC": [
+                            4
+                        ],
+                        "B_TINF": [
+                            4,
+                            5
+                        ]
+                    }
+                }
+            },
+            "17:00:00 - 18:15:00": {
+                "Grundlagen der Linearen Algebra": {
+                    "Audimax": {
+                        "B_AWP": [
+                            1,
+                            2
+                        ],
+                        "B_BWL": [
+                            1,
+                            2
+                        ],
+                        "B_CGT": [
+                            1,
+                            2
+                        ],
+                        "B_DSAI": [
+                            1,
+                            2
+                        ],
+                        "B_ECOM": [
+                            1,
+                            2,
+                            3
+                        ],
+                        "B_IMCA": [
+                            1,
+                            2
+                        ],
+                        "B_INF": [
+                            1,
+                            2
+                        ],
+                        "B_ITE": [
+                            1,
+                            2
+                        ],
+                        "B_MINF": [
+                            2,
+                            3
+                        ],
+                        "B_STEC": [
+                            1,
+                            2
+                        ],
+                        "B_TINF": [
+                            1,
+                            2
+                        ],
+                        "B_WINF": [
+                            1,
+                            2
+                        ],
+                        "B_WING": [
+                            1,
+                            2
+                        ]
+                    }
+                }
+            }
+        },
+        "Sonntag": {
+            "09:30:00 - 10:45:00": {
+                "Grundlagen der Computergrafik (Praktikum)": {
+                    "PC-Pool 4": {
+                        "B_CGT": [
+                            4,
+                            5
+                        ],
+                        "B_INF": [
+                            5,
+                            6
+                        ],
+                        "B_MINF": [
+                            4,
+                            5
+                        ],
+                        "B_STEC": [
+                            4
+                        ],
+                        "B_TINF": [
+                            4,
+                            5
+                        ]
+                    }
+                }
+            },
+            "14:00:00 - 15:15:00": {
+                "Wirkprinzipien und Technologie (Praktikum)": {
+                    "Smart-Project-Labor": {
+                        "B_STEC": [
+                            1,
+                            2
+                        ]
+                    }
+                }
+            }
+        },
+        "Freitag": {
+            "08:00:00 - 09:15:00": {
+                "Wirkprinzipien und Technologie (Praktikum)": {
+                    "Smart-Project-Labor": {
+                        "B_STEC": [
+                            1,
+                            2
+                        ]
+                    }
+                }
+            }
+        },
+        "Samstag": {
+            "12:30:00 - 13:45:00": {
+                "Wirtschaftsethik 1": {
+                    "Hörsaal 4": {
+                        "ITAM": [
+                            3
+                        ],
+                        "ITAS": [
+                            3
+                        ],
+                        "KAI": [
+                            3
+                        ]
+                    }
+                }
+            }
+        },
+        "Mittwoch": {
+            "09:30:00 - 10:45:00": {
+                "Wirtschaftsethik 1": {
+                    "Hörsaal 2": {
+                        "ITAM": [
+                            3
+                        ],
+                        "ITAS": [
+                            3
+                        ],
+                        "KAI": [
+                            3
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    "constraints": {
+        "core": {
+            "fitness": 0,
+            "unsatisfied": {
+                "employee_conflicts": 0,
+                "student_conflicts": 0,
+                "room_capacity": 0,
+                "room_type": 0
+            },
+            "satisfied": {
+                "employee_conflicts": 15,
+                "student_conflicts": 55,
+                "room_capacity": 7,
+                "room_type": 7
+            }
+        },
+        "hard": {
+            "fitness": 0,
+            "unsatisfied": [],
+            "satisfied": []
+        },
+        "soft": {
+            "fitness": 0,
+            "unsatisfied": [],
+            "satisfied": []
+        }
+    }
+}

@@ -1,11 +1,8 @@
 import time
+from typing import Any
+
 import numpy as np
 import pygad
-from typing import Any, Optional
-
-from numpy._typing import NDArray
-
-from src.python.io import parser_json
 from src.python.api import api
 from src.python.ga import constraints
 from src.python.log.logger import logger_ga
@@ -197,11 +194,3 @@ def genetic_algorithm(generations: int = NUM_GENERATIONS):
     result = parse_solution_for_print(best_solution, fitness, date_x_room, lessons)
 
     return runtime, result, fitness, ga_instance.generations_completed
-
-def main() -> None:
-    parser_json.parse()
-    runtime, parsed_solution, fitness, generations_completed = genetic_algorithm()
-
-
-if __name__ == "__main__":
-    main()
