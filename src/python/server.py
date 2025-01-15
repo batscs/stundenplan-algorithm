@@ -37,8 +37,7 @@ def post_config():
     return jsonify({"status": "Config changes have been applied"}), 201
 
 @app.route('/config', methods=['GET'])
-def post_config():
-
+def get_config():
     return jsonify(config.get_config()), 201
 
 @app.route('/stundenplan', methods=['POST'])
