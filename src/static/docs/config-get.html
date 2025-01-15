@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GET /config - API Documentation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #1a73e8;
+            color: white;
+            padding: 1rem 2rem;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        main {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h2 {
+            color: #444;
+        }
+        pre {
+            background-color: #f9f9f9;
+            border-left: 4px solid #1a73e8;
+            padding: 1rem;
+            overflow-x: auto;
+        }
+        a {
+            color: #1a73e8;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            margin-top: 2rem;
+            color: #777;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>GET /config</h1>
+    </header>
+    <main>
+        <h2>Description</h2>
+        <p>Retrieves the current server configuration.</p>
+
+        <h2>Request</h2>
+        <p>No request body is required.</p>
+
+        <h2>Response</h2>
+        <pre>
+{
+    "server_name": "Stundenplan25",
+    "version": "1.0",
+    "settings": {
+        ...
+    }
+}
+        </pre>
+        <a href="/">Back to API Documentation</a>
+    </main>
+    <footer>
+        <p>&copy; 2025 FH-Wedel/Stundenplan25. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,6 +1,6 @@
 import os
 from datetime import datetime
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, send_from_directory
 from src.python.app import core
 from src.python.io import reader_json, printer_json
 from src.python.app import config
@@ -9,7 +9,11 @@ import threading
 from src.python.utils import path_utils
 from src.python.utils import stundenplan_utils
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder=path_utils.PATH_SERVER_STATIC, static_url_path="/")
+
+@app.route('/')
+def serve_index():
+    return send_from_directory(app.static_folder, "index.html")
 
 # Global variables and lock
 algorithm_lock = threading.Lock()
@@ -90,7 +94,6 @@ def get_data():
             "timestamp": datetime.now().isoformat(),
             "data": data
         }), 200
-
     except Exception as e:
         logger_app.error(f"Error in /stundenplan-run: {str(e)}")
         return jsonify({
@@ -100,6 +103,7 @@ def get_data():
 
 
 @app.route('/stundenplan-run', methods=['GET']) # TODO rename to /stundenplan and method = PATCH
+@app.route('/stundenplan', methods=['PATCH'])
 def run_algorithm():
     global is_running
 
