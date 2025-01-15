@@ -1,142 +1,169 @@
 import os
+import threading
 from datetime import datetime
 from flask import Flask, request, jsonify, send_from_directory
-from src.python.app import core
+from flask_restx import Api, Resource, fields
+from src.python.app import core, config
 from src.python.io import reader_json, printer_json
-from src.python.app import config
 from src.python.log.logger import logger_app
-import threading
-from src.python.utils import path_utils
-from src.python.utils import stundenplan_utils
+from src.python.utils import path_utils, stundenplan_utils
 
 app = Flask(__name__, static_folder=path_utils.PATH_SERVER_STATIC, static_url_path="/")
+api = Api(app,
+          title='Stundenplan API Documentation',
+          description='Eine umfassende API-Dokumentation für das Stundenplan-System.',
+          doc='/api/docs',
+          prefix='/api')
 
-@app.route('/')
-def serve_index():
-    return send_from_directory(app.static_folder, "index.html")
+# Define namespaces
+ns_config = api.namespace('config', description='Configuration operations')
+ns_stundenplan = api.namespace('stundenplan', description='Stundenplan operations')
+ns_status = api.namespace('status', description='Status operations')
+
+# Models for request and response validation
+config_model = api.model('Config', {
+    'algorithm': fields.Nested(api.model('AlgorithmConfig', {
+        'generations': fields.Integer(required=True, description='Number of generations for the algorithm')
+    })),
+    'app': fields.Nested(api.model('AppConfig', {
+        'config': fields.String(required=True, description='Configuration file name')
+    })),
+    'input': fields.Nested(api.model('InputConfig', {
+        'filename': fields.String(required=True, description='Input file name')
+    }))
+})
+
+
+stundenplan_model = api.model('Stundenplan', {
+    # Definieren Sie hier die Felder für Stundenplan-Daten
+})
+
+status_model = api.model('Status', {
+    'is_running': fields.Boolean(description='Algorithm running status')
+})
 
 # Global variables and lock
 algorithm_lock = threading.Lock()
 is_running = False
-
-# TODO logger_server
 
 def run_genetic_algorithm_thread():
     global is_running
 
     try:
         core.run()
-
     except Exception as e:
         logger_app.error(f"Error during algorithm execution: {str(e)}")
     finally:
         is_running = False  # Reset the running flag
 
-@app.route('/config', methods=['POST'])
-def post_config():
-    data = request.get_json()
+@ns_config.route('/')
+class ConfigResource(Resource):
+    @ns_config.doc('get_config')
+    def get(self):
+        """Retrieves the current server configuration."""
+        return config.get_config(), 200
 
-    config.set_config(data)
+    @ns_config.doc('post_config')
+    @ns_config.expect(config_model)
+    @ns_config.response(201, 'Config changes have been applied')
+    def post(self):
+        """Updates the server configuration with new data."""
+        data = request.get_json()
+        config.set_config(data)
+        return {"status": "Config changes have been applied"}, 201
 
-    return jsonify({"status": "Config changes have been applied"}), 201
+@ns_stundenplan.route('/')
+class StundenplanResource(Resource):
+    @ns_stundenplan.doc('get_stundenplan')
+    def get(self):
+        """Fetches the latest Stundenplan data from the server."""
+        path = path_utils.RESOURCE_OUTPUT_PATH
+        try:
+            files = [f for f in os.listdir(path) if f.startswith("parsed_solution_") and f.endswith(".json")]
+            if not files:
+                logger_app.debug("No output files found in the directory.")
+                api.abort(404, "No output files found")
 
-@app.route('/config', methods=['GET'])
-def get_config():
-    return jsonify(config.get_config()), 201
+            newest_file = max(files, key=lambda f: os.path.getctime(os.path.join(path, f)))
+            filepath = os.path.join(path, newest_file)
+            logger_app.debug(f"Newest file determined: {filepath}")
 
-@app.route('/stundenplan', methods=['POST'])
-def post_data():
-    global is_running
+            data = reader_json.parse(filepath)
+            if data is None:
+                logger_app.error("Failed to parse the file or file is empty.")
+                return {
+                           "status": "failed",
+                           "timestamp": datetime.now().isoformat(),
+                           "data": None
+                       }, 500
 
-    if is_running:
-        return jsonify({"error": "Cannot save data while algorithm is running"}), 409
+            return {
+                       "status": "success",
+                       "timestamp": datetime.now().isoformat(),
+                       "data": data
+                   }, 200
+        except Exception as e:
+            logger_app.error(f"Error in /stundenplan-run: {str(e)}")
+            return {
+                       "error": str(e),
+                       "timestamp": datetime.now().isoformat()
+                   }, 500
 
-    data = request.get_json()
+    @ns_stundenplan.doc('post_stundenplan')
+    @ns_stundenplan.expect(stundenplan_model)
+    def post(self):
+        """Saves Stundenplan data to the server. Input data is validated before saving."""
+        global is_running
 
-    verify = stundenplan_utils.verify_input(data)
+        if is_running:
+            api.abort(409, "Cannot save data while algorithm is running")
 
-    if not verify["success"]:
-        return jsonify({"error": "Invalid input Data"}), 409
+        data = request.get_json()
+        verify = stundenplan_utils.verify_input(data)
 
-    path = config.get_path_input()
-    printer_json.save(data, path)
-    return jsonify({"status": "Data saved successfully"}), 201
+        if not verify["success"]:
+            api.abort(409, "Invalid input Data")
 
+        path = config.get_path_input()
+        printer_json.save(data, path)
+        return {"status": "Data saved successfully"}, 201
 
-@app.route('/stundenplan', methods=['GET'])
-def get_data():
-    path = path_utils.RESOURCE_OUTPUT_PATH
+    @ns_stundenplan.doc('patch_stundenplan')
+    def patch(self):
+        """Initiates the genetic algorithm to generate solutions for Stundenplan data."""
+        global is_running
 
-    try:
-        # Find the newest output file with the expected naming pattern
-        files = [f for f in os.listdir(path) if f.startswith("parsed_solution_") and f.endswith(".json")]
-        if not files:
-            logger_app.debug("No output files found in the directory.")
-            return jsonify({"error": "No output files found"}), 404
-
-        newest_file = max(files, key=lambda f: os.path.getctime(os.path.join(path, f)))
-        filepath = os.path.join(path, newest_file)
-        logger_app.debug(f"Newest file determined: {filepath}")
-
-        # Parse the file
-        data = reader_json.parse(filepath)
+        data = reader_json.parse(config.get_path_input())
         if data is None:
-            logger_app.error("Failed to parse the file or file is empty.")
-            return jsonify({
-                "status": "failed",
-                "timestamp": datetime.now().isoformat(),
-                "data": None
-            }), 500
+            api.abort(400, "No Stundenplan-Data exists")
 
-        # Return parsed data with additional metadata
-        return jsonify({
-            "status": "success",
-            "timestamp": datetime.now().isoformat(),
-            "data": data
-        }), 200
-    except Exception as e:
-        logger_app.error(f"Error in /stundenplan-run: {str(e)}")
-        return jsonify({
-            "error": str(e),
-            "timestamp": datetime.now().isoformat()
-        }), 500
+        if is_running:
+            api.abort(409, "An algorithm run is already in progress")
 
+        try:
+            logger_app.debug("Incoming Request: Run Algorithm")
+            with algorithm_lock:
+                is_running = True
+                threading.Thread(
+                    target=run_genetic_algorithm_thread,
+                    daemon=True
+                ).start()
+            return {"status": "Algorithm started"}, 202
+        except Exception as e:
+            api.abort(500, str(e))
 
-@app.route('/stundenplan-run', methods=['GET']) # TODO rename to /stundenplan and method = PATCH
-@app.route('/stundenplan', methods=['PATCH'])
-def run_algorithm():
-    global is_running
+@ns_status.route('/')
+class StatusResource(Resource):
+    @ns_status.doc('get_status')
+    @ns_status.marshal_with(status_model)
+    def get(self):
+        """Checks the current status of the server and algorithm execution."""
+        return {"is_running": is_running}, 200
 
-    data = reader_json.parse(config.get_path_input())
-
-    if data is None:
-        return jsonify({"error": "No Stundenplan-Data exists"}), 400
-
-    if is_running:
-        return jsonify({"error": "An algorithm run is already in progress"}), 409
-
-    try:
-        logger_app.debug("Incoming Request: Run Algorithm")
-
-        # Start the genetic algorithm in a separate thread
-        with algorithm_lock:
-            is_running = True
-            threading.Thread(
-                target=run_genetic_algorithm_thread,
-                daemon=True
-            ).start()
-
-        return jsonify({"status": "Algorithm started"}), 202
-
-    except Exception as e:
-        return jsonify({"error": str(e)}), 500
-
-
-
-@app.route('/status', methods=['GET'])
-def status():
-    return jsonify({"is_running": is_running})
-
+# Serve the index.html
+@app.route('/')
+def serve_index():
+    return send_from_directory(app.static_folder, "index.html")
 
 if __name__ == "__main__":
     logger_app.debug("Starting Server")
