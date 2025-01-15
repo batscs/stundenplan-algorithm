@@ -41,3 +41,7 @@ def get_algorithm_generations():
 
 def get_path_config():
     return os.path.join(path_utils.RESOURCE_CONFIG_PATH, config["app"]["config"])
+
+
+def get_config():
+    return config

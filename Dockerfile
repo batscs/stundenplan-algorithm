@@ -6,7 +6,7 @@ COPY requirements.txt .
 
 RUN pip3 install --no-cache-dir -r requirements.txt
 
-MKDIR -p /app/src/resources/logs
+RUN mkdir -p /app/src/resources/logs
 
 COPY ./src ./src
 

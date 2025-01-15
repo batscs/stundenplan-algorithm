@@ -30,7 +30,6 @@ def save_solution(
         .strftime("%Y-%m-%d_%H-%M-%S")
     )
 
-    # TODO solution filename als parameter übergeben lassen und util funktion dafür in path_utils
     solution_filename: str = f"parsed_solution_{current_time}.json"
     solution_directory: str = path_utils.RESOURCE_OUTPUT_PATH
     os.makedirs(solution_directory, exist_ok=True)

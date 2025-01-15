@@ -17,10 +17,6 @@ is_running = False
 
 # TODO logger_server
 
-# TODO /run geht nur einmal, danach nicht wegen sqlite database
-
-# TODO /config POST und GET wäre auch praktisch, ähnlich zu logging_config.json
-
 def run_genetic_algorithm_thread():
     global is_running
 
@@ -32,6 +28,18 @@ def run_genetic_algorithm_thread():
     finally:
         is_running = False  # Reset the running flag
 
+@app.route('/config', methods=['POST'])
+def post_config():
+    data = request.get_json()
+
+    config.set_config(data)
+
+    return jsonify({"status": "Config changes have been applied"}), 201
+
+@app.route('/config', methods=['GET'])
+def post_config():
+
+    return jsonify(config.get_config()), 201
 
 @app.route('/stundenplan', methods=['POST'])
 def post_data():
