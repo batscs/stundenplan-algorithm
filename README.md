@@ -6,7 +6,7 @@ version: '2'
 services:
     stundenplan:
         container_name: "stundenplan"
-        image: git.fh-wedel.de/swp_stundenplan25/genetic_algorithm:0.0.1
+        image: git.fh-wedel.de/swp_stundenplan25/genetic_algorithm:0.0.2
         volumes:
             - ./resources:/app/src/python/resources
         ports:
