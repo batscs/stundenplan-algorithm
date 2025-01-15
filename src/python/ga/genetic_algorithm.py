@@ -1,5 +1,5 @@
 import time
-from typing import Any
+from typing import Any, List, Dict
 
 import numpy as np
 import pygad
@@ -25,7 +25,7 @@ def prepare():
     lessons = [
         event
         for event in api.get_events_by_id()
-                for _ in range(event["Weekly Blocks"])
+        for _ in range(event["Weekly Blocks"])
     ]
 
     logger_ga.debug(f"Prepared lessons count: {len(lessons)}")
@@ -38,45 +38,66 @@ def prepare():
 
     return lessons, date_x_room
 
+
 def parse_solution_into_timetable(
-    pygad_solution: list[np.uint16],
-    date_x_room,
-    lessons
-) -> dict[str, Any]:
-    """Parses a PyGad solution for printing and transforms it into a human-readable format.
+        pygad_solution: List[np.uint16],
+        date_x_room: List[tuple],
+        lessons: List[Dict[str, Any]]
+) -> List[Dict[str, Any]]:
+    """Parses a PyGad solution for printing and transforms it into a human-readable list format.
+
     Args:
         pygad_solution: PyGad solution to parse.
+        date_x_room: List of date and room pairs.
+        lessons: List of lesson dictionaries.
 
     Returns:
-        A dictionary parsed from the PyGad solution.
+        A list of dictionaries, each representing a scheduled event.
     """
-    result = {}
+    timetable = []
 
     for i, date_x_room_id in enumerate(pygad_solution):
         (_, date), (_, room) = date_x_room[date_x_room_id]
-        day =  f"day_{date['Day']}"
-        timeslot = f"timeslot_{date['TimeSlot']}"
         event = lessons[i]  # type: ignore
 
-        if day not in result:
-            result[day] = {}
-        if timeslot not in result[day]:
-            result[day][timeslot] = {}
-
+        day = date['Day']
+        timeslot = date['TimeSlot']
         event_name = event["Name"]
-        count_event_at_time = 1
-
-        while event_name in result[day][timeslot]:
-            event_name = f"{event_name} ({count_event_at_time})"
-            count_event_at_time += 1
-
         room_name = room["Name"]
-        result[day][timeslot][event_name] = {
-            "room": room_name,
-            "participants": event["Participants"]
-        }
+        participants = event["Participants"]
 
-    return result
+        # Check for duplicate events in the same timeslot and room
+        existing_event = next(
+            (item for item in timetable if item["day"] == day and
+             item["timeslot"] == timeslot and
+             item["event"].startswith(event_name)),
+            None
+        )
+
+        if existing_event:
+            # If the event already exists in the same timeslot, append a suffix
+            count = sum(1 for item in timetable if item["day"] == day and
+                        item["timeslot"] == timeslot and
+                        item["event"].startswith(event_name))
+            event_entry = {
+                "day": day,
+                "timeslot": timeslot,
+                "event": f"{event_name} ({count})",
+                "room": room_name,
+                "participants": participants
+            }
+        else:
+            event_entry = {
+                "day": day,
+                "timeslot": timeslot,
+                "event": event_name,
+                "room": room_name,
+                "participants": participants
+            }
+
+        timetable.append(event_entry)
+
+    return timetable
 
 
 def parse_solution_for_print(best_solution, fitness, date_x_room, lessons):
@@ -125,7 +146,6 @@ def genetic_algorithm(generations: int = NUM_GENERATIONS):
     Args:
         generations: Number of generations for which the genetic algorithm should run, defaults to
             `NUM_GENERATIONS`.
-        term: Term for which the schedule is being generated, defaults to "Sommer".
 
     Returns:
         A tuple containing the following elements:
@@ -141,16 +161,11 @@ def genetic_algorithm(generations: int = NUM_GENERATIONS):
     def on_generation(instance: pygad.GA):
         """Callback to log constraint violations of the best solution after each generation."""
         best_solution, fitness, _ = instance.best_solution()  # type: ignore
-        # lessons, date_x_room = instance.variables  # type: ignore
 
         _, violated_core, _ = constraints.evaluate_constraints_core(best_solution, lessons, date_x_room)
-        # _, violated_hard, _ = evaluate_constraints_hard(best_solution, lessons, date_x_room)
-        # _, violated_soft, _ = evaluate_constraints_soft()
 
         logger_ga.info(f"Generation {instance.generations_completed} with Fitness {fitness}")
         logger_ga.info(f"Core Constraints conflicts: {violated_core}")
-        # logger_ga.info(f"Hard Constraints conflicts: {violated_hard}")
-        # logger_ga.info(f"Soft Constraints conflicts: {violated_soft}")
 
     ga_instance = pygad.GA(
         num_genes=len(lessons),
