@@ -24,7 +24,7 @@ def prepare():
 
     lessons = [
         event
-        for event in api.get_events_by_id().values()
+        for event in api.get_events_by_id()
                 for _ in range(event["Weekly Blocks"])
     ]
 
@@ -36,9 +36,7 @@ def prepare():
         for r in api.get_rooms_by_id().items()
     ]
 
-    employee_dislikes_date = api.get_employee_dislikes_date()
-
-    return lessons, date_x_room, employee_dislikes_date
+    return lessons, date_x_room
 
 def parse_solution_into_timetable(
     pygad_solution: list[np.uint16],
@@ -52,37 +50,30 @@ def parse_solution_into_timetable(
     Returns:
         A dictionary parsed from the PyGad solution.
     """
-    courses_by_id = api.get_courses_by_id()
-    semesters_by_id = api.get_semesters_by_id()
     result = {}
 
     for i, date_x_room_id in enumerate(pygad_solution):
         (_, date), (_, room) = date_x_room[date_x_room_id]
-        day = date["Day"]
-        time_slot = date["TimeSlot"]
-        time = (
-            time_slot["Start Time"]#.strftime("%H:%M")
-            + " - "
-            + time_slot["End Time"]#.strftime("%H:%M")
-        )
+        day =  f"day_{date['Day']}"
+        timeslot = f"timeslot_{date['TimeSlot']}"
         event = lessons[i]  # type: ignore
-        day_name = day["Name"]
-        if day_name not in result:
-            result[day_name] = {}
-        if time not in result[day_name]:
-            result[day_name][time] = {}
+
+        if day not in result:
+            result[day] = {}
+        if timeslot not in result[day]:
+            result[day][timeslot] = {}
+
         event_name = event["Name"]
         count_event_at_time = 1
-        while event_name in result[day_name][time]:
+
+        while event_name in result[day][timeslot]:
             event_name = f"{event_name} ({count_event_at_time})"
             count_event_at_time += 1
+
         room_name = room["Name"]
-        result[day_name][time][event_name] = {}
-        result[day_name][time][event_name][room_name] = {
-            courses_by_id[course_id]["Abbreviation"]: [
-                semesters_by_id[semester_id]["Value"] for semester_id in semesters_ids
-            ]
-            for course_id, semesters_ids in event["Participants"].items()
+        result[day][timeslot][event_name] = {
+            "room": room_name,
+            "participants": event["Participants"]
         }
 
     return result
@@ -102,8 +93,10 @@ def parse_solution_for_print(best_solution, fitness, date_x_room, lessons):
     soft_fitness, soft_unsatisfied, soft_satisfied = (
         constraints.evaluate_constraints_soft(best_solution, lessons, date_x_room))
 
-    result["fitness"] = fitness
     result["timetable"] = timetable
+    result["metadata"] = {
+        "fitness": fitness,
+    }
     result["constraints"] = {
         "core": {
             "fitness": core_fitness,
@@ -142,16 +135,16 @@ def genetic_algorithm(generations: int = NUM_GENERATIONS):
         generations_completed: Number of generations completed by the algorithm.
     """
     logger_ga.info(f"Starting genetic algorithm with {generations} generations")
-    lessons, date_x_room, employee_dislikes_date = prepare()
+    lessons, date_x_room = prepare()
     logger_ga.info(f"Data preparation complete.")
 
     def on_generation(instance: pygad.GA):
         """Callback to log constraint violations of the best solution after each generation."""
         best_solution, fitness, _ = instance.best_solution()  # type: ignore
-        # lessons, date_x_room, employee_dislikes_date = instance.variables  # type: ignore
+        # lessons, date_x_room = instance.variables  # type: ignore
 
         _, violated_core, _ = constraints.evaluate_constraints_core(best_solution, lessons, date_x_room)
-        # _, violated_hard, _ = evaluate_constraints_hard(best_solution, lessons, date_x_room, employee_dislikes_date)
+        # _, violated_hard, _ = evaluate_constraints_hard(best_solution, lessons, date_x_room)
         # _, violated_soft, _ = evaluate_constraints_soft()
 
         logger_ga.info(f"Generation {instance.generations_completed} with Fitness {fitness}")
@@ -179,7 +172,7 @@ def genetic_algorithm(generations: int = NUM_GENERATIONS):
         suppress_warnings=True,
         on_generation=on_generation,  # Add callback here
     )
-    ga_instance.variables = (lessons, date_x_room, employee_dislikes_date)  # type: ignore
+    ga_instance.variables = (lessons, date_x_room)  # type: ignore
 
     logger_ga.info("Running genetic algorithm...")
     start_time = time.perf_counter()

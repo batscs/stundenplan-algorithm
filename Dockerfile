@@ -6,10 +6,12 @@ COPY requirements.txt .
 
 RUN pip3 install --no-cache-dir -r requirements.txt
 
+MKDIR -p /app/src/resources/logs
+
 COPY ./src ./src
 
 ENV PYTHONPATH="/app/src:${PYTHONPATH}"
 
-ENTRYPOINT ["python", "-u", "src/python/server.py"]
+ENTRYPOINT ["python", "-u", "src/python/main.py"]
 
 CMD ["--help"]
