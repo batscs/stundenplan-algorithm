@@ -1,4 +1,10 @@
-# docker-compose.yml
+# Setup
+
+### 1. Docker Engine bereitstellen 
+
+z.B. Docker Desktop for Windows installieren & anmelden
+
+### 2. docker-compose.yml erstellen  
 
 ```yml
 version: '2'
@@ -13,17 +19,19 @@ services:
             - "1111:80"
 ```
 
-# Endpoints
+### 3. docker login git.fh-wedel.de
 
-Docker ausführen
- 
-Anleitung
-1. Im Terminal 
-  - docker login git.fh-wedel.de
-2. Docker compose starten auch im Terminal 
-  - docker-compose up -d
-3. Im Browser aufrufen 
-  - http://localhost:1111
+Benötigt um das genetic_algorithm image von git.fh-wedel.de zu pullen im nächsten Schritt
+
+### 4. docker-compose up -d
+
+Muss im Terminal ausgewählt werden im Ordner wo die docker-compose.yml sich befindet
+
+### 5. Im browser aufrufen (https://localhost:1111)
+
+Swagger Dokumentation hier für Verwendung der API Endpunkte
+
+# Endpoints
 
 GET /stundenplan - aktuellstes Ergebnis vom Algorithmus  
 POST /stundenplan - Stundenplan Input als Body  
