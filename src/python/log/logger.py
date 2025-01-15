@@ -3,7 +3,6 @@ import logging.config
 import os
 from logging import Logger
 from typing import Any
-
 from src.python.utils import path_utils
 
 LOGGING_CONFIG_PATH: str = os.path.join(path_utils.RESOURCE_CONFIG_PATH, "logging_config.json")
@@ -19,12 +18,15 @@ def configure_logging() -> None:
     global _is_logging_configured
 
     # Only configure logging if it hasn't been done already
-    if not _is_logging_configured:
-        with open(LOGGING_CONFIG_PATH) as logging_config_json:
-            logging_config: dict[str, Any] = json.load(logging_config_json)
-            logging.config.dictConfig(logging_config)
+    try:
+        if not _is_logging_configured:
+            with open(LOGGING_CONFIG_PATH) as logging_config_json:
+                logging_config: dict[str, Any] = json.load(logging_config_json)
+                logging.config.dictConfig(logging_config)
 
-        _is_logging_configured = True  # Mark as configured
+            _is_logging_configured = True  # Mark as configured
+    except IOError:
+        print("Logging config not found")
 
 # call configure logging when module is imported
 configure_logging()

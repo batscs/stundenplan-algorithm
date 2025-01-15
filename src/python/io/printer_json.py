@@ -10,6 +10,8 @@ import pytz
 from src.python.utils import path_utils
 
 def save(data, filepath):
+    os.makedirs(os.path.dirname(filepath), exist_ok=True)
+
     with open(filepath, "w", encoding="UTF8") as file:
         json.dump(data, file, ensure_ascii=False, indent=4)
 

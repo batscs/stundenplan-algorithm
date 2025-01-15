@@ -1,6 +1,5 @@
 services:
     stundenplan:
-        container_name: "stundenplan"
         build: .
         image: stundenplan:dev
         volumes:
