@@ -1,1 +1,295 @@
-<meta http-equiv="refresh" content="0; url=/api/docs">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stundenplan Algorithmus</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #1C2764;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        main {
+            flex: 1;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .status {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .status-indicator {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin-right: 8px;
+        }
+
+        .status-running {
+            background-color: #28a745;
+        }
+
+        .status-stopped {
+            background-color: #dc3545;
+        }
+
+        .api-link {
+            display: inline-block;
+            background-color: #1C2764;
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-weight: 500;
+        }
+
+        .api-link:hover {
+            background-color: #14204e;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .quick-actions {
+            padding: 15px;
+            background-color: #f1f1f1;
+            border-radius: 5px;
+        }
+
+        .quick-actions h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.2rem;
+        }
+
+        .quick-actions button {
+            background-color: #1C2764;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            cursor: pointer;
+        }
+
+        .quick-actions button:hover {
+            background-color: #14204e;
+        }
+
+        .log-box {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 0;
+            height: 200px;
+            overflow-y: auto;
+            font-family: monospace;
+            font-size: 0.9rem;
+            color: #444;
+        }
+
+        #log-content {
+            margin: 0;
+            padding: 10px;
+        }
+
+        #log-category {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #fff;
+            font-size: 1rem;
+            width: 100%;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #f1f1f1;
+            margin-top: auto;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>FH Wedel - Stundenplan Algorithmus</h1>
+    </header>
+
+    <main>
+        <div class="status section">
+            <div>
+                <span class="status-indicator" id="status-indicator"></span>
+                <span id="status-text">Status wird geladen...</span>
+            </div>
+            <a class="api-link" href="/api/docs" target="_blank">API Dokumentation</a>
+        </div>
+
+        <div class="section">
+            <h2>Willkommen!</h2>
+            <p>
+                Dies ist die Verwaltungsoberfläche für den Stundenplan-Algorithmus der FH Wedel.
+                Überprüfen Sie den aktuellen Status des Algorithmus oder besuchen Sie die API-Dokumentation.
+            </p>
+            <p>Weitere Funktionen und Informationen werden in zukünftigen Updates hinzugefügt!</p>
+        </div>
+
+        <div class="quick-actions section">
+            <h4>Schnellaktionen</h4>
+            <button id="run-algorithm">Algorithmus ausführen</button>
+        </div>
+
+        <div class="section">
+            <h4>Logs</h4>
+            <div class="mb-3">
+                <select id="log-category">
+                    <option value="">Lade Kategorien...</option>
+                </select>
+            </div>
+            <div class="log-box" id="log-box">
+                <pre id="log-content">Wähle eine Kategorie, um die Logs zu sehen.</pre>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 FH Wedel. Alle Rechte vorbehalten.</p>
+    </footer>
+
+    <script>
+        async function updateStatus() {
+            try {
+                const response = await fetch('/api/status');
+                const data = await response.json();
+
+                const statusIndicator = document.getElementById('status-indicator');
+                const statusText = document.getElementById('status-text');
+
+                if (data.is_running) {
+                    statusIndicator.className = 'status-indicator status-running';
+                    statusText.textContent = 'Algorithmus läuft';
+                } else {
+                    statusIndicator.className = 'status-indicator status-stopped';
+                    statusText.textContent = 'Algorithmus gestoppt';
+                }
+            } catch (error) {
+                console.error('Fehler beim Abrufen des Status:', error);
+            }
+        }
+
+        async function loadLogCategories() {
+            try {
+                const response = await fetch('/api/logs');
+                const categories = await response.json();
+
+                const logCategorySelect = document.getElementById('log-category');
+                logCategorySelect.innerHTML = '';
+
+                categories.forEach(category => {
+                    const option = document.createElement('option');
+                    option.value = category;
+                    option.textContent = category.charAt(0).toUpperCase() + category.slice(1) + ' Logs';
+                    logCategorySelect.appendChild(option);
+                });
+
+                logCategorySelect.addEventListener('change', () => {
+                    loadLogs(logCategorySelect.value);
+                });
+
+                // Load the first category by default if available
+                if (categories.length > 0) {
+                    loadLogs(categories[0]);
+                }
+            } catch (error) {
+                console.error('Fehler beim Abrufen der Log-Kategorien:', error);
+                document.getElementById('log-content').textContent = 'Fehler beim Laden der Kategorien.';
+            }
+        }
+
+        async function loadLogs(category) {
+            try {
+                const response = await fetch(`/api/logs/${category}`);
+                const logs = await response.text();
+
+                const logContent = document.getElementById('log-content');
+                logContent.textContent = logs;
+
+                const logBox = document.getElementById('log-box');
+                logBox.scrollTop = logBox.scrollHeight;
+            } catch (error) {
+                console.error(`Fehler beim Abrufen der Logs für Kategorie ${category}:`, error);
+                document.getElementById('log-content').textContent = 'Fehler beim Laden der Logs.';
+            }
+        }
+
+        async function runAlgorithm() {
+            try {
+                const response = await fetch('/api/stundenplan', {
+                    method: 'PATCH'
+                });
+                if (response.ok) {
+                    // alert('Algorithmus erfolgreich gestartet!');
+                } else {
+                    alert('Fehler beim Starten des Algorithmus.');
+                }
+            } catch (error) {
+                console.error('Fehler beim Ausführen des Algorithmus:', error);
+                alert('Fehler beim Ausführen des Algorithmus.');
+            }
+        }
+
+        // Initialer Statusabruf und Log-Kategorien laden
+        updateStatus();
+        loadLogCategories();
+
+        // Periodische Aktualisierung des Status und der Logs alle 5 Sekunden
+        setInterval(updateStatus, 1000);
+        setInterval(() => {
+            const logCategorySelect = document.getElementById('log-category');
+            if (logCategorySelect.value) {
+                loadLogs(logCategorySelect.value);
+            }
+        }, 1000);
+
+        // Event listener for quick actions
+        document.getElementById('run-algorithm').addEventListener('click', runAlgorithm);
+    </script>
+</body>
+
+</html>

@@ -2,11 +2,11 @@ import fnmatch
 import os
 import threading
 from datetime import datetime
-from flask import Flask, request, jsonify, send_from_directory, render_template_string, abort
+from flask import Flask, request, jsonify, send_from_directory, render_template_string, abort, Response
 from flask_restx import Api, Resource, fields
 from src.python.app import core, config
 from src.python.io import reader_json, printer_json
-from src.python.log.logger import logger_app
+from src.python.log.logger import logger_app, get_logs_algorithm, get_logs_application
 from src.python.utils import path_utils, stundenplan_utils
 from src.python.utils.models import register_models
 
@@ -21,6 +21,7 @@ api = Api(app,
 ns_config = api.namespace('config', description='Configuration operations')
 ns_stundenplan = api.namespace('stundenplan', description='Stundenplan operations')
 ns_status = api.namespace('status', description='Status operations')
+ns_logs = api.namespace('logs', description='Log insights')
 
 # Models for request and response validation
 models = register_models(api)
@@ -50,6 +51,31 @@ def run_genetic_algorithm_thread():
         logger_app.error(f"Error during algorithm execution: {str(e)}")
     finally:
         is_running = False  # Reset the running flag
+
+@ns_logs.route('/')
+class LogsAlgorithmResource(Resource):
+
+    @ns_config.doc('get_logs')
+    def get(self):
+        """Retrieves the available logs"""
+        return [ "algorithm", "application" ]
+
+@ns_logs.route('/algorithm')
+class LogsAlgorithmResource(Resource):
+
+    @ns_config.doc('get_algorithm_logs')
+    def get(self):
+        """Retrieves the algorithm logs."""
+        return Response(get_logs_algorithm(), content_type="text/plain")
+
+
+@ns_logs.route('/application')
+class LogsAlgorithmResource(Resource):
+
+    @ns_config.doc('get_application_logs')
+    def get(self):
+        """Retrieves the application logs."""
+        return Response(get_logs_application(), content_type="text/plain")
 
 @ns_config.route('/')
 class ConfigResource(Resource):
