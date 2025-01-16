@@ -1,0 +1,1073 @@
+{
+    "timetable": [
+        {
+            "day": 4,
+            "timeslot": 5,
+            "event": "Grundlagen der Computergrafik (Praktikum)",
+            "room": "PC04",
+            "participants": [
+                "B_CGT:4",
+                "B_CGT:5",
+                "B_INF:5",
+                "B_INF:6",
+                "B_MINF:4",
+                "B_MINF:5",
+                "B_STEC:4",
+                "B_TINF:4",
+                "B_TINF:5"
+            ]
+        },
+        {
+            "day": 7,
+            "timeslot": 2,
+            "event": "Grundlagen der Computergrafik (Praktikum)",
+            "room": "PC04",
+            "participants": [
+                "B_CGT:4",
+                "B_CGT:5",
+                "B_INF:5",
+                "B_INF:6",
+                "B_MINF:4",
+                "B_MINF:5",
+                "B_STEC:4",
+                "B_TINF:4",
+                "B_TINF:5"
+            ]
+        },
+        {
+            "day": 4,
+            "timeslot": 7,
+            "event": "Grundlagen der Linearen Algebra",
+            "room": "HS07",
+            "participants": [
+                "B_AWP:1",
+                "B_AWP:2",
+                "B_BWL:1",
+                "B_BWL:2",
+                "B_CGT:1",
+                "B_CGT:2",
+                "B_DSAI:1",
+                "B_DSAI:2",
+                "B_ECOM:1",
+                "B_ECOM:2",
+                "B_ECOM:3",
+                "B_IMCA:1",
+                "B_IMCA:2",
+                "B_INF:1",
+                "B_INF:2",
+                "B_ITE:1",
+                "B_ITE:2",
+                "B_MINF:2",
+                "B_MINF:3",
+                "B_STEC:1",
+                "B_STEC:2",
+                "B_TINF:1",
+                "B_TINF:2",
+                "B_WINF:1",
+                "B_WINF:2",
+                "B_WING:1",
+                "B_WING:2"
+            ]
+        },
+        {
+            "day": 7,
+            "timeslot": 5,
+            "event": "Wirkprinzipien und Technologie (Praktikum)",
+            "room": "LR04",
+            "participants": [
+                "B_STEC:1",
+                "B_STEC:2"
+            ]
+        },
+        {
+            "day": 5,
+            "timeslot": 1,
+            "event": "Wirkprinzipien und Technologie (Praktikum)",
+            "room": "LR04",
+            "participants": [
+                "B_STEC:1",
+                "B_STEC:2"
+            ]
+        },
+        {
+            "day": 6,
+            "timeslot": 4,
+            "event": "Wirtschaftsethik 1",
+            "room": "HS04",
+            "participants": [
+                "ITAM:3",
+                "ITAS:3",
+                "KAI:3"
+            ]
+        },
+        {
+            "day": 3,
+            "timeslot": 2,
+            "event": "Wirtschaftsethik 1",
+            "room": "HS02",
+            "participants": [
+                "ITAM:3",
+                "ITAS:3",
+                "KAI:3"
+            ]
+        }
+    ],
+    "metadata": {
+        "fitness": 0
+    },
+    "constraints": {
+        "core": {
+            "fitness": 0,
+            "unsatisfied": {
+                "employee_conflicts": 0,
+                "student_conflicts": 0,
+                "room_capacity": 0,
+                "room_type": 0
+            },
+            "satisfied": {
+                "employee_conflicts": 15,
+                "student_conflicts": 55,
+                "room_capacity": 7,
+                "room_type": 7
+            }
+        },
+        "hard": {
+            "fitness": 0,
+            "unsatisfied": [],
+            "satisfied": [
+                {
+                    "type": "employee_dislikes_date",
+                    "employee": "AHA",
+                    "day": "DI",
+                    "timeslots": [
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7
+                    ]
+                },
+                {
+                    "type": "employee_dislikes_date",
+                    "employee": "AHA",
+                    "day": "DO",
+                    "timeslots": [
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7
+                    ]
+                },
+                {
+                    "type": "employee_dislikes_date",
+                    "employee": "AHA",
+                    "day": "FR",
+                    "timeslots": [
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7
+                    ]
+                },
+                {
+                    "type": "employee_dislikes_date",
+                    "employee": "AHA",
+                    "day": "MI",
+                    "timeslots": [
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7
+                    ]
+                },
+                {
+                    "type": "employee_dislikes_date",
+                    "employee": "AHA",
+                    "day": "MO",
+                    "timeslots": [
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7
+                    ]
+                },
+                {
+                    "type": "employee_dislikes_date",
+                    "employee": "AHA",
+                    "day": "SA",
+                    "timeslots": [
+                        6,
+                        7
+                    ]
+                },
+                {
+                    "type": "employee_dislikes_date",
+                    "employee": "AHA",
+                    "day": "SO",
+                    "timeslots": [
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7
+                    ]
+                },
+                {
+                    "type": "employee_dislikes_date",
+                    "employee": "CH",
+                    "day": "DI",
+                    "timeslots": [
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7
+                    ]
+                },
+                {
+                    "type": "employee_dislikes_date",
+                    "employee": "CH",
+                    "day": "DO",
+                    "timeslots": [
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7
+                    ]
+                },
+                {
+                    "type": "employee_dislikes_date",
+                    "employee": "CH",
+                    "day": "FR",
+                    "timeslots": [
+                        1,
+                        2,
+                        3,
+                        4
+                    ]
+                },
+                {
+                    "type": "employee_dislikes_date",
+                    "employee": "CH",
+                    "day": "MI",
+                    "timeslots": [
+                        1,
+                        2,
+                        3,
+                        4
+                    ]
+                },
+                {
+                    "type": "employee_dislikes_date",
+                    "employee": "CH",
+                    "day": "MO",
+                    "timeslots": [
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7
+                    ]
+                },
+                {
+                    "type": "employee_dislikes_date",
+                    "employee": "CH",
+                    "day": "SA",
+                    "timeslots": [
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7
+                    ]
+                },
+                {
+                    "type": "employee_dislikes_date",
+                    "employee": "CH",
+                    "day": "SO",
+                    "timeslots": [
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7
+                    ]
+                },
+                {
+                    "type": "employee_dislikes_date",
+                    "employee": "MPG",
+                    "day": "DI",
+                    "timeslots": [
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7
+                    ]
+                },
+                {
+                    "type": "employee_dislikes_date",
+                    "employee": "MPG",
+                    "day": "DO",
+                    "timeslots": [
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7
+                    ]
+                },
+                {
+                    "type": "employee_dislikes_date",
+                    "employee": "MPG",
+                    "day": "FR",
+                    "timeslots": [
+                        5,
+                        6,
+                        7
+                    ]
+                },
+                {
+                    "type": "employee_dislikes_date",
+                    "employee": "MPG",
+                    "day": "MI",
+                    "timeslots": [
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7
+                    ]
+                },
+                {
+                    "type": "employee_dislikes_date",
+                    "employee": "MPG",
+                    "day": "MO",
+                    "timeslots": [
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7
+                    ]
+                },
+                {
+                    "type": "employee_dislikes_date",
+                    "employee": "MPG",
+                    "day": "SA",
+                    "timeslots": [
+                        6,
+                        7
+                    ]
+                },
+                {
+                    "type": "employee_dislikes_date",
+                    "employee": "MPG",
+                    "day": "SO",
+                    "timeslots": [
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7
+                    ]
+                },
+                {
+                    "type": "employee_dislikes_date",
+                    "employee": "MVI",
+                    "day": "DI",
+                    "timeslots": [
+                        2,
+                        3,
+                        4,
+                        5,
+                        6
+                    ]
+                },
+                {
+                    "type": "employee_dislikes_date",
+                    "employee": "MVI",
+                    "day": "DO",
+                    "timeslots": [
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7
+                    ]
+                },
+                {
+                    "type": "employee_dislikes_date",
+                    "employee": "MVI",
+                    "day": "FR",
+                    "timeslots": [
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7
+                    ]
+                },
+                {
+                    "type": "employee_dislikes_date",
+                    "employee": "MVI",
+                    "day": "MI",
+                    "timeslots": [
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7
+                    ]
+                },
+                {
+                    "type": "employee_dislikes_date",
+                    "employee": "MVI",
+                    "day": "MO",
+                    "timeslots": [
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7
+                    ]
+                },
+                {
+                    "type": "employee_dislikes_date",
+                    "employee": "MVI",
+                    "day": "SA",
+                    "timeslots": [
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7
+                    ]
+                },
+                {
+                    "type": "employee_dislikes_date",
+                    "employee": "MVI",
+                    "day": "SO",
+                    "timeslots": [
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7
+                    ]
+                },
+                {
+                    "type": "employee_dislikes_date",
+                    "employee": "UH",
+                    "day": "DI",
+                    "timeslots": [
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7
+                    ]
+                },
+                {
+                    "type": "employee_dislikes_date",
+                    "employee": "UH",
+                    "day": "DO",
+                    "timeslots": [
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7
+                    ]
+                },
+                {
+                    "type": "employee_dislikes_date",
+                    "employee": "UH",
+                    "day": "FR",
+                    "timeslots": [
+                        3,
+                        4
+                    ]
+                },
+                {
+                    "type": "employee_dislikes_date",
+                    "employee": "UH",
+                    "day": "MI",
+                    "timeslots": [
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7
+                    ]
+                },
+                {
+                    "type": "employee_dislikes_date",
+                    "employee": "UH",
+                    "day": "MO",
+                    "timeslots": [
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7
+                    ]
+                },
+                {
+                    "type": "employee_dislikes_date",
+                    "employee": "UH",
+                    "day": "SA",
+                    "timeslots": [
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7
+                    ]
+                },
+                {
+                    "type": "employee_dislikes_date",
+                    "employee": "UH",
+                    "day": "SO",
+                    "timeslots": [
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7
+                    ]
+                }
+            ]
+        },
+        "soft": {
+            "fitness": 0,
+            "unsatisfied": [],
+            "satisfied": [
+                {
+                    "type": "employee_dislikes_date",
+                    "employee": "AHA",
+                    "day": "DI",
+                    "timeslots": [
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7
+                    ]
+                },
+                {
+                    "type": "employee_dislikes_date",
+                    "employee": "AHA",
+                    "day": "DO",
+                    "timeslots": [
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7
+                    ]
+                },
+                {
+                    "type": "employee_dislikes_date",
+                    "employee": "AHA",
+                    "day": "FR",
+                    "timeslots": [
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7
+                    ]
+                },
+                {
+                    "type": "employee_dislikes_date",
+                    "employee": "AHA",
+                    "day": "MI",
+                    "timeslots": [
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7
+                    ]
+                },
+                {
+                    "type": "employee_dislikes_date",
+                    "employee": "AHA",
+                    "day": "MO",
+                    "timeslots": [
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7
+                    ]
+                },
+                {
+                    "type": "employee_dislikes_date",
+                    "employee": "AHA",
+                    "day": "SA",
+                    "timeslots": [
+                        6,
+                        7
+                    ]
+                },
+                {
+                    "type": "employee_dislikes_date",
+                    "employee": "AHA",
+                    "day": "SO",
+                    "timeslots": [
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7
+                    ]
+                },
+                {
+                    "type": "employee_dislikes_date",
+                    "employee": "CH",
+                    "day": "DI",
+                    "timeslots": [
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7
+                    ]
+                },
+                {
+                    "type": "employee_dislikes_date",
+                    "employee": "CH",
+                    "day": "DO",
+                    "timeslots": [
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7
+                    ]
+                },
+                {
+                    "type": "employee_dislikes_date",
+                    "employee": "CH",
+                    "day": "FR",
+                    "timeslots": [
+                        1,
+                        2,
+                        3,
+                        4
+                    ]
+                },
+                {
+                    "type": "employee_dislikes_date",
+                    "employee": "CH",
+                    "day": "MI",
+                    "timeslots": [
+                        1,
+                        2,
+                        3,
+                        4
+                    ]
+                },
+                {
+                    "type": "employee_dislikes_date",
+                    "employee": "CH",
+                    "day": "MO",
+                    "timeslots": [
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7
+                    ]
+                },
+                {
+                    "type": "employee_dislikes_date",
+                    "employee": "CH",
+                    "day": "SA",
+                    "timeslots": [
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7
+                    ]
+                },
+                {
+                    "type": "employee_dislikes_date",
+                    "employee": "CH",
+                    "day": "SO",
+                    "timeslots": [
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7
+                    ]
+                },
+                {
+                    "type": "employee_dislikes_date",
+                    "employee": "MPG",
+                    "day": "DI",
+                    "timeslots": [
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7
+                    ]
+                },
+                {
+                    "type": "employee_dislikes_date",
+                    "employee": "MPG",
+                    "day": "DO",
+                    "timeslots": [
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7
+                    ]
+                },
+                {
+                    "type": "employee_dislikes_date",
+                    "employee": "MPG",
+                    "day": "FR",
+                    "timeslots": [
+                        5,
+                        6,
+                        7
+                    ]
+                },
+                {
+                    "type": "employee_dislikes_date",
+                    "employee": "MPG",
+                    "day": "MI",
+                    "timeslots": [
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7
+                    ]
+                },
+                {
+                    "type": "employee_dislikes_date",
+                    "employee": "MPG",
+                    "day": "MO",
+                    "timeslots": [
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7
+                    ]
+                },
+                {
+                    "type": "employee_dislikes_date",
+                    "employee": "MPG",
+                    "day": "SA",
+                    "timeslots": [
+                        6,
+                        7
+                    ]
+                },
+                {
+                    "type": "employee_dislikes_date",
+                    "employee": "MPG",
+                    "day": "SO",
+                    "timeslots": [
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7
+                    ]
+                },
+                {
+                    "type": "employee_dislikes_date",
+                    "employee": "MVI",
+                    "day": "DI",
+                    "timeslots": [
+                        2,
+                        3,
+                        4,
+                        5,
+                        6
+                    ]
+                },
+                {
+                    "type": "employee_dislikes_date",
+                    "employee": "MVI",
+                    "day": "DO",
+                    "timeslots": [
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7
+                    ]
+                },
+                {
+                    "type": "employee_dislikes_date",
+                    "employee": "MVI",
+                    "day": "FR",
+                    "timeslots": [
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7
+                    ]
+                },
+                {
+                    "type": "employee_dislikes_date",
+                    "employee": "MVI",
+                    "day": "MI",
+                    "timeslots": [
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7
+                    ]
+                },
+                {
+                    "type": "employee_dislikes_date",
+                    "employee": "MVI",
+                    "day": "MO",
+                    "timeslots": [
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7
+                    ]
+                },
+                {
+                    "type": "employee_dislikes_date",
+                    "employee": "MVI",
+                    "day": "SA",
+                    "timeslots": [
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7
+                    ]
+                },
+                {
+                    "type": "employee_dislikes_date",
+                    "employee": "MVI",
+                    "day": "SO",
+                    "timeslots": [
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7
+                    ]
+                },
+                {
+                    "type": "employee_dislikes_date",
+                    "employee": "UH",
+                    "day": "DI",
+                    "timeslots": [
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7
+                    ]
+                },
+                {
+                    "type": "employee_dislikes_date",
+                    "employee": "UH",
+                    "day": "DO",
+                    "timeslots": [
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7
+                    ]
+                },
+                {
+                    "type": "employee_dislikes_date",
+                    "employee": "UH",
+                    "day": "FR",
+                    "timeslots": [
+                        3,
+                        4
+                    ]
+                },
+                {
+                    "type": "employee_dislikes_date",
+                    "employee": "UH",
+                    "day": "MI",
+                    "timeslots": [
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7
+                    ]
+                },
+                {
+                    "type": "employee_dislikes_date",
+                    "employee": "UH",
+                    "day": "MO",
+                    "timeslots": [
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7
+                    ]
+                },
+                {
+                    "type": "employee_dislikes_date",
+                    "employee": "UH",
+                    "day": "SA",
+                    "timeslots": [
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7
+                    ]
+                },
+                {
+                    "type": "employee_dislikes_date",
+                    "employee": "UH",
+                    "day": "SO",
+                    "timeslots": [
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7
+                    ]
+                }
+            ]
+        }
+    }
+}

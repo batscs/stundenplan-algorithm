@@ -2,6 +2,9 @@ import numpy as np
 from typing import Optional, Any, Dict, Tuple, List, Set
 from numpy.typing import NDArray
 
+from src.python.api import api
+from src.python.ga import evaluator_constraint
+
 def evaluate_constraints_core(
     solution: NDArray[np.uint32],
     lessons,
@@ -63,17 +66,47 @@ def evaluate_constraints_core(
 
     return fitness, constraint_violations, constraints_satisfied
 
+def evaluate_constraint(constraint, solution, lessons, date_x_room):
+    print(constraint)
+
+    type = constraint["type"]
+
+    if type == "employee_dislikes_date":
+        return evaluator_constraint.evaluate_employee_dislikes_date(constraint, solution, lessons, date_x_room)
+    elif type == "evaluate_event_disallowed_days":
+        return evaluator_constraint.evaluate_event_disallowed_days(constraint, solution, lessons, date_x_room)
+
+    return 0
+
 def evaluate_constraints_hard(solution: NDArray[np.uint32], lessons, date_x_room):
     violations = []
     satisfied = []
 
-    return 0, violations, satisfied
+    constraints = api.get_constraints_hard()
+
+    for constraint in constraints:
+        fitness = evaluate_constraint(constraint, solution, lessons, date_x_room)
+        if fitness == 0:
+            satisfied.append(constraint)
+        else:
+            violations.append(constraint)
+
+    return -len(violations), violations, satisfied
 
 def evaluate_constraints_soft(solution: NDArray[np.uint32], lessons, date_x_room):
     violations = []
     satisfied = []
 
-    return 0, violations, satisfied
+    constraints = api.get_constraints_hard()
+
+    for constraint in constraints:
+        fitness = evaluate_constraint(constraint, solution, lessons, date_x_room)
+        if fitness == 0:
+            satisfied.append(constraint)
+        else:
+            violations.append(constraint)
+
+    return -len(violations), violations, satisfied
 
 def fitness_function(
     instance: Any, solution: NDArray[np.uint32], solution_idx: int

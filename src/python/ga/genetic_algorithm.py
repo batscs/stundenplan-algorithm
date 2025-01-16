@@ -4,7 +4,7 @@ from typing import Any, List, Dict
 import numpy as np
 import pygad
 from src.python.api import api
-from src.python.ga import constraints
+from src.python.ga import evaluator
 from src.python.log.logger import logger_ga
 
 NUM_GENERATIONS: int = 20000
@@ -106,13 +106,13 @@ def parse_solution_for_print(best_solution, fitness, date_x_room, lessons):
     timetable = parse_solution_into_timetable(best_solution, date_x_room, lessons)  # type: ignore
 
     core_fitness, core_unsatisfied, core_satisfied = (
-        constraints.evaluate_constraints_core(best_solution, lessons, date_x_room))
+        evaluator.evaluate_constraints_core(best_solution, lessons, date_x_room))
 
     hard_fitness, hard_unsatisfied, hard_satisfied = (
-        constraints.evaluate_constraints_hard(best_solution, lessons, date_x_room))
+        evaluator.evaluate_constraints_hard(best_solution, lessons, date_x_room))
 
     soft_fitness, soft_unsatisfied, soft_satisfied = (
-        constraints.evaluate_constraints_soft(best_solution, lessons, date_x_room))
+        evaluator.evaluate_constraints_soft(best_solution, lessons, date_x_room))
 
     result["timetable"] = timetable
     result["metadata"] = {
@@ -162,7 +162,7 @@ def genetic_algorithm(generations: int = NUM_GENERATIONS):
         """Callback to log constraint violations of the best solution after each generation."""
         best_solution, fitness, _ = instance.best_solution()  # type: ignore
 
-        _, violated_core, _ = constraints.evaluate_constraints_core(best_solution, lessons, date_x_room)
+        _, violated_core, _ = evaluator.evaluate_constraints_core(best_solution, lessons, date_x_room)
 
         logger_ga.info(f"Generation {instance.generations_completed} with Fitness {fitness}")
         logger_ga.info(f"Core Constraints conflicts: {violated_core}")
@@ -172,7 +172,7 @@ def genetic_algorithm(generations: int = NUM_GENERATIONS):
         gene_type=np.uint32,  # type: ignore
         gene_space={"low": 0, "high": len(date_x_room)},
         allow_duplicate_genes=False,
-        fitness_func=constraints.fitness_function,
+        fitness_func=evaluator.fitness_function,
         num_generations=generations,
         sol_per_pop=SOL_PER_POP,
         mutation_type="adaptive",
