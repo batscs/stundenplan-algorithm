@@ -173,6 +173,7 @@
         <div class="quick-actions section">
             <h4>Schnellaktionen</h4>
             <button id="run-algorithm">Algorithmus ausführen</button>
+            <button id="open-result">Stundenplan einsehen</button>
         </div>
 
         <div class="section">
@@ -274,6 +275,10 @@
             }
         }
 
+        async function openResult() {
+             window.open("/api/stundenplan", '_blank').focus();
+        }
+
         // Initialer Statusabruf und Log-Kategorien laden
         updateStatus();
         loadLogCategories();
@@ -289,6 +294,7 @@
 
         // Event listener for quick actions
         document.getElementById('run-algorithm').addEventListener('click', runAlgorithm);
+        document.getElementById('open-result').addEventListener('click', openResult);
     </script>
 </body>
 
