@@ -23,10 +23,7 @@ def __register_input_models(api):
         'room_type': fields.String(required=True, description='Type of room required for the event')
     })
 
-    # Constraints model (generic)
-    constraint_model = api.model('Constraint', {
-        'type': fields.String(required=True, description='Type of the constraint')
-    })
+    constraints = fields.Raw(required=True, description="List of Constraint data")
 
     # Schedule input model
     stundenplan_input = api.model('Datenbasis', {
@@ -34,8 +31,8 @@ def __register_input_models(api):
         'rooms': fields.List(fields.Nested(room_model), required=True, description='List of rooms available'),
         'events': fields.List(fields.Nested(event_model), required=True, description='List of events to schedule'),
         'constraints': fields.Nested(api.model('Constraints', {
-            'hard': fields.List(fields.Nested(constraint_model), description='List of hard constraints'),
-            'soft': fields.List(fields.Nested(constraint_model), description='List of soft constraints')
+            'hard': constraints,
+            'soft': constraints
         }), required=True, description='Constraints for the schedule')
     })
 
@@ -57,23 +54,14 @@ def __register_output_models(api):
         'participants': fields.List(fields.String, required=True, description='List of participants in the event'),
     })
 
-    core_constraints_reduced = api.model('CoreConstraintsDetails', {
-            'employee_conflicts': fields.Integer(description='Number of unsatisfied employee conflicts'),
-            'student_conflicts': fields.Integer(description='Number of unsatisfied student conflicts'),
-            'room_capacity': fields.Integer(description='Number of unsatisfied room capacity constraints'),
-            'room_type': fields.Integer(description='Number of unsatisfied room type constraints'),
-        })
+    constraints = fields.Raw(required=True, description="List of Constraint data")
+
 
     # Core Constraints Model
     core_constraints_model = api.model('CoreConstraints', {
         'fitness': fields.Integer(required=True, description='Fitness score for core constraints'),
-        'unsatisfied': fields.Nested(core_constraints_reduced),
-        'satisfied': fields.Nested(core_constraints_reduced),
-    })
-
-    # Constraints model (generic)
-    constraint_model = api.model('Constraint', {
-        'type': fields.String(required=True, description='Type of the constraint')
+        'unsatisfied': constraints,
+        'satisfied': constraints,
     })
 
     # Constraints Model
@@ -81,13 +69,13 @@ def __register_output_models(api):
         'core': fields.Nested(core_constraints_model),
         'hard': fields.Nested(api.model('HardConstraints', {
             'fitness': fields.Integer(required=True, description='Fitness score for hard constraints'),
-            'unsatisfied': fields.List(fields.Nested(constraint_model), description='List of satisfied constraints'),
-            'satisfied': fields.List(fields.Nested(constraint_model), description='List of unsatisfied constraints')
+            'unsatisfied': constraints,
+            'satisfied': constraints
         })),
         'soft': fields.Nested(api.model('SoftConstraints', {
             'fitness': fields.Integer(required=True, description='Fitness score for soft constraints'),
-            'unsatisfied': fields.List(fields.Nested(constraint_model), description='List of satisfied constraints'),
-            'satisfied': fields.List(fields.Nested(constraint_model), description='List of unsatisfied constraints')
+            'unsatisfied': constraints,
+            'satisfied': constraints
         })),
     })
 

@@ -67,8 +67,6 @@ def evaluate_constraints_core(
     return fitness, constraint_violations, constraints_satisfied
 
 def evaluate_constraint(constraint, solution, lessons, date_x_room):
-    print(constraint)
-
     type = constraint["type"]
 
     if type == "employee_dislikes_date":
