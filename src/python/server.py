@@ -1,7 +1,7 @@
 import os
 import threading
 from datetime import datetime
-from flask import Flask, request, jsonify, send_from_directory
+from flask import Flask, request, jsonify, send_from_directory, render_template_string
 from flask_restx import Api, Resource, fields
 from src.python.app import core, config
 from src.python.io import reader_json, printer_json
@@ -60,14 +60,17 @@ def run_genetic_algorithm_thread():
 class ConfigResource(Resource):
     @ns_config.doc('get_config')
     def get(self):
-        """Retrieves the current server configuration."""
+        """Retrieves the current application configuration."""
         return config.get_config(), 200
 
     @ns_config.doc('post_config')
     @ns_config.expect(config_model)
     @ns_config.response(201, 'Config changes have been applied')
     def post(self):
-        """Updates the server configuration with new data."""
+        """Updates the application configuration with new data.
+
+        This endpoint allows partial updates to the configuration. You can provide only the fields
+        that need to be updated in the request body. If a field is omitted, it retains its current value."""
         data = request.get_json()
         config.set_config(data)
         return {"status": "Config changes have been applied"}, 201
@@ -155,7 +158,6 @@ class StundenplanResource(Resource):
 @ns_status.route('/')
 class StatusResource(Resource):
     @ns_status.doc('get_status')
-    @ns_status.marshal_with(status_model)
     def get(self):
         """Checks the current status of the server and algorithm execution."""
         return {"is_running": is_running}, 200
