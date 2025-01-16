@@ -305,7 +305,7 @@
       {
         "type": "employee_dislikes_date",
         "employee": "AHA",
-        "day": "DI",
+        "day": 2,
         "timeslots": [
           1,
           2,
@@ -319,7 +319,7 @@
       {
         "type": "employee_dislikes_date",
         "employee": "AHA",
-        "day": "DO",
+        "day": 4,
         "timeslots": [
           1,
           2,
@@ -333,7 +333,7 @@
       {
         "type": "employee_dislikes_date",
         "employee": "AHA",
-        "day": "FR",
+        "day": 5,
         "timeslots": [
           1,
           2,
@@ -347,7 +347,7 @@
       {
         "type": "employee_dislikes_date",
         "employee": "AHA",
-        "day": "MI",
+        "day": 3,
         "timeslots": [
           1,
           2,
@@ -361,7 +361,7 @@
       {
         "type": "employee_dislikes_date",
         "employee": "AHA",
-        "day": "MO",
+        "day": 1,
         "timeslots": [
           1,
           2,
@@ -375,7 +375,7 @@
       {
         "type": "employee_dislikes_date",
         "employee": "AHA",
-        "day": "SA",
+        "day": 6,
         "timeslots": [
           6,
           7
@@ -384,7 +384,7 @@
       {
         "type": "employee_dislikes_date",
         "employee": "AHA",
-        "day": "SO",
+        "day": 7,
         "timeslots": [
           1,
           2,
@@ -398,7 +398,7 @@
       {
         "type": "employee_dislikes_date",
         "employee": "CH",
-        "day": "DI",
+        "day": 2,
         "timeslots": [
           1,
           2,
@@ -412,7 +412,7 @@
       {
         "type": "employee_dislikes_date",
         "employee": "CH",
-        "day": "DO",
+        "day": 4,
         "timeslots": [
           1,
           2,
@@ -426,7 +426,7 @@
       {
         "type": "employee_dislikes_date",
         "employee": "CH",
-        "day": "FR",
+        "day": 5,
         "timeslots": [
           1,
           2,
@@ -437,7 +437,7 @@
       {
         "type": "employee_dislikes_date",
         "employee": "CH",
-        "day": "MI",
+        "day": 3,
         "timeslots": [
           1,
           2,
@@ -448,7 +448,7 @@
       {
         "type": "employee_dislikes_date",
         "employee": "CH",
-        "day": "MO",
+        "day": 1,
         "timeslots": [
           1,
           2,
@@ -462,7 +462,7 @@
       {
         "type": "employee_dislikes_date",
         "employee": "CH",
-        "day": "SA",
+        "day": 6,
         "timeslots": [
           1,
           2,
@@ -476,7 +476,7 @@
       {
         "type": "employee_dislikes_date",
         "employee": "CH",
-        "day": "SO",
+        "day": 7,
         "timeslots": [
           1,
           2,
@@ -490,7 +490,7 @@
       {
         "type": "employee_dislikes_date",
         "employee": "MPG",
-        "day": "DI",
+        "day": 2,
         "timeslots": [
           1,
           2,
@@ -504,7 +504,7 @@
       {
         "type": "employee_dislikes_date",
         "employee": "MPG",
-        "day": "DO",
+        "day": 4,
         "timeslots": [
           1,
           2,
@@ -518,7 +518,7 @@
       {
         "type": "employee_dislikes_date",
         "employee": "MPG",
-        "day": "FR",
+        "day": 5,
         "timeslots": [
           5,
           6,
@@ -528,7 +528,7 @@
       {
         "type": "employee_dislikes_date",
         "employee": "MPG",
-        "day": "MI",
+        "day": 3,
         "timeslots": [
           1,
           2,
@@ -542,7 +542,7 @@
       {
         "type": "employee_dislikes_date",
         "employee": "MPG",
-        "day": "MO",
+        "day": 1,
         "timeslots": [
           1,
           2,
@@ -556,7 +556,7 @@
       {
         "type": "employee_dislikes_date",
         "employee": "MPG",
-        "day": "SA",
+        "day": 6,
         "timeslots": [
           6,
           7
@@ -565,7 +565,7 @@
       {
         "type": "employee_dislikes_date",
         "employee": "MPG",
-        "day": "SO",
+        "day": 7,
         "timeslots": [
           1,
           2,
@@ -579,7 +579,7 @@
       {
         "type": "employee_dislikes_date",
         "employee": "MVI",
-        "day": "DI",
+        "day": 2,
         "timeslots": [
           2,
           3,
@@ -591,7 +591,7 @@
       {
         "type": "employee_dislikes_date",
         "employee": "MVI",
-        "day": "DO",
+        "day": 4,
         "timeslots": [
           1,
           2,
@@ -605,7 +605,7 @@
       {
         "type": "employee_dislikes_date",
         "employee": "MVI",
-        "day": "FR",
+        "day": 5,
         "timeslots": [
           1,
           2,
@@ -619,7 +619,7 @@
       {
         "type": "employee_dislikes_date",
         "employee": "MVI",
-        "day": "MI",
+        "day": 3,
         "timeslots": [
           1,
           2,
@@ -633,7 +633,7 @@
       {
         "type": "employee_dislikes_date",
         "employee": "MVI",
-        "day": "MO",
+        "day": 1,
         "timeslots": [
           1,
           2,
@@ -647,7 +647,7 @@
       {
         "type": "employee_dislikes_date",
         "employee": "MVI",
-        "day": "SA",
+        "day": 6,
         "timeslots": [
           1,
           2,
@@ -661,7 +661,7 @@
       {
         "type": "employee_dislikes_date",
         "employee": "MVI",
-        "day": "SO",
+        "day": 7,
         "timeslots": [
           1,
           2,
@@ -675,7 +675,7 @@
       {
         "type": "employee_dislikes_date",
         "employee": "UH",
-        "day": "DI",
+        "day": 2,
         "timeslots": [
           1,
           2,
@@ -689,7 +689,7 @@
       {
         "type": "employee_dislikes_date",
         "employee": "UH",
-        "day": "DO",
+        "day": 4,
         "timeslots": [
           1,
           2,
@@ -703,7 +703,7 @@
       {
         "type": "employee_dislikes_date",
         "employee": "UH",
-        "day": "FR",
+        "day": 5,
         "timeslots": [
           3,
           4
@@ -712,7 +712,7 @@
       {
         "type": "employee_dislikes_date",
         "employee": "UH",
-        "day": "MI",
+        "day": 3,
         "timeslots": [
           1,
           2,
@@ -726,7 +726,7 @@
       {
         "type": "employee_dislikes_date",
         "employee": "UH",
-        "day": "MO",
+        "day": 1,
         "timeslots": [
           1,
           2,
@@ -740,7 +740,7 @@
       {
         "type": "employee_dislikes_date",
         "employee": "UH",
-        "day": "SA",
+        "day": 6,
         "timeslots": [
           1,
           2,
@@ -754,7 +754,7 @@
       {
         "type": "employee_dislikes_date",
         "employee": "UH",
-        "day": "SO",
+        "day": 7,
         "timeslots": [
           1,
           2,
