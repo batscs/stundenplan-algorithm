@@ -1,7 +1,8 @@
+import fnmatch
 import os
 import threading
 from datetime import datetime
-from flask import Flask, request, jsonify, send_from_directory, render_template_string
+from flask import Flask, request, jsonify, send_from_directory, render_template_string, abort
 from flask_restx import Api, Resource, fields
 from src.python.app import core, config
 from src.python.io import reader_json, printer_json
@@ -31,6 +32,14 @@ model_status = models['status_model']
 # Global variables and lock
 algorithm_lock = threading.Lock()
 is_running = False
+
+allowed_ips = config.get_server_allowed_ips()
+
+@app.before_request
+def limit_remote_addr():
+    client_ip = request.remote_addr
+    if not any(fnmatch.fnmatch(client_ip, pattern) for pattern in allowed_ips):
+        abort(403)  # Zugriff verweigern
 
 def run_genetic_algorithm_thread():
     global is_running

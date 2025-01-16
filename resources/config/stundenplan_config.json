@@ -4,5 +4,8 @@
   },
   "algorithm": {
     "generations": 200
+  },
+  "app": {
+    "server_allowed_ips": ["*"]
   }
 }

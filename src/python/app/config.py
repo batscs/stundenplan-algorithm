@@ -11,7 +11,8 @@ config = {
         "generations": 50
     },
     "app": {
-        "config": "stundenplan_config.json"
+        "config": "stundenplan_config.json",
+        "server_allowed_ips": ["*"]
     }
 }
 
@@ -45,3 +46,7 @@ def get_path_config():
 
 def get_config():
     return config
+
+
+def get_server_allowed_ips():
+    return config["app"]["server_allowed_ips"]

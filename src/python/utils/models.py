@@ -103,7 +103,8 @@ def register_models(api):
             'generations': fields.Integer(required=True, description='Number of generations for the algorithm')
         })),
         'app': fields.Nested(api.model('ConfigApp', {
-            'config': fields.String(required=True, description='Configuration file name')
+            'config': fields.String(required=True, description='Configuration file name'),
+            'server_allowed_ips': fields.List(fields.String(required=True, description='IP Pattern'))
         })),
         'input': fields.Nested(api.model('ConfigInput', {
             'filename': fields.String(required=True, description='Input file name')
