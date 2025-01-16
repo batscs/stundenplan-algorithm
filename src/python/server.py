@@ -7,6 +7,7 @@ from src.python.app import core, config
 from src.python.io import reader_json, printer_json
 from src.python.log.logger import logger_app
 from src.python.utils import path_utils, stundenplan_utils
+from src.python.utils.models import register_models
 
 app = Flask(__name__, static_folder=path_utils.PATH_SERVER_STATIC, static_url_path="/")
 api = Api(app,
@@ -21,26 +22,11 @@ ns_stundenplan = api.namespace('stundenplan', description='Stundenplan operation
 ns_status = api.namespace('status', description='Status operations')
 
 # Models for request and response validation
-config_model = api.model('Config', {
-    'algorithm': fields.Nested(api.model('AlgorithmConfig', {
-        'generations': fields.Integer(required=True, description='Number of generations for the algorithm')
-    })),
-    'app': fields.Nested(api.model('AppConfig', {
-        'config': fields.String(required=True, description='Configuration file name')
-    })),
-    'input': fields.Nested(api.model('InputConfig', {
-        'filename': fields.String(required=True, description='Input file name')
-    }))
-})
-
-
-stundenplan_model = api.model('Stundenplan', {
-    # Definieren Sie hier die Felder für Stundenplan-Daten
-})
-
-status_model = api.model('Status', {
-    'is_running': fields.Boolean(description='Algorithm running status')
-})
+models = register_models(api)
+model_config = models['config_model']
+model_stundenplan_input = models['stundenplan_input']
+model_stundenplan_output = models['stundenplan_output']
+model_status = models['status_model']
 
 # Global variables and lock
 algorithm_lock = threading.Lock()
@@ -58,14 +44,16 @@ def run_genetic_algorithm_thread():
 
 @ns_config.route('/')
 class ConfigResource(Resource):
+
     @ns_config.doc('get_config')
+    @ns_config.marshal_with(model_config, mask=False)
     def get(self):
         """Retrieves the current application configuration."""
         return config.get_config(), 200
 
     @ns_config.doc('post_config')
-    @ns_config.expect(config_model)
-    @ns_config.response(201, 'Config changes have been applied')
+    @ns_config.expect(model_config)
+    @ns_config.response(202, 'Accepted: Config changes have been applied if valid')
     def post(self):
         """Updates the application configuration with new data.
 
@@ -73,11 +61,13 @@ class ConfigResource(Resource):
         that need to be updated in the request body. If a field is omitted, it retains its current value."""
         data = request.get_json()
         config.set_config(data)
-        return {"status": "Config changes have been applied"}, 201
+        return {"status": "Config changes have been applied"}, 202
 
 @ns_stundenplan.route('/')
 class StundenplanResource(Resource):
+
     @ns_stundenplan.doc('get_stundenplan')
+    @ns_stundenplan.marshal_with(model_stundenplan_output, mask=False)
     def get(self):
         """Fetches the latest Stundenplan data from the server."""
         path = path_utils.RESOURCE_OUTPUT_PATH
@@ -113,7 +103,10 @@ class StundenplanResource(Resource):
                    }, 500
 
     @ns_stundenplan.doc('post_stundenplan')
-    @ns_stundenplan.expect(stundenplan_model)
+    @ns_stundenplan.expect(model_stundenplan_input)
+    @ns_stundenplan.response(201, "Accepted: Stundenplan data saved successfully.")
+    @ns_stundenplan.response(400, "Bad Request: Missing or malformed input data.")
+    @ns_stundenplan.response(409, "Conflict: The algorithm is currently running.")
     def post(self):
         """Saves Stundenplan data to the server. Input data is validated before saving."""
         global is_running
@@ -125,13 +118,16 @@ class StundenplanResource(Resource):
         verify = stundenplan_utils.verify_input(data)
 
         if not verify["success"]:
-            api.abort(409, "Invalid input Data")
+            api.abort(400, "Invalid input Data")
 
         path = config.get_path_input()
         printer_json.save(data, path)
         return {"status": "Data saved successfully"}, 201
 
     @ns_stundenplan.doc('patch_stundenplan')
+    @ns_stundenplan.response(202, "Accepted: Stundenplan Generation has been started.")
+    @ns_stundenplan.response(400, "Bad Request: Missing input data.")
+    @ns_stundenplan.response(409, "Conflict: The algorithm is currently running.")
     def patch(self):
         """Initiates the genetic algorithm to generate solutions for Stundenplan data."""
         global is_running
