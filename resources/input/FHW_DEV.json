@@ -3,213 +3,213 @@
     "days": 7,
     "timeslots": 7
   },
-  "Room": [
+  "rooms": [
     {
-      "Name": "EXT",
-      "Capacity": 20,
-      "Room Type": "Externes Unternehmen"
+      "name": "EXT",
+      "capacity": 20,
+      "room_type": "Externes Unternehmen"
     },
     {
-      "Name": "HS01",
-      "Capacity": 10,
-      "Room Type": "Hörsaal"
+      "name": "HS01",
+      "capacity": 10,
+      "room_type": "Hörsaal"
     },
     {
-      "Name": "HS02",
-      "Capacity": 10,
-      "Room Type": "Hörsaal"
+      "name": "HS02",
+      "capacity": 10,
+      "room_type": "Hörsaal"
     },
     {
-      "Name": "HS03",
-      "Capacity": 10,
-      "Room Type": "Hörsaal"
+      "name": "HS03",
+      "capacity": 10,
+      "room_type": "Hörsaal"
     },
     {
-      "Name": "HS04",
-      "Capacity": 20,
-      "Room Type": "Hörsaal"
+      "name": "HS04",
+      "capacity": 20,
+      "room_type": "Hörsaal"
     },
     {
-      "Name": "HS05",
-      "Capacity": 20,
-      "Room Type": "Hörsaal"
+      "name": "HS05",
+      "capacity": 20,
+      "room_type": "Hörsaal"
     },
     {
-      "Name": "HS06",
-      "Capacity": 20,
-      "Room Type": "Hörsaal"
+      "name": "HS06",
+      "capacity": 20,
+      "room_type": "Hörsaal"
     },
     {
-      "Name": "HS07",
-      "Capacity": 30,
-      "Room Type": "Hörsaal"
+      "name": "HS07",
+      "capacity": 30,
+      "room_type": "Hörsaal"
     },
     {
-      "Name": "LR01",
-      "Capacity": 20,
-      "Room Type": "Fertigungstechniklabor"
+      "name": "LR01",
+      "capacity": 20,
+      "room_type": "Fertigungstechniklabor"
     },
     {
-      "Name": "LR02",
-      "Capacity": 20,
-      "Room Type": "Messtechniklabor"
+      "name": "LR02",
+      "capacity": 20,
+      "room_type": "Messtechniklabor"
     },
     {
-      "Name": "LR03",
-      "Capacity": 20,
-      "Room Type": "Optiklabor"
+      "name": "LR03",
+      "capacity": 20,
+      "room_type": "Optiklabor"
     },
     {
-      "Name": "LR04",
-      "Capacity": 20,
-      "Room Type": "Smart-Project-Labor"
+      "name": "LR04",
+      "capacity": 20,
+      "room_type": "Smart-Project-Labor"
     },
     {
-      "Name": "LR05",
-      "Capacity": 20,
-      "Room Type": "Elektroniklabor"
+      "name": "LR05",
+      "capacity": 20,
+      "room_type": "Elektroniklabor"
     },
     {
-      "Name": "LR06",
-      "Capacity": 20,
-      "Room Type": "Robotiklabor"
+      "name": "LR06",
+      "capacity": 20,
+      "room_type": "Robotiklabor"
     },
     {
-      "Name": "LR07",
-      "Capacity": 20,
-      "Room Type": "Verfahrenstechniklabor"
+      "name": "LR07",
+      "capacity": 20,
+      "room_type": "Verfahrenstechniklabor"
     },
     {
-      "Name": "LR08",
-      "Capacity": 20,
-      "Room Type": "CAE-Labor"
+      "name": "LR08",
+      "capacity": 20,
+      "room_type": "CAE-Labor"
     },
     {
-      "Name": "LR09",
-      "Capacity": 20,
-      "Room Type": "Schaltungstechniklabor"
+      "name": "LR09",
+      "capacity": 20,
+      "room_type": "Schaltungstechniklabor"
     },
     {
-      "Name": "LR10",
-      "Capacity": 20,
-      "Room Type": "Virtual-Reality-Labor"
+      "name": "LR10",
+      "capacity": 20,
+      "room_type": "Virtual-Reality-Labor"
     },
     {
-      "Name": "LR11",
-      "Capacity": 20,
-      "Room Type": "Netzwerkschulungslabor"
+      "name": "LR11",
+      "capacity": 20,
+      "room_type": "Netzwerkschulungslabor"
     },
     {
-      "Name": "LR12",
-      "Capacity": 20,
-      "Room Type": "Audiolabor"
+      "name": "LR12",
+      "capacity": 20,
+      "room_type": "Audiolabor"
     },
     {
-      "Name": "OL01",
-      "Capacity": 20,
-      "Room Type": "Onlineveranstaltung"
+      "name": "OL01",
+      "capacity": 20,
+      "room_type": "Onlineveranstaltung"
     },
     {
-      "Name": "PC01",
-      "Capacity": 20,
-      "Room Type": "PC-Pool"
+      "name": "PC01",
+      "capacity": 20,
+      "room_type": "PC-Pool"
     },
     {
-      "Name": "PC02",
-      "Capacity": 10,
-      "Room Type": "PC-Pool"
+      "name": "PC02",
+      "capacity": 10,
+      "room_type": "PC-Pool"
     },
     {
-      "Name": "PC03",
-      "Capacity": 20,
-      "Room Type": "PC-Pool"
+      "name": "PC03",
+      "capacity": 20,
+      "room_type": "PC-Pool"
     },
     {
-      "Name": "PC04",
-      "Capacity": 30,
-      "Room Type": "PC-Pool"
+      "name": "PC04",
+      "capacity": 30,
+      "room_type": "PC-Pool"
     },
     {
-      "Name": "PC05",
-      "Capacity": 30,
-      "Room Type": "PC-Pool"
+      "name": "PC05",
+      "capacity": 30,
+      "room_type": "PC-Pool"
     },
     {
-      "Name": "PC06",
-      "Capacity": 10,
-      "Room Type": "PC-Pool"
+      "name": "PC06",
+      "capacity": 10,
+      "room_type": "PC-Pool"
     },
     {
-      "Name": "SR01",
-      "Capacity": 20,
-      "Room Type": "Konferenzraum"
+      "name": "SR01",
+      "capacity": 20,
+      "room_type": "Konferenzraum"
     },
     {
-      "Name": "SR02",
-      "Capacity": 10,
-      "Room Type": "Seminarraum"
+      "name": "SR02",
+      "capacity": 10,
+      "room_type": "Seminarraum"
     },
     {
-      "Name": "SR03",
-      "Capacity": 10,
-      "Room Type": "Seminarraum"
+      "name": "SR03",
+      "capacity": 10,
+      "room_type": "Seminarraum"
     },
     {
-      "Name": "SR04",
-      "Capacity": 10,
-      "Room Type": "Seminarraum"
+      "name": "SR04",
+      "capacity": 10,
+      "room_type": "Seminarraum"
     },
     {
-      "Name": "SR05",
-      "Capacity": 20,
-      "Room Type": "Seminarraum"
+      "name": "SR05",
+      "capacity": 20,
+      "room_type": "Seminarraum"
     },
     {
-      "Name": "SR06",
-      "Capacity": 30,
-      "Room Type": "Seminarraum"
+      "name": "SR06",
+      "capacity": 30,
+      "room_type": "Seminarraum"
     },
     {
-      "Name": "SR07",
-      "Capacity": 20,
-      "Room Type": "Seminarraum"
+      "name": "SR07",
+      "capacity": 20,
+      "room_type": "Seminarraum"
     },
     {
-      "Name": "SR08",
-      "Capacity": 30,
-      "Room Type": "Seminarraum"
+      "name": "SR08",
+      "capacity": 30,
+      "room_type": "Seminarraum"
     },
     {
-      "Name": "SR10",
-      "Capacity": 20,
-      "Room Type": "Seminarraum"
+      "name": "SR10",
+      "capacity": 20,
+      "room_type": "Seminarraum"
     },
     {
-      "Name": "SR11",
-      "Capacity": 20,
-      "Room Type": "Seminarraum"
+      "name": "SR11",
+      "capacity": 20,
+      "room_type": "Seminarraum"
     },
     {
-      "Name": "SR12",
-      "Capacity": 10,
-      "Room Type": "Seminarraum"
+      "name": "SR12",
+      "capacity": 10,
+      "room_type": "Seminarraum"
     },
     {
-      "Name": "SR13",
-      "Capacity": 30,
-      "Room Type": "Seminarraum"
+      "name": "SR13",
+      "capacity": 30,
+      "room_type": "Seminarraum"
     }
   ],
-  "Event": [
+  "events": [
     {
-      "Name": "Grundlagen der Computergrafik (Praktikum)",
-      "Employees": [
+      "name": "Grundlagen der Computergrafik (Praktikum)",
+      "employees": [
         "MPG",
         "MRE",
         "NHO",
         "PMU"
       ],
-      "Participants": [
+      "participants": [
         "B_CGT:4",
         "B_CGT:5",
         "B_INF:5",
@@ -220,17 +220,16 @@
         "B_TINF:4",
         "B_TINF:5"
       ],
-      "Participant Size": 20,
-      "Weekly Blocks": 2,
-      "Room Type": "PC-Pool",
-      "Disallowed Days": "SA;SO"
+      "size": 20,
+      "weekly_blocks": 2,
+      "room_type": "PC-Pool"
     },
     {
-      "Name": "Grundlagen der Linearen Algebra",
-      "Employees": [
+      "name": "Grundlagen der Linearen Algebra",
+      "employees": [
         "AHA"
       ],
-      "Participants": [
+      "participants": [
         "B_AWP:1",
         "B_AWP:2",
         "B_BWL:1",
@@ -259,50 +258,46 @@
         "B_WING:1",
         "B_WING:2"
       ],
-      "Participant Size": 30,
-      "Weekly Blocks": 1,
-      "Room Type": "Hörsaal",
-      "Disallowed Days": "SA;SO"
+      "size": 30,
+      "weekly_blocks": 1,
+      "room_type": "Hörsaal"
     },
     {
-      "Name": "Web-Anwendungen (Seminar)",
-      "Employees": [
+      "name": "Web-Anwendungen (Seminar)",
+      "employees": [
         "MPG"
       ],
-      "Participant Size": 10,
-      "Weekly Blocks": 0,
-      "Room Type": "Seminarraum",
-      "Disallowed Days": "SA;SO"
+      "size": 10,
+      "weekly_blocks": 0,
+      "room_type": "Seminarraum"
     },
     {
-      "Name": "Wirkprinzipien und Technologie (Praktikum)",
-      "Employees": [
+      "name": "Wirkprinzipien und Technologie (Praktikum)",
+      "employees": [
         "MVI",
         "UH"
       ],
-      "Participants": [
+      "participants": [
         "B_STEC:1",
         "B_STEC:2"
       ],
-      "Participant Size": 20,
-      "Weekly Blocks": 2,
-      "Room Type": "Smart-Project-Labor",
-      "Disallowed Days": "SA;SO"
+      "size": 20,
+      "weekly_blocks": 2,
+      "room_type": "Smart-Project-Labor"
     },
     {
-      "Name": "Wirtschaftsethik 1",
-      "Employees": [
+      "name": "Wirtschaftsethik 1",
+      "employees": [
         "CH"
       ],
-      "Participants": [
+      "participants": [
         "ITAM:3",
         "ITAS:3",
         "KAI:3"
       ],
-      "Participant Size": 10,
-      "Weekly Blocks": 2,
-      "Room Type": "Hörsaal",
-      "Disallowed Days": "SA;SO"
+      "size": 10,
+      "weekly_blocks": 2,
+      "room_type": "Hörsaal"
     }
   ],
   "constraints": {
@@ -771,6 +766,32 @@
         ]
       }
     ],
-    "soft": []
+    "soft": [
+    {
+      "type": "event-disallowed-days",
+      "event": "Grundlagen der Computergrafik (Praktikum)",
+      "days": [6, 7]
+    },
+    {
+      "type": "event-disallowed-days",
+      "event": "Grundlagen der Linearen Algebra",
+      "days": [6, 7]
+    },
+    {
+      "type": "event-disallowed-days",
+      "event": "Web-Anwendungen (Seminar)",
+      "days": [6, 7]
+    },
+    {
+      "type": "event-disallowed-days",
+      "event": "Wirkprinzipien und Technologie (Praktikum)",
+      "days": [6, 7]
+    },
+    {
+      "type": "event-disallowed-days",
+      "event": "Wirtschaftsethik 1",
+      "days": [6, 7]
+    }
+  ]
   }
 }

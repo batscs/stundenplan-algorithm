@@ -25,8 +25,8 @@ def get_dates_by_id() -> dict[int, dict]:
     for day in days_by_abbr:
         for timeslot in time_slots_by_id:
             dates[index] = {
-                'Day': day,
-                'TimeSlot': timeslot
+                'day': day,
+                'timeslot': timeslot
             }
             index += 1
     return dates
@@ -35,8 +35,8 @@ def get_rooms_by_id() -> dict[str, dict]:
     """Returns a dictionary of room abbreviations to room details."""
 
     rooms = {}
-    for room in data['Room']:
-        rooms[room['Name']] = {
+    for room in data['rooms']:
+        rooms[room['name']] = {
             **room
         }
     return rooms
@@ -44,7 +44,7 @@ def get_rooms_by_id() -> dict[str, dict]:
 
 def get_events_by_id():
     """Returns a dictionary of event names to event details."""
-    return data["Event"]
+    return data["events"]
 
 def get_constraints_hard():
     return data["constraints"]["hard"]

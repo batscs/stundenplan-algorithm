@@ -31,7 +31,7 @@ def evaluate_constraints_core(
         (date_id, date), (room_id, room) = date_x_room[date_x_room_id]
 
         # Check for employee conflicts
-        for employee_id in event["Employees"]:
+        for employee_id in event["employees"]:
             employee_x_date = (employee_id, date_id)
             if employee_x_date in employee_planned_at_date:
                 constraint_violations["employee_conflicts"] += 1
@@ -40,7 +40,7 @@ def evaluate_constraints_core(
             employee_planned_at_date.add(employee_x_date)
 
         # Check for student conflicts
-        for participant in event["Participants"]:
+        for participant in event["participants"]:
             date_x_student = (date_id, participant)
             if date_x_student in date_x_students:
                 constraint_violations["student_conflicts"] += 1
@@ -48,13 +48,13 @@ def evaluate_constraints_core(
                 constraints_satisfied["student_conflicts"] += 1
             date_x_students.add(date_x_student)
 
-        if room["Capacity"] < event["Participant Size"]:
+        if room["capacity"] < event["size"]:
             constraint_violations["room_capacity"] += 1
         else:
             constraints_satisfied["room_capacity"] += 1
 
         # Check for room type
-        if room["Room Type"] != event["Room Type"]:
+        if room["room_type"] != event["room_type"]:
             constraint_violations["room_type"] += 1
         else:
             constraints_satisfied["room_type"] += 1

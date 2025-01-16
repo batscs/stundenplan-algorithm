@@ -25,7 +25,7 @@ def prepare():
     lessons = [
         event
         for event in api.get_events_by_id()
-        for _ in range(event["Weekly Blocks"])
+        for _ in range(event["weekly_blocks"])
     ]
 
     logger_ga.debug(f"Prepared lessons count: {len(lessons)}")
@@ -60,11 +60,11 @@ def parse_solution_into_timetable(
         (_, date), (_, room) = date_x_room[date_x_room_id]
         event = lessons[i]  # type: ignore
 
-        day = date['Day']
-        timeslot = date['TimeSlot']
-        event_name = event["Name"]
-        room_name = room["Name"]
-        participants = event["Participants"]
+        day = date['day']
+        timeslot = date['timeslot']
+        event_name = event["name"]
+        room_name = room["name"]
+        participants = event["participants"]
 
         # Check for duplicate events in the same timeslot and room
         existing_event = next(
