@@ -27,15 +27,12 @@ Benötigt um das genetic_algorithm image von git.fh-wedel.de zu pullen im nächs
 
 Muss im Terminal ausgewählt werden im Ordner wo die docker-compose.yml sich befindet
 
-### 5. Im browser aufrufen (https://localhost:1111)
+### 5. Im browser aufrufen (http://localhost:1111)
 
 Swagger Dokumentation hier für Verwendung der API Endpunkte
 
 # Endpoints
 
-GET /stundenplan - aktuellstes Ergebnis vom Algorithmus  
-POST /stundenplan - Stundenplan Input als Body  
-GET /stundenplan-run - Algorithmus ausführen mit Daten von POST/stundenplan 
+url: http://localhost:1111/api/docs
 
-GET /config  - aktuelle App Config  
-POST /config - Config changes im Body
+![swagger_ui](https://i.gyazo.com/927fd85973de5f6aa629f4d59f63fb71.png)
