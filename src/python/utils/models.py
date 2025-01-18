@@ -1,6 +1,14 @@
 from flask_restx import fields
 
 def __register_input_models(api):
+    constraint_model = api.model('InputConstraint', {
+        'id': fields.String(required=True, description='Constraint ID'),
+        'type': fields.String(required=True, description='Constraint Type'),
+        'owner': fields.String(required=True, description='Constraint Owner'),
+        'inverted': fields.Boolean(description="Constraint inverted?"),
+        "fields": fields.Raw(description="Additional fields for constraint-type specific information")
+    })
+
     metadata_model = api.model('InputMetadata', {
         'days': fields.Integer(required=True, description='Number of days'),
         'timeslots': fields.Integer(required=True, description='Number of timeslots per day')
@@ -23,7 +31,7 @@ def __register_input_models(api):
         'room_type': fields.String(required=True, description='Type of room required for the event')
     })
 
-    constraints = fields.Raw(required=True, description="List of Constraint data")
+    constraints = fields.List(fields.Nested(constraint_model))
 
     # Schedule input model
     stundenplan_input = api.model('Datenbasis', {
@@ -39,10 +47,19 @@ def __register_input_models(api):
     return stundenplan_input
 
 def __register_output_models(api):
-    # Participants Model
-    participant_model = api.model('Participant', {
-        'program': fields.String(required=True, description='The program code (e.g., B_CGT)'),
-        'semester': fields.Integer(required=True, description='The semester number (e.g., 4)'),
+    constraint_model = api.model('OutputConstraint', {
+        'id': fields.String(required=True, description='Constraint ID'),
+        'type': fields.String(required=True, description='Constraint Type'),
+        'owner': fields.String(required=True, description='Constraint Owner'),
+        'inverted': fields.Boolean(description="Constraint inverted?"),
+        "fields": fields.Raw(description="Additional fields for constraint-type specific information")
+    })
+
+    core_constraint_model = api.model('CoreConstraints', {
+        'employee_conflicts': fields.Integer(required=True, description='Count of Constraints'),
+        'student_conflicts': fields.Integer(required=True, description='Count of Constraints'),
+        'room_capacity': fields.Integer(required=True, description='Count of Constraints'),
+        'room_type': fields.Integer(required=True, description='Count of Constraints'),
     })
 
     # Event Model
@@ -54,14 +71,13 @@ def __register_output_models(api):
         'participants': fields.List(fields.String, required=True, description='List of participants in the event'),
     })
 
-    constraints = fields.Raw(required=True, description="List of Constraint data")
-
+    constraints = fields.List(fields.Nested(constraint_model))
 
     # Core Constraints Model
-    core_constraints_model = api.model('CoreConstraints', {
+    core_constraints_model = api.model('WrappedCoreConstraints', {
         'fitness': fields.Integer(required=True, description='Fitness score for core constraints'),
-        'unsatisfied': constraints,
-        'satisfied': constraints,
+        'unsatisfied': fields.Nested(core_constraint_model),
+        'satisfied': fields.Nested(core_constraint_model),
     })
 
     # Constraints Model
