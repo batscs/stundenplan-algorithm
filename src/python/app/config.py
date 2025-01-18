@@ -9,7 +9,6 @@ config = {
         "generations_max": 50
     },
     "application": {
-        "filepath_config": "stundenplan_config.json",
         "filepath_input": "input.json",
         "server_allowed_ips": ["*"]
     }
@@ -41,7 +40,8 @@ def get_algorithm_generations_max():
 
 
 def get_application_path_config():
-    return os.path.join(path_utils.RESOURCE_CONFIG_PATH, config["application"]["filepath_config"])
+    # macht nur sinn hardcoded
+    return os.path.join(path_utils.RESOURCE_CONFIG_PATH, "stundenplan_config.json")
 
 
 def get_config():
