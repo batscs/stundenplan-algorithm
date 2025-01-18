@@ -42,3 +42,5 @@ RESOURCE_CONFIG_PATH: str = os.path.join(RESOURCES_PATH, "config")
 RESOURCE_OUTPUT_PATH: str = os.path.join(RESOURCES_PATH, "output")
 
 PATH_SERVER_STATIC: str = os.path.join(SRC_PATH, "static")
+
+PATH_DOCS: str = os.path.join(SRC_PATH, "docs")

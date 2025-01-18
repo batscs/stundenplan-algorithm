@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            min-height: 100vh;
+            color: #333;
+            background-color: #f4f6fa;
+        }
+
+        nav {
+            width: 280px;
+            background-color: #1C2764;
+            padding: 20px;
+            border-right: 1px solid #ddd;
+            color: #fff;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        img {
+            max-width: 60rem;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        nav h2 {
+            margin: 0 0 20px 0;
+            font-size: 1.8rem;
+            color: #fff;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            flex-grow: 1;
+        }
+
+        nav ul li {
+            margin: 10px 0;
+        }
+
+        nav ul li strong {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+            color: orange;
+            margin-top: 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.1rem;
+            transition: color 0.3s ease, padding-left 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ffd700;
+            padding-left: 8px;
+        }
+
+        nav .footer {
+            margin-top: auto;
+            font-size: 0.85rem;
+            color: #cdd4ea;
+            text-align: center;
+        }
+
+        main {
+            flex: 1;
+            padding: 30px;
+            background-color: #ffffff;
+            box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
+        }
+
+        main h1 {
+            color: #1C2764;
+        }
+
+        main p {
+            line-height: 1.6;
+            margin: 15px 0;
+        }
+
+        a {
+            color: #1C2764;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Markdown-specific styles */
+        main h1, main h2, main h3, main h4, main h5, main h6 {
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #1C2764;
+        }
+
+        main h1 {
+            font-size: 2rem;
+            border-bottom: 4px solid #1C2764;
+            padding-bottom: 5px;
+        }
+
+        main h2 {
+            font-size: 1.75rem;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+        }
+
+        main h3 {
+            font-size: 1.5rem;
+        }
+
+        main ul, main ol {
+            margin: 15px 0;
+            padding-left: 40px;
+        }
+
+        main ul li, main ol li {
+            margin-bottom: 10px;
+        }
+
+        main blockquote {
+            margin: 20px 0;
+            padding: 10px 20px;
+            background-color: #f9f9f9;
+            border-left: 5px solid #1C2764;
+            color: #555;
+            font-style: italic;
+        }
+
+        main pre {
+            background-color: #f4f6fa;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow-x: auto;
+            font-family: "Courier New", Courier, monospace;
+            font-size: 0.9rem;
+        }
+
+        main code {
+            background-color: #f4f6fa;
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-family: "Courier New", Courier, monospace;
+        }
+
+        main table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+
+        main table th, main table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        main table th {
+            background-color: #f4f6fa;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                flex-direction: column;
+            }
+
+            nav {
+                width: 100%;
+                box-shadow: none;
+                border-right: none;
+                border-bottom: 1px solid #ddd;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h2>{{ title }}</h2>
+        <ul>
+            {% for section in sidebar %}
+                {% if section.header %}
+                    <li><strong>{{ section.header }}</strong></li>
+                    {% if section.topics %}
+                        <ul>
+                            {% for topic in section.topics %}
+                                <li><a href="/docs/{{ topic.file | replace('.md', '.html') }}">{{ topic.name }}</a></li>
+                            {% endfor %}
+                        </ul>
+                    {% endif %}
+                {% endif %}
+            {% endfor %}
+        </ul>
+        <div class="footer">&copy; 2025 FH-Wedel </div>
+    </nav>
+    <main>
+        {{ content | safe }}
+    </main>
+</body>
+</html>

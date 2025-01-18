@@ -5,6 +5,7 @@ from datetime import datetime
 from flask import Flask, request, jsonify, send_from_directory, render_template_string, abort, Response
 from flask_restx import Api, Resource, fields
 from src.python.app import core, config
+from src.python.app.docs import DocumentationCompiler
 from src.python.io import reader_json, printer_json
 from src.python.log.logger import logger_app, get_logs_algorithm, get_logs_application
 from src.python.utils import path_utils, stundenplan_utils
@@ -36,11 +37,14 @@ is_running = False
 
 allowed_ips = config.get_server_allowed_ips()
 
+compiler = DocumentationCompiler(path_utils.PATH_DOCS, recompile=True)
+
 @app.before_request
 def limit_remote_addr():
     client_ip = request.remote_addr
     if not any(fnmatch.fnmatch(client_ip, pattern) for pattern in allowed_ips):
         abort(403)  # Zugriff verweigern
+
 
 def run_genetic_algorithm_thread():
     global is_running
@@ -52,13 +56,15 @@ def run_genetic_algorithm_thread():
     finally:
         is_running = False  # Reset the running flag
 
+
 @ns_logs.route('/')
 class LogsAlgorithmResource(Resource):
 
     @ns_config.doc('get_logs')
     def get(self):
         """Retrieves the available logs"""
-        return [ "algorithm", "application" ]
+        return ["algorithm", "application"]
+
 
 @ns_logs.route('/algorithm')
 class LogsAlgorithmResource(Resource):
@@ -76,6 +82,7 @@ class LogsAlgorithmResource(Resource):
     def get(self):
         """Retrieves the application logs."""
         return Response(get_logs_application(), content_type="text/plain")
+
 
 @ns_config.route('/')
 class ConfigResource(Resource):
@@ -97,6 +104,7 @@ class ConfigResource(Resource):
         data = request.get_json()
         config.set_config(data)
         return {"status": "Config changes have been applied"}, 202
+
 
 @ns_stundenplan.route('/')
 class StundenplanResource(Resource):
@@ -120,22 +128,22 @@ class StundenplanResource(Resource):
             if data is None:
                 logger_app.error("Failed to parse the file or file is empty.")
                 return {
-                           "status": "failed",
-                           "timestamp": datetime.now().isoformat(),
-                           "data": None
-                       }, 500
+                    "status": "failed",
+                    "timestamp": datetime.now().isoformat(),
+                    "data": None
+                }, 500
 
             return {
-                       "status": "success",
-                       "timestamp": datetime.now().isoformat(),
-                       "data": data
-                   }, 200
+                "status": "success",
+                "timestamp": datetime.now().isoformat(),
+                "data": data
+            }, 200
         except Exception as e:
             logger_app.error(f"Error in /stundenplan-run: {str(e)}")
             return {
-                       "error": str(e),
-                       "timestamp": datetime.now().isoformat()
-                   }, 500
+                "error": str(e),
+                "timestamp": datetime.now().isoformat()
+            }, 500
 
     @ns_stundenplan.doc('post_stundenplan')
     @ns_stundenplan.expect(model_stundenplan_input)
@@ -186,6 +194,7 @@ class StundenplanResource(Resource):
         except Exception as e:
             api.abort(500, str(e))
 
+
 @ns_status.route('/')
 class StatusResource(Resource):
     @ns_status.doc('get_status')
@@ -193,10 +202,27 @@ class StatusResource(Resource):
         """Checks the current status of the server and algorithm execution."""
         return {"is_running": is_running}, 200
 
+
 # Serve the index.html
 @app.route('/')
 def serve_index():
     return send_from_directory(app.static_folder, "index.html")
+
+@app.route("/docs/<path:filename>")
+def serve_doc(filename):
+    doc_content = compiler.get_document(filename)
+    if doc_content:
+        return render_template_string(doc_content)
+    return "Document not found", 404
+
+@app.route("/docs/")
+def serve_docs_index():
+    doc_content = compiler.get_document("index.html")
+    if doc_content:
+        return render_template_string(doc_content)
+    return "Document not found", 404
+
+
 
 if __name__ == "__main__":
     logger_app.debug("Starting Server")
