@@ -21,7 +21,7 @@ def run():
 
     api.inject(input_data)
 
-    generations = config.get_algorithm_generations()
+    generations = config.get_algorithm_generations_max()
     print(f"Genetic algorithm started (generations = {generations})")
 
     runtime, parsed_solution, fitness, generations_completed = genetic_algorithm.genetic_algorithm(generations)

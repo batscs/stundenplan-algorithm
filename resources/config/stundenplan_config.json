@@ -1,11 +1,15 @@
 {
-  "input": {
-    "filename": "FHW_DEV.json"
-  },
-  "algorithm": {
-    "generations": 200
-  },
-  "app": {
-    "server_allowed_ips": ["*"]
-  }
+    "algorithm": {
+        "generations_max": 200
+    },
+    "application": {
+        "filepath_config": "stundenplan_config.json",
+        "filepath_input": "server_input.json",
+        "server_allowed_ips": [
+            "*"
+        ]
+    },
+    "input": {
+        "filename": "server_input.json"
+    }
 }

@@ -1,17 +1,16 @@
 import os
 
 from src.python.utils import path_utils
+from src.python.io import printer_json
 
 # DEFAULT CONFIGURATION
 config = {
-    "input": {
-        "filename": "input.json"
-      },
     "algorithm": {
-        "generations": 50
+        "generations_max": 50
     },
-    "app": {
-        "config": "stundenplan_config.json",
+    "application": {
+        "filepath_config": "stundenplan_config.json",
+        "filepath_input": "input.json",
         "server_allowed_ips": ["*"]
     }
 }
@@ -31,17 +30,18 @@ def set_config(new_config):
                 base_dict[key] = value
 
     update_dict(config, new_config)
+    printer_json.save(config, get_application_path_config())
 
 def get_path_input():
-    filename = config["input"]["filename"]
+    filename = config["application"]["filepath_input"]
     return os.path.join(path_utils.RESOURCE_INPUT_PATH, filename)
 
-def get_algorithm_generations():
-    return config["algorithm"]["generations"]
+def get_algorithm_generations_max():
+    return config["algorithm"]["generations_max"]
 
 
-def get_path_config():
-    return os.path.join(path_utils.RESOURCE_CONFIG_PATH, config["app"]["config"])
+def get_application_path_config():
+    return os.path.join(path_utils.RESOURCE_CONFIG_PATH, config["application"]["filepath_config"])
 
 
 def get_config():
@@ -49,4 +49,4 @@ def get_config():
 
 
 def get_server_allowed_ips():
-    return config["app"]["server_allowed_ips"]
+    return config["application"]["server_allowed_ips"]

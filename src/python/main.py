@@ -5,7 +5,7 @@ from src.python.app import config, core
 
 def main() -> None:
     logger_app.debug("Starting Application")
-    app_config = parser.parse(config.get_path_config())
+    app_config = parser.parse(config.get_application_path_config())
     config.set_config(app_config)
 
     core.run()

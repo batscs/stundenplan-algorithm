@@ -201,13 +201,13 @@ def serve_index():
 if __name__ == "__main__":
     logger_app.debug("Starting Server")
 
-    stundenplan_config = reader_json.parse(config.get_path_config())
+    stundenplan_config = reader_json.parse(config.get_application_path_config())
     if stundenplan_config is not None:
         config.set_config(stundenplan_config)
 
     server_config = {
-        "input": {
-            "filename": "server_input.json"
+        "application": {
+            "filepath_input": "server_input.json"
         }
     }
 

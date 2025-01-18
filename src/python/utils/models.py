@@ -1,20 +1,20 @@
 from flask_restx import fields
 
 def __register_input_models(api):
-    metadata_model = api.model('Metadata', {
+    metadata_model = api.model('InputMetadata', {
         'days': fields.Integer(required=True, description='Number of days'),
         'timeslots': fields.Integer(required=True, description='Number of timeslots per day')
     })
 
     # Room model
-    room_model = api.model('Room', {
+    room_model = api.model('InputRoom', {
         'name': fields.String(required=True, description='Name of the room'),
         'capacity': fields.Integer(required=True, description='Capacity of the room'),
         'room_type': fields.String(required=True, description='Type of the room')
     })
 
     # Event model
-    event_model = api.model('Event', {
+    event_model = api.model('InputEvent', {
         'name': fields.String(required=True, description='Name of the event'),
         'employees': fields.List(fields.String, required=True, description='List of employees assigned to the event'),
         'participants': fields.List(fields.String, description='List of participants (optional)'),
@@ -30,7 +30,7 @@ def __register_input_models(api):
         'metadata': fields.Nested(metadata_model, required=True, description='Metadata for the schedule'),
         'rooms': fields.List(fields.Nested(room_model), required=True, description='List of rooms available'),
         'events': fields.List(fields.Nested(event_model), required=True, description='List of events to schedule'),
-        'constraints': fields.Nested(api.model('Constraints', {
+        'constraints': fields.Nested(api.model('InputConstraints', {
             'hard': constraints,
             'soft': constraints
         }), required=True, description='Constraints for the schedule')
@@ -100,14 +100,12 @@ def __register_output_models(api):
 def register_models(api):
     config_model = api.model('Config', {
         'algorithm': fields.Nested(api.model('ConfigAlgorithm', {
-            'generations': fields.Integer(required=True, description='Number of generations for the algorithm')
+            'generations_max': fields.Integer(required=True, description='Number of generations for the algorithm')
         })),
-        'app': fields.Nested(api.model('ConfigApp', {
-            'config': fields.String(required=True, description='Configuration file name'),
+        'application': fields.Nested(api.model('ConfigApp', {
+            'filepath_config': fields.String(required=True, description='Configuration file name'),
+            'filepath_input': fields.String(required=True, description='Configuration file name'),
             'server_allowed_ips': fields.List(fields.String(required=True, description='IP Pattern'))
-        })),
-        'input': fields.Nested(api.model('ConfigInput', {
-            'filename': fields.String(required=True, description='Input file name')
         }))
     })
 
