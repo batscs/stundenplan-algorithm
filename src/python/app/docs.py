@@ -2,6 +2,7 @@ import os
 import markdown
 import yaml
 from jinja2 import Template
+from flask import Flask, send_from_directory, render_template_string
 
 class DocumentationCompiler:
     def __init__(self, docs_folder, recompile=False):
@@ -59,4 +60,13 @@ class DocumentationCompiler:
         md_filename = filename.replace(".html", ".md")
         if md_filename in compiled_docs:
             return compiled_docs[md_filename]
+        return None
+
+    def serve_raw_file(self, subpath):
+        """Serve a raw file (e.g., images, CSS, JS) from the docs folder."""
+        full_path = os.path.join(self.docs_folder, subpath)
+        if os.path.isfile(full_path):
+            directory = os.path.dirname(full_path)
+            filename = os.path.basename(full_path)
+            return send_from_directory(directory, filename)
         return None

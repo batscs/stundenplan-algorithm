@@ -1,20 +1,28 @@
 title: Stundenplan Dokumentation
 sidebar:
+  - header: Projekt
+    topics:
+      - name: Einführung
+      - name: Setup (Entwickler)
+      - name: Setup (Benutzer)
+      - name: Verwendung
   - header: Stundenplan
     topics:
       - name: Datenmodell
         file: stundenplan/datamodel.md
-      - name: Pipeline
+      - name: Organisationsplan
         file: stundenplan/pipeline.md
-  - header: Architecture Decision Record
+  - header: Implementation
     topics:
-      - name: Docs
+      - name: Dokumentation
         file: adr/docs.md
+      - name: Server
+        file: adr/server.md
   - header: Changelog
     topics:
-      - name: release 0.0.1
-        file: release/r_0_0_1.md
-      - name: release 0.0.2
-        file: release/r_0_0_2.md
       - name: release 0.0.3
         file: release/r_0_0_3.md
+      - name: release 0.0.2
+        file: release/r_0_0_2.md
+      - name: release 0.0.1
+        file: release/r_0_0_1.md

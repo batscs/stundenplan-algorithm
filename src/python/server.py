@@ -14,7 +14,7 @@ from src.python.utils.models import register_models
 app = Flask(__name__, static_folder=path_utils.PATH_SERVER_STATIC, static_url_path="/")
 api = Api(app,
           title='Stundenplan API Documentation',
-          description='Eine umfassende API-Dokumentation für das Stundenplan-System.',
+          description='Eine umfassende API-Dokumentation für den [Stundenplan-Algorithmus](/).',
           doc='/api/docs',
           prefix='/api')
 
@@ -209,11 +209,19 @@ def serve_index():
     return send_from_directory(app.static_folder, "index.html")
 
 @app.route("/docs/<path:filename>")
-def serve_doc(filename):
+def serve_file(filename):
+    # Versuche, die Datei als kompiliertes Dokument zu laden
     doc_content = compiler.get_document(filename)
     if doc_content:
         return render_template_string(doc_content)
-    return "Document not found", 404
+
+    # Falls nicht kompiliert, versuche sie als Rohdatei zu laden
+    raw_file_response = compiler.serve_raw_file(filename)
+    if raw_file_response:
+        return raw_file_response
+
+    # Wenn weder HTML noch Rohdatei gefunden wird, 404 zurückgeben
+    return "File not found", 404
 
 @app.route("/docs/")
 def serve_docs_index():
