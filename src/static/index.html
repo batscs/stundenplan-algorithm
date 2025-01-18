@@ -32,19 +32,54 @@
 
         main {
             flex: 1;
-            max-width: 800px;
+            width: 90%;
+            max-width: 80vw;
             margin: 20px auto;
-            padding: 20px;
+            display: flex;
+            gap: 20px;
+        }
+
+        #log-content {
+            font-size: 0.9rem;
+        }
+
+        .left-panel {
+            flex: none;
+            width: 300px;
             background-color: white;
             border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .right-panel {
+            flex: 1;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            min-width: 0;
+        }
+
+        .section h4 {
+            margin: 0;
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: #1C2764;
+            border-bottom: 2px solid #1C2764;
+            padding-bottom: 5px;
         }
 
         .status {
-            margin-bottom: 20px;
             display: flex;
-            align-items: center;
-            justify-content: space-between;
+            flex-direction: column;
+            gap: 10px;
         }
 
         .status-indicator {
@@ -71,25 +106,19 @@
             padding: 10px 15px;
             border-radius: 5px;
             font-weight: 500;
+            text-align: center;
+            width: 100%;
+            box-sizing: border-box;
         }
 
         .api-link:hover {
             background-color: #14204e;
         }
 
-        .section {
-            margin-bottom: 20px;
-        }
-
         .quick-actions {
-            padding: 15px;
-            background-color: #f1f1f1;
-            border-radius: 5px;
-        }
-
-        .quick-actions h4 {
-            margin: 0 0 10px 0;
-            font-size: 1.2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
         }
 
         .quick-actions button {
@@ -100,36 +129,51 @@
             border-radius: 5px;
             font-size: 0.9rem;
             cursor: pointer;
+            width: 100%;
+            box-sizing: border-box;
+            font-weight: 500;
         }
 
         .quick-actions button:hover {
             background-color: #14204e;
         }
 
-        .log-box {
+        .logs-section {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .logs-section .log-box {
+            flex: 1;
             background-color: #f9f9f9;
             border: 1px solid #ddd;
             border-radius: 5px;
-            padding: 0;
-            height: 200px;
+            max-height: calc(100vh - 350px);
             overflow-y: auto;
+            overflow-x: auto;
             font-family: monospace;
-            font-size: 0.9rem;
+            font-size: 1rem;
             color: #444;
+            padding: 0 10px; /* Remove top/bottom padding */
+            word-wrap: break-word;
+            white-space: pre-wrap;
         }
 
-        #log-content {
+        .logs-section .log-box pre {
             margin: 0;
-            padding: 10px;
+            padding: 0;
+            white-space: pre;
         }
 
-        #log-category {
+        .logs-section select {
             padding: 10px;
             border: 1px solid #ccc;
             border-radius: 5px;
             background-color: #fff;
             font-size: 1rem;
             width: 100%;
+            box-sizing: border-box;
         }
 
         footer {
@@ -153,36 +197,29 @@
     </header>
 
     <main>
-        <div class="status section">
-            <div>
-                <span class="status-indicator" id="status-indicator"></span>
-                <span id="status-text">Status wird geladen...</span>
+        <div class="left-panel">
+            <div class="status section">
+                <h4>Algorithmus</h4>
+                <div>
+                    <span class="status-indicator" id="status-indicator"></span>
+                    <span id="status-text">Status wird geladen...</span>
+                </div>
+                <a class="api-link" href="/api/docs" target="_blank">API Dokumentation</a>
+                <a class="api-link" href="/docs" target="_blank">Dokumentation</a>
             </div>
-            <a class="api-link" href="/api/docs" target="_blank">API Dokumentation</a>
+
+            <div class="quick-actions section">
+                <h4>Schnellaktionen</h4>
+                <button id="run-algorithm">Algorithmus ausführen</button>
+                <button id="open-result">Stundenplan einsehen</button>
+            </div>
         </div>
 
-        <div class="section">
-            <h2>Willkommen!</h2>
-            <p>
-                Dies ist die Verwaltungsoberfläche für den Stundenplan-Algorithmus der FH Wedel.
-                Überprüfen Sie den aktuellen Status des Algorithmus oder besuchen Sie die API-Dokumentation.
-            </p>
-            <p>Weitere Funktionen und Informationen werden in zukünftigen Updates hinzugefügt!</p>
-        </div>
-
-        <div class="quick-actions section">
-            <h4>Schnellaktionen</h4>
-            <button id="run-algorithm">Algorithmus ausführen</button>
-            <button id="open-result">Stundenplan einsehen</button>
-        </div>
-
-        <div class="section">
+        <div class="right-panel logs-section">
             <h4>Logs</h4>
-            <div class="mb-3">
-                <select id="log-category">
-                    <option value="">Lade Kategorien...</option>
-                </select>
-            </div>
+            <select id="log-category">
+                <option value="">Lade Kategorien...</option>
+            </select>
             <div class="log-box" id="log-box">
                 <pre id="log-content">Wähle eine Kategorie, um die Logs zu sehen.</pre>
             </div>
@@ -194,6 +231,10 @@
     </footer>
 
     <script>
+        function scrollToBottom(element) {
+            element.scrollTop = element.scrollHeight;
+        }
+
         async function updateStatus() {
             try {
                 const response = await fetch('/api/status');
@@ -233,7 +274,6 @@
                     loadLogs(logCategorySelect.value);
                 });
 
-                // Load the first category by default if available
                 if (categories.length > 0) {
                     loadLogs(categories[0]);
                 }
@@ -252,7 +292,7 @@
                 logContent.textContent = logs;
 
                 const logBox = document.getElementById('log-box');
-                logBox.scrollTop = logBox.scrollHeight;
+                scrollToBottom(logBox);
             } catch (error) {
                 console.error(`Fehler beim Abrufen der Logs für Kategorie ${category}:`, error);
                 document.getElementById('log-content').textContent = 'Fehler beim Laden der Logs.';
@@ -276,14 +316,12 @@
         }
 
         async function openResult() {
-             window.open("/api/stundenplan", '_blank').focus();
+            window.open("/api/stundenplan", '_blank').focus();
         }
 
-        // Initialer Statusabruf und Log-Kategorien laden
         updateStatus();
         loadLogCategories();
 
-        // Periodische Aktualisierung des Status und der Logs alle 5 Sekunden
         setInterval(updateStatus, 1000);
         setInterval(() => {
             const logCategorySelect = document.getElementById('log-category');
@@ -292,7 +330,6 @@
             }
         }, 1000);
 
-        // Event listener for quick actions
         document.getElementById('run-algorithm').addEventListener('click', runAlgorithm);
         document.getElementById('open-result').addEventListener('click', openResult);
     </script>
