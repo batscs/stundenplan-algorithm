@@ -1,4 +1,4 @@
-from src.python.api import api
+from src.python.api import database
 from src.python.app import config
 from src.python.ga import genetic_algorithm
 from src.python.io import reader_json
@@ -19,7 +19,7 @@ def run():
         print("Error: Input Data invalid")
         return
 
-    api.inject(input_data)
+    database.inject(input_data)
 
     generations = config.get_algorithm_generations_max()
     print(f"Genetic algorithm started (generations = {generations})")

@@ -2,7 +2,7 @@ import numpy as np
 from typing import Optional, Any, Dict, Tuple, List, Set
 from numpy.typing import NDArray
 
-from src.python.api import api
+from src.python.api import database
 from src.python.ga import evaluator_constraint
 
 def evaluate_constraints_core(
@@ -87,7 +87,7 @@ def evaluate_constraints_hard(solution: NDArray[np.uint32], lessons, date_x_room
     satisfied = []
     total_fitness = 0
 
-    constraints = api.get_constraints_hard()
+    constraints = database.get_constraints_hard()
 
     for constraint in constraints:
         fitness = evaluate_constraint(constraint, solution, lessons, date_x_room)
@@ -104,7 +104,7 @@ def evaluate_constraints_soft(solution: NDArray[np.uint32], lessons, date_x_room
     satisfied = []
     total_fitness = 0
 
-    constraints = api.get_constraints_soft()
+    constraints = database.get_constraints_soft()
 
     for constraint in constraints:
         fitness = evaluate_constraint(constraint, solution, lessons, date_x_room)

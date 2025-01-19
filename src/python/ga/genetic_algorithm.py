@@ -3,7 +3,7 @@ from typing import Any, List, Dict
 
 import numpy as np
 import pygad
-from src.python.api import api
+from src.python.api import database
 from src.python.ga import evaluator
 from src.python.log.logger import logger_ga
 
@@ -24,7 +24,7 @@ def prepare():
 
     lessons = [
         event
-        for event in api.get_events_by_id()
+        for event in database.get_events_by_id()
         for _ in range(event["weekly_blocks"])
     ]
 
@@ -32,8 +32,8 @@ def prepare():
 
     date_x_room = [
         (d, r)
-        for d in api.get_dates_by_id().items()
-        for r in api.get_rooms_by_id().items()
+        for d in database.get_dates_by_id().items()
+        for r in database.get_rooms_by_id().items()
     ]
 
     return lessons, date_x_room
