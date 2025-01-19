@@ -78,8 +78,10 @@
             margin: 0;
         }
 
-        nav ul li {
-            margin: 5px 0;
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
         }
 
         nav ul li a {
@@ -208,6 +210,25 @@
             font-weight: bold;
         }
 
+        nav ul ul {
+            padding-left: 20px; /* Einrückung für verschachtelte Listen */
+        }
+
+        nav ul ul ul {
+            padding-left: 20px; /* Zusätzliche Einrückung für tiefere Ebenen */
+        }
+
+        nav ul li {
+            margin: 5px 0;
+        }
+
+        nav ul li a {
+            margin-left: 0; /* Entferne die vorherige statische Einrückung */
+            padding-left: 10px; /* Dynamische Einrückung innerhalb von verschachtelten Listen */
+            display: block; /* Block-Layout für Links */
+        }
+
+
         @media (max-width: 768px) {
             body {
                 flex-direction: column;
@@ -226,20 +247,25 @@
     <nav>
         <h2>{{ title }}</h2>
         <ul>
-            {% for section in sidebar %}
-                {% if section.header %}
-                    <details open="True">
-                        <summary>{{ section.header }}</summary>
-                        {% if section.topics %}
-                            <ul>
-                                {% for topic in section.topics %}
-                                    <li><a href="/docs/{{ topic.file | replace('.md', '.html') }}">{{ topic.name }}</a></li>
-                                {% endfor %}
-                            </ul>
-                        {% endif %}
-                    </details>
-                {% endif %}
-            {% endfor %}
+            {% macro render_sidebar(sections) %}
+                {% for section in sections %}
+                    {% if section.header %}
+                        <details open="True">
+                            <summary>{{ section.header }}</summary>
+                            {% if section.topics %}
+                                <ul>
+                                    {{ render_sidebar(section.topics) }}
+                                </ul>
+                            {% endif %}
+                        </details>
+                    {% elif section.file %}
+                        <li>
+                            <a href="/docs/{{ section.file | replace('.md', '.html') }}">{{ section.name }}</a>
+                        </li>
+                    {% endif %}
+                {% endfor %}
+            {% endmacro %}
+            {{ render_sidebar(sidebar) }}
         </ul>
         <div class="footer">
             <a id="go-back" href="/"> home </a>

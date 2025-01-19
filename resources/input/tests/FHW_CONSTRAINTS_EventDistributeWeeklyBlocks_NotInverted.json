@@ -1,0 +1,45 @@
+{
+  "metadata": {
+    "days": 4,
+    "timeslots": 7
+  },
+  "rooms": [
+    {
+      "name": "SR01",
+      "capacity": 20,
+      "room_type": "Seminarraum"
+    },
+    {
+      "name": "HS01",
+      "capacity": 20,
+      "room_type": "Hörsaal"
+    }
+  ],
+  "events": [
+    {
+      "name": "Statistik",
+      "employees": [
+        "BOE"
+      ],
+      "participants": [
+        "B_INF"
+      ],
+      "size": 20,
+      "weekly_blocks": 4,
+      "room_type": "Hörsaal"
+    }
+  ],
+  "constraints": {
+    "hard": [
+      {
+        "type": "EventDistributeWeeklyBlocks",
+        "owner": "BOE",
+        "inverted": false,
+        "fields": {
+          "event": "Statistik"
+        }
+      }
+    ],
+    "soft": []
+  }
+}

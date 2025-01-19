@@ -183,7 +183,7 @@ def genetic_algorithm(generations: int = NUM_GENERATIONS):
         crossover_type="scattered",
         stop_criteria="reach_0",
         keep_elitism=1,
-        random_seed=0,
+        random_seed=None,
         suppress_warnings=True,
         on_generation=on_generation,  # Add callback here
     )

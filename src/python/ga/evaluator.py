@@ -33,6 +33,10 @@ def evaluate_constraints_core(
         event = lessons[event_idx]
         (date_id, date), (room_id, room) = date_x_room[date_x_room_id]
 
+        # event = {name: string, employees: [string], participants: [string], size: integer, weekly_blocks: integer, room_type: string}
+        # date = {day: integer, timeslot: integer}
+        # room = {name: string, capacity: integer, room_type: string}
+
         # Check for employee conflicts
         for employee_id in event["employees"]:
             employee_x_date = (employee_id, date_id)
@@ -69,16 +73,19 @@ def evaluate_constraints_core(
 def evaluate_constraint(constraint, solution, lessons, date_x_room):
     type = constraint["type"]
 
-    if type == "employee_dislikes_date":
-        return evaluator_constraint.evaluate_employee_dislikes_date(constraint, solution, lessons, date_x_room)
-    elif type == "evaluate_event_disallowed_days":
-        return evaluator_constraint.evaluate_event_disallowed_days(constraint, solution, lessons, date_x_room)
+    if type == "EmployeeFreeTimeslots":
+        return evaluator_constraint.evaluate_employee_free_timeslots(constraint, solution, lessons, date_x_room)
+    elif type == "EmployeeSubsequentTimeslots":
+        return evaluator_constraint.evaluate_employee_subsequent_timeslots(constraint, solution, lessons, date_x_room)
+    elif type == "EventDistributeWeeklyBlocks":
+        return evaluator_constraint.evaluate_event_distribute_weekly_blocks(constraint, solution, lessons, date_x_room)
 
     return 0
 
 def evaluate_constraints_hard(solution: NDArray[np.uint32], lessons, date_x_room):
     violations = []
     satisfied = []
+    total_fitness = 0
 
     constraints = api.get_constraints_hard()
 
@@ -87,24 +94,27 @@ def evaluate_constraints_hard(solution: NDArray[np.uint32], lessons, date_x_room
         if fitness == 0:
             satisfied.append(constraint)
         else:
+            total_fitness += fitness
             violations.append(constraint)
 
-    return -len(violations), violations, satisfied
+    return total_fitness, violations, satisfied
 
 def evaluate_constraints_soft(solution: NDArray[np.uint32], lessons, date_x_room):
     violations = []
     satisfied = []
+    total_fitness = 0
 
-    constraints = api.get_constraints_hard()
+    constraints = api.get_constraints_soft()
 
     for constraint in constraints:
         fitness = evaluate_constraint(constraint, solution, lessons, date_x_room)
         if fitness == 0:
             satisfied.append(constraint)
         else:
+            total_fitness += fitness
             violations.append(constraint)
 
-    return -len(violations), violations, satisfied
+    return total_fitness, violations, satisfied
 
 def fitness_function(
     instance: Any, solution: NDArray[np.uint32], solution_idx: int
@@ -113,5 +123,7 @@ def fitness_function(
     lessons, date_x_room = instance.variables  # type: ignore
 
     core_fitness, core_violations, core_satisfied = evaluate_constraints_core(solution, lessons, date_x_room)
+    hard_fitness, hard_violations, hard_satisfied = evaluate_constraints_hard(solution, lessons, date_x_room)
+    soft_fitness, soft_violations, soft_satisfied = evaluate_constraints_soft(solution, lessons, date_x_room)
 
-    return core_fitness
+    return core_fitness + hard_fitness + soft_fitness

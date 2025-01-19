@@ -1,19 +1,5 @@
 # Datenmodell
 
-## Config
-
-```json
-{
-  "algorithm": {
-    "generations_max": 0
-  },
-  "application": {
-    "server_allowed_ips": ["string"],
-    "filepath_input": "string"
-  }
-}
-```
-
 ## Datenbasis für zu generierenden Stundenplan
 
 #### Stundenplan
@@ -67,32 +53,5 @@
 {
   "days": 0,
   "timeslots": 0
-}
-```
-
-## Fertig generierte Stundenplan Ausgabe
-
-#### Metadata
-```json
-{
-  "fitness": 0
-}
-```
-
-#### Metadata
-```json
-{
-  "fitness": 0
-}
-```
-
-#### Event
-```json
-{
-  "event": "string",
-  "day": 0,
-  "timeslot": 0,
-  "room": "string",
-  "participants": ["string"]
 }
 ```

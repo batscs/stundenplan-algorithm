@@ -3,15 +3,27 @@ sidebar:
   - header: Projekt
     topics:
       - name: Einführung
+        file: index.md
       - name: Setup (Entwickler)
+        file: index.md
       - name: Setup (Benutzer)
+        file: index.md
       - name: Verwendung
+        file: index.md
   - header: Stundenplan
     topics:
-      - name: Datenmodell
-        file: stundenplan/datamodel.md
       - name: Organisationsplan
         file: stundenplan/pipeline.md
+  - header: Datenmodell
+    topics:
+      - name: Config
+        file: datenmodell/config.md
+      - name: Datenbasis
+        file: datenmodell/datenbasis.md
+      - name: Ergebnis
+        file: datenmodell/ergebnis.md
+      - name: Constraints
+        file: datenmodell/constraints.md
   - header: Implementation
     topics:
       - name: Dokumentation
