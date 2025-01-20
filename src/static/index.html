@@ -211,6 +211,7 @@
             <div class="quick-actions section">
                 <h4>Schnellaktionen</h4>
                 <button id="run-algorithm">Algorithmus ausführen</button>
+                <button id="generate-schedule">Stundenplan generieren</button>
                 <button id="open-result">Stundenplan einsehen</button>
             </div>
         </div>
@@ -305,13 +306,44 @@
                     method: 'PATCH'
                 });
                 if (response.ok) {
-                    // alert('Algorithmus erfolgreich gestartet!');
+                    alert('Algorithmus erfolgreich gestartet!');
                 } else {
                     alert('Fehler beim Starten des Algorithmus.');
                 }
             } catch (error) {
                 console.error('Fehler beim Ausführen des Algorithmus:', error);
                 alert('Fehler beim Ausführen des Algorithmus.');
+            }
+        }
+
+        async function generateSchedule() {
+            const input = prompt("Geben Sie den JSON-Text für den Stundenplan ein:");
+            if (!input) return;
+
+            try {
+                const response = await fetch('/api/stundenplan', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: input
+                });
+
+                if (response.status === 201) {
+                    let statusData;
+                    do {
+                        await new Promise(resolve => setTimeout(resolve, 500));
+                        const statusResponse = await fetch('/api/status');
+                        statusData = await statusResponse.json();
+                    } while (statusData.is_running);
+
+                    window.open("/api/stundenplan", '_blank').focus();
+                } else {
+                    alert('Fehler beim Generieren des Stundenplans.');
+                }
+            } catch (error) {
+                console.error('Fehler beim Generieren des Stundenplans:', error);
+                alert('Fehler beim Generieren des Stundenplans.');
             }
         }
 
@@ -331,6 +363,7 @@
         }, 1000);
 
         document.getElementById('run-algorithm').addEventListener('click', runAlgorithm);
+        document.getElementById('generate-schedule').addEventListener('click', generateSchedule);
         document.getElementById('open-result').addEventListener('click', openResult);
     </script>
 </body>
