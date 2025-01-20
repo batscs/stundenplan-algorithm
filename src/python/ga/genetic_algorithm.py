@@ -160,12 +160,18 @@ def genetic_algorithm(generations: int = NUM_GENERATIONS):
 
     def on_generation(instance: pygad.GA):
         """Callback to log constraint violations of the best solution after each generation."""
-        best_solution, fitness, _ = instance.best_solution()  # type: ignore
+        nonlocal best_solution_g, fitness_g
+        best_solution_g, fitness_g, _ = instance.best_solution()  # type: ignore
 
-        _, violated_core, _ = evaluator.evaluate_constraints_core(best_solution, lessons, date_x_room)
+        _, violated_core, _ = evaluator.evaluate_constraints_core(best_solution_g, lessons, date_x_room)
 
-        logger_ga.info(f"Generation {instance.generations_completed} with Fitness {fitness}")
+        logger_ga.info(f"Generation {instance.generations_completed} with Fitness {fitness_g}")
         logger_ga.info(f"Core Constraints conflicts: {violated_core}")
+
+    # sometimes inconsistencies occur, because on_generation has a different best_solution
+    # than the best_solution being found here
+    best_solution_g = None
+    fitness_g = None
 
     ga_instance = pygad.GA(
         num_genes=len(lessons),
@@ -195,10 +201,9 @@ def genetic_algorithm(generations: int = NUM_GENERATIONS):
     runtime = time.perf_counter() - start_time
     logger_ga.info(f"Genetic algorithm completed in {runtime:.2f} seconds")
 
-    best_solution, fitness, _ = ga_instance.best_solution()
-    logger_ga.info(f"Best fitness: {fitness}")  # type: ignore
+    logger_ga.info(f"Best fitness: {fitness_g}")  # type: ignore
 
     # ----------
-    result = parse_solution_for_print(best_solution, fitness, date_x_room, lessons)
+    result = parse_solution_for_print(best_solution_g, fitness_g, date_x_room, lessons)
 
-    return runtime, result, fitness, ga_instance.generations_completed
+    return runtime, result, fitness_g, ga_instance.generations_completed
