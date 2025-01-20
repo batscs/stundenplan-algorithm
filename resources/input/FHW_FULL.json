@@ -1,0 +1,4229 @@
+{
+    "metadata": {
+        "days": 5,
+        "timeslots": 7
+    },
+    "rooms": [
+        {
+            "name": "HS01",
+            "capacity": 44,
+            "room_type": "HS"
+        },
+        {
+            "name": "HS02",
+            "capacity": 44,
+            "room_type": "HS"
+        },
+        {
+            "name": "HS03",
+            "capacity": 44,
+            "room_type": "HS"
+        },
+        {
+            "name": "HS04",
+            "capacity": 44,
+            "room_type": "HS"
+        },
+        {
+            "name": "HS05",
+            "capacity": 44,
+            "room_type": "HS"
+        },
+        {
+            "name": "HS06",
+            "capacity": 44,
+            "room_type": "HS"
+        },
+        {
+            "name": "HS07",
+            "capacity": 44,
+            "room_type": "HS"
+        },
+        {
+            "name": "SR08",
+            "capacity": 44,
+            "room_type": "SR"
+        },
+        {
+            "name": "PC01",
+            "capacity": 44,
+            "room_type": "SR"
+        },
+        {
+            "name": "PC02",
+            "capacity": 44,
+            "room_type": "SR"
+        },
+        {
+            "name": "PC03",
+            "capacity": 44,
+            "room_type": "SR"
+        },
+        {
+            "name": "PC04",
+            "capacity": 44,
+            "room_type": "SR"
+        },
+        {
+            "name": "PC05",
+            "capacity": 44,
+            "room_type": "SR"
+        },
+        {
+            "name": "PC06",
+            "capacity": 44,
+            "room_type": "SR"
+        },
+        {
+            "name": "SR05",
+            "capacity": 44,
+            "room_type": "SR"
+        },
+        {
+            "name": "SR06",
+            "capacity": 44,
+            "room_type": "SR"
+        },
+        {
+            "name": "SR04",
+            "capacity": 44,
+            "room_type": "SR"
+        },
+        {
+            "name": "SR07",
+            "capacity": 44,
+            "room_type": "SR"
+        },
+        {
+            "name": "SR10",
+            "capacity": 44,
+            "room_type": "SR"
+        },
+        {
+            "name": "SR13",
+            "capacity": 44,
+            "room_type": "SR"
+        },
+        {
+            "name": "SR11",
+            "capacity": 44,
+            "room_type": "SR"
+        },
+        {
+            "name": "LR34",
+            "capacity": 44,
+            "room_type": "SR"
+        },
+        {
+            "name": "LR08",
+            "capacity": 44,
+            "room_type": "SR"
+        },
+        {
+            "name": "LR05",
+            "capacity": 44,
+            "room_type": "SR"
+        },
+        {
+            "name": "SR01",
+            "capacity": 44,
+            "room_type": "SR"
+        },
+        {
+            "name": "LR30",
+            "capacity": 44,
+            "room_type": "SR"
+        },
+        {
+            "name": "LR27",
+            "capacity": 44,
+            "room_type": "SR"
+        },
+        {
+            "name": "LR09",
+            "capacity": 44,
+            "room_type": "SR"
+        },
+        {
+            "name": "LR04",
+            "capacity": 44,
+            "room_type": "SR"
+        },
+        {
+            "name": "LR35",
+            "capacity": 44,
+            "room_type": "SR"
+        },
+        {
+            "name": "X",
+            "capacity": 44,
+            "room_type": "SR"
+        },
+        {
+            "name": "XSR8",
+            "capacity": 44,
+            "room_type": "SR"
+        },
+        {
+            "name": "XHS1",
+            "capacity": 44,
+            "room_type": "HS"
+        },
+        {
+            "name": "XHS6",
+            "capacity": 44,
+            "room_type": "HS"
+        },
+        {
+            "name": "XPC6",
+            "capacity": 44,
+            "room_type": "SR"
+        },
+        {
+            "name": "OL01",
+            "capacity": 44,
+            "room_type": "SR"
+        }
+    ],
+    "events": [
+        {
+            "name": "Mathematik (+ Übung)",
+            "employees": [
+                "wol"
+            ],
+            "participants": [
+                "ITAM:1",
+                "ITAS:1",
+                "ITAW:1",
+                "ITAM:1",
+                "ITAS:1",
+                "ITAW:1"
+            ],
+            "size": 44,
+            "weekly_blocks": 7,
+            "room_type": "HS"
+        },
+        {
+            "name": "Geometrische Modellierung und Computeranimation",
+            "employees": [
+                "bo",
+                "pmu"
+            ],
+            "participants": [
+                "B_CGT:5",
+                "B_CGT:6",
+                "B_Minf:5",
+                "B_Minf:6",
+                "B_STec:5",
+                "B_CGT:5",
+                "B_CGT:6",
+                "B_Minf:5",
+                "B_Minf:6",
+                "B_STec:5"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "HS"
+        },
+        {
+            "name": "Ingenieurmathematik",
+            "employees": [
+                "dmi"
+            ],
+            "participants": [
+                "B_ITE:2",
+                "B_ITE:3",
+                "MuITE:1",
+                "MuITE:2",
+                "B_STec:3",
+                "B_Tinf:3",
+                "B_Tinf:4",
+                "B_Wing:3",
+                "B_Wing:4",
+                "B_ITE:2",
+                "B_ITE:3",
+                "MuITE:1",
+                "MuITE:2",
+                "B_STec:3",
+                "B_Tinf:3",
+                "B_Tinf:4",
+                "B_Wing:3",
+                "B_Wing:4"
+            ],
+            "size": 44,
+            "weekly_blocks": 2,
+            "room_type": "HS"
+        },
+        {
+            "name": "Digital Product Management",
+            "employees": [
+                "gru"
+            ],
+            "participants": [
+                "B_CGT:3",
+                "B_DSAI:5",
+                "B_ECom:3",
+                "B_ECom:4",
+                "B_Minf:3",
+                "B_CGT:3",
+                "B_DSAI:5",
+                "B_ECom:3",
+                "B_ECom:4",
+                "B_Minf:3"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "HS"
+        },
+        {
+            "name": "Grundlagen der Psychologie",
+            "employees": [
+                "mt"
+            ],
+            "participants": [
+                "B_DAWP:1",
+                "B_DAWP:2",
+                "B_DAWP:3",
+                "B_DAWP:1",
+                "B_DAWP:2",
+                "B_DAWP:3"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "HS"
+        },
+        {
+            "name": "Workshop Data Engineering",
+            "employees": [
+                "ann",
+                "mpa"
+            ],
+            "participants": [
+                "B_DSAI:5",
+                "B_DSAI:5"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "HS"
+        },
+        {
+            "name": "Grundlagen der Wirtschaftspsychologie",
+            "employees": [
+                "afi",
+                "gi"
+            ],
+            "participants": [
+                "B_BWL:3",
+                "B_BWL:4",
+                "B_DAWP:1",
+                "B_DAWP:2",
+                "B_BWL:3",
+                "B_BWL:4",
+                "B_DAWP:1",
+                "B_DAWP:2"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "HS"
+        },
+        {
+            "name": "International Service Business Concepts & Cases",
+            "employees": [
+                "gi"
+            ],
+            "participants": [
+                "M_BWL:1",
+                "M_BWL:2",
+                "M_Wing:1",
+                "M_Wing:2",
+                "M_BWL:1",
+                "M_BWL:2",
+                "M_Wing:1",
+                "M_Wing:2"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "HS"
+        },
+        {
+            "name": "Grundlagen Marketing- und Vertriebsmanagement",
+            "employees": [
+                "afi"
+            ],
+            "participants": [
+                "B_BWL:3",
+                "B_BWL:4",
+                "B_DAWP:3",
+                "B_DSAI:3",
+                "B_DSAI:4",
+                "B_ECom:3",
+                "B_ECom:4",
+                "B_Winf:4",
+                "B_Winf:5",
+                "B_Wing:3",
+                "B_Wing:4",
+                "B_BWL:3",
+                "B_BWL:4",
+                "B_DAWP:3",
+                "B_DSAI:3",
+                "B_DSAI:4",
+                "B_ECom:3",
+                "B_ECom:4",
+                "B_Winf:4",
+                "B_Winf:5",
+                "B_Wing:3",
+                "B_Wing:4"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "HS"
+        },
+        {
+            "name": "Grundlagen Servicemanagement",
+            "employees": [
+                "gi"
+            ],
+            "participants": [
+                "B_BWL:3",
+                "B_BWL:4",
+                "B_DAWP:3",
+                "B_DSAI:3",
+                "B_DSAI:4",
+                "B_ECom:3",
+                "B_ECom:4",
+                "B_Winf:4",
+                "B_Winf:5",
+                "B_Wing:3",
+                "B_Wing:4",
+                "B_BWL:3",
+                "B_BWL:4",
+                "B_DAWP:3",
+                "B_DSAI:3",
+                "B_DSAI:4",
+                "B_ECom:3",
+                "B_ECom:4",
+                "B_Winf:4",
+                "B_Winf:5",
+                "B_Wing:3",
+                "B_Wing:4"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "HS"
+        },
+        {
+            "name": "Distributed Systems",
+            "employees": [
+                "uh"
+            ],
+            "participants": [
+                "M_Inf:1",
+                "M_Inf:2",
+                "M_ITE:1",
+                "M_ITE:2",
+                "MuITE:1",
+                "MuITE:2",
+                "M_ITS:1",
+                "M_ITS:2",
+                "M_WIM:1",
+                "M_WIM:2",
+                "M_Inf:1",
+                "M_Inf:2",
+                "M_ITE:1",
+                "M_ITE:2",
+                "MuITE:1",
+                "MuITE:2",
+                "M_ITS:1",
+                "M_ITS:2",
+                "M_WIM:1",
+                "M_WIM:2"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "HS"
+        },
+        {
+            "name": "Digitaltechnik 1 (Grundl.d.techn.Informatik)",
+            "employees": [
+                "saw"
+            ],
+            "participants": [
+                "ITAM:1",
+                "ITAS:1",
+                "ITAW:1",
+                "B_Inf:1",
+                "B_ITE:1",
+                "B_STec:1",
+                "B_Tinf:1",
+                "ITAM:1",
+                "ITAS:1",
+                "ITAW:1",
+                "B_Inf:1",
+                "B_ITE:1",
+                "B_STec:1",
+                "B_Tinf:1"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "HS"
+        },
+        {
+            "name": "Elektronik",
+            "employees": [
+                "saw"
+            ],
+            "participants": [
+                "B_ITE:5",
+                "B_STec:3",
+                "B_Tinf:3",
+                "B_Tinf:4",
+                "B_ITE:5",
+                "B_STec:3",
+                "B_Tinf:3",
+                "B_Tinf:4"
+            ],
+            "size": 44,
+            "weekly_blocks": 2,
+            "room_type": "HS"
+        },
+        {
+            "name": "Programmstrukturen 2",
+            "employees": [
+                "dpr"
+            ],
+            "participants": [
+                "B_CGT:2",
+                "B_DSAI:2",
+                "B_Inf:2",
+                "B_ITE:2",
+                "B_Minf:2",
+                "B_Winf:2",
+                "B_CGT:2",
+                "B_DSAI:2",
+                "B_Inf:2",
+                "B_ITE:2",
+                "B_Minf:2",
+                "B_Winf:2"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "HS"
+        },
+        {
+            "name": "Softwarequalität",
+            "employees": [
+                "jbn"
+            ],
+            "participants": [
+                "B_IMCA:3",
+                "B_IMCA:4",
+                "B_Inf:4",
+                "B_Inf:5",
+                "B_ITE:5",
+                "B_Winf:4",
+                "B_Winf:5",
+                "B_IMCA:3",
+                "B_IMCA:4",
+                "B_Inf:4",
+                "B_Inf:5",
+                "B_ITE:5",
+                "B_Winf:4",
+                "B_Winf:5"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "HS"
+        },
+        {
+            "name": "Digital Transformation (+ Übung)",
+            "employees": [
+                "gre"
+            ],
+            "participants": [
+                "M_BWL:1",
+                "M_BWL:2",
+                "M_DSAI:1",
+                "M_DSAI:2",
+                "M_SDBM:1",
+                "M_SDBM:2",
+                "M_WIM:1",
+                "M_WIM:2",
+                "M_Wing:1",
+                "M_Wing:2",
+                "M_BWL:1",
+                "M_BWL:2",
+                "M_DSAI:1",
+                "M_DSAI:2",
+                "M_SDBM:1",
+                "M_SDBM:2",
+                "M_WIM:1",
+                "M_WIM:2",
+                "M_Wing:1",
+                "M_Wing:2"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "HS"
+        },
+        {
+            "name": "Organisationslehre",
+            "employees": [
+                "fbo"
+            ],
+            "participants": [
+                "M_BWL:1",
+                "M_BWL:2",
+                "M_DSAI:1",
+                "M_DSAI:2",
+                "M_ECom:2",
+                "M_Wing:1",
+                "M_Wing:2",
+                "M_BWL:1",
+                "M_BWL:2",
+                "M_DSAI:1",
+                "M_DSAI:2",
+                "M_ECom:2",
+                "M_Wing:1",
+                "M_Wing:2"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "HS"
+        },
+        {
+            "name": "Strategisches Management",
+            "employees": [
+                "fbo"
+            ],
+            "participants": [
+                "M_BWL:1",
+                "M_BWL:2",
+                "M_DSAI:1",
+                "M_DSAI:2",
+                "M_ECom:2",
+                "M_Wing:1",
+                "M_Wing:2",
+                "M_BWL:1",
+                "M_BWL:2",
+                "M_DSAI:1",
+                "M_DSAI:2",
+                "M_ECom:2",
+                "M_Wing:1",
+                "M_Wing:2"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "HS"
+        },
+        {
+            "name": "Datenbanktechnologie (+ Übung)",
+            "employees": [
+                "twe"
+            ],
+            "participants": [
+                "M_DSAI:1",
+                "M_DSAI:2",
+                "M_Inf:1",
+                "M_Inf:2",
+                "M_ITS:1",
+                "M_ITS:2",
+                "M_WIM:1",
+                "M_WIM:2",
+                "M_DSAI:1",
+                "M_DSAI:2",
+                "M_Inf:1",
+                "M_Inf:2",
+                "M_ITS:1",
+                "M_ITS:2",
+                "M_WIM:1",
+                "M_WIM:2"
+            ],
+            "size": 44,
+            "weekly_blocks": 2,
+            "room_type": "HS"
+        },
+        {
+            "name": "Datenbanken",
+            "employees": [
+                "mpa"
+            ],
+            "participants": [
+                "ITAM:3",
+                "ITAS:3",
+                "B_BWL:3",
+                "B_BWL:4",
+                "B_CGT:3",
+                "B_CGT:4",
+                "B_DAWP:3",
+                "B_DSAI:3",
+                "B_DSAI:4",
+                "B_ECom:3",
+                "B_ECom:4",
+                "B_IMCA:3",
+                "B_Inf:3",
+                "B_Inf:4",
+                "B_ITE:5",
+                "B_ITE:6",
+                "B_Minf:1",
+                "B_Minf:2",
+                "B_STec:3",
+                "B_Tinf:5",
+                "B_Tinf:6",
+                "B_Winf:2",
+                "B_Winf:3",
+                "B_Wing:3",
+                "B_Wing:4",
+                "ITAM:3",
+                "ITAS:3",
+                "B_BWL:3",
+                "B_BWL:4",
+                "B_CGT:3",
+                "B_CGT:4",
+                "B_DAWP:3",
+                "B_DSAI:3",
+                "B_DSAI:4",
+                "B_ECom:3",
+                "B_ECom:4",
+                "B_IMCA:3",
+                "B_Inf:3",
+                "B_Inf:4",
+                "B_ITE:5",
+                "B_ITE:6",
+                "B_Minf:1",
+                "B_Minf:2",
+                "B_STec:3",
+                "B_Tinf:5",
+                "B_Tinf:6",
+                "B_Winf:2",
+                "B_Winf:3",
+                "B_Wing:3",
+                "B_Wing:4"
+            ],
+            "size": 44,
+            "weekly_blocks": 2,
+            "room_type": "HS"
+        },
+        {
+            "name": "Informationstechnik",
+            "employees": [
+                "dsg"
+            ],
+            "participants": [
+                "B_CGT:1",
+                "B_CGT:2",
+                "B_DSAI:3",
+                "B_DSAI:4",
+                "B_Inf:1",
+                "B_Inf:2",
+                "B_ITE:1",
+                "B_ITE:2",
+                "B_Minf:1",
+                "B_Minf:2",
+                "B_STec:1",
+                "B_Tinf:1",
+                "B_Winf:1",
+                "B_Winf:2",
+                "B_Wing:3",
+                "B_Wing:4",
+                "B_CGT:1",
+                "B_CGT:2",
+                "B_DSAI:3",
+                "B_DSAI:4",
+                "B_Inf:1",
+                "B_Inf:2",
+                "B_ITE:1",
+                "B_ITE:2",
+                "B_Minf:1",
+                "B_Minf:2",
+                "B_STec:1",
+                "B_Tinf:1",
+                "B_Winf:1",
+                "B_Winf:2",
+                "B_Wing:3",
+                "B_Wing:4"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "HS"
+        },
+        {
+            "name": "Commercial English (Gruppe 1)",
+            "employees": [
+                "ev"
+            ],
+            "participants": [
+                "B_BWL:1",
+                "B_BWL:2",
+                "B_BWL:1",
+                "B_BWL:2"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "SR"
+        },
+        {
+            "name": "Business English (Gruppe 1)",
+            "employees": [
+                "ev"
+            ],
+            "participants": [
+                "B_BWL:1",
+                "B_BWL:2",
+                "B_BWL:1",
+                "B_BWL:2"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "SR"
+        },
+        {
+            "name": "Marktforschung",
+            "employees": [
+                "afi"
+            ],
+            "participants": [
+                "M_BWL:1",
+                "M_BWL:2",
+                "M_Wing:1",
+                "M_Wing:2",
+                "M_BWL:1",
+                "M_BWL:2",
+                "M_Wing:1",
+                "M_Wing:2"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "SR"
+        },
+        {
+            "name": "Programmstrukturen 1 (Betreuung)",
+            "employees": [
+                "bwa",
+                "klk",
+                "mpg",
+                "ne",
+                "pmu"
+            ],
+            "participants": [
+                "B_CGT:1",
+                "B_DSAI:1",
+                "B_ECom:1",
+                "B_IMCA:1",
+                "B_Inf:1",
+                "B_ITE:1",
+                "B_Minf:1",
+                "B_STec:1",
+                "B_Tinf:1",
+                "B_Winf:1",
+                "B_CGT:1",
+                "B_DSAI:1",
+                "B_ECom:1",
+                "B_IMCA:1",
+                "B_Inf:1",
+                "B_ITE:1",
+                "B_Minf:1",
+                "B_STec:1",
+                "B_Tinf:1",
+                "B_Winf:1"
+            ],
+            "size": 44,
+            "weekly_blocks": 5,
+            "room_type": "SR"
+        },
+        {
+            "name": "Distributed Systems (Tutorial)",
+            "employees": [
+                "uh"
+            ],
+            "participants": [
+                "M_Inf:1",
+                "M_Inf:2",
+                "M_ITE:1",
+                "M_ITE:2",
+                "MuITE:1",
+                "MuITE:2",
+                "M_ITS:1",
+                "M_ITS:2",
+                "M_WIM:1",
+                "M_WIM:2",
+                "M_Inf:1",
+                "M_Inf:2",
+                "M_ITE:1",
+                "M_ITE:2",
+                "MuITE:1",
+                "MuITE:2",
+                "M_ITS:1",
+                "M_ITS:2",
+                "M_WIM:1",
+                "M_WIM:2"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "SR"
+        },
+        {
+            "name": "Einführung in die Programmierung (Übung)",
+            "employees": [
+                "ahr",
+                "krg",
+                "mpa",
+                "mpg"
+            ],
+            "participants": [
+                "B_BWL:1",
+                "B_BWL:2",
+                "B_ECom:1",
+                "B_ECom:2",
+                "B_Wing:1",
+                "B_Wing:2",
+                "B_BWL:1",
+                "B_BWL:2",
+                "B_ECom:1",
+                "B_ECom:2",
+                "B_Wing:1",
+                "B_Wing:2"
+            ],
+            "size": 44,
+            "weekly_blocks": 4,
+            "room_type": "SR"
+        },
+        {
+            "name": "SP (Übung.5)",
+            "employees": [
+                "aan",
+                "avh",
+                "mhe",
+                "tti",
+                "tzw"
+            ],
+            "participants": [
+                "ITAM:3",
+                "ITAS:3",
+                "B_ITE:3",
+                "B_STec:3",
+                "B_Tinf:3",
+                "B_Tinf:4",
+                "ITAM:3",
+                "ITAS:3",
+                "B_ITE:3",
+                "B_STec:3",
+                "B_Tinf:3",
+                "B_Tinf:4"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "SR"
+        },
+        {
+            "name": "SP (Übung.1)",
+            "employees": [
+                "aan",
+                "avh",
+                "mhe",
+                "tti",
+                "tzw"
+            ],
+            "participants": [
+                "B_CGT:3",
+                "B_CGT:4",
+                "B_Minf:3",
+                "B_Minf:4",
+                "B_CGT:3",
+                "B_CGT:4",
+                "B_Minf:3",
+                "B_Minf:4"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "SR"
+        },
+        {
+            "name": "SP (Übung.2)",
+            "employees": [
+                "aan",
+                "avh",
+                "mhe",
+                "tti",
+                "tzw"
+            ],
+            "participants": [
+                "B_CGT:3",
+                "B_CGT:4",
+                "B_Minf:3",
+                "B_Minf:4",
+                "B_CGT:3",
+                "B_CGT:4",
+                "B_Minf:3",
+                "B_Minf:4"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "SR"
+        },
+        {
+            "name": "Projekt IT-Sicherheit",
+            "employees": [
+                "gb"
+            ],
+            "participants": [
+                "M_ITS:1",
+                "M_ITS:2",
+                "M_ITS:1",
+                "M_ITS:2"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "SR"
+        },
+        {
+            "name": "Integrierte Berichterstattung",
+            "employees": [
+                "web"
+            ],
+            "participants": [
+                "B_BWL:3",
+                "B_BWL:4",
+                "B_IMCA:3",
+                "B_IMCA:4",
+                "B_BWL:3",
+                "B_BWL:4",
+                "B_IMCA:3",
+                "B_IMCA:4"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "SR"
+        },
+        {
+            "name": "Fundamental Programming Structures",
+            "employees": [
+                "cei"
+            ],
+            "participants": [
+                "MuITE:1",
+                "MuITE:1"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "SR"
+        },
+        {
+            "name": "Rechnernetze (Praktikum)",
+            "employees": [
+                "kal",
+                "kch"
+            ],
+            "participants": [
+                "ITAM:3",
+                "ITAS:3",
+                "ITAM:3",
+                "ITAS:3"
+            ],
+            "size": 44,
+            "weekly_blocks": 2,
+            "room_type": "SR"
+        },
+        {
+            "name": "AuD (Übung.1)",
+            "employees": [
+                "aan",
+                "avh",
+                "mhe",
+                "tti"
+            ],
+            "participants": [
+                "B_CGT:3",
+                "B_CGT:4",
+                "B_Minf:4",
+                "B_Minf:5",
+                "B_CGT:3",
+                "B_CGT:4",
+                "B_Minf:4",
+                "B_Minf:5"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "SR"
+        },
+        {
+            "name": "AuD (Übung.2)",
+            "employees": [
+                "aan",
+                "avh",
+                "mhe",
+                "tti"
+            ],
+            "participants": [
+                "B_CGT:3",
+                "B_CGT:4",
+                "B_Minf:4",
+                "B_Minf:5",
+                "B_CGT:3",
+                "B_CGT:4",
+                "B_Minf:4",
+                "B_Minf:5"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "SR"
+        },
+        {
+            "name": "Grundlagen der Mediengestaltung",
+            "employees": [
+                "mlo"
+            ],
+            "participants": [
+                "ITAM:3",
+                "B_CGT:1",
+                "B_CGT:2",
+                "B_Minf:1",
+                "B_Minf:2",
+                "ITAM:3",
+                "B_CGT:1",
+                "B_CGT:2",
+                "B_Minf:1",
+                "B_Minf:2"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "HS"
+        },
+        {
+            "name": "Seminar (Computergrafik, VR, Games)",
+            "employees": [
+                "bo"
+            ],
+            "participants": [
+                "B_CGT:5",
+                "B_Inf:5",
+                "B_Inf:6",
+                "M_Inf:1",
+                "M_Inf:2",
+                "B_Minf:6",
+                "B_CGT:5",
+                "B_Inf:5",
+                "B_Inf:6",
+                "M_Inf:1",
+                "M_Inf:2",
+                "B_Minf:6"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "HS"
+        },
+        {
+            "name": "Programmstrukturen 2 (Aufgabenvorstellung)",
+            "employees": [
+                "klk"
+            ],
+            "participants": [
+                "B_CGT:2",
+                "B_DSAI:2",
+                "B_Inf:2",
+                "B_ITE:2",
+                "B_Minf:2",
+                "B_Winf:2",
+                "B_CGT:2",
+                "B_DSAI:2",
+                "B_Inf:2",
+                "B_ITE:2",
+                "B_Minf:2",
+                "B_Winf:2"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "HS"
+        },
+        {
+            "name": "Virtual Reality",
+            "employees": [
+                "bo"
+            ],
+            "participants": [
+                "B_CGT:5",
+                "B_Minf:5",
+                "B_Minf:6",
+                "B_CGT:5",
+                "B_Minf:5",
+                "B_Minf:6"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "HS"
+        },
+        {
+            "name": "Berechenbarkeit und Komplexität (BuK)",
+            "employees": [
+                "iw"
+            ],
+            "participants": [
+                "M_Inf:1",
+                "M_Inf:2",
+                "M_ITS:1",
+                "M_ITS:2",
+                "M_Inf:1",
+                "M_Inf:2",
+                "M_ITS:1",
+                "M_ITS:2"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "HS"
+        },
+        {
+            "name": "BuK / FSuV (Übung)",
+            "employees": [
+                "iw",
+                "uh"
+            ],
+            "participants": [
+                "M_Inf:1",
+                "M_Inf:2",
+                "M_ITS:1",
+                "M_ITS:2",
+                "M_Inf:1",
+                "M_Inf:2",
+                "M_ITS:1",
+                "M_ITS:2"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "HS"
+        },
+        {
+            "name": "Formale Spezifikation und Verifikation (FSuK)",
+            "employees": [
+                "uh"
+            ],
+            "participants": [
+                "M_Inf:1",
+                "M_Inf:2",
+                "M_ITS:1",
+                "M_ITS:2",
+                "M_Inf:1",
+                "M_Inf:2",
+                "M_ITS:1",
+                "M_ITS:2"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "HS"
+        },
+        {
+            "name": "Medientechnik 1",
+            "employees": [
+                "hi"
+            ],
+            "participants": [
+                "ITAM:1",
+                "ITAM:1"
+            ],
+            "size": 44,
+            "weekly_blocks": 2,
+            "room_type": "HS"
+        },
+        {
+            "name": "Einkauf und Supply Management",
+            "employees": [
+                "gh"
+            ],
+            "participants": [
+                "B_BWL:3",
+                "B_BWL:4",
+                "B_Wing:3",
+                "B_Wing:4",
+                "B_BWL:3",
+                "B_BWL:4",
+                "B_Wing:3",
+                "B_Wing:4"
+            ],
+            "size": 44,
+            "weekly_blocks": 2,
+            "room_type": "HS"
+        },
+        {
+            "name": "E-Commerce Geschäftsmodelle",
+            "employees": [
+                "awo",
+                "jpl"
+            ],
+            "participants": [
+                "M_DSAI:1",
+                "M_DSAI:2",
+                "M_ECom:1",
+                "M_ECom:2",
+                "M_DSAI:1",
+                "M_DSAI:2",
+                "M_ECom:1",
+                "M_ECom:2"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "HS"
+        },
+        {
+            "name": "Chemie, Chemietechnik (Aufbauphase)",
+            "employees": [],
+            "participants": [],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "HS"
+        },
+        {
+            "name": "Chemie, Chemietechnik",
+            "employees": [
+                "smt"
+            ],
+            "participants": [
+                "B_ITE:2",
+                "B_Wing:1",
+                "B_Wing:2",
+                "B_ITE:2",
+                "B_Wing:1",
+                "B_Wing:2"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "HS"
+        },
+        {
+            "name": "Chemie, Chemietechnik (Abbauphase)",
+            "employees": [],
+            "participants": [],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "HS"
+        },
+        {
+            "name": "Diskrete Mathematik",
+            "employees": [
+                "iw"
+            ],
+            "participants": [
+                "ITAS:3",
+                "B_CGT:1",
+                "B_DSAI:1",
+                "B_ECom:1",
+                "B_IMCA:1",
+                "B_Inf:1",
+                "B_ITE:1",
+                "B_Minf:1",
+                "B_STec:1",
+                "B_Tinf:1",
+                "B_Winf:1",
+                "ITAS:3",
+                "B_CGT:1",
+                "B_DSAI:1",
+                "B_ECom:1",
+                "B_IMCA:1",
+                "B_Inf:1",
+                "B_ITE:1",
+                "B_Minf:1",
+                "B_STec:1",
+                "B_Tinf:1",
+                "B_Winf:1"
+            ],
+            "size": 44,
+            "weekly_blocks": 2,
+            "room_type": "HS"
+        },
+        {
+            "name": "Diskrete Mathematik (Übung)",
+            "employees": [
+                "cei"
+            ],
+            "participants": [
+                "ITAS:3",
+                "B_CGT:1",
+                "B_DSAI:1",
+                "B_ECom:1",
+                "B_IMCA:1",
+                "B_Inf:1",
+                "B_ITE:1",
+                "B_Minf:1",
+                "B_STec:1",
+                "B_Tinf:1",
+                "B_Winf:1",
+                "ITAS:3",
+                "B_CGT:1",
+                "B_DSAI:1",
+                "B_ECom:1",
+                "B_IMCA:1",
+                "B_Inf:1",
+                "B_ITE:1",
+                "B_Minf:1",
+                "B_STec:1",
+                "B_Tinf:1",
+                "B_Winf:1"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "HS"
+        },
+        {
+            "name": "Multi Channel Retailing",
+            "employees": [
+                "dde"
+            ],
+            "participants": [
+                "B_DSAI:5",
+                "B_ECom:5",
+                "B_ECom:6",
+                "B_DSAI:5",
+                "B_ECom:5",
+                "B_ECom:6"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "HS"
+        },
+        {
+            "name": "Regelungstechnik",
+            "employees": [
+                "cbu"
+            ],
+            "participants": [
+                "B_ITE:5",
+                "B_Tinf:5",
+                "B_Tinf:6",
+                "B_ITE:5",
+                "B_Tinf:5",
+                "B_Tinf:6"
+            ],
+            "size": 44,
+            "weekly_blocks": 2,
+            "room_type": "HS"
+        },
+        {
+            "name": "Digital-Marketing",
+            "employees": [
+                "jpl"
+            ],
+            "participants": [
+                "B_CGT:3",
+                "B_CGT:4",
+                "B_DSAI:4",
+                "B_DSAI:5",
+                "B_ECom:2",
+                "B_ECom:3",
+                "B_CGT:3",
+                "B_CGT:4",
+                "B_DSAI:4",
+                "B_DSAI:5",
+                "B_ECom:2",
+                "B_ECom:3"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "HS"
+        },
+        {
+            "name": "Produktionsplanung und -steuerung",
+            "employees": [
+                "gh"
+            ],
+            "participants": [
+                "B_BWL:3",
+                "B_BWL:4",
+                "B_Winf:4",
+                "B_Winf:5",
+                "B_Wing:3",
+                "B_Wing:4",
+                "B_BWL:3",
+                "B_BWL:4",
+                "B_Winf:4",
+                "B_Winf:5",
+                "B_Wing:3",
+                "B_Wing:4"
+            ],
+            "size": 44,
+            "weekly_blocks": 2,
+            "room_type": "HS"
+        },
+        {
+            "name": "Rechnernetze",
+            "employees": [
+                "kal"
+            ],
+            "participants": [
+                "B_CGT:3",
+                "B_IMCA:3",
+                "B_Inf:2",
+                "B_Inf:3",
+                "B_STec:5",
+                "B_Tinf:5",
+                "B_Winf:2",
+                "B_Winf:3",
+                "B_CGT:3",
+                "B_IMCA:3",
+                "B_Inf:2",
+                "B_Inf:3",
+                "B_STec:5",
+                "B_Tinf:5",
+                "B_Winf:2",
+                "B_Winf:3"
+            ],
+            "size": 44,
+            "weekly_blocks": 2,
+            "room_type": "HS"
+        },
+        {
+            "name": "AuD (Betreuung)",
+            "employees": [
+                "aan",
+                "avh",
+                "mhe",
+                "tti"
+            ],
+            "participants": [
+                "B_CGT:3",
+                "B_CGT:4",
+                "B_DSAI:3",
+                "B_DSAI:4",
+                "B_IMCA:3",
+                "B_IMCA:4",
+                "B_Inf:3",
+                "B_Inf:4",
+                "B_ITE:3",
+                "B_Minf:4",
+                "B_Minf:5",
+                "B_STec:3",
+                "B_Tinf:3",
+                "B_Tinf:4",
+                "B_Winf:3",
+                "B_Winf:4",
+                "B_CGT:3",
+                "B_CGT:4",
+                "B_DSAI:3",
+                "B_DSAI:4",
+                "B_IMCA:3",
+                "B_IMCA:4",
+                "B_Inf:3",
+                "B_Inf:4",
+                "B_ITE:3",
+                "B_Minf:4",
+                "B_Minf:5",
+                "B_STec:3",
+                "B_Tinf:3",
+                "B_Tinf:4",
+                "B_Winf:3",
+                "B_Winf:4"
+            ],
+            "size": 44,
+            "weekly_blocks": 2,
+            "room_type": "HS"
+        },
+        {
+            "name": "Einführung in die VWL",
+            "employees": [
+                "gi"
+            ],
+            "participants": [
+                "B_BWL:1",
+                "B_BWL:2",
+                "B_DAWP:3",
+                "B_DSAI:1",
+                "B_DSAI:2",
+                "B_IMCA:3",
+                "B_Winf:3",
+                "B_Winf:4",
+                "B_Wing:3",
+                "B_Wing:4",
+                "B_BWL:1",
+                "B_BWL:2",
+                "B_DAWP:3",
+                "B_DSAI:1",
+                "B_DSAI:2",
+                "B_IMCA:3",
+                "B_Winf:3",
+                "B_Winf:4",
+                "B_Wing:3",
+                "B_Wing:4"
+            ],
+            "size": 44,
+            "weekly_blocks": 2,
+            "room_type": "HS"
+        },
+        {
+            "name": "Programmstrukturen 1",
+            "employees": [
+                "dpr"
+            ],
+            "participants": [
+                "B_CGT:1",
+                "B_DSAI:1",
+                "B_ECom:1",
+                "B_IMCA:1",
+                "B_Inf:1",
+                "B_ITE:1",
+                "B_Minf:1",
+                "B_STec:1",
+                "B_Tinf:1",
+                "B_Winf:1",
+                "B_CGT:1",
+                "B_DSAI:1",
+                "B_ECom:1",
+                "B_IMCA:1",
+                "B_Inf:1",
+                "B_ITE:1",
+                "B_Minf:1",
+                "B_STec:1",
+                "B_Tinf:1",
+                "B_Winf:1"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "HS"
+        },
+        {
+            "name": "Systemanalyse",
+            "employees": [
+                "dpr"
+            ],
+            "participants": [
+                "B_DSAI:5",
+                "B_ECom:5",
+                "B_ECom:6",
+                "B_IMCA:4",
+                "B_IMCA:5",
+                "B_Inf:4",
+                "B_Inf:5",
+                "B_Winf:4",
+                "B_Winf:5",
+                "B_Wing:3",
+                "B_Wing:4",
+                "B_DSAI:5",
+                "B_ECom:5",
+                "B_ECom:6",
+                "B_IMCA:4",
+                "B_IMCA:5",
+                "B_Inf:4",
+                "B_Inf:5",
+                "B_Winf:4",
+                "B_Winf:5",
+                "B_Wing:3",
+                "B_Wing:4"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "HS"
+        },
+        {
+            "name": "Seminar (IT Security)",
+            "employees": [
+                "gb"
+            ],
+            "participants": [
+                "M_Inf:1",
+                "M_Inf:2",
+                "M_ITE:1",
+                "M_ITE:2",
+                "MuITE:1",
+                "MuITE:2",
+                "M_ITS:1",
+                "M_ITS:2",
+                "M_Inf:1",
+                "M_Inf:2",
+                "M_ITE:1",
+                "M_ITE:2",
+                "MuITE:1",
+                "MuITE:2",
+                "M_ITS:1",
+                "M_ITS:2"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "SR"
+        },
+        {
+            "name": "Business Planning",
+            "employees": [
+                "gh",
+                "uhl"
+            ],
+            "participants": [
+                "B_BWL:3",
+                "B_BWL:4",
+                "B_BWL:3",
+                "B_BWL:4"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "SR"
+        },
+        {
+            "name": "Regelungstechnik (Übung)",
+            "employees": [
+                "cbu"
+            ],
+            "participants": [
+                "B_ITE:5",
+                "B_Tinf:5",
+                "B_Tinf:6",
+                "B_ITE:5",
+                "B_Tinf:5",
+                "B_Tinf:6"
+            ],
+            "size": 44,
+            "weekly_blocks": 2,
+            "room_type": "SR"
+        },
+        {
+            "name": "ERP-Grundlagen 1",
+            "employees": [
+                "wol"
+            ],
+            "participants": [
+                "ITAS:1",
+                "ITAW:1",
+                "ITAS:1",
+                "ITAW:1"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "SR"
+        },
+        {
+            "name": "Office-Software",
+            "employees": [
+                "ne"
+            ],
+            "participants": [
+                "ITAM:1",
+                "ITAS:1",
+                "ITAW:1",
+                "ITAM:1",
+                "ITAS:1",
+                "ITAW:1"
+            ],
+            "size": 44,
+            "weekly_blocks": 2,
+            "room_type": "SR"
+        },
+        {
+            "name": "SP (Betreuung)",
+            "employees": [
+                "aan",
+                "avh",
+                "mhe",
+                "tti",
+                "tzw"
+            ],
+            "participants": [
+                "ITAM:3",
+                "ITAS:3",
+                "B_CGT:3",
+                "B_CGT:4",
+                "B_Inf:3",
+                "B_Inf:4",
+                "B_ITE:3",
+                "B_Minf:3",
+                "B_Minf:4",
+                "B_STec:3",
+                "B_Tinf:3",
+                "B_Tinf:4",
+                "ITAM:3",
+                "ITAS:3",
+                "B_CGT:3",
+                "B_CGT:4",
+                "B_Inf:3",
+                "B_Inf:4",
+                "B_ITE:3",
+                "B_Minf:3",
+                "B_Minf:4",
+                "B_STec:3",
+                "B_Tinf:3",
+                "B_Tinf:4"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "SR"
+        },
+        {
+            "name": "SP (Übung.3)",
+            "employees": [
+                "aan",
+                "avh",
+                "mhe",
+                "tti",
+                "tzw"
+            ],
+            "participants": [
+                "B_Inf:3",
+                "B_Inf:4",
+                "B_Inf:3",
+                "B_Inf:4"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "SR"
+        },
+        {
+            "name": "SP (Übung.4)",
+            "employees": [
+                "aan",
+                "avh",
+                "mhe",
+                "tti",
+                "tzw"
+            ],
+            "participants": [
+                "B_Inf:3",
+                "B_Inf:4",
+                "B_Inf:3",
+                "B_Inf:4"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "SR"
+        },
+        {
+            "name": "Programmstrukturen 2 (Übung.4)",
+            "employees": [
+                "bwa",
+                "cei",
+                "klk",
+                "nvk"
+            ],
+            "participants": [
+                "B_Inf:2",
+                "B_ITE:2",
+                "B_Inf:2",
+                "B_ITE:2"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "SR"
+        },
+        {
+            "name": "Programmstrukturen 2 (Übung.3)",
+            "employees": [
+                "bwa",
+                "cei",
+                "klk",
+                "nvk"
+            ],
+            "participants": [
+                "B_Winf:2",
+                "B_Winf:2"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "SR"
+        },
+        {
+            "name": "Programmstrukturen 2 (Übung.2)",
+            "employees": [
+                "bwa",
+                "cei",
+                "klk",
+                "nvk"
+            ],
+            "participants": [
+                "B_DSAI:2",
+                "B_Winf:2",
+                "B_DSAI:2",
+                "B_Winf:2"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "SR"
+        },
+        {
+            "name": "Fundamental Programming Structures (Lab Course)",
+            "employees": [
+                "cei",
+                "hoe",
+                "nvk"
+            ],
+            "participants": [
+                "MuITE:1",
+                "MuITE:1"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "SR"
+        },
+        {
+            "name": "Grundlagen der Mediengestaltung (Praktikum, nach Absprache)",
+            "employees": [
+                "mlo"
+            ],
+            "participants": [
+                "ITAM:3",
+                "B_CGT:1",
+                "B_CGT:2",
+                "B_Minf:1",
+                "B_Minf:2",
+                "ITAM:3",
+                "B_CGT:1",
+                "B_CGT:2",
+                "B_Minf:1",
+                "B_Minf:2"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "SR"
+        },
+        {
+            "name": "Digitale Kommunikationssysteme",
+            "employees": [
+                "saw"
+            ],
+            "participants": [
+                "M_Inf:1",
+                "M_Inf:2",
+                "M_ITE:1",
+                "M_ITE:2",
+                "MuITE:1",
+                "MuITE:2",
+                "M_Inf:1",
+                "M_Inf:2",
+                "M_ITE:1",
+                "M_ITE:2",
+                "MuITE:1",
+                "MuITE:2"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "SR"
+        },
+        {
+            "name": "Reconfigurable Computing",
+            "employees": [
+                "saw"
+            ],
+            "participants": [
+                "M_Inf:1",
+                "M_Inf:2",
+                "M_ITE:1",
+                "M_ITE:2",
+                "MuITE:1",
+                "MuITE:2",
+                "M_Inf:1",
+                "M_Inf:2",
+                "M_ITE:1",
+                "M_ITE:2",
+                "MuITE:1",
+                "MuITE:2"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "SR"
+        },
+        {
+            "name": "Embedded Systems Workshop",
+            "employees": [
+                "bos"
+            ],
+            "participants": [
+                "M_ITE:1",
+                "M_ITE:2",
+                "MuITE:1",
+                "MuITE:2",
+                "M_ITE:1",
+                "M_ITE:2",
+                "MuITE:1",
+                "MuITE:2"
+            ],
+            "size": 44,
+            "weekly_blocks": 3,
+            "room_type": "SR"
+        },
+        {
+            "name": "Produktionstechnisches Projekt (KickOff)",
+            "employees": [
+                "ba",
+                "jg"
+            ],
+            "participants": [
+                "B_Wing:5",
+                "B_Wing:6",
+                "B_Wing:5",
+                "B_Wing:6"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "SR"
+        },
+        {
+            "name": "Produktionstechnisches Projekt",
+            "employees": [
+                "ba",
+                "jg"
+            ],
+            "participants": [
+                "B_Wing:5",
+                "B_Wing:6",
+                "B_Wing:5",
+                "B_Wing:6"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "SR"
+        },
+        {
+            "name": "Industrial Internet of Things Project",
+            "employees": [
+                "cbu"
+            ],
+            "participants": [
+                "MuITE:1",
+                "MuITE:2",
+                "MuITE:1",
+                "MuITE:2"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "SR"
+        },
+        {
+            "name": "Virtual Reality (Praktikum)",
+            "employees": [
+                "dko",
+                "mpg"
+            ],
+            "participants": [
+                "B_CGT:5",
+                "B_CGT:6",
+                "B_Minf:5",
+                "B_Minf:6",
+                "B_CGT:5",
+                "B_CGT:6",
+                "B_Minf:5",
+                "B_Minf:6"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "SR"
+        },
+        {
+            "name": "Anwendungen der KI (Applications of AI)",
+            "employees": [
+                "iw"
+            ],
+            "participants": [
+                "B_CGT:4",
+                "B_CGT:5",
+                "B_DSAI:4",
+                "B_DSAI:5",
+                "B_Inf:5",
+                "B_Inf:6",
+                "B_ITE:5",
+                "MuITE:1",
+                "MuITE:2",
+                "B_Tinf:5",
+                "B_Tinf:6",
+                "B_Winf:4",
+                "B_Winf:5",
+                "B_CGT:4",
+                "B_CGT:5",
+                "B_DSAI:4",
+                "B_DSAI:5",
+                "B_Inf:5",
+                "B_Inf:6",
+                "B_ITE:5",
+                "MuITE:1",
+                "MuITE:2",
+                "B_Tinf:5",
+                "B_Tinf:6",
+                "B_Winf:4",
+                "B_Winf:5"
+            ],
+            "size": 44,
+            "weekly_blocks": 2,
+            "room_type": "HS"
+        },
+        {
+            "name": "Automatisierung in der Fertigung",
+            "employees": [
+                "aha"
+            ],
+            "participants": [
+                "M_DSAI:1",
+                "M_DSAI:2",
+                "M_ITE:1",
+                "MuITE:1",
+                "M_Wing:1",
+                "M_Wing:2",
+                "M_DSAI:1",
+                "M_DSAI:2",
+                "M_ITE:1",
+                "MuITE:1",
+                "M_Wing:1",
+                "M_Wing:2"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "HS"
+        },
+        {
+            "name": "Workshop Steuerungstechnik",
+            "employees": [
+                "bos"
+            ],
+            "participants": [
+                "M_DSAI:1",
+                "M_DSAI:2",
+                "M_ITE:1",
+                "MuITE:1",
+                "M_Wing:1",
+                "M_Wing:2",
+                "M_DSAI:1",
+                "M_DSAI:2",
+                "M_ITE:1",
+                "MuITE:1",
+                "M_Wing:1",
+                "M_Wing:2"
+            ],
+            "size": 44,
+            "weekly_blocks": 4,
+            "room_type": "HS"
+        },
+        {
+            "name": "Lebenszyklus von IT-Systemen (+ Übung)",
+            "employees": [
+                "gre"
+            ],
+            "participants": [
+                "B_IMCA:3",
+                "B_IMCA:4",
+                "B_IMCA:3",
+                "B_IMCA:4"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "HS"
+        },
+        {
+            "name": "Einführung i.d. Konstruktion",
+            "employees": [
+                "ba"
+            ],
+            "participants": [
+                "B_ITE:3",
+                "B_Wing:3",
+                "B_Wing:4",
+                "B_ITE:3",
+                "B_Wing:3",
+                "B_Wing:4"
+            ],
+            "size": 44,
+            "weekly_blocks": 2,
+            "room_type": "HS"
+        },
+        {
+            "name": "Gemeinschaftskunde 1",
+            "employees": [
+                "ch"
+            ],
+            "participants": [
+                "ITAM:1",
+                "ITAS:1",
+                "ITAW:1",
+                "ITAM:1",
+                "ITAS:1",
+                "ITAW:1"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "HS"
+        },
+        {
+            "name": "Geometrie",
+            "employees": [
+                "ch"
+            ],
+            "participants": [
+                "ITAM:1",
+                "ITAM:1"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "HS"
+        },
+        {
+            "name": "Sustainable Technologies & Climate Change",
+            "employees": [
+                "dmi"
+            ],
+            "participants": [
+                "M_SDBM:1",
+                "M_SDBM:2",
+                "M_Wing:1",
+                "M_Wing:2",
+                "M_SDBM:1",
+                "M_SDBM:2",
+                "M_Wing:1",
+                "M_Wing:2"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "HS"
+        },
+        {
+            "name": "Sustainable & Digital Consumer Behavior",
+            "employees": [
+                "afi"
+            ],
+            "participants": [
+                "M_ECom:1",
+                "M_SDBM:1",
+                "M_SDBM:2",
+                "M_ECom:1",
+                "M_SDBM:1",
+                "M_SDBM:2"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "HS"
+        },
+        {
+            "name": "Kolloquium",
+            "employees": [
+                "vma"
+            ],
+            "participants": [
+                "ITAM:1",
+                "ITAM:3",
+                "ITAM:5",
+                "ITAS:1",
+                "ITAS:3",
+                "ITAS:5",
+                "ITAW:1",
+                "B_BWL:1",
+                "B_BWL:2",
+                "B_BWL:3",
+                "B_BWL:4",
+                "B_BWL:5",
+                "B_BWL:6",
+                "B_BWL:7",
+                "M_BWL:1",
+                "M_BWL:2",
+                "M_BWL:3",
+                "M_BWL:4",
+                "B_CGT:1",
+                "B_CGT:2",
+                "B_CGT:3",
+                "B_CGT:4",
+                "B_CGT:5",
+                "B_CGT:6",
+                "B_CGT:7",
+                "B_DAWP:1",
+                "B_DAWP:2",
+                "B_DAWP:3",
+                "B_DSAI:1",
+                "B_DSAI:2",
+                "B_DSAI:3",
+                "B_DSAI:4",
+                "B_DSAI:5",
+                "B_DSAI:7",
+                "M_DSAI:1",
+                "M_DSAI:2",
+                "M_DSAI:3",
+                "B_ECom:1",
+                "B_ECom:2",
+                "B_ECom:3",
+                "B_ECom:4",
+                "B_ECom:5",
+                "B_ECom:6",
+                "B_ECom:7",
+                "M_ECom:1",
+                "M_ECom:2",
+                "M_ECom:3",
+                "B_IMCA:1",
+                "B_IMCA:3",
+                "B_IMCA:4",
+                "B_IMCA:5",
+                "B_IMCA:6",
+                "B_IMCA:7",
+                "B_Inf:1",
+                "B_Inf:2",
+                "B_Inf:3",
+                "B_Inf:4",
+                "B_Inf:5",
+                "B_Inf:6",
+                "B_Inf:7",
+                "M_Inf:1",
+                "M_Inf:2",
+                "M_Inf:3",
+                "B_ITE:1",
+                "B_ITE:2",
+                "B_ITE:3",
+                "B_ITE:5",
+                "B_ITE:6",
+                "B_ITE:7",
+                "M_ITE:1",
+                "M_ITE:2",
+                "M_ITE:3",
+                "MuITE:1",
+                "MuITE:2",
+                "MuITE:3",
+                "M_ITS:1",
+                "M_ITS:2",
+                "M_ITS:3",
+                "B_Minf:1",
+                "B_Minf:2",
+                "B_Minf:3",
+                "B_Minf:4",
+                "B_Minf:5",
+                "B_Minf:6",
+                "B_Minf:7",
+                "M_SDBM:1",
+                "M_SDBM:2",
+                "M_SDBM:3",
+                "B_STec:1",
+                "B_STec:3",
+                "B_STec:5",
+                "B_Tinf:1",
+                "B_Tinf:3",
+                "B_Tinf:4",
+                "B_Tinf:5",
+                "B_Tinf:7",
+                "B_Winf:1",
+                "B_Winf:2",
+                "B_Winf:3",
+                "B_Winf:4",
+                "B_Winf:5",
+                "B_Winf:6",
+                "B_Winf:7",
+                "M_WIM:1",
+                "M_WIM:2",
+                "M_WIM:3",
+                "B_Wing:1",
+                "B_Wing:2",
+                "B_Wing:3",
+                "B_Wing:4",
+                "B_Wing:5",
+                "B_Wing:6",
+                "B_Wing:7",
+                "M_Wing:1",
+                "M_Wing:2",
+                "M_Wing:3",
+                "ITAM:1",
+                "ITAM:3",
+                "ITAM:5",
+                "ITAS:1",
+                "ITAS:3",
+                "ITAS:5",
+                "ITAW:1",
+                "B_BWL:1",
+                "B_BWL:2",
+                "B_BWL:3",
+                "B_BWL:4",
+                "B_BWL:5",
+                "B_BWL:6",
+                "B_BWL:7",
+                "M_BWL:1",
+                "M_BWL:2",
+                "M_BWL:3",
+                "M_BWL:4",
+                "B_CGT:1",
+                "B_CGT:2",
+                "B_CGT:3",
+                "B_CGT:4",
+                "B_CGT:5",
+                "B_CGT:6",
+                "B_CGT:7",
+                "B_DAWP:1",
+                "B_DAWP:2",
+                "B_DAWP:3",
+                "B_DSAI:1",
+                "B_DSAI:2",
+                "B_DSAI:3",
+                "B_DSAI:4",
+                "B_DSAI:5",
+                "B_DSAI:7",
+                "M_DSAI:1",
+                "M_DSAI:2",
+                "M_DSAI:3",
+                "B_ECom:1",
+                "B_ECom:2",
+                "B_ECom:3",
+                "B_ECom:4",
+                "B_ECom:5",
+                "B_ECom:6",
+                "B_ECom:7",
+                "M_ECom:1",
+                "M_ECom:2",
+                "M_ECom:3",
+                "B_IMCA:1",
+                "B_IMCA:3",
+                "B_IMCA:4",
+                "B_IMCA:5",
+                "B_IMCA:6",
+                "B_IMCA:7",
+                "B_Inf:1",
+                "B_Inf:2",
+                "B_Inf:3",
+                "B_Inf:4",
+                "B_Inf:5",
+                "B_Inf:6",
+                "B_Inf:7",
+                "M_Inf:1",
+                "M_Inf:2",
+                "M_Inf:3",
+                "B_ITE:1",
+                "B_ITE:2",
+                "B_ITE:3",
+                "B_ITE:5",
+                "B_ITE:6",
+                "B_ITE:7",
+                "M_ITE:1",
+                "M_ITE:2",
+                "M_ITE:3",
+                "MuITE:1",
+                "MuITE:2",
+                "MuITE:3",
+                "M_ITS:1",
+                "M_ITS:2",
+                "M_ITS:3",
+                "B_Minf:1",
+                "B_Minf:2",
+                "B_Minf:3",
+                "B_Minf:4",
+                "B_Minf:5",
+                "B_Minf:6",
+                "B_Minf:7",
+                "M_SDBM:1",
+                "M_SDBM:2",
+                "M_SDBM:3",
+                "B_STec:1",
+                "B_STec:3",
+                "B_STec:5",
+                "B_Tinf:1",
+                "B_Tinf:3",
+                "B_Tinf:4",
+                "B_Tinf:5",
+                "B_Tinf:7",
+                "B_Winf:1",
+                "B_Winf:2",
+                "B_Winf:3",
+                "B_Winf:4",
+                "B_Winf:5",
+                "B_Winf:6",
+                "B_Winf:7",
+                "M_WIM:1",
+                "M_WIM:2",
+                "M_WIM:3",
+                "B_Wing:1",
+                "B_Wing:2",
+                "B_Wing:3",
+                "B_Wing:4",
+                "B_Wing:5",
+                "B_Wing:6",
+                "B_Wing:7",
+                "M_Wing:1",
+                "M_Wing:2",
+                "M_Wing:3"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "HS"
+        },
+        {
+            "name": "Lineare Algebra",
+            "employees": [
+                "aha"
+            ],
+            "participants": [
+                "B_CGT:2",
+                "B_CGT:3",
+                "B_DSAI:2",
+                "B_DSAI:3",
+                "B_Inf:3",
+                "B_Inf:4",
+                "B_ITE:2",
+                "B_ITE:3",
+                "B_Minf:3",
+                "B_Minf:4",
+                "B_Tinf:3",
+                "B_CGT:2",
+                "B_CGT:3",
+                "B_DSAI:2",
+                "B_DSAI:3",
+                "B_Inf:3",
+                "B_Inf:4",
+                "B_ITE:2",
+                "B_ITE:3",
+                "B_Minf:3",
+                "B_Minf:4",
+                "B_Tinf:3"
+            ],
+            "size": 44,
+            "weekly_blocks": 2,
+            "room_type": "HS"
+        },
+        {
+            "name": "Induktive Statistik",
+            "employees": [
+                "fbo"
+            ],
+            "participants": [
+                "B_BWL:2",
+                "B_BWL:3",
+                "B_CGT:3",
+                "B_CGT:4",
+                "B_DAWP:2",
+                "B_DAWP:3",
+                "B_DSAI:2",
+                "B_DSAI:3",
+                "B_ECom:3",
+                "B_ECom:4",
+                "B_IMCA:4",
+                "B_IMCA:5",
+                "B_Inf:5",
+                "B_Inf:6",
+                "B_STec:5",
+                "B_Winf:3",
+                "B_Winf:4",
+                "B_Wing:3",
+                "B_Wing:4",
+                "B_BWL:2",
+                "B_BWL:3",
+                "B_CGT:3",
+                "B_CGT:4",
+                "B_DAWP:2",
+                "B_DAWP:3",
+                "B_DSAI:2",
+                "B_DSAI:3",
+                "B_ECom:3",
+                "B_ECom:4",
+                "B_IMCA:4",
+                "B_IMCA:5",
+                "B_Inf:5",
+                "B_Inf:6",
+                "B_STec:5",
+                "B_Winf:3",
+                "B_Winf:4",
+                "B_Wing:3",
+                "B_Wing:4"
+            ],
+            "size": 44,
+            "weekly_blocks": 3,
+            "room_type": "HS"
+        },
+        {
+            "name": "E-Commerce Datenmanagement",
+            "employees": [
+                "sba"
+            ],
+            "participants": [
+                "B_ECom:5",
+                "B_ECom:6",
+                "B_ECom:5",
+                "B_ECom:6"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "HS"
+        },
+        {
+            "name": "Einführung in die Betriebswirtschaft",
+            "employees": [
+                "fko"
+            ],
+            "participants": [
+                "B_CGT:3",
+                "B_DSAI:1",
+                "B_DSAI:2",
+                "B_Inf:2",
+                "B_Inf:3",
+                "B_Tinf:5",
+                "B_CGT:3",
+                "B_DSAI:1",
+                "B_DSAI:2",
+                "B_Inf:2",
+                "B_Inf:3",
+                "B_Tinf:5"
+            ],
+            "size": 44,
+            "weekly_blocks": 2,
+            "room_type": "HS"
+        },
+        {
+            "name": "Grundlagen Rechnungswesen",
+            "employees": [
+                "web"
+            ],
+            "participants": [
+                "B_BWL:1",
+                "B_BWL:2",
+                "B_DAWP:1",
+                "B_DAWP:2",
+                "B_ECom:1",
+                "B_ECom:2",
+                "B_IMCA:1",
+                "B_Winf:1",
+                "B_Winf:2",
+                "B_Wing:1",
+                "B_Wing:2",
+                "B_BWL:1",
+                "B_BWL:2",
+                "B_DAWP:1",
+                "B_DAWP:2",
+                "B_ECom:1",
+                "B_ECom:2",
+                "B_IMCA:1",
+                "B_Winf:1",
+                "B_Winf:2",
+                "B_Wing:1",
+                "B_Wing:2"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "HS"
+        },
+        {
+            "name": "Grundlagen der Betriebswirtschaftslehre",
+            "employees": [
+                "afi",
+                "fbo",
+                "gh",
+                "gi",
+                "web"
+            ],
+            "participants": [
+                "B_BWL:1",
+                "B_BWL:2",
+                "B_DAWP:1",
+                "B_DAWP:2",
+                "B_ECom:1",
+                "B_ECom:2",
+                "B_IMCA:1",
+                "B_Winf:1",
+                "B_Winf:2",
+                "B_Wing:1",
+                "B_Wing:2",
+                "B_BWL:1",
+                "B_BWL:2",
+                "B_DAWP:1",
+                "B_DAWP:2",
+                "B_ECom:1",
+                "B_ECom:2",
+                "B_IMCA:1",
+                "B_Winf:1",
+                "B_Winf:2",
+                "B_Wing:1",
+                "B_Wing:2"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "HS"
+        },
+        {
+            "name": "Analysis (Übung)",
+            "employees": [
+                "fko"
+            ],
+            "participants": [
+                "B_BWL:1",
+                "B_CGT:1",
+                "B_DSAI:1",
+                "B_IMCA:1",
+                "B_Inf:1",
+                "B_Minf:1",
+                "B_Winf:1",
+                "B_Wing:1",
+                "B_Wing:2",
+                "B_BWL:1",
+                "B_CGT:1",
+                "B_DSAI:1",
+                "B_IMCA:1",
+                "B_Inf:1",
+                "B_Minf:1",
+                "B_Winf:1",
+                "B_Wing:1",
+                "B_Wing:2"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "HS"
+        },
+        {
+            "name": "Seminar (E-Commerce)",
+            "employees": [
+                "awo",
+                "jpl"
+            ],
+            "participants": [
+                "B_ECom:6",
+                "M_ECom:1",
+                "M_ECom:2",
+                "B_ECom:6",
+                "M_ECom:1",
+                "M_ECom:2"
+            ],
+            "size": 44,
+            "weekly_blocks": 2,
+            "room_type": "SR"
+        },
+        {
+            "name": "Online-Plattform (Konzeption & Aufbau)",
+            "employees": [
+                "awo"
+            ],
+            "participants": [
+                "B_ECom:4",
+                "B_ECom:5",
+                "B_ECom:4",
+                "B_ECom:5"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "SR"
+        },
+        {
+            "name": "Hochschullehrerkonferenz",
+            "employees": [
+                "gi"
+            ],
+            "participants": [],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "SR"
+        },
+        {
+            "name": "Workshop Mikroprozessor / Mikrocontroller-Seminar",
+            "employees": [
+                "voe"
+            ],
+            "participants": [
+                "B_Tinf:4",
+                "B_Tinf:5",
+                "B_Tinf:4",
+                "B_Tinf:5"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "SR"
+        },
+        {
+            "name": "Programmstrukturen 2 (Übung.1)",
+            "employees": [
+                "bwa",
+                "cei",
+                "klk",
+                "nvk"
+            ],
+            "participants": [
+                "B_CGT:2",
+                "B_Minf:2",
+                "B_CGT:2",
+                "B_Minf:2"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "SR"
+        },
+        {
+            "name": "Programmierung 1",
+            "employees": [
+                "ahr"
+            ],
+            "participants": [
+                "ITAM:1",
+                "ITAS:1",
+                "ITAW:1",
+                "ITAM:1",
+                "ITAS:1",
+                "ITAW:1"
+            ],
+            "size": 44,
+            "weekly_blocks": 2,
+            "room_type": "SR"
+        },
+        {
+            "name": "AuD (Übung.6)",
+            "employees": [
+                "aan",
+                "avh",
+                "mhe",
+                "tti"
+            ],
+            "participants": [
+                "B_DSAI:3",
+                "B_DSAI:4",
+                "B_IMCA:3",
+                "B_IMCA:4",
+                "B_Winf:3",
+                "B_Winf:4",
+                "B_DSAI:3",
+                "B_DSAI:4",
+                "B_IMCA:3",
+                "B_IMCA:4",
+                "B_Winf:3",
+                "B_Winf:4"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "SR"
+        },
+        {
+            "name": "AuD (Übung.7)",
+            "employees": [
+                "aan",
+                "avh",
+                "mhe",
+                "tti"
+            ],
+            "participants": [
+                "B_DSAI:3",
+                "B_DSAI:4",
+                "B_IMCA:3",
+                "B_IMCA:4",
+                "B_Winf:3",
+                "B_Winf:4",
+                "B_DSAI:3",
+                "B_DSAI:4",
+                "B_IMCA:3",
+                "B_IMCA:4",
+                "B_Winf:3",
+                "B_Winf:4"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "SR"
+        },
+        {
+            "name": "AuD (Übung.3)",
+            "employees": [
+                "aan",
+                "avh",
+                "mhe",
+                "tti"
+            ],
+            "participants": [
+                "B_Inf:3",
+                "B_Inf:4",
+                "B_Inf:3",
+                "B_Inf:4"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "SR"
+        },
+        {
+            "name": "AuD (Übung.4)",
+            "employees": [
+                "aan",
+                "avh",
+                "mhe",
+                "tti"
+            ],
+            "participants": [
+                "B_Inf:3",
+                "B_Inf:4",
+                "B_Inf:3",
+                "B_Inf:4"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "SR"
+        },
+        {
+            "name": "AuD (Übung.5)",
+            "employees": [
+                "aan",
+                "avh",
+                "mhe",
+                "tti"
+            ],
+            "participants": [
+                "B_ITE:3",
+                "B_STec:3",
+                "B_Tinf:3",
+                "B_Tinf:4",
+                "B_ITE:3",
+                "B_STec:3",
+                "B_Tinf:3",
+                "B_Tinf:4"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "SR"
+        },
+        {
+            "name": "Praktikum Wirkprinzipien und Technologie",
+            "employees": [
+                "uh"
+            ],
+            "participants": [
+                "B_ITE:1",
+                "B_STec:1",
+                "B_Tinf:1",
+                "B_ITE:1",
+                "B_STec:1",
+                "B_Tinf:1"
+            ],
+            "size": 44,
+            "weekly_blocks": 2,
+            "room_type": "SR"
+        },
+        {
+            "name": "Projekt Eingebettete Software",
+            "employees": [
+                "bos",
+                "uh"
+            ],
+            "participants": [
+                "B_STec:3",
+                "B_STec:3"
+            ],
+            "size": 44,
+            "weekly_blocks": 2,
+            "room_type": "SR"
+        },
+        {
+            "name": "Deutsch 1",
+            "employees": [
+                "sed"
+            ],
+            "participants": [
+                "ITAM:3",
+                "ITAS:3",
+                "ITAM:3",
+                "ITAS:3"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "SR"
+        },
+        {
+            "name": "Englisch 1",
+            "employees": [
+                "hw"
+            ],
+            "participants": [
+                "ITAM:3",
+                "ITAS:3",
+                "ITAM:3",
+                "ITAS:3"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "SR"
+        },
+        {
+            "name": "Betriebsrat",
+            "employees": [],
+            "participants": [],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "SR"
+        },
+        {
+            "name": "AG Smart Technology",
+            "employees": [
+                "uh"
+            ],
+            "participants": [
+                "B_STec:1",
+                "B_STec:3",
+                "B_STec:5",
+                "B_STec:1",
+                "B_STec:3",
+                "B_STec:5"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "SR"
+        },
+        {
+            "name": "Allgemeine BWL",
+            "employees": [
+                "wol"
+            ],
+            "participants": [
+                "ITAM:1",
+                "ITAS:1",
+                "ITAW:1",
+                "ITAM:1",
+                "ITAS:1",
+                "ITAW:1"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "HS"
+        },
+        {
+            "name": "SP (Tutorium)",
+            "employees": [
+                "bos"
+            ],
+            "participants": [
+                "ITAM:3",
+                "ITAS:3",
+                "ITAM:3",
+                "ITAS:3"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "HS"
+        },
+        {
+            "name": "Datenvisualisierung / Feature Engineering",
+            "employees": [
+                "ann"
+            ],
+            "participants": [
+                "B_DSAI:3",
+                "B_DSAI:4",
+                "B_Minf:5",
+                "B_Minf:6",
+                "B_DSAI:3",
+                "B_DSAI:4",
+                "B_Minf:5",
+                "B_Minf:6"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "HS"
+        },
+        {
+            "name": "Entre- und Intrapreneurship",
+            "employees": [
+                "jpl",
+                "vma"
+            ],
+            "participants": [
+                "B_Tinf:5",
+                "B_Tinf:6",
+                "B_Winf:5",
+                "B_Winf:6",
+                "B_Tinf:5",
+                "B_Tinf:6",
+                "B_Winf:5",
+                "B_Winf:6"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "HS"
+        },
+        {
+            "name": "Einführung i.d. Konstruktion (+ Übung)",
+            "employees": [
+                "ba",
+                "jg"
+            ],
+            "participants": [
+                "B_ITE:3",
+                "B_Wing:3",
+                "B_Wing:4",
+                "B_ITE:3",
+                "B_Wing:3",
+                "B_Wing:4"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "HS"
+        },
+        {
+            "name": "Sustainable Corporate Governance",
+            "employees": [
+                "web"
+            ],
+            "participants": [
+                "M_BWL:1",
+                "M_BWL:2",
+                "M_SDBM:1",
+                "M_SDBM:2",
+                "M_BWL:1",
+                "M_BWL:2",
+                "M_SDBM:1",
+                "M_SDBM:2"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "HS"
+        },
+        {
+            "name": "Sustainability Economics & Digital Platforms",
+            "employees": [
+                "gi"
+            ],
+            "participants": [
+                "M_BWL:1",
+                "M_BWL:2",
+                "M_SDBM:1",
+                "M_SDBM:2",
+                "M_Wing:1",
+                "M_Wing:2",
+                "M_BWL:1",
+                "M_BWL:2",
+                "M_SDBM:1",
+                "M_SDBM:2",
+                "M_Wing:1",
+                "M_Wing:2"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "HS"
+        },
+        {
+            "name": "Security Management",
+            "employees": [
+                "gb"
+            ],
+            "participants": [
+                "M_BWL:1",
+                "M_BWL:2",
+                "M_ITE:1",
+                "M_ITE:2",
+                "MuITE:1",
+                "MuITE:2",
+                "M_ITS:1",
+                "M_ITS:2",
+                "M_WIM:1",
+                "M_WIM:2",
+                "M_Wing:1",
+                "M_Wing:2",
+                "M_BWL:1",
+                "M_BWL:2",
+                "M_ITE:1",
+                "M_ITE:2",
+                "MuITE:1",
+                "MuITE:2",
+                "M_ITS:1",
+                "M_ITS:2",
+                "M_WIM:1",
+                "M_WIM:2",
+                "M_Wing:1",
+                "M_Wing:2"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "HS"
+        },
+        {
+            "name": "Systemnahe Programmierung (SP)",
+            "employees": [
+                "uhl"
+            ],
+            "participants": [
+                "ITAM:3",
+                "ITAS:3",
+                "B_CGT:3",
+                "B_CGT:4",
+                "B_Inf:3",
+                "B_Inf:4",
+                "B_ITE:3",
+                "B_Minf:3",
+                "B_Minf:4",
+                "B_STec:3",
+                "B_Tinf:3",
+                "B_Tinf:4",
+                "ITAM:3",
+                "ITAS:3",
+                "B_CGT:3",
+                "B_CGT:4",
+                "B_Inf:3",
+                "B_Inf:4",
+                "B_ITE:3",
+                "B_Minf:3",
+                "B_Minf:4",
+                "B_STec:3",
+                "B_Tinf:3",
+                "B_Tinf:4"
+            ],
+            "size": 44,
+            "weekly_blocks": 2,
+            "room_type": "HS"
+        },
+        {
+            "name": "Algorithmen und Datenstrukturen (AuD)",
+            "employees": [
+                "uhl"
+            ],
+            "participants": [
+                "B_CGT:3",
+                "B_CGT:4",
+                "B_DSAI:3",
+                "B_DSAI:4",
+                "B_IMCA:3",
+                "B_IMCA:4",
+                "B_Inf:3",
+                "B_Inf:4",
+                "B_ITE:3",
+                "B_Minf:4",
+                "B_Minf:5",
+                "B_STec:3",
+                "B_Tinf:3",
+                "B_Tinf:4",
+                "B_Winf:3",
+                "B_Winf:4",
+                "B_CGT:3",
+                "B_CGT:4",
+                "B_DSAI:3",
+                "B_DSAI:4",
+                "B_IMCA:3",
+                "B_IMCA:4",
+                "B_Inf:3",
+                "B_Inf:4",
+                "B_ITE:3",
+                "B_Minf:4",
+                "B_Minf:5",
+                "B_STec:3",
+                "B_Tinf:3",
+                "B_Tinf:4",
+                "B_Winf:3",
+                "B_Winf:4"
+            ],
+            "size": 44,
+            "weekly_blocks": 2,
+            "room_type": "HS"
+        },
+        {
+            "name": "Data Literacy",
+            "employees": [
+                "ann"
+            ],
+            "participants": [
+                "B_BWL:3",
+                "B_BWL:4",
+                "B_DSAI:1",
+                "B_DSAI:2",
+                "B_ECom:1",
+                "B_ECom:2",
+                "B_ECom:5",
+                "B_Wing:3",
+                "B_Wing:4",
+                "B_BWL:3",
+                "B_BWL:4",
+                "B_DSAI:1",
+                "B_DSAI:2",
+                "B_ECom:1",
+                "B_ECom:2",
+                "B_ECom:5",
+                "B_Wing:3",
+                "B_Wing:4"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "HS"
+        },
+        {
+            "name": "Discrete Mathematics",
+            "employees": [
+                "iw"
+            ],
+            "participants": [
+                "MuITE:1",
+                "MuITE:2",
+                "MuITE:1",
+                "MuITE:2"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "HS"
+        },
+        {
+            "name": "IT-Steuerung und IT-gestütztes BPM (nur nach Bekanntgabe)",
+            "employees": [
+                "rpo"
+            ],
+            "participants": [
+                "B_IMCA:5",
+                "B_IMCA:6",
+                "B_IMCA:5",
+                "B_IMCA:6"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "HS"
+        },
+        {
+            "name": "Einführung in die Robotik",
+            "employees": [
+                "uh"
+            ],
+            "participants": [
+                "B_ITE:5",
+                "B_ITE:6",
+                "B_Minf:4",
+                "B_Minf:6",
+                "B_Tinf:5",
+                "B_Tinf:6",
+                "B_ITE:5",
+                "B_ITE:6",
+                "B_Minf:4",
+                "B_Minf:6",
+                "B_Tinf:5",
+                "B_Tinf:6"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "HS"
+        },
+        {
+            "name": "Methoden der Künstlichen Intelligenz",
+            "employees": [
+                "gb"
+            ],
+            "participants": [
+                "M_DSAI:1",
+                "M_DSAI:2",
+                "M_Inf:1",
+                "M_Inf:2",
+                "M_WIM:1",
+                "M_WIM:2",
+                "M_DSAI:1",
+                "M_DSAI:2",
+                "M_Inf:1",
+                "M_Inf:2",
+                "M_WIM:1",
+                "M_WIM:2"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "HS"
+        },
+        {
+            "name": "Fotorealismus und Simulation",
+            "employees": [
+                "bo"
+            ],
+            "participants": [
+                "M_Inf:1",
+                "M_Inf:2",
+                "M_Inf:1",
+                "M_Inf:2"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "HS"
+        },
+        {
+            "name": "Visualisierung",
+            "employees": [
+                "bo"
+            ],
+            "participants": [
+                "M_Inf:1",
+                "M_Inf:2",
+                "M_Inf:1",
+                "M_Inf:2"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "HS"
+        },
+        {
+            "name": "Workshop Audio-Bearbeitung",
+            "employees": [
+                "hi"
+            ],
+            "participants": [
+                "ITAM:3",
+                "B_CGT:1",
+                "B_CGT:2",
+                "B_Minf:1",
+                "B_Minf:2",
+                "ITAM:3",
+                "B_CGT:1",
+                "B_CGT:2",
+                "B_Minf:1",
+                "B_Minf:2"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "HS"
+        },
+        {
+            "name": "Grundlagen der funktionalen Programmierung",
+            "employees": [
+                "tti"
+            ],
+            "participants": [
+                "ITAS:5",
+                "B_Inf:1",
+                "B_Inf:2",
+                "ITAS:5",
+                "B_Inf:1",
+                "B_Inf:2"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "HS"
+        },
+        {
+            "name": "Mechanische Grundlagen",
+            "employees": [
+                "aha"
+            ],
+            "participants": [
+                "B_DSAI:3",
+                "B_DSAI:4",
+                "B_ITE:1",
+                "B_ITE:2",
+                "B_ITE:3",
+                "B_Minf:4",
+                "B_STec:1",
+                "B_Tinf:1",
+                "B_Wing:1",
+                "B_Wing:2",
+                "B_DSAI:3",
+                "B_DSAI:4",
+                "B_ITE:1",
+                "B_ITE:2",
+                "B_ITE:3",
+                "B_Minf:4",
+                "B_STec:1",
+                "B_Tinf:1",
+                "B_Wing:1",
+                "B_Wing:2"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "HS"
+        },
+        {
+            "name": "Advanced Digital Marketing",
+            "employees": [
+                "jpl"
+            ],
+            "participants": [
+                "B_ECom:5",
+                "B_ECom:6",
+                "B_ECom:5",
+                "B_ECom:6"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "SR"
+        },
+        {
+            "name": "Energietechnik",
+            "employees": [
+                "smt"
+            ],
+            "participants": [
+                "M_SDBM:1",
+                "M_SDBM:2",
+                "M_Wing:1",
+                "M_Wing:2",
+                "M_SDBM:1",
+                "M_SDBM:2",
+                "M_Wing:1",
+                "M_Wing:2"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "SR"
+        },
+        {
+            "name": "Grundlagen der funktionalen Programmierung (Übung)",
+            "employees": [
+                "mhe",
+                "tti",
+                "tzw"
+            ],
+            "participants": [
+                "ITAS:5",
+                "B_Inf:1",
+                "B_Inf:2",
+                "ITAS:5",
+                "B_Inf:1",
+                "B_Inf:2"
+            ],
+            "size": 44,
+            "weekly_blocks": 2,
+            "room_type": "SR"
+        },
+        {
+            "name": "Geometrische Modellierung und Computeranimation (Praktikum)",
+            "employees": [
+                "mpg",
+                "pmu"
+            ],
+            "participants": [
+                "B_CGT:5",
+                "B_CGT:6",
+                "B_Minf:5",
+                "B_Minf:6",
+                "B_STec:5",
+                "B_CGT:5",
+                "B_CGT:6",
+                "B_Minf:5",
+                "B_Minf:6",
+                "B_STec:5"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "SR"
+        },
+        {
+            "name": "Workshop Audio-Bearbeitung (nach Absprache)",
+            "employees": [
+                "hi"
+            ],
+            "participants": [
+                "ITAM:3",
+                "B_CGT:1",
+                "B_CGT:2",
+                "B_Minf:1",
+                "B_Minf:2",
+                "ITAM:3",
+                "B_CGT:1",
+                "B_CGT:2",
+                "B_Minf:1",
+                "B_Minf:2"
+            ],
+            "size": 44,
+            "weekly_blocks": 2,
+            "room_type": "SR"
+        },
+        {
+            "name": "Projekt intelligente Systeme",
+            "employees": [
+                "uh"
+            ],
+            "participants": [
+                "B_STec:5",
+                "B_STec:5"
+            ],
+            "size": 44,
+            "weekly_blocks": 2,
+            "room_type": "SR"
+        },
+        {
+            "name": "Beratungskompetenz (nur nach Bekanntgabe)",
+            "employees": [
+                "rpo"
+            ],
+            "participants": [
+                "B_IMCA:4",
+                "B_IMCA:5",
+                "B_IMCA:4",
+                "B_IMCA:5"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "SR"
+        },
+        {
+            "name": "Aktuelle Entwicklungen in der Informatik",
+            "employees": [
+                "uh"
+            ],
+            "participants": [
+                "M_Inf:1",
+                "M_Inf:2",
+                "M_Inf:1",
+                "M_Inf:2"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "SR"
+        },
+        {
+            "name": "Einführung in die Robotik (Praktikum)",
+            "employees": [
+                "hoe"
+            ],
+            "participants": [
+                "B_ITE:5",
+                "B_ITE:6",
+                "B_ITE:5",
+                "B_ITE:6"
+            ],
+            "size": 44,
+            "weekly_blocks": 2,
+            "room_type": "SR"
+        },
+        {
+            "name": "Physikalisches Praktikum",
+            "employees": [
+                "jg",
+                "krg"
+            ],
+            "participants": [
+                "B_ITE:2",
+                "B_Wing:2",
+                "B_ITE:2",
+                "B_Wing:2"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "SR"
+        },
+        {
+            "name": "Programmstrukturen 1 (Abnahmen)",
+            "employees": [
+                "ahr",
+                "bwa",
+                "klk",
+                "mpg",
+                "ne",
+                "pmu"
+            ],
+            "participants": [
+                "B_CGT:1",
+                "B_DSAI:1",
+                "B_ECom:1",
+                "B_IMCA:1",
+                "B_Inf:1",
+                "B_ITE:1",
+                "B_Minf:1",
+                "B_STec:1",
+                "B_Tinf:1",
+                "B_Winf:1",
+                "B_CGT:1",
+                "B_DSAI:1",
+                "B_ECom:1",
+                "B_IMCA:1",
+                "B_Inf:1",
+                "B_ITE:1",
+                "B_Minf:1",
+                "B_STec:1",
+                "B_Tinf:1",
+                "B_Winf:1"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "SR"
+        },
+        {
+            "name": "Mobile Commerce (nur nach Bekanntgabe)",
+            "employees": [
+                "fhe",
+                "pmb"
+            ],
+            "participants": [
+                "B_ECom:3",
+                "B_ECom:4",
+                "B_Minf:2",
+                "B_Minf:3",
+                "B_ECom:3",
+                "B_ECom:4",
+                "B_Minf:2",
+                "B_Minf:3"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "HS"
+        },
+        {
+            "name": "Medical Engineering",
+            "employees": [
+                "dsg"
+            ],
+            "participants": [
+                "M_ITE:1",
+                "M_ITE:2",
+                "MuITE:1",
+                "MuITE:2",
+                "M_ITE:1",
+                "M_ITE:2",
+                "MuITE:1",
+                "MuITE:2"
+            ],
+            "size": 44,
+            "weekly_blocks": 2,
+            "room_type": "HS"
+        },
+        {
+            "name": "Medientechnik 1 (nach Absprache)",
+            "employees": [
+                "hi"
+            ],
+            "participants": [
+                "ITAM:1",
+                "ITAM:1"
+            ],
+            "size": 44,
+            "weekly_blocks": 3,
+            "room_type": "HS"
+        },
+        {
+            "name": "Grundlagen des E-Commerce",
+            "employees": [
+                "awo"
+            ],
+            "participants": [
+                "B_DSAI:3",
+                "B_DSAI:4",
+                "B_ECom:1",
+                "B_ECom:2",
+                "B_DSAI:3",
+                "B_DSAI:4",
+                "B_ECom:1",
+                "B_ECom:2"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "HS"
+        },
+        {
+            "name": "Grundl. der Elektrotechnik",
+            "employees": [
+                "cbu"
+            ],
+            "participants": [
+                "B_DSAI:3",
+                "B_DSAI:4",
+                "B_ITE:1",
+                "B_ITE:2",
+                "B_ITE:3",
+                "B_Minf:4",
+                "B_STec:1",
+                "B_Tinf:1",
+                "B_Wing:1",
+                "B_Wing:2",
+                "B_DSAI:3",
+                "B_DSAI:4",
+                "B_ITE:1",
+                "B_ITE:2",
+                "B_ITE:3",
+                "B_Minf:4",
+                "B_STec:1",
+                "B_Tinf:1",
+                "B_Wing:1",
+                "B_Wing:2"
+            ],
+            "size": 44,
+            "weekly_blocks": 2,
+            "room_type": "HS"
+        },
+        {
+            "name": "Merger & Acquisitions",
+            "employees": [
+                "cen",
+                "ysi"
+            ],
+            "participants": [
+                "M_BWL:1",
+                "M_BWL:2",
+                "M_WIM:1",
+                "M_WIM:2",
+                "M_Wing:1",
+                "M_Wing:2",
+                "M_BWL:1",
+                "M_BWL:2",
+                "M_WIM:1",
+                "M_WIM:2",
+                "M_Wing:1",
+                "M_Wing:2"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "HS"
+        },
+        {
+            "name": "Digitale Medien (Start am 25.10 , weitere Infos im Moodle-Kurs)",
+            "employees": [
+                "bau"
+            ],
+            "participants": [
+                "M_BWL:1",
+                "M_BWL:2",
+                "M_DSAI:1",
+                "M_DSAI:2",
+                "M_Wing:1",
+                "M_Wing:2",
+                "M_BWL:1",
+                "M_BWL:2",
+                "M_DSAI:1",
+                "M_DSAI:2",
+                "M_Wing:1",
+                "M_Wing:2"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "HS"
+        },
+        {
+            "name": "Introduction to Industrial AI Data-driven Ind.4.0 Concepts",
+            "employees": [
+                "ann",
+                "cbu"
+            ],
+            "participants": [
+                "M_ITE:1",
+                "M_ITE:2",
+                "MuITE:1",
+                "MuITE:2",
+                "M_Wing:1",
+                "M_Wing:2",
+                "M_ITE:1",
+                "M_ITE:2",
+                "MuITE:1",
+                "MuITE:2",
+                "M_Wing:1",
+                "M_Wing:2"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "HS"
+        },
+        {
+            "name": "Großintegrierte Systeme",
+            "employees": [
+                "dsg"
+            ],
+            "participants": [
+                "B_Tinf:4",
+                "B_Tinf:5",
+                "B_Tinf:4",
+                "B_Tinf:5"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "HS"
+        },
+        {
+            "name": "Computer Vision",
+            "employees": [
+                "dsg",
+                "mpa"
+            ],
+            "participants": [],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "HS"
+        },
+        {
+            "name": "Prozessmodellierung (+ Übung)",
+            "employees": [
+                "kil",
+                "uhl"
+            ],
+            "participants": [
+                "B_DSAI:5",
+                "B_ECom:5",
+                "B_ECom:6",
+                "B_IMCA:4",
+                "B_IMCA:5",
+                "B_Inf:4",
+                "B_Inf:5",
+                "B_Winf:4",
+                "B_Winf:5",
+                "B_Wing:3",
+                "B_Wing:4",
+                "B_DSAI:5",
+                "B_ECom:5",
+                "B_ECom:6",
+                "B_IMCA:4",
+                "B_IMCA:5",
+                "B_Inf:4",
+                "B_Inf:5",
+                "B_Winf:4",
+                "B_Winf:5",
+                "B_Wing:3",
+                "B_Wing:4"
+            ],
+            "size": 44,
+            "weekly_blocks": 2,
+            "room_type": "HS"
+        },
+        {
+            "name": "Grundlagen von Computer-Games und interaktiven Medien",
+            "employees": [
+                "dko"
+            ],
+            "participants": [
+                "B_CGT:1",
+                "B_CGT:2",
+                "B_CGT:1",
+                "B_CGT:2"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "HS"
+        },
+        {
+            "name": "Künstliche Intelligenz und Recht (Start am 8. November)",
+            "employees": [
+                "bra"
+            ],
+            "participants": [
+                "M_DSAI:1",
+                "M_DSAI:1"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "HS"
+        },
+        {
+            "name": "Technologie Mediengestaltung und GUI-Programmierung",
+            "employees": [
+                "ona"
+            ],
+            "participants": [
+                "B_Minf:5",
+                "B_Minf:6",
+                "B_STec:5",
+                "B_Minf:5",
+                "B_Minf:6",
+                "B_STec:5"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "HS"
+        },
+        {
+            "name": "Einführung in die Programmierung",
+            "employees": [
+                "krg"
+            ],
+            "participants": [
+                "B_BWL:1",
+                "B_BWL:2",
+                "B_DAWP:1",
+                "B_DAWP:2",
+                "B_ECom:1",
+                "B_ECom:2",
+                "B_Wing:1",
+                "B_Wing:2",
+                "B_BWL:1",
+                "B_BWL:2",
+                "B_DAWP:1",
+                "B_DAWP:2",
+                "B_ECom:1",
+                "B_ECom:2",
+                "B_Wing:1",
+                "B_Wing:2"
+            ],
+            "size": 44,
+            "weekly_blocks": 2,
+            "room_type": "HS"
+        },
+        {
+            "name": "Analysis",
+            "employees": [
+                "fko"
+            ],
+            "participants": [
+                "B_BWL:1",
+                "B_CGT:1",
+                "B_DSAI:1",
+                "B_IMCA:1",
+                "B_Inf:1",
+                "B_Minf:1",
+                "B_Winf:1",
+                "B_Wing:1",
+                "B_Wing:2",
+                "B_BWL:1",
+                "B_CGT:1",
+                "B_DSAI:1",
+                "B_IMCA:1",
+                "B_Inf:1",
+                "B_Minf:1",
+                "B_Winf:1",
+                "B_Wing:1",
+                "B_Wing:2"
+            ],
+            "size": 44,
+            "weekly_blocks": 2,
+            "room_type": "HS"
+        },
+        {
+            "name": "Communication Skills (Gruppen und Termine über Moodle)",
+            "employees": [
+                "amk",
+                "pgo"
+            ],
+            "participants": [
+                "B_BWL:4",
+                "B_CGT:4",
+                "B_IMCA:6",
+                "B_ITE:5",
+                "B_ITE:6",
+                "B_Minf:2",
+                "B_Minf:6",
+                "B_STec:3",
+                "B_Tinf:6",
+                "B_Winf:6",
+                "B_BWL:4",
+                "B_CGT:4",
+                "B_IMCA:6",
+                "B_ITE:5",
+                "B_ITE:6",
+                "B_Minf:2",
+                "B_Minf:6",
+                "B_STec:3",
+                "B_Tinf:6",
+                "B_Winf:6"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "SR"
+        },
+        {
+            "name": "E-Commerce Plattform-Architektur",
+            "employees": [
+                "awo"
+            ],
+            "participants": [
+                "M_ECom:1",
+                "M_ECom:2",
+                "M_ECom:1",
+                "M_ECom:2"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "SR"
+        },
+        {
+            "name": "Predictive Maintenance Lab",
+            "employees": [
+                "ann",
+                "cbu"
+            ],
+            "participants": [
+                "M_ITE:1",
+                "M_ITE:2",
+                "MuITE:1",
+                "MuITE:2",
+                "M_Wing:1",
+                "M_Wing:2",
+                "M_ITE:1",
+                "M_ITE:2",
+                "MuITE:1",
+                "MuITE:2",
+                "M_Wing:1",
+                "M_Wing:2"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "SR"
+        },
+        {
+            "name": "Anwendungsentwicklung in ERP-Systemen (+ Übung)",
+            "employees": [
+                "kil",
+                "wol"
+            ],
+            "participants": [
+                "ITAS:5",
+                "KAI:5",
+                "B_IMCA:5",
+                "B_IMCA:6",
+                "B_Inf:5",
+                "B_Inf:6",
+                "B_Winf:5",
+                "B_Winf:6",
+                "ITAS:5",
+                "KAI:5",
+                "B_IMCA:5",
+                "B_IMCA:6",
+                "B_Inf:5",
+                "B_Inf:6",
+                "B_Winf:5",
+                "B_Winf:6"
+            ],
+            "size": 44,
+            "weekly_blocks": 2,
+            "room_type": "SR"
+        },
+        {
+            "name": "Bildbearbeitung",
+            "employees": [
+                "ne"
+            ],
+            "participants": [
+                "ITAM:3",
+                "ITAM:3"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "SR"
+        },
+        {
+            "name": "Bildbearbeitung (Praktikum)",
+            "employees": [
+                "ne"
+            ],
+            "participants": [
+                "ITAM:3",
+                "ITAM:3"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "SR"
+        },
+        {
+            "name": "Visual Effects and Shader (Praktikum)",
+            "employees": [
+                "aan",
+                "avh",
+                "pmu"
+            ],
+            "participants": [
+                "B_CGT:5",
+                "B_CGT:6",
+                "B_CGT:5",
+                "B_CGT:6"
+            ],
+            "size": 44,
+            "weekly_blocks": 2,
+            "room_type": "SR"
+        },
+        {
+            "name": "Unternehmensbesteuerung 1 (nur nach Bekanntgabe)",
+            "employees": [
+                "fre"
+            ],
+            "participants": [
+                "B_BWL:3",
+                "B_BWL:4",
+                "B_IMCA:3",
+                "B_IMCA:4",
+                "B_BWL:3",
+                "B_BWL:4",
+                "B_IMCA:3",
+                "B_IMCA:4"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "SR"
+        },
+        {
+            "name": "Visual Effects and Shader",
+            "employees": [
+                "jso"
+            ],
+            "participants": [
+                "B_CGT:5",
+                "B_CGT:6",
+                "B_CGT:5",
+                "B_CGT:6"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "SR"
+        },
+        {
+            "name": "Physik für Computer Games",
+            "employees": [
+                "bo"
+            ],
+            "participants": [
+                "B_CGT:6",
+                "B_CGT:6"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "SR"
+        },
+        {
+            "name": "Wirtschaftsethik 1",
+            "employees": [
+                "ch"
+            ],
+            "participants": [
+                "ITAM:3",
+                "ITAS:3",
+                "ITAM:3",
+                "ITAS:3"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "SR"
+        },
+        {
+            "name": "Commercial English (Gruppe 2)",
+            "employees": [
+                "ev"
+            ],
+            "participants": [
+                "B_DAWP:1",
+                "B_DAWP:1"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "SR"
+        },
+        {
+            "name": "Business English (Gruppe 2)",
+            "employees": [
+                "ev"
+            ],
+            "participants": [
+                "KAI:5",
+                "B_DAWP:1",
+                "KAI:5",
+                "B_DAWP:1"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "SR"
+        },
+        {
+            "name": "Digitaltechnik (Praktikum)",
+            "employees": [
+                "tfs"
+            ],
+            "participants": [
+                "B_ITE:1",
+                "B_STec:1",
+                "B_Tinf:1",
+                "B_ITE:1",
+                "B_STec:1",
+                "B_Tinf:1"
+            ],
+            "size": 44,
+            "weekly_blocks": 2,
+            "room_type": "SR"
+        },
+        {
+            "name": "User Experience (nur nach Bekanntgabe)",
+            "employees": [
+                "kzo",
+                "ols"
+            ],
+            "participants": [
+                "B_ECom:3",
+                "B_ECom:4",
+                "B_Minf:2",
+                "B_Minf:3",
+                "B_ECom:3",
+                "B_ECom:4",
+                "B_Minf:2",
+                "B_Minf:3"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "HS"
+        },
+        {
+            "name": "Change Management (Workshops am 6. und 7. Dezember 2024)",
+            "employees": [
+                "aah"
+            ],
+            "participants": [
+                "M_BWL:1",
+                "M_BWL:2",
+                "M_DSAI:1",
+                "M_DSAI:2",
+                "M_ECom:1",
+                "M_ECom:2",
+                "M_SDBM:1",
+                "M_SDBM:2",
+                "M_WIM:1",
+                "M_WIM:2",
+                "M_Wing:1",
+                "M_Wing:2",
+                "M_BWL:1",
+                "M_BWL:2",
+                "M_DSAI:1",
+                "M_DSAI:2",
+                "M_ECom:1",
+                "M_ECom:2",
+                "M_SDBM:1",
+                "M_SDBM:2",
+                "M_WIM:1",
+                "M_WIM:2",
+                "M_Wing:1",
+                "M_Wing:2"
+            ],
+            "size": 44,
+            "weekly_blocks": 1,
+            "room_type": "HS"
+        }
+    ],
+    "constraints": {
+        "hard": [],
+        "soft": []
+    }
+}
