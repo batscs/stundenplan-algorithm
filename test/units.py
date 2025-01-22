@@ -9,7 +9,7 @@ def test_constraint_employeesubsequenttimeslots():
 
         if result:
             events = result["data"]["timetable"]
-            solution = [ (1, 1), (1, 3), (2, 1), (2, 3) ]
+            solution = [(1, 1), (1, 3), (2, 1), (2, 3)]
 
             for event in events:
                 schedule = (event["day"], event["timeslot"])
@@ -29,6 +29,7 @@ def test_constraint_employeesubsequenttimeslots():
         print(f"Test failed with error: {e}")
         return False
 
+
 def test_constraint_eventdistributeweeklyblocks():
     """Test scenario for employee subsequent timeslots constraint."""
     input_file = "input/FHW_CONSTRAINTS_EventDistributeWeeklyBlocks_NotInverted.json"
@@ -46,6 +47,28 @@ def test_constraint_eventdistributeweeklyblocks():
                 return True
             else:
                 return False
+
+        return False
+    except Exception as e:
+        print(f"Test failed with error: {e}")
+        return False
+
+def test_constraint_employeefreetimeslots():
+    """Test scenario for employee subsequent timeslots constraint."""
+    input_file = "input/FHW_CONSTRAINTS_EmployeeFreeTimeslots.json"
+    try:
+        result = call_api(input_file)
+
+        if result:
+            events = result["data"]["timetable"]
+            days = set()
+
+            event = events[0]
+            day = event["day"]
+            timeslot = event["timeslot"]
+
+            if day == 2 and timeslot == 3:
+                return True
 
         return False
     except Exception as e:

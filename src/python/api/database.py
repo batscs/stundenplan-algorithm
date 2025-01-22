@@ -8,57 +8,55 @@ def inject(new_data):
     global data
     data = new_data
 
-def get_dates_by_id() -> dict[int, dict]:
+
+def get_schedule() -> [(int, int)]:
     """Returns a dictionary of date indices to day and time slot details."""
     days = list(range(1, data["metadata"]["days"] + 1))
     timeslots = list(range(1, data["metadata"]["timeslots"] + 1))
 
-    dates = {}
-    index = 1
+    dates = []
     for day in days:
         for timeslot in timeslots:
-            dates[index] = {
+            dates.append({
                 'day': day,
                 'timeslot': timeslot
-            }
-            index += 1
+            })
     return dates
 
-def get_rooms_by_id() -> dict[str, dict]:
+
+def get_rooms() -> dict[str, dict]:
     """Returns a dictionary of room abbreviations to room details."""
-
-    rooms = {}
-    for room in data['rooms']:
-        rooms[room['name']] = {
-            **room
-        }
-    return rooms
+    return data["rooms"]
 
 
-def get_events_by_id():
+def get_events():
     """Returns a dictionary of event names to event details."""
     return data["events"]
+
 
 def get_lessons():
     lessons = [
         event
-        for event in get_events_by_id()
+        for event in get_events()
         for _ in range(event["weekly_blocks"])
     ]
 
     return lessons
 
+
 def get_constraints_hard():
     return data["constraints"]["hard"]
+
 
 def get_constraints_soft():
     return data["constraints"]["soft"]
 
+
 def get_date_x_room():
     date_x_room = [
-        (d, r)
-        for d in get_dates_by_id().items()
-        for r in get_rooms_by_id().items()
+        {"date": d, "room": r}
+        for d in get_schedule()
+        for r in get_rooms()
     ]
 
     return date_x_room

@@ -31,7 +31,9 @@ def evaluate_constraints_core(
 
     for event_idx, date_x_room_id in enumerate(solution):
         event = lessons[event_idx]
-        (date_id, date), (room_id, room) = date_x_room[date_x_room_id]
+        schedule = date_x_room[date_x_room_id]
+        date = schedule["date"]
+        room = schedule["room"]
 
         # event = {name: string, employees: [string], participants: [string], size: integer, weekly_blocks: integer, room_type: string}
         # date = {day: integer, timeslot: integer}
@@ -39,7 +41,7 @@ def evaluate_constraints_core(
 
         # Check for employee conflicts
         for employee_id in event["employees"]:
-            employee_x_date = (employee_id, date_id)
+            employee_x_date = (employee_id, tuple(date.items()))
             if employee_x_date in employee_planned_at_date:
                 constraint_violations["employee_conflicts"] += 1
             else:
@@ -48,7 +50,7 @@ def evaluate_constraints_core(
 
         # Check for student conflicts
         for participant in event["participants"]:
-            date_x_student = (date_id, participant)
+            date_x_student = (participant, tuple(date.items()))
             if date_x_student in date_x_students:
                 constraint_violations["student_conflicts"] += 1
             else:

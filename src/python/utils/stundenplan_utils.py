@@ -12,9 +12,9 @@ def verify_input(data):
 
 
 def parse_solution_into_timetable(
-        pygad_solution: List[np.uint16],
-        date_x_room: List[tuple],
-        lessons: List[Dict[str, Any]]
+        pygad_solution,
+        date_x_room,
+        lessons
 ) -> List[Dict[str, Any]]:
     """Parses a PyGad solution for printing and transforms it into a human-readable list format.
 
@@ -29,7 +29,9 @@ def parse_solution_into_timetable(
     timetable = []
 
     for i, date_x_room_id in enumerate(pygad_solution):
-        (_, date), (_, room) = date_x_room[date_x_room_id]
+        schedule = date_x_room[date_x_room_id]
+        date = schedule["date"]
+        room = schedule["room"]
         event = lessons[i]  # type: ignore
 
         day = date['day']

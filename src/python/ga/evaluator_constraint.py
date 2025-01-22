@@ -11,7 +11,8 @@ def evaluate_employee_free_timeslots(constraint, solution, lessons, date_x_room)
 
     for event_idx, date_x_room_id in enumerate(solution):
         event = lessons[event_idx]
-        (date_id, date), _ = date_x_room[date_x_room_id]
+        schedule = date_x_room[date_x_room_id]
+        date = schedule["date"]
 
         if employee in event["employees"] and (date["day"], date["timeslot"]) in forbidden_slots:
             violations += 1
@@ -30,7 +31,8 @@ def evaluate_employee_subsequent_timeslots(constraint, solution, lessons, date_x
 
     for event_idx, date_x_room_id in enumerate(solution):
         event = lessons[event_idx]
-        (date_id, date), _ = date_x_room[date_x_room_id]
+        schedule = date_x_room[date_x_room_id]
+        date = schedule["date"]
 
         if employee in event["employees"]:
             if date["day"] not in employee_schedule:
@@ -63,7 +65,8 @@ def evaluate_event_distribute_weekly_blocks(constraint, solution, lessons, date_
     for event_idx, date_x_room_id in enumerate(solution):
         event = lessons[event_idx]
         if event["name"] == event_name:
-            (date_id, date), _ = date_x_room[date_x_room_id]
+            schedule = date_x_room[date_x_room_id]
+            date = schedule["date"]
             if date["day"] in event_days:
                 if not inverted:
                     return -1
