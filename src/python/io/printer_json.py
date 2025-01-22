@@ -7,6 +7,7 @@ from typing import Any
 import numpy as np
 import pytz
 
+from src.python.log.logger import logger_app
 from src.python.utils import path_utils
 
 def save(data, filepath):

@@ -5,6 +5,5 @@ services:
         volumes:
             - ./resources:/app/src/python/resources
             - ./src/docs:/app/src/docs
-        command: ${COMMAND:--help}
         ports:
             - "1111:80"

@@ -39,3 +39,20 @@ def get_result():
     response = requests.get(f"{BASE_URL}/stundenplan")
     response.raise_for_status()
     return response.json()
+
+def call_api(input):
+    input_data = load_test_input(input)
+
+    # Step 2: POST input data
+    post_response = post_input_data(input_data)
+
+    # Step 3: Run the algorithm
+    run_algorithm()
+
+    # Step 4: Wait for completion
+    wait_for_completion()
+
+    # Step 5: Get the result
+    result = get_result();
+
+    return result

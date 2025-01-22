@@ -1,5 +1,6 @@
 import os
 
+from src.python.log.logger import logger_app
 from src.python.utils import path_utils
 from src.python.io import printer_json
 
@@ -30,6 +31,7 @@ def set_config(new_config):
 
     update_dict(config, new_config)
     printer_json.save(config, get_application_path_config())
+    logger_app.debug("Config updated")
 
 def get_path_input():
     filename = config["application"]["filepath_input"]

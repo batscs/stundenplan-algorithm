@@ -1,6 +1,7 @@
 import json
 from typing import Any
 
+
 def parse(json_file_path: str):
     """Parses a JSON file into the database.
 

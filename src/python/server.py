@@ -7,7 +7,7 @@ from flask_restx import Api, Resource, fields
 from src.python.app import core, config
 from src.python.app.docs import DocumentationCompiler
 from src.python.io import reader_json, printer_json
-from src.python.log.logger import logger_app, get_logs_algorithm, get_logs_application
+from src.python.log.logger import logger_app, get_logs_algorithm, get_logs_application, logger_srv, get_logs_server
 from src.python.utils import path_utils, stundenplan_utils
 from src.python.utils.models import register_models
 
@@ -42,7 +42,9 @@ compiler = DocumentationCompiler(path_utils.PATH_DOCS, recompile=True)
 @app.before_request
 def limit_remote_addr():
     client_ip = request.remote_addr
+    logger_srv.debug(f"{client_ip} - {request.method} {request.path}")
     if not any(fnmatch.fnmatch(client_ip, pattern) for pattern in allowed_ips):
+        logger_srv.warning(f"UNAUTHORIZED: {client_ip} - {request.method} {request.path}")
         abort(403)  # Zugriff verweigern
 
 
@@ -63,8 +65,16 @@ class LogsAlgorithmResource(Resource):
     @ns_config.doc('get_logs')
     def get(self):
         """Retrieves the available logs"""
-        return ["algorithm", "application"]
+        return ["application", "algorithm", "server"]
 
+
+@ns_logs.route('/server')
+class LogsAlgorithmResource(Resource):
+
+    @ns_config.doc('get_server_logs')
+    def get(self):
+        """Retrieves the algorithm logs."""
+        return Response(get_logs_server(), content_type="text/plain")
 
 @ns_logs.route('/algorithm')
 class LogsAlgorithmResource(Resource):
@@ -183,7 +193,6 @@ class StundenplanResource(Resource):
             api.abort(409, "An algorithm run is already in progress")
 
         try:
-            logger_app.debug("Incoming Request: Run Algorithm")
             with algorithm_lock:
                 is_running = True
                 threading.Thread(
@@ -236,15 +245,17 @@ if __name__ == "__main__":
     logger_app.debug("Starting Server")
 
     stundenplan_config = reader_json.parse(config.get_application_path_config())
+
     if stundenplan_config is not None:
-        config.set_config(stundenplan_config)
-
-    server_config = {
-        "application": {
-            "filepath_input": "server_input.json"
+        logger_app.debug("Loaded existing configuration file")
+        stundenplan_config["application"]["filepath_input"] = "server_input.json"
+    else:
+        stundenplan_config = {
+            "application": {
+                "filepath_input": "server_input.json"
+            }
         }
-    }
 
-    config.set_config(server_config)
+    config.set_config(stundenplan_config)
 
     app.run(host="0.0.0.0", port=80)
