@@ -1,4 +1,4 @@
-# Setup
+# Setup (Endbenutzer)
 
 ### 1. Docker Engine bereitstellen 
 
@@ -38,3 +38,35 @@ Swagger Dokumentation hier für Verwendung der API Endpunkte
 url: http://localhost:1111/api/docs
 
 ![swagger_ui](https://i.gyazo.com/927fd85973de5f6aa629f4d59f63fb71.png)
+
+# Setup (Entwickler)
+
+### 1. Git Repository Clonen
+
+### 2. Docker-Engine bereitstellen
+
+### 3. Starten
+Zum alleinigen Ausführen reicht das gegebene Start-Shellscript
+```sh
+./start.bat
+```
+
+Bei Änderungen ist es erforderlich das Docker Image neu zu bauen, erst dann kann der Container mit den Änderungen gestartet werden.
+```sh
+./rebuild.bat
+```
+
+Alternative können für PyCharm oder IntelliJ die Run-Konfigurationen aus dem `.run` Ordner importiert werden
+
+### 4. Testen
+Die Tests können ausgeführt werden aus der tests-Directory (Working Directory muss sich in der befinden)
+1. In Working Directory navigieren
+```sh
+cd ./test
+```
+2. Test Script ausführen
+```sh
+python3 test.py
+```
+
+Eigene Tests können entsprechend dem vorhanden Muster in `units.py` ergänzt werden
