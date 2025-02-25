@@ -53,6 +53,21 @@ def test_constraint_eventdistributeweeklyblocks():
         print(f"Test failed with error: {e}")
         return False
 
+def test_invalid_constraint_employeefreetimeslots_notimeslotsfield():
+    """Test scenario for employee subsequent timeslots constraint."""
+    input_file = "input/FHW_INVALID_CONSTRAINTS_EmployeeFreeTimeslots_NoTimeslotsField.json"
+    input_data = load_test_input(input_file)
+    try:
+        result = post_input_data(input_data)
+        if not result["success"]:
+            return True
+
+    except Exception as e:
+        print(f"Test failed with error: {e}")
+        return False
+
+    return False
+
 def test_constraint_employeefreetimeslots():
     """Test scenario for employee subsequent timeslots constraint."""
     input_file = "input/FHW_CONSTRAINTS_EmployeeFreeTimeslots.json"

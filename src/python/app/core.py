@@ -20,6 +20,7 @@ def run():
     if not verify["success"]:
         print("Error: Input Data invalid")
         logger_app.error("Could not start core application, invalid input data")
+        logger_app.error("Messages: " + str(verify["messages"]))
         return
 
     database.inject(input_data)

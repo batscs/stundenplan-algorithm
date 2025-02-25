@@ -42,7 +42,7 @@ compiler = DocumentationCompiler(path_utils.PATH_DOCS, recompile=True)
 @app.before_request
 def limit_remote_addr():
     client_ip = request.remote_addr
-    logger_srv.debug(f"{client_ip} - {request.method} {request.path}")
+    logger_srv.info(f"{client_ip} - {request.method} {request.path}")
     if not any(fnmatch.fnmatch(client_ip, pattern) for pattern in allowed_ips):
         logger_srv.warning(f"UNAUTHORIZED: {client_ip} - {request.method} {request.path}")
         abort(403)  # Zugriff verweigern
@@ -171,11 +171,13 @@ class StundenplanResource(Resource):
         verify = stundenplan_utils.verify_input(data)
 
         if not verify["success"]:
-            api.abort(400, "Invalid input Data")
+            logger_app.warning("Attempted to load invalid data")
+            logger_app.warning("Messages: " + str(verify["messages"]))
+            return verify, 201
 
         path = config.get_path_input()
         printer_json.save(data, path)
-        return {"status": "Data saved successfully"}, 201
+        return verify, 201
 
     @ns_stundenplan.doc('patch_stundenplan')
     @ns_stundenplan.response(202, "Accepted: Stundenplan Generation has been started.")

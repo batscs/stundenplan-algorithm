@@ -33,6 +33,7 @@
     "hard": [
       {
         "type": "EmployeeSubsequentTimeslots",
+        "id": "123",
         "owner": "BOE",
         "fields": {
           "limit": 1

@@ -32,10 +32,11 @@
   "constraints": {
     "hard": [
       {
+        "id": "123",
         "type": "EventDistributeWeeklyBlocks",
         "owner": "BOE",
-        "inverted": false,
         "fields": {
+          "inverted": false,
           "event": "Statistik"
         }
       }

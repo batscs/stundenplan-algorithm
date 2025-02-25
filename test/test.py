@@ -1,6 +1,7 @@
 import units
 import inspect
 
+
 def main():
     """Run all tests and report results."""
     # Find all functions in tests.py that start with "test_"
@@ -23,6 +24,7 @@ def main():
     print("\nTest Results:")
     for test_name, result in results.items():
         print(f"{test_name}: {result}")
+
 
 if __name__ == "__main__":
     main()

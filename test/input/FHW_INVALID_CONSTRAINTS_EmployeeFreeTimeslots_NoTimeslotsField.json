@@ -36,28 +36,6 @@
         "type": "EmployeeFreeTimeslots",
         "owner": "BOE",
         "fields": {
-          "timeslots": [
-            {
-              "day": 1,
-              "timeslot": 1
-            },
-            {
-              "day": 1,
-              "timeslot": 2
-            },
-            {
-              "day": 1,
-              "timeslot": 3
-            },
-            {
-              "day": 2,
-              "timeslot": 1
-            },
-            {
-              "day": 2,
-              "timeslot": 2
-            }
-          ]
         }
       }
     ],

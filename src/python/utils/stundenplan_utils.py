@@ -1,3 +1,4 @@
+import json
 from typing import List, Any, Dict
 
 import numpy as np
@@ -6,16 +7,86 @@ from src.python.ga import evaluator
 
 
 def verify_input(data):
+    messages = []
+
+    # TODO if data ist kein json object -> error
+    # TODO type checks für keys
+
+    if "metadata" not in data:
+        messages.append("metadata is missing")
+    else:
+        if "days" not in data["metadata"]:
+            messages.append("days in metadata is missing")
+        if "timeslots" not in data["metadata"]:
+            messages.append("timeslots in metadata is missing")
+
+    if "rooms" not in data:
+        messages.append("rooms is missing")
+    else:
+        for room in data["rooms"]:
+            if "name" not in room:
+                messages.append("a room has no name")
+            else:
+                if "capacity" not in room:
+                    messages.append(f"room {room['name']} has no capacity key")
+                if "room_type" not in room:
+                    messages.append(f"room {room['name']} has no room_type key")
+
+    if "events" not in data:
+        messages.append("events is missing")
+    else:
+        for event in data["events"]:
+            if "name" not in event:
+                messages.append("an event has no name")
+            else:
+                if "employees" not in event:
+                    messages.append(f"event {event['name']} has no employees key")
+                if "participants" not in event:
+                    messages.append(f"event {event['name']} has no participants key")
+                if "size" not in event:
+                    messages.append(f"event {event['name']} has no size key")
+                if "weekly_blocks" not in event:
+                    messages.append(f"event {event['name']} has no weekly_blocks key")
+                if "room_type" not in event:
+                    messages.append(f"event {event['name']} has no room_type")
+
+    if "constraints" not in data:
+        messages.append("constraints are missing")
+    else:
+        hasBothConstraints = True
+        constraints = data["constraints"]
+        if "hard" not in constraints:
+            messages.append("hard constraints are missing")
+            hasBothConstraints = False
+        if "soft" not in constraints:
+            messages.append("soft constraints are missing")
+            hasBothConstraints = False
+
+        if hasBothConstraints:
+            for constraint in (constraints["hard"] + constraints["soft"]):
+                if "id" not in constraint:
+                    messages.append("a constraint has no id")
+                else:
+                    id = constraint["id"]
+                    if "owner" not in constraint:
+                        messages.append(f"constraint {id} has no owner")
+                    if "fields" not in constraint:
+                        messages.append(f"constraint {id} has no fields")
+                    if "type" not in constraint:
+                        messages.append(f"constraint {id} has no type")
+                    else:
+                        if constraint["type"] == "EmployeeFreeTimeslots":
+                            if "timeslots" not in constraint["fields"]:
+                                messages.append("Timeslots not in EmployeeFreeTimeslots")
+    print(messages)
+
     return {
-        "success": True
+        "messages": messages,
+        "success": len(messages) == 0
     }
 
 
-def parse_solution_into_timetable(
-        pygad_solution,
-        date_x_room,
-        lessons
-) -> List[Dict[str, Any]]:
+def parse_solution_into_timetable(pygad_solution,date_x_room,lessons) -> List[Dict[str, Any]]:
     """Parses a PyGad solution for printing and transforms it into a human-readable list format.
 
     Args:
