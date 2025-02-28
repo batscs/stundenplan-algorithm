@@ -59,7 +59,7 @@ def evaluate_event_distribute_weekly_blocks(constraint, solution, lessons, date_
     # if inverted, then events with the same name must be on the same day
 
     event_name = constraint["fields"]["event"]
-    inverted = constraint["fields"]["inverted"]
+    inverted = constraint["inverted"]
     event_days = set()
 
     for event_idx, date_x_room_id in enumerate(solution):
