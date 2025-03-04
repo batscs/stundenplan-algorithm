@@ -52,10 +52,10 @@ def save_output(output, name):
         if isinstance(output, str):
             # Try to parse the string as JSON
             json_data = json.loads(output)
-            formatted_output = json.dumps(json_data, indent=4, sort_keys=True)
+            formatted_output = json.dumps(json_data, indent=4)
         elif isinstance(output, dict):
             # Pretty-print the dictionary as JSON
-            formatted_output = json.dumps(output, indent=4, sort_keys=True)
+            formatted_output = json.dumps(output, indent=4)
         else:
             # If it's not JSON, save it as plain text
             formatted_output = str(output)

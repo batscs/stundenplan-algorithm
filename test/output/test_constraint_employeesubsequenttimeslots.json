@@ -1,84 +1,84 @@
 {
     "data": {
+        "timetable": [
+            {
+                "day": 1,
+                "timeslot": 3,
+                "event": "Statistik",
+                "room": "HS01",
+                "participants": [
+                    "B_INF"
+                ]
+            },
+            {
+                "day": 2,
+                "timeslot": 3,
+                "event": "Statistik",
+                "room": "HS01",
+                "participants": [
+                    "B_INF"
+                ]
+            },
+            {
+                "day": 2,
+                "timeslot": 1,
+                "event": "Statistik",
+                "room": "HS01",
+                "participants": [
+                    "B_INF"
+                ]
+            },
+            {
+                "day": 1,
+                "timeslot": 1,
+                "event": "Statistik",
+                "room": "HS01",
+                "participants": [
+                    "B_INF"
+                ]
+            }
+        ],
+        "metadata": {
+            "fitness": 0
+        },
         "constraints": {
             "core": {
                 "fitness": 0,
-                "satisfied": {
-                    "employee_conflicts": 4,
-                    "room_capacity": 4,
-                    "room_type": 4,
-                    "student_conflicts": 4
-                },
                 "unsatisfied": {
                     "employee_conflicts": 0,
+                    "student_conflicts": 0,
                     "room_capacity": 0,
-                    "room_type": 0,
-                    "student_conflicts": 0
+                    "room_type": 0
+                },
+                "satisfied": {
+                    "employee_conflicts": 4,
+                    "student_conflicts": 4,
+                    "room_capacity": 4,
+                    "room_type": 4
                 }
             },
             "hard": {
                 "fitness": 0,
+                "unsatisfied": [],
                 "satisfied": [
                     {
+                        "id": "123",
+                        "type": "EmployeeSubsequentTimeslots",
+                        "owner": "BOE",
+                        "inverted": false,
                         "fields": {
                             "limit": 1
-                        },
-                        "id": "123",
-                        "inverted": false,
-                        "owner": "BOE",
-                        "type": "EmployeeSubsequentTimeslots"
+                        }
                     }
-                ],
-                "unsatisfied": []
+                ]
             },
             "soft": {
                 "fitness": 0,
-                "satisfied": [],
-                "unsatisfied": []
+                "unsatisfied": [],
+                "satisfied": []
             }
-        },
-        "metadata": {
-            "fitness": 0
-        },
-        "timetable": [
-            {
-                "day": 1,
-                "event": "Statistik",
-                "participants": [
-                    "B_INF"
-                ],
-                "room": "HS01",
-                "timeslot": 3
-            },
-            {
-                "day": 2,
-                "event": "Statistik",
-                "participants": [
-                    "B_INF"
-                ],
-                "room": "HS01",
-                "timeslot": 1
-            },
-            {
-                "day": 1,
-                "event": "Statistik",
-                "participants": [
-                    "B_INF"
-                ],
-                "room": "HS01",
-                "timeslot": 1
-            },
-            {
-                "day": 2,
-                "event": "Statistik",
-                "participants": [
-                    "B_INF"
-                ],
-                "room": "HS01",
-                "timeslot": 3
-            }
-        ]
+        }
     },
-    "status": "success",
-    "timestamp": "2025-03-04T15:30:54.508890"
+    "timestamp": "2025-03-04T15:33:43.276878",
+    "status": "success"
 }

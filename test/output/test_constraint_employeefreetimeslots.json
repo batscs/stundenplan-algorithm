@@ -1,25 +1,44 @@
 {
     "data": {
+        "timetable": [
+            {
+                "day": 2,
+                "timeslot": 3,
+                "event": "Statistik",
+                "room": "HS01",
+                "participants": [
+                    "B_INF"
+                ]
+            }
+        ],
+        "metadata": {
+            "fitness": 0
+        },
         "constraints": {
             "core": {
                 "fitness": 0,
-                "satisfied": {
-                    "employee_conflicts": 1,
-                    "room_capacity": 1,
-                    "room_type": 1,
-                    "student_conflicts": 1
-                },
                 "unsatisfied": {
                     "employee_conflicts": 0,
+                    "student_conflicts": 0,
                     "room_capacity": 0,
-                    "room_type": 0,
-                    "student_conflicts": 0
+                    "room_type": 0
+                },
+                "satisfied": {
+                    "employee_conflicts": 1,
+                    "student_conflicts": 1,
+                    "room_capacity": 1,
+                    "room_type": 1
                 }
             },
             "hard": {
                 "fitness": 0,
+                "unsatisfied": [],
                 "satisfied": [
                     {
+                        "id": "123",
+                        "type": "EmployeeFreeTimeslots",
+                        "owner": "BOE",
+                        "inverted": false,
                         "fields": {
                             "timeslots": [
                                 {
@@ -43,36 +62,17 @@
                                     "timeslot": 2
                                 }
                             ]
-                        },
-                        "id": "123",
-                        "inverted": false,
-                        "owner": "BOE",
-                        "type": "EmployeeFreeTimeslots"
+                        }
                     }
-                ],
-                "unsatisfied": []
+                ]
             },
             "soft": {
                 "fitness": 0,
-                "satisfied": [],
-                "unsatisfied": []
+                "unsatisfied": [],
+                "satisfied": []
             }
-        },
-        "metadata": {
-            "fitness": 0
-        },
-        "timetable": [
-            {
-                "day": 2,
-                "event": "Statistik",
-                "participants": [
-                    "B_INF"
-                ],
-                "room": "HS01",
-                "timeslot": 3
-            }
-        ]
+        }
     },
-    "status": "success",
-    "timestamp": "2025-03-04T15:30:53.946253"
+    "timestamp": "2025-03-04T15:33:42.680488",
+    "status": "success"
 }
