@@ -11,7 +11,7 @@ def load_test_input(file_path):
     # Get the directory of the current script
     script_dir = os.path.dirname(__file__)
     # Construct the full path to the input file
-    full_path = os.path.join(script_dir, file_path)
+    full_path = os.path.join(script_dir, "input", f"{file_path}.json")
 
     if not os.path.exists(full_path):
         raise FileNotFoundError(f"Input file not found: {full_path}")

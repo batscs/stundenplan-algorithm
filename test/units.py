@@ -1,11 +1,12 @@
+import sys
+
 from api import load_test_input, post_input_data, run_algorithm, wait_for_completion, get_result, call_api
 
 
 def test_constraint_employeesubsequenttimeslots():
     """Test scenario for employee subsequent timeslots constraint."""
-    input_file = "input/FHW_CONSTRAINTS_EmployeeSubsequentTimeslots.json"
     try:
-        result = call_api(input_file)
+        result = call_api(sys._getframe().f_code.co_name)
 
         if result:
             events = result["data"]["timetable"]
@@ -32,9 +33,8 @@ def test_constraint_employeesubsequenttimeslots():
 
 def test_constraint_eventdistributeweeklyblocks():
     """Test scenario for employee subsequent timeslots constraint."""
-    input_file = "input/FHW_CONSTRAINTS_EventDistributeWeeklyBlocks_NotInverted.json"
     try:
-        result = call_api(input_file)
+        result = call_api(sys._getframe().f_code.co_name)
 
         if result:
             events = result["data"]["timetable"]
@@ -55,8 +55,7 @@ def test_constraint_eventdistributeweeklyblocks():
 
 def test_invalid_constraint_employeefreetimeslots_notimeslotsfield():
     """Test scenario for employee subsequent timeslots constraint."""
-    input_file = "input/FHW_INVALID_CONSTRAINTS_EmployeeFreeTimeslots_NoTimeslotsField.json"
-    input_data = load_test_input(input_file)
+    input_data = load_test_input(sys._getframe().f_code.co_name)
     try:
         result = post_input_data(input_data)
         if not result["success"]:
@@ -70,9 +69,8 @@ def test_invalid_constraint_employeefreetimeslots_notimeslotsfield():
 
 def test_constraint_employeefreetimeslots():
     """Test scenario for employee subsequent timeslots constraint."""
-    input_file = "input/FHW_CONSTRAINTS_EmployeeFreeTimeslots.json"
     try:
-        result = call_api(input_file)
+        result = call_api(sys._getframe().f_code.co_name)
 
         if result:
             events = result["data"]["timetable"]

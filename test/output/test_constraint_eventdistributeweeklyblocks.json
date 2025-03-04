@@ -51,13 +51,13 @@
                 "timeslot": 5
             },
             {
-                "day": 4,
+                "day": 3,
                 "event": "Statistik",
                 "participants": [
                     "B_INF"
                 ],
                 "room": "HS01",
-                "timeslot": 4
+                "timeslot": 1
             },
             {
                 "day": 1,
@@ -66,19 +66,19 @@
                     "B_INF"
                 ],
                 "room": "HS01",
-                "timeslot": 4
+                "timeslot": 5
             },
             {
-                "day": 3,
+                "day": 4,
                 "event": "Statistik",
                 "participants": [
                     "B_INF"
                 ],
                 "room": "HS01",
-                "timeslot": 6
+                "timeslot": 1
             }
         ]
     },
     "status": "success",
-    "timestamp": "2025-03-04T15:19:34.543468"
+    "timestamp": "2025-03-04T15:30:55.107810"
 }

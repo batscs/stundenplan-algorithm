@@ -42,7 +42,7 @@
         },
         "timetable": [
             {
-                "day": 2,
+                "day": 1,
                 "event": "Statistik",
                 "participants": [
                     "B_INF"
@@ -69,7 +69,7 @@
                 "timeslot": 1
             },
             {
-                "day": 1,
+                "day": 2,
                 "event": "Statistik",
                 "participants": [
                     "B_INF"
@@ -80,5 +80,5 @@
         ]
     },
     "status": "success",
-    "timestamp": "2025-03-04T15:19:33.937546"
+    "timestamp": "2025-03-04T15:30:54.508890"
 }
