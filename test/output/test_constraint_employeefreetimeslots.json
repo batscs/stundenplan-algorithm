@@ -1,0 +1,78 @@
+{
+    "data": {
+        "constraints": {
+            "core": {
+                "fitness": 0,
+                "satisfied": {
+                    "employee_conflicts": 1,
+                    "room_capacity": 1,
+                    "room_type": 1,
+                    "student_conflicts": 1
+                },
+                "unsatisfied": {
+                    "employee_conflicts": 0,
+                    "room_capacity": 0,
+                    "room_type": 0,
+                    "student_conflicts": 0
+                }
+            },
+            "hard": {
+                "fitness": 0,
+                "satisfied": [
+                    {
+                        "fields": {
+                            "timeslots": [
+                                {
+                                    "day": 1,
+                                    "timeslot": 1
+                                },
+                                {
+                                    "day": 1,
+                                    "timeslot": 2
+                                },
+                                {
+                                    "day": 1,
+                                    "timeslot": 3
+                                },
+                                {
+                                    "day": 2,
+                                    "timeslot": 1
+                                },
+                                {
+                                    "day": 2,
+                                    "timeslot": 2
+                                }
+                            ]
+                        },
+                        "id": "123",
+                        "inverted": false,
+                        "owner": "BOE",
+                        "type": "EmployeeFreeTimeslots"
+                    }
+                ],
+                "unsatisfied": []
+            },
+            "soft": {
+                "fitness": 0,
+                "satisfied": [],
+                "unsatisfied": []
+            }
+        },
+        "metadata": {
+            "fitness": 0
+        },
+        "timetable": [
+            {
+                "day": 2,
+                "event": "Statistik",
+                "participants": [
+                    "B_INF"
+                ],
+                "room": "HS01",
+                "timeslot": 3
+            }
+        ]
+    },
+    "status": "success",
+    "timestamp": "2025-03-04T15:19:33.355211"
+}

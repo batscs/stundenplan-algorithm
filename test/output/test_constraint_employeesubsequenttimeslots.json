@@ -1,0 +1,84 @@
+{
+    "data": {
+        "constraints": {
+            "core": {
+                "fitness": 0,
+                "satisfied": {
+                    "employee_conflicts": 4,
+                    "room_capacity": 4,
+                    "room_type": 4,
+                    "student_conflicts": 4
+                },
+                "unsatisfied": {
+                    "employee_conflicts": 0,
+                    "room_capacity": 0,
+                    "room_type": 0,
+                    "student_conflicts": 0
+                }
+            },
+            "hard": {
+                "fitness": 0,
+                "satisfied": [
+                    {
+                        "fields": {
+                            "limit": 1
+                        },
+                        "id": "123",
+                        "inverted": false,
+                        "owner": "BOE",
+                        "type": "EmployeeSubsequentTimeslots"
+                    }
+                ],
+                "unsatisfied": []
+            },
+            "soft": {
+                "fitness": 0,
+                "satisfied": [],
+                "unsatisfied": []
+            }
+        },
+        "metadata": {
+            "fitness": 0
+        },
+        "timetable": [
+            {
+                "day": 2,
+                "event": "Statistik",
+                "participants": [
+                    "B_INF"
+                ],
+                "room": "HS01",
+                "timeslot": 3
+            },
+            {
+                "day": 2,
+                "event": "Statistik",
+                "participants": [
+                    "B_INF"
+                ],
+                "room": "HS01",
+                "timeslot": 1
+            },
+            {
+                "day": 1,
+                "event": "Statistik",
+                "participants": [
+                    "B_INF"
+                ],
+                "room": "HS01",
+                "timeslot": 1
+            },
+            {
+                "day": 1,
+                "event": "Statistik",
+                "participants": [
+                    "B_INF"
+                ],
+                "room": "HS01",
+                "timeslot": 3
+            }
+        ]
+    },
+    "status": "success",
+    "timestamp": "2025-03-04T15:19:33.937546"
+}
