@@ -35,6 +35,7 @@
         "id": "123",
         "type": "EmployeeFreeTimeslots",
         "owner": "BOE",
+        "inverted": false,
         "fields": {
         }
       }

@@ -74,6 +74,8 @@ def verify_input(data):
                         messages.append(f"constraint {id} has no fields")
                     if "type" not in constraint:
                         messages.append(f"constraint {id} has no type")
+                    if "inverted" not in constraint:
+                        messages.append(f"constraint {id} has no key inverted")
                     else:
                         if constraint["type"] == "EmployeeFreeTimeslots":
                             if "timeslots" not in constraint["fields"]:

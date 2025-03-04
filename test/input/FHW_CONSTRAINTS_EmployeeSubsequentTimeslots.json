@@ -35,6 +35,7 @@
         "type": "EmployeeSubsequentTimeslots",
         "id": "123",
         "owner": "BOE",
+        "inverted": false,
         "fields": {
           "limit": 1
         }
