@@ -59,14 +59,13 @@ Bei Änderungen ist es erforderlich das Docker Image neu zu bauen, erst dann kan
 Alternative können für PyCharm oder IntelliJ die Run-Konfigurationen aus dem `.run` Ordner importiert werden
 
 ### 4. Testen
-Die Tests können ausgeführt werden aus der tests-Directory (Working Directory muss sich in der befinden)
-1. In Working Directory navigieren
+Die Tests können ausgeführt werden aus der tests-Directory (Working Directory muss sich in der befinden).
+
+Der Algorithm-Server muss laufen damit die Tests ausgeführt werden können. 
+
+##### Test Script ausführen
 ```sh
-cd ./test
-```
-2. Test Script ausführen
-```sh
-python3 test.py
+python test/test.py
 ```
 
-Eigene Tests können entsprechend dem vorhanden Muster in `units.py` ergänzt werden
+Eigene Tests können entsprechend dem vorhanden Muster in `test/units.py` ergänzt werden

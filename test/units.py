@@ -15,19 +15,19 @@ def test_constraint_employeesubsequenttimeslots():
                 schedule = (event["day"], event["timeslot"])
                 if schedule not in solution:
                     print(schedule)
-                    return False
+                    return False, result
                 else:
                     solution.remove(schedule)
 
             if len(solution) == 0:
-                return True
+                return True, result
             else:
-                return False
+                return False, result
 
         return False
     except Exception as e:
         print(f"Test failed with error: {e}")
-        return False
+        return False, None
 
 
 def test_constraint_eventdistributeweeklyblocks():
@@ -44,14 +44,14 @@ def test_constraint_eventdistributeweeklyblocks():
                 days.add(event["day"])
 
             if len(days) == 4:
-                return True
+                return True, result
             else:
-                return False
+                return False, result
 
-        return False
+        return False, result
     except Exception as e:
         print(f"Test failed with error: {e}")
-        return False
+        return False, None
 
 def test_invalid_constraint_employeefreetimeslots_notimeslotsfield():
     """Test scenario for employee subsequent timeslots constraint."""
@@ -60,13 +60,13 @@ def test_invalid_constraint_employeefreetimeslots_notimeslotsfield():
     try:
         result = post_input_data(input_data)
         if not result["success"]:
-            return True
+            return True, result
 
     except Exception as e:
         print(f"Test failed with error: {e}")
-        return False
+        return False, None
 
-    return False
+    return False, result
 
 def test_constraint_employeefreetimeslots():
     """Test scenario for employee subsequent timeslots constraint."""
@@ -83,9 +83,9 @@ def test_constraint_employeefreetimeslots():
             timeslot = event["timeslot"]
 
             if day == 2 and timeslot == 3:
-                return True
+                return True, result
 
-        return False
+        return False, result
     except Exception as e:
         print(f"Test failed with error: {e}")
-        return False
+        return False, None
