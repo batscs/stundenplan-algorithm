@@ -59,7 +59,8 @@ def call_api(input):
     # Step 2: POST input data
     post_response = post_input_data(input_data)
 
-    # TODO check post_response
+    if not post_response["success"]:
+        return post_response
 
     # Step 3: Run the algorithm
     run_algorithm()

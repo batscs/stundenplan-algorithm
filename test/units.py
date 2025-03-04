@@ -5,8 +5,8 @@ from api import load_test_input, post_input_data, run_algorithm, wait_for_comple
 
 def test_constraint_employeesubsequenttimeslots():
     """Test scenario for employee subsequent timeslots constraint."""
+    result = call_api(sys._getframe().f_code.co_name)
     try:
-        result = call_api(sys._getframe().f_code.co_name)
 
         if result:
             events = result["data"]["timetable"]
@@ -28,14 +28,13 @@ def test_constraint_employeesubsequenttimeslots():
         return False
     except Exception as e:
         print(f"Test failed with error: {e}")
-        return False, None
+        return False, result
 
 
 def test_constraint_eventdistributeweeklyblocks():
     """Test scenario for employee subsequent timeslots constraint."""
+    result = call_api(sys._getframe().f_code.co_name)
     try:
-        result = call_api(sys._getframe().f_code.co_name)
-
         if result:
             events = result["data"]["timetable"]
             days = set()
@@ -51,26 +50,26 @@ def test_constraint_eventdistributeweeklyblocks():
         return False, result
     except Exception as e:
         print(f"Test failed with error: {e}")
-        return False, None
+        return False, result
 
 def test_invalid_constraint_employeefreetimeslots_notimeslotsfield():
     """Test scenario for employee subsequent timeslots constraint."""
     input_data = load_test_input(sys._getframe().f_code.co_name)
+    result = post_input_data(input_data)
     try:
-        result = post_input_data(input_data)
         if not result["success"]:
             return True, result
 
     except Exception as e:
         print(f"Test failed with error: {e}")
-        return False, None
+        return False, result
 
     return False, result
 
 def test_constraint_employeefreetimeslots():
     """Test scenario for employee subsequent timeslots constraint."""
+    result = call_api(sys._getframe().f_code.co_name)
     try:
-        result = call_api(sys._getframe().f_code.co_name)
 
         if result:
             events = result["data"]["timetable"]
@@ -86,4 +85,4 @@ def test_constraint_employeefreetimeslots():
         return False, result
     except Exception as e:
         print(f"Test failed with error: {e}")
-        return False, None
+        return False, result
