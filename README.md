@@ -4,7 +4,11 @@
 
 z.B. Docker Desktop for Windows installieren & anmelden
 
-### 2. docker-compose.yml erstellen  
+### 2. docker login git.fh-wedel.de
+
+Benötigt um das genetic_algorithm image von git.fh-wedel.de zu pullen im nächsten Schritt
+
+### 3. docker-compose.yml erstellen  
 
 Hierbei muss nicht die gesamte git repository gecloned werden. Mit folgender docker-compose wird der neuste stable release als container aufgesetzt.
 
@@ -14,16 +18,12 @@ version: '2'
 services:
     algorithm:
         container_name: "stundenplan_algorithm"
-        image: git.fh-wedel.de/swp_stundenplan25/genetic_algorithm:0.0.3
+        image: git.fh-wedel.de/swp_stundenplan25/genetic_algorithm:0.0.4
         volumes:
             - ./resources:/app/src/python/resources
         ports:
             - "1111:80"
 ```
-
-### 3. docker login git.fh-wedel.de
-
-Benötigt um das genetic_algorithm image von git.fh-wedel.de zu pullen im nächsten Schritt
 
 ### 4. docker-compose up -d
 
