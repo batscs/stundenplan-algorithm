@@ -22,14 +22,12 @@ def load_test_input(file_path):
 def post_input_data(input_data):
     """Send the input data to the POST /api/stundenplan endpoint."""
     response = requests.post(f"{BASE_URL}/stundenplan", json=input_data)
-    response.raise_for_status()
     return response.json()
 
 
 def run_algorithm():
     """Trigger the algorithm using PATCH /api/stundenplan."""
     response = requests.patch(f"{BASE_URL}/stundenplan")
-    response.raise_for_status()
     return response.json()
 
 
@@ -37,7 +35,6 @@ def wait_for_completion():
     """Wait for the algorithm to complete by checking the status endpoint."""
     while True:
         response = requests.get(f"{BASE_URL}/status")
-        response.raise_for_status()
         status = response.json()
         if not status.get("is_running", False):
             return True

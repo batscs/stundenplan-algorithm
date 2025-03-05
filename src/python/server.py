@@ -173,7 +173,7 @@ class StundenplanResource(Resource):
         if not verify["success"]:
             logger_app.warning("Attempted to load invalid data")
             logger_app.warning("Messages: " + str(verify["messages"]))
-            return verify, 201
+            return verify, 400
 
         path = config.get_path_input()
         printer_json.save(data, path)
