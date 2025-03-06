@@ -1,5 +1,5 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="rebuild" type="ShConfigurationType">
+  <configuration default="false" name="docker" type="ShConfigurationType">
     <option name="SCRIPT_TEXT" value="docker image rm -f stundenplan:dev; docker-compose up;" />
     <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
     <option name="SCRIPT_PATH" value="$PROJECT_DIR$/rebuild.bat; $PROJECT_DIR$/start.bat" />
