@@ -11,17 +11,7 @@ def inject(new_data):
 
 def get_schedule() -> [(int, int)]:
     """Returns a dictionary of date indices to day and time slot details."""
-    days = list(range(1, data["metadata"]["days"] + 1))
-    timeslots = list(range(1, data["metadata"]["timeslots"] + 1))
-
-    dates = []
-    for day in days:
-        for timeslot in timeslots:
-            dates.append({
-                'day': day,
-                'timeslot': timeslot
-            })
-    return dates
+    return data["timeslots"]
 
 
 def get_rooms() -> dict[str, dict]:

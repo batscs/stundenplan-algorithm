@@ -12,13 +12,12 @@ def verify_input(data):
     # TODO if data ist kein json object -> error
     # TODO type checks für keys
 
-    if "metadata" not in data:
-        messages.append("metadata is missing")
+    if "timeslots" not in data:
+        messages.append("timeslots are missing")
     else:
-        if "days" not in data["metadata"]:
-            messages.append("days in metadata is missing")
-        if "timeslots" not in data["metadata"]:
-            messages.append("timeslots in metadata is missing")
+        for timeslot in data["timeslots"]:
+            if "day" not in timeslot or "timeslot" not in timeslot:
+                messages.append("timeslot has invalid data")
 
     if "rooms" not in data:
         messages.append("rooms is missing")

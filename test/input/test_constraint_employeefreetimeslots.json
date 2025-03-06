@@ -1,8 +1,30 @@
 {
-  "metadata": {
-    "days": 2,
-    "timeslots": 3
-  },
+  "timeslots": [
+    {
+      "day": 1,
+      "timeslot": 1
+    },
+    {
+      "day": 1,
+      "timeslot": 2
+    },
+    {
+      "day": 1,
+      "timeslot": 3
+    },
+    {
+      "day": 2,
+      "timeslot": 1
+    },
+    {
+      "day": 2,
+      "timeslot": 2
+    },
+    {
+      "day": 2,
+      "timeslot": 3
+    }
+  ],
   "rooms": [
     {
       "name": "SR01",
