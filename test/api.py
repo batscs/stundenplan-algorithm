@@ -27,7 +27,7 @@ def post_input_data(input_data):
 
 def run_algorithm():
     """Trigger the algorithm using PATCH /api/stundenplan."""
-    response = requests.patch(f"{BASE_URL}/stundenplan")
+    response = requests.put(f"{BASE_URL}/stundenplan")
     return response.json()
 
 
@@ -38,7 +38,7 @@ def wait_for_completion():
         status = response.json()
         if not status.get("is_running", False):
             return True
-        time.sleep(0.5)  # Wait for 0.5 seconds before checking again
+        time.sleep(0.1)  # Wait for 0.5 seconds before checking again
 
 
 def get_result():

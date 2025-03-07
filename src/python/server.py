@@ -2,6 +2,8 @@ import fnmatch
 import os
 import threading
 from datetime import datetime
+
+import pytz
 from flask import Flask, request, jsonify, send_from_directory, render_template_string, abort, Response
 from flask_restx import Api, Resource, fields
 from src.python.app import core, config
@@ -16,7 +18,8 @@ api = Api(app,
           title='Stundenplan API Documentation',
           description='Eine umfassende API-Dokumentation für den [Stundenplan-Algorithmus](/).',
           doc='/api/docs',
-          prefix='/api')
+          prefix='/api',
+          strict_slashes=False)
 
 # Define namespaces
 ns_config = api.namespace('config', description='Configuration operations')
@@ -121,14 +124,17 @@ class StundenplanResource(Resource):
 
     @ns_stundenplan.doc('get_stundenplan')
     @ns_stundenplan.marshal_with(model_stundenplan_output, mask=False)
+    @ns_config.response(200, 'OK: Returning Stundenplan Result')
+    @ns_config.response(404, "Not Found: No Stundenplan Result has been generated yet")
+    @ns_config.response(500, "Internal Server Error: Output File can't be parsed")
     def get(self):
         """Fetches the latest Stundenplan data from the server."""
+        client_ip = request.remote_addr
+        logger_srv.info(f"Attempting to get stundenplan-result from user {client_ip}")
+
         path = path_utils.RESOURCE_OUTPUT_PATH
         try:
             files = [f for f in os.listdir(path) if f.startswith("parsed_solution_") and f.endswith(".json")]
-            if not files:
-                logger_app.debug("No output files found in the directory.")
-                api.abort(404, "No output files found")
 
             newest_file = max(files, key=lambda f: os.path.getctime(os.path.join(path, f)))
             filepath = os.path.join(path, newest_file)
@@ -136,11 +142,11 @@ class StundenplanResource(Resource):
 
             data = reader_json.parse(filepath)
             if data is None:
-                logger_app.error("Failed to parse the file or file is empty.")
+                logger_app.error(f"Attempted to get stundenplan-result from {client_ip}, but input data can't be parsed or is empty")
                 return {
-                    "status": "failed",
+                    "data": None,
                     "timestamp": datetime.now().isoformat(),
-                    "data": None
+                    "status": "failed"
                 }, 500
 
             return {
@@ -149,11 +155,12 @@ class StundenplanResource(Resource):
                 "data": data
             }, 200
         except Exception as e:
-            logger_app.error(f"Error in /stundenplan-run: {str(e)}")
+            logger_app.error(f"Attempted to get stundenplan-result from {client_ip}, but no input data is available")
             return {
-                "error": str(e),
+                "data": None,
+                "status": "failed",
                 "timestamp": datetime.now().isoformat()
-            }, 500
+            }, 404
 
     @ns_stundenplan.doc('post_stundenplan')
     @ns_stundenplan.expect(model_stundenplan_input)
@@ -164,8 +171,18 @@ class StundenplanResource(Resource):
         """Saves Stundenplan data to the server. Input data is validated before saving."""
         global is_running
 
+        client_ip = request.remote_addr
+        logger_srv.info(f"Attempting to save new stundenplan-input data from user {client_ip}")
+
         if is_running:
             api.abort(409, "Cannot save data while algorithm is running")
+            # TODO return irgendwas, 409
+
+        current_time: str = (
+            datetime.now(pytz.utc)
+            .astimezone(pytz.timezone("Europe/Berlin"))
+            .strftime("%Y-%m-%d_%H-%M-%S")
+        )
 
         data = request.get_json()
         verify = stundenplan_utils.verify_input(data)
@@ -173,19 +190,27 @@ class StundenplanResource(Resource):
         if not verify["success"]:
             logger_app.warning("Attempted to load invalid data")
             logger_app.warning("Messages: " + str(verify["messages"]))
+
+            filename = f"server_input_{current_time}_invalid.json"
+            printer_json.save(data, config.get_path_input_custom(filename))
+
             return verify, 400
 
-        path = config.get_path_input()
-        printer_json.save(data, path)
+        filename = f"server_input_{current_time}.json"
+        config.set_filename_input(filename)
+        printer_json.save(data, config.get_path_input())
+
         return verify, 201
 
-    @ns_stundenplan.doc('patch_stundenplan')
+    @ns_stundenplan.doc('put_stundenplan')
     @ns_stundenplan.response(202, "Accepted: Stundenplan Generation has been started.")
     @ns_stundenplan.response(400, "Bad Request: Missing input data.")
     @ns_stundenplan.response(409, "Conflict: The algorithm is currently running.")
     def put(self):
         """Initiates the genetic algorithm to generate solutions for Stundenplan data."""
         global is_running
+        client_ip = request.remote_addr
+        logger_srv.info(f"Attempting to start algorithm from user {client_ip}")
 
         data = reader_json.parse(config.get_path_input())
         if data is None:
