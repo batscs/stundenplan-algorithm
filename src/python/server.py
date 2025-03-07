@@ -183,7 +183,7 @@ class StundenplanResource(Resource):
     @ns_stundenplan.response(202, "Accepted: Stundenplan Generation has been started.")
     @ns_stundenplan.response(400, "Bad Request: Missing input data.")
     @ns_stundenplan.response(409, "Conflict: The algorithm is currently running.")
-    def patch(self):
+    def put(self):
         """Initiates the genetic algorithm to generate solutions for Stundenplan data."""
         global is_running
 
