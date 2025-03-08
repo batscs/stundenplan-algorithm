@@ -18,7 +18,7 @@ version: '2'
 services:
     algorithm:
         container_name: "stundenplan_algorithm"
-        image: git.fh-wedel.de/swp_stundenplan25/genetic_algorithm:0.0.4
+        image: git.fh-wedel.de/swp_stundenplan25/genetic_algorithm:0.0.5
         volumes:
             - ./resources:/app/src/python/resources
         ports:
@@ -41,6 +41,8 @@ url: http://localhost:1111/api/docs
 
 # Setup (Entwickler)
 
+## Mit Docker
+
 ### 1. Git Repository Clonen
 
 ### 2. Docker-Engine bereitstellen
@@ -58,12 +60,37 @@ Bei Änderungen ist es erforderlich das Docker Image neu zu bauen, erst dann kan
 
 Alternative können für PyCharm oder IntelliJ die Run-Konfigurationen aus dem `.run` Ordner importiert werden
 
-### 4. Testen
-Die Tests können ausgeführt werden aus der tests-Directory (Working Directory muss sich in der befinden).
+## Ohne Docker
+
+### 1. Voraussetzungen
+Es muss mindestens python version 3.12 vorhanden sein, testen kann man das durch
+```
+python -V
+```
+
+### 2. Requirements installieren
+Es befindet sich in der repo eine `requirements.txt` mit allen dependencies welche benötigt werden, python kann diese selbst installieren:
+```
+python -m pip install requirements.txt -r
+```
+
+### 3. Starten
+Auf **Windows** kann der Server mit folgendem CMD einzeiler gestartet werden:
+```sh
+cmd /c "set PYTHONPATH=%CD%; %PYTHONPATH% && python -u src\python\server.py" 
+```
+
+Auf **Linux** kann der Server mit folgendem Shell einzeiler gestartet werden:
+```sh
+PYTHONPATH=$(pwd) && export PYTHONPATH && python -u src/python/server.py
+```
+
+## Testen
+Die Tests können durch das script `test.py` in dem test Ordner ausgeführt werden.
 
 Der Algorithm-Server muss laufen damit die Tests ausgeführt werden können. 
 
-##### Test Script ausführen
+### Test Script ausführen
 ```sh
 python test/test.py
 ```
