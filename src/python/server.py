@@ -150,7 +150,7 @@ class StundenplanResource(Resource):
 
             data = reader_json.parse(filepath)
             if data is None:
-                logger_app.error(f"Attempted to get stundenplan-result from {client_ip}, but input data can't be parsed or is empty")
+                logger_app.error(f"Attempted to get stundenplan-result from {client_ip}, but output data can't be parsed or is empty")
                 return {
                     "data": None,
                     "timestamp": datetime.now().isoformat(),
@@ -163,10 +163,10 @@ class StundenplanResource(Resource):
                 "data": data
             }, 200
         except Exception as e:
-            logger_app.error(f"Attempted to get stundenplan-result from {client_ip}, but no input data is available")
+            logger_app.error(f"Attempted to get stundenplan-result from {client_ip}, but no output data has been generated yet")
             return {
                 "data": None,
-                "status": "failed",
+                "status": "unavailable",
                 "timestamp": datetime.now().isoformat()
             }, 404
 
