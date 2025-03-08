@@ -48,10 +48,15 @@ compiler = DocumentationCompiler(path_utils.PATH_DOCS, recompile=True)
 @app.before_request
 def limit_remote_addr():
     client_ip = request.remote_addr
-    logger_srv.info(f"{client_ip} - {request.method} {request.path}")
     if not any(fnmatch.fnmatch(client_ip, pattern) for pattern in allowed_ips):
         logger_srv.warning(f"UNAUTHORIZED: {client_ip} - {request.method} {request.path}")
         abort(403)  # Zugriff verweigern
+
+@app.after_request
+def log_response_code(response):
+    client_ip = request.remote_addr
+    logger_srv.info(f"{client_ip} - {request.method} {request.path} - Code: {response.status_code}")
+    return response
 
 
 def run_genetic_algorithm_thread():
