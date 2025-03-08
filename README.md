@@ -1,3 +1,27 @@
+# Inhaltsverzeichnis
+
+1. [Setup (Endbenutzer)](#setup-endbenutzer)  
+   1.1 [Docker Engine bereitstellen](#1-docker-engine-bereitstellen)  
+   1.2 [docker login git.fh-wedel.de](#2-docker-login-gitfh-wedelde)  
+   1.3 [docker-compose.yml erstellen](#3-docker-composeyml-erstellen)  
+   1.4 [docker-compose up -d](#4-docker-compose-up--d)  
+   1.5 [Im Browser aufrufen](#5-im-browser-aufrufen)  
+
+2. [Endpoints](#endpoints)  
+
+3. [Setup (Entwickler)](#setup-entwickler)  
+   3.1 [Mit Docker](#mit-docker)  
+       - [Git Repository Clonen](#1-git-repository-clonen)  
+       - [Docker-Engine bereitstellen](#2-docker-engine-bereitstellen)  
+       - [Starten](#3-starten)  
+   3.2 [Ohne Docker](#ohne-docker)  
+       - [Voraussetzungen](#1-voraussetzungen)  
+       - [Requirements installieren](#2-requirements-installieren)  
+       - [Starten](#3-starten)  
+
+4. [Testen](#testen)  
+   4.1 [Test Script ausführen](#test-script-ausführen)  
+
 # Setup (Endbenutzer)
 
 ### 1. Docker Engine bereitstellen 
@@ -33,7 +57,7 @@ Muss im Terminal ausgeführt werden im Ordner wo die docker-compose.yml sich bef
 
 Swagger Dokumentation hier für Verwendung der API Endpunkte
 
-# Endpoints
+# API Endpoints
 
 url: http://localhost:1111/api/docs
 
