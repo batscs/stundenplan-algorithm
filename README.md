@@ -46,7 +46,7 @@ services:
         volumes:
             - ./resources:/app/src/python/resources
         ports:
-            - "1111:80"
+            - "1111:1111"
 ```
 
 ### 4. docker-compose up -d
