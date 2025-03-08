@@ -32,6 +32,8 @@ sidebar:
         file: adr/server.md
   - header: Changelog
     topics:
+      - name: release 0.0.5
+        file: release/r_0_0_5.md
       - name: release 0.0.4
         file: release/r_0_0_4.md
       - name: release 0.0.3
