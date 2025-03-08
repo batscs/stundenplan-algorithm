@@ -46,7 +46,8 @@ class DocumentationCompiler:
             # Compile all .md files
             for md_file in self.get_all_markdown_files():
                 html_content = self.render_markdown(md_file)
-                self.compiled_docs[md_file] = template.render(
+                filename = md_file.replace("\\", "/") # to work on both linux and windows
+                self.compiled_docs[filename] = template.render(
                     title=self.metadata["title"],
                     sidebar=self.metadata["sidebar"],
                     content=html_content,
