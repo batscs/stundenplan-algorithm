@@ -79,7 +79,6 @@ def verify_input(data):
                         if constraint["type"] == "EmployeeFreeTimeslots":
                             if "timeslots" not in constraint["fields"]:
                                 messages.append("Timeslots not in EmployeeFreeTimeslots")
-    print(messages)
 
     return {
         "messages": messages,

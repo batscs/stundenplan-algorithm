@@ -35,6 +35,8 @@ def set_config(new_config):
 
 def set_filename_input(filename):
     config["application"]["filepath_input"] = filename
+    logger_app.debug("New Input File updated")
+    set_config(config)
 
 def get_path_input():
     filename = config["application"]["filepath_input"]

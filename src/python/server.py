@@ -12,7 +12,10 @@ from src.python.io import reader_json, printer_json
 from src.python.log.logger import logger_app, get_logs_algorithm, get_logs_application, logger_srv, get_logs_server
 from src.python.utils import path_utils, stundenplan_utils
 from src.python.utils.models import register_models
+import logging
 
+log = logging.getLogger('werkzeug')
+log.setLevel(logging.ERROR)
 app = Flask(__name__, static_folder=path_utils.PATH_SERVER_STATIC, static_url_path="/")
 api = Api(app,
           title='Stundenplan API Documentation',
