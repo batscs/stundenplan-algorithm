@@ -9,9 +9,9 @@ def __register_input_models(api):
         "fields": fields.Raw(description="Additional fields for constraint-type specific information")
     })
 
-    metadata_model = api.model('InputMetadata', {
-        'days': fields.Integer(required=True, description='Number of days'),
-        'timeslots': fields.Integer(required=True, description='Number of timeslots per day')
+    timeslot_model = api.model('InputTimeslot', {
+        'day': fields.Integer(required=True, description='Day'),
+        'timeslot': fields.Integer(required=True, description='Timeslot'),
     })
 
     # Room model
@@ -35,7 +35,7 @@ def __register_input_models(api):
 
     # Schedule input model
     stundenplan_input = api.model('Datenbasis', {
-        'metadata': fields.Nested(metadata_model, required=True, description='Metadata for the schedule'),
+        'timeslots': fields.List(fields.Nested(timeslot_model), required=True, description='List of timeslots available'),
         'rooms': fields.List(fields.Nested(room_model), required=True, description='List of rooms available'),
         'events': fields.List(fields.Nested(event_model), required=True, description='List of events to schedule'),
         'constraints': fields.Nested(api.model('InputConstraints', {
