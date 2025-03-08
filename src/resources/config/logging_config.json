@@ -20,7 +20,7 @@
             "class": "logging.FileHandler",
             "level": "DEBUG",
             "formatter": "normal",
-            "filename": "src/python/resources/logs/application.log",
+            "filename": "src/resources/logs/application.log",
             "mode": "w",
             "encoding": "utf8"
         },
@@ -28,7 +28,7 @@
             "class": "logging.FileHandler",
             "level": "DEBUG",
             "formatter": "normal",
-            "filename": "src/python/resources/logs/database.log",
+            "filename": "src/resources/logs/database.log",
             "mode": "w",
             "encoding": "utf8"
         },
@@ -36,7 +36,7 @@
             "class": "logging.FileHandler",
             "level": "DEBUG",
             "formatter": "normal",
-            "filename": "src/python/resources/logs/algorithm.log",
+            "filename": "src/resources/logs/algorithm.log",
             "mode": "w",
             "encoding": "utf8"
         },
@@ -44,7 +44,7 @@
             "class": "logging.FileHandler",
             "level": "DEBUG",
             "formatter": "normal",
-            "filename": "src/python/resources/logs/server.log",
+            "filename": "src/resources/logs/server.log",
             "mode": "w",
             "encoding": "utf8"
         }
