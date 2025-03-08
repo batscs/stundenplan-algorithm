@@ -71,7 +71,6 @@ def run_genetic_algorithm_thread():
 
 
 @ns_logs.route('/')
-@ns_logs.route('')
 class LogsAlgorithmResource(Resource):
 
     @ns_config.doc('get_logs')
@@ -81,7 +80,6 @@ class LogsAlgorithmResource(Resource):
 
 
 @ns_logs.route('/server')
-@ns_logs.route('/server/')
 class LogsAlgorithmResource(Resource):
 
     @ns_config.doc('get_server_logs')
@@ -90,7 +88,6 @@ class LogsAlgorithmResource(Resource):
         return Response(get_logs_server(), content_type="text/plain")
 
 @ns_logs.route('/algorithm')
-@ns_logs.route('/algorithm/')
 class LogsAlgorithmResource(Resource):
 
     @ns_config.doc('get_algorithm_logs')
@@ -100,7 +97,6 @@ class LogsAlgorithmResource(Resource):
 
 
 @ns_logs.route('/application')
-@ns_logs.route('/application/')
 class LogsAlgorithmResource(Resource):
 
     @ns_config.doc('get_application_logs')
@@ -110,7 +106,6 @@ class LogsAlgorithmResource(Resource):
 
 
 @ns_config.route('/')
-@ns_config.route('')
 class ConfigResource(Resource):
 
     @ns_config.doc('get_config')
@@ -133,7 +128,6 @@ class ConfigResource(Resource):
 
 
 @ns_stundenplan.route('/')
-@ns_stundenplan.route('')
 class StundenplanResource(Resource):
 
     @ns_stundenplan.doc('get_stundenplan')
@@ -246,7 +240,6 @@ class StundenplanResource(Resource):
 
 
 @ns_status.route('/')
-@ns_status.route('')
 class StatusResource(Resource):
     @ns_status.doc('get_status')
     def get(self):
@@ -275,7 +268,6 @@ def serve_file(filename):
     return "File not found", 404
 
 @app.route("/docs/")
-@app.route("/docs")
 def serve_docs_index():
     doc_content = compiler.get_document("index.html")
     if doc_content:
