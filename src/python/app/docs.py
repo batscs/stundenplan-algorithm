@@ -21,7 +21,7 @@ class DocumentationCompiler:
     def render_markdown(self, markdown_file):
         """Convert Markdown file to HTML."""
         md_path = os.path.join(self.docs_folder, markdown_file)
-        with open(md_path, "r") as f:
+        with open(md_path, "r", encoding="utf-8") as f:
             return markdown.markdown(f.read(), extensions=["fenced_code", "codehilite"])
 
     def get_all_markdown_files(self):
