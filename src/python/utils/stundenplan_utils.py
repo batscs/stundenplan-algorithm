@@ -145,7 +145,7 @@ def parse_solution_into_timetable(pygad_solution,date_x_room,lessons) -> List[Di
     return timetable
 
 
-def parse_solution_for_print(best_solution, fitness, date_x_room, lessons):
+def parse_solution_for_print(best_solution, fitness, runtime, date_x_room, lessons):
     result = {}
 
     timetable = parse_solution_into_timetable(best_solution, date_x_room, lessons)  # type: ignore
@@ -162,6 +162,7 @@ def parse_solution_for_print(best_solution, fitness, date_x_room, lessons):
     result["timetable"] = timetable
     result["metadata"] = {
         "fitness": fitness,
+        "runtime": runtime
     }
     result["constraints"] = {
         "core": {

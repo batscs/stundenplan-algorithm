@@ -76,12 +76,12 @@ def genetic_algorithm(generations: int = NUM_GENERATIONS):
     logger_ga.info("Running genetic algorithm...")
     start_time = time.perf_counter()
     ga_instance.run()
-    runtime = time.perf_counter() - start_time
+    runtime = round(time.perf_counter() - start_time, 2)
     logger_ga.info(f"Genetic algorithm completed in {runtime:.2f} seconds")
 
     logger_ga.info(f"Best fitness: {fitness_g}")  # type: ignore
 
     # ----------
-    result = stundenplan_utils.parse_solution_for_print(best_solution_g, fitness_g, date_x_room, lessons)
+    result = stundenplan_utils.parse_solution_for_print(best_solution_g, fitness_g, runtime, date_x_room, lessons)
 
     return runtime, result, fitness_g, ga_instance.generations_completed

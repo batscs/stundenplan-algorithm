@@ -100,6 +100,7 @@ def __register_output_models(api):
         'timetable': fields.List(fields.Nested(event_model), required=True, description='List of scheduled events'),
         'metadata': fields.Nested(api.model('Metadata', {
             'fitness': fields.Integer(required=True, description='Overall fitness score for the timetable'),
+            'runtime': fields.String(required=True, description='Runtime of the algorithm in seconds'),
         })),
         'constraints': fields.Nested(constraints_model, required=True,
                                      description='Constraints data for the timetable'),
