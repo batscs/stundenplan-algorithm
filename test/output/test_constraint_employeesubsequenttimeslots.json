@@ -3,24 +3,6 @@
         "timetable": [
             {
                 "day": 1,
-                "timeslot": 3,
-                "event": "Statistik",
-                "room": "HS01",
-                "participants": [
-                    "B_INF"
-                ]
-            },
-            {
-                "day": 2,
-                "timeslot": 3,
-                "event": "Statistik",
-                "room": "HS01",
-                "participants": [
-                    "B_INF"
-                ]
-            },
-            {
-                "day": 2,
                 "timeslot": 1,
                 "event": "Statistik",
                 "room": "HS01",
@@ -29,7 +11,25 @@
                 ]
             },
             {
+                "day": 2,
+                "timeslot": 3,
+                "event": "Statistik",
+                "room": "HS01",
+                "participants": [
+                    "B_INF"
+                ]
+            },
+            {
                 "day": 1,
+                "timeslot": 3,
+                "event": "Statistik",
+                "room": "HS01",
+                "participants": [
+                    "B_INF"
+                ]
+            },
+            {
+                "day": 2,
                 "timeslot": 1,
                 "event": "Statistik",
                 "room": "HS01",
@@ -39,7 +39,8 @@
             }
         ],
         "metadata": {
-            "fitness": 0
+            "fitness": 0,
+            "runtime": "0.02"
         },
         "constraints": {
             "core": {
@@ -79,6 +80,6 @@
             }
         }
     },
-    "timestamp": "2025-03-04T15:33:43.276878",
+    "timestamp": "2025-03-08T19:13:25.989033",
     "status": "success"
 }
