@@ -48,14 +48,14 @@ url: http://localhost:1111/api/docs
 ### 2. Docker-Engine bereitstellen
 
 ### 3. Starten
-Zum alleinigen Ausführen reicht das gegebene Start-Shellscript
+Gestartet wird der Server über mit docker-compose
 ```sh
-./start.bat
+docker-compose up -d
 ```
 
 Bei Änderungen ist es erforderlich das Docker Image neu zu bauen, erst dann kann der Container mit den Änderungen gestartet werden.
 ```sh
-./rebuild.bat
+docker-compose up -d --build
 ```
 
 Alternative können für PyCharm oder IntelliJ die Run-Konfigurationen aus dem `.run` Ordner importiert werden
