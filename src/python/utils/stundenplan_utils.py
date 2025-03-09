@@ -5,6 +5,19 @@ import numpy as np
 
 from src.python.ga import evaluator
 
+def optimize_input(data):
+    rooms = data["rooms"]
+    events = data["events"]
+
+    # Get the set of room types used in events
+    valid_room_types = {event["room_type"] for event in events}
+
+    # Filter out rooms that don't have a matching room_type in events
+    data["rooms"] = [room for room in rooms if room["room_type"] in valid_room_types]
+
+    print("optimized")
+
+    return data
 
 def verify_input(data):
     messages = []

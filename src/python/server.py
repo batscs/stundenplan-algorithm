@@ -204,9 +204,11 @@ class StundenplanResource(Resource):
 
             return verify, 400
 
+        data_optimized = stundenplan_utils.optimize_input(data)
+
         filename = f"server_input_{current_time}.json"
         config.set_filename_input(filename)
-        printer_json.save(data, config.get_path_input())
+        printer_json.save(data_optimized, config.get_path_input())
 
         return verify, 201
 
