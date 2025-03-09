@@ -42,7 +42,7 @@ version: '2'
 services:
     algorithm:
         container_name: "stundenplan_algorithm"
-        image: git.fh-wedel.de/swp_stundenplan25/genetic_algorithm:0.0.5
+        image: git.fh-wedel.de/swp_stundenplan25/genetic_algorithm:1.0.0
         volumes:
             - ./resources:/app/src/python/resources
         ports:
