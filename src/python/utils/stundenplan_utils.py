@@ -84,14 +84,24 @@ def verify_input(data):
                         messages.append(f"constraint {id} has no owner")
                     if "fields" not in constraint:
                         messages.append(f"constraint {id} has no fields")
-                    if "type" not in constraint:
-                        messages.append(f"constraint {id} has no type")
+
                     if "inverted" not in constraint:
                         messages.append(f"constraint {id} has no key inverted")
+
+                    if "type" not in constraint:
+                        messages.append(f"constraint {id} has no type")
+                    elif constraint["type"] == "EmployeeFreeTimeslots":
+                        if "timeslots" not in constraint["fields"]:
+                            messages.append(f"Timeslots not in EmployeeFreeTimeslots - id: {id}")
+                    elif constraint["type"] == "EmployeeSubsequentTimeslots":
+                        if "limit" not in constraint["fields"]:
+                            messages.append(f"Limit not in EmployeeSubsequentTimeslots - id: {id}")
+                    elif constraint["type"] == "EventDistributeWeeklyBlocks":
+                        if "event" not in constraint["fields"]:
+                            messages.append(f"Event not in EventDistributeWeeklyBlocks - id: {id}")
                     else:
-                        if constraint["type"] == "EmployeeFreeTimeslots":
-                            if "timeslots" not in constraint["fields"]:
-                                messages.append("Timeslots not in EmployeeFreeTimeslots")
+                        messages.append(f"constraint {id} has unknown type {constraint['type']}")
+
 
     return {
         "messages": messages,
