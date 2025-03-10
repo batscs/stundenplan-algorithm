@@ -75,11 +75,11 @@ def evaluate_constraints_core(
 def evaluate_constraint(constraint, solution, lessons, date_x_room):
     type = constraint["type"]
 
-    if type == "EmployeeFreeTimeslots":
+    if type.lower() == "EmployeeFreeTimeslots".lower():
         return evaluator_constraint.evaluate_employee_free_timeslots(constraint, solution, lessons, date_x_room)
-    elif type == "EmployeeSubsequentTimeslots":
+    elif type.lower() == "EmployeeSubsequentTimeslots".lower():
         return evaluator_constraint.evaluate_employee_subsequent_timeslots(constraint, solution, lessons, date_x_room)
-    elif type == "EventDistributeWeeklyBlocks":
+    elif type.lower() == "EventDistributeWeeklyBlocks".lower():
         return evaluator_constraint.evaluate_event_distribute_weekly_blocks(constraint, solution, lessons, date_x_room)
 
     return 0

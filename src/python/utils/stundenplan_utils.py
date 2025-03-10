@@ -90,13 +90,13 @@ def verify_input(data):
 
                     if "type" not in constraint:
                         messages.append(f"constraint {id} has no type")
-                    elif constraint["type"] == "EmployeeFreeTimeslots":
+                    elif constraint["type"].lower() == "EmployeeFreeTimeslots".lower():
                         if "timeslots" not in constraint["fields"]:
                             messages.append(f"Timeslots not in EmployeeFreeTimeslots - id: {id}")
-                    elif constraint["type"] == "EmployeeSubsequentTimeslots":
+                    elif constraint["type"].lower() == "EmployeeSubsequentTimeslots".lower():
                         if "limit" not in constraint["fields"]:
                             messages.append(f"Limit not in EmployeeSubsequentTimeslots - id: {id}")
-                    elif constraint["type"] == "EventDistributeWeeklyBlocks":
+                    elif constraint["type"].lower() == "EventDistributeWeeklyBlocks".lower():
                         if "event" not in constraint["fields"]:
                             messages.append(f"Event not in EventDistributeWeeklyBlocks - id: {id}")
                     else:
