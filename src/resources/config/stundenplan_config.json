@@ -1,9 +1,9 @@
 {
     "algorithm": {
-        "generations_max": 50
+        "generations_max": 20
     },
     "application": {
-        "filepath_input": "server_input.json",
+        "filepath_input": "server_input_2025-03-08_16-25-07.json",
         "server_allowed_ips": [
             "*"
         ]

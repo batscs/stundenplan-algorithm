@@ -1,0 +1,81 @@
+{
+    "version": 1,
+    "disable_existing_loggers": false,
+    "formatters": {
+        "normal": {
+            "format": "%(asctime)s [%(levelname)-5s] %(name)s - %(message)s"
+        },
+        "detailed": {
+            "format": "%(asctime)s | %(levelname)-5s | %(name)s | %(funcName)s | %(lineno)s | %(message)s"
+        }
+    },
+    "handlers": {
+        "console": {
+            "class": "logging.StreamHandler",
+            "level": "DEBUG",
+            "formatter": "normal",
+            "stream": "ext://sys.stdout"
+        },
+        "logfile_application": {
+            "class": "logging.FileHandler",
+            "level": "DEBUG",
+            "formatter": "normal",
+            "filename": "src/resources/logs/application.log",
+            "mode": "w",
+            "encoding": "utf8"
+        },
+        "logfile_database": {
+            "class": "logging.FileHandler",
+            "level": "DEBUG",
+            "formatter": "normal",
+            "filename": "src/resources/logs/database.log",
+            "mode": "w",
+            "encoding": "utf8"
+        },
+        "logfile_algorithm": {
+            "class": "logging.FileHandler",
+            "level": "DEBUG",
+            "formatter": "normal",
+            "filename": "src/resources/logs/algorithm.log",
+            "mode": "w",
+            "encoding": "utf8"
+        },
+        "logfile_server": {
+            "class": "logging.FileHandler",
+            "level": "DEBUG",
+            "formatter": "normal",
+            "filename": "src/resources/logs/server.log",
+            "mode": "w",
+            "encoding": "utf8"
+        }
+    },
+    "loggers": {
+        "application": {
+            "level": "DEBUG",
+            "handlers": [
+                "logfile_application",
+                "console"
+            ]
+        },
+        "database": {
+            "level": "DEBUG",
+            "handlers": [
+                "logfile_database"
+            ]
+        },
+        "algorithm": {
+            "level": "DEBUG",
+            "handlers": [
+                "logfile_algorithm",
+                "console"
+            ]
+        },
+        "server": {
+            "level": "DEBUG",
+            "handlers": [
+                "logfile_server",
+                "console"
+            ]
+        }
+    }
+}

@@ -33,8 +33,16 @@ def set_config(new_config):
     printer_json.save(config, get_application_path_config())
     logger_app.debug("Config updated")
 
+def set_filename_input(filename):
+    config["application"]["filepath_input"] = filename
+    logger_app.debug("New Input File updated")
+    set_config(config)
+
 def get_path_input():
     filename = config["application"]["filepath_input"]
+    return os.path.join(path_utils.RESOURCE_INPUT_PATH, filename)
+
+def get_path_input_custom(filename):
     return os.path.join(path_utils.RESOURCE_INPUT_PATH, filename)
 
 def get_algorithm_generations_max():

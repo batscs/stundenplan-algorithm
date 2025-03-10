@@ -1,10 +1,12 @@
 def evaluate_employee_free_timeslots(constraint, solution, lessons, date_x_room):
     employee = constraint["owner"]
     timeslots = constraint["fields"]["timeslots"]
-    # invert ignored
+    inverted = constraint["inverted"]
+
     # timeslots is array of { day: integer, timeslot: integer }
 
-    # employee is not allowed to have any event with him during any of those timeslots
+    # if not inverted, employee is not allowed to have any event with him during any of those timeslots
+    # if inverted, employee is only allowed to have events in given timeslots
 
     forbidden_slots = {(slot["day"], slot["timeslot"]) for slot in timeslots}
     violations = 0
@@ -14,10 +16,15 @@ def evaluate_employee_free_timeslots(constraint, solution, lessons, date_x_room)
         schedule = date_x_room[date_x_room_id]
         date = schedule["date"]
 
-        if employee in event["employees"] and (date["day"], date["timeslot"]) in forbidden_slots:
-            violations += 1
+        if employee in event["employees"]:
+            if not inverted:
+                if (date["day"], date["timeslot"]) in forbidden_slots:
+                    return -1
+            else:
+                if (date["day"], date["timeslot"]) not in forbidden_slots:
+                    return -1
 
-    return 0 if violations == 0 else -1
+    return 0
 
 def evaluate_employee_subsequent_timeslots(constraint, solution, lessons, date_x_room):
     employee = constraint["owner"]

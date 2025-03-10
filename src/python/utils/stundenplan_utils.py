@@ -5,6 +5,19 @@ import numpy as np
 
 from src.python.ga import evaluator
 
+def optimize_input(data):
+    rooms = data["rooms"]
+    events = data["events"]
+
+    # Get the set of room types used in events
+    valid_room_types = {event["room_type"] for event in events}
+
+    # Filter out rooms that don't have a matching room_type in events
+    data["rooms"] = [room for room in rooms if room["room_type"] in valid_room_types]
+
+    print("optimized")
+
+    return data
 
 def verify_input(data):
     messages = []
@@ -71,15 +84,24 @@ def verify_input(data):
                         messages.append(f"constraint {id} has no owner")
                     if "fields" not in constraint:
                         messages.append(f"constraint {id} has no fields")
-                    if "type" not in constraint:
-                        messages.append(f"constraint {id} has no type")
+
                     if "inverted" not in constraint:
                         messages.append(f"constraint {id} has no key inverted")
+
+                    if "type" not in constraint:
+                        messages.append(f"constraint {id} has no type")
+                    elif constraint["type"] == "EmployeeFreeTimeslots":
+                        if "timeslots" not in constraint["fields"]:
+                            messages.append(f"Timeslots not in EmployeeFreeTimeslots - id: {id}")
+                    elif constraint["type"] == "EmployeeSubsequentTimeslots":
+                        if "limit" not in constraint["fields"]:
+                            messages.append(f"Limit not in EmployeeSubsequentTimeslots - id: {id}")
+                    elif constraint["type"] == "EventDistributeWeeklyBlocks":
+                        if "event" not in constraint["fields"]:
+                            messages.append(f"Event not in EventDistributeWeeklyBlocks - id: {id}")
                     else:
-                        if constraint["type"] == "EmployeeFreeTimeslots":
-                            if "timeslots" not in constraint["fields"]:
-                                messages.append("Timeslots not in EmployeeFreeTimeslots")
-    print(messages)
+                        messages.append(f"constraint {id} has unknown type {constraint['type']}")
+
 
     return {
         "messages": messages,
@@ -146,7 +168,7 @@ def parse_solution_into_timetable(pygad_solution,date_x_room,lessons) -> List[Di
     return timetable
 
 
-def parse_solution_for_print(best_solution, fitness, date_x_room, lessons):
+def parse_solution_for_print(best_solution, fitness, runtime, date_x_room, lessons):
     result = {}
 
     timetable = parse_solution_into_timetable(best_solution, date_x_room, lessons)  # type: ignore
@@ -163,6 +185,7 @@ def parse_solution_for_print(best_solution, fitness, date_x_room, lessons):
     result["timetable"] = timetable
     result["metadata"] = {
         "fitness": fitness,
+        "runtime": runtime
     }
     result["constraints"] = {
         "core": {
