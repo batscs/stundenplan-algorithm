@@ -52,6 +52,7 @@ def test_constraint_eventdistributeweeklyblocks():
         print(f"Test failed with error: {e}")
         return False, result
 
+
 def test_invalid_constraint_employeefreetimeslots_notimeslotsfield():
     """Test scenario for employee subsequent timeslots constraint."""
     input_data = load_test_input(sys._getframe().f_code.co_name)
@@ -65,6 +66,7 @@ def test_invalid_constraint_employeefreetimeslots_notimeslotsfield():
         return False, result
 
     return False, result
+
 
 def test_constraint_employeefreetimeslots():
     """Test scenario for employee subsequent timeslots constraint."""
@@ -80,6 +82,85 @@ def test_constraint_employeefreetimeslots():
             timeslot = event["timeslot"]
 
             if day == 2 and timeslot == 3:
+                return True, result
+
+        return False, result
+    except Exception as e:
+        print(f"Test failed with error: {e}")
+        return False, result
+
+
+def test_constraint_expression_1():
+    result = call_api(sys._getframe().f_code.co_name)
+    try:
+
+        if result:
+            events = result["data"]["timetable"]
+
+            event = events[0]
+            if event["day"] == 2:
+                return True, result
+            else:
+                return False, result
+
+        return False, result
+    except Exception as e:
+        print(f"Test failed with error: {e}")
+        return False, result
+
+
+def test_constraint_expression_2():
+    result = call_api(sys._getframe().f_code.co_name)
+    try:
+
+        if result:
+            events = result["data"]["timetable"]
+
+            event1 = events[0]
+            event2 = events[1]
+            if event1["day"] == event2["day"] and event1["timeslot"] == event2["timeslot"]:
+                return True, result
+            else:
+                return False, result
+
+        return False, result
+    except Exception as e:
+        print(f"Test failed with error: {e}")
+        return False, result
+
+
+def test_constraint_expression_3():
+    result = call_api(sys._getframe().f_code.co_name)
+    try:
+
+        if result:
+            events = result["data"]["timetable"]
+
+            event1 = events[0]
+            event2 = events[1]
+            if event1["day"] != event2["day"]:
+                return True, result
+            else:
+                return False, result
+
+        return False, result
+    except Exception as e:
+        print(f"Test failed with error: {e}")
+        return False, result
+
+
+def test_constraint_expression_4():
+    result = call_api(sys._getframe().f_code.co_name)
+    try:
+
+        if result:
+            events = result["data"]["timetable"]
+
+            days = set()
+            for event in events:
+                days.add(event["day"])
+
+            if 1 not in days or 3 not in days:
                 return True, result
 
         return False, result

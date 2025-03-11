@@ -3,17 +3,22 @@ import inspect
 import os
 import shutil
 import json
-
+import sys
 
 def main():
     """Run all tests and report results."""
     # Find all functions in tests.py that start with "test_"
     clear_output_dir()
 
+    args = sys.argv
+    test_name = None
+    if len(args) == 2:
+        test_name = args[1]
+
     test_functions = {
         name: func
         for name, func in inspect.getmembers(units, inspect.isfunction)
-        if name.startswith("test_")
+        if name.startswith("test_") and (not test_name or test_name == name)
     }
 
     results = {}

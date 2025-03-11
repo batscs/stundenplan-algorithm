@@ -1,0 +1,89 @@
+{
+  "timeslots": [
+    {
+      "day": 1,
+      "timeslot": 1
+    },
+    {
+      "day": 1,
+      "timeslot": 2
+    },
+    {
+      "day": 1,
+      "timeslot": 3
+    },
+    {
+      "day": 1,
+      "timeslot": 4
+    },
+    {
+      "day": 1,
+      "timeslot": 5
+    },
+    {
+      "day": 1,
+      "timeslot": 6
+    },
+    {
+      "day": 1,
+      "timeslot": 7
+    }
+  ],
+  "rooms": [
+    {
+      "name": "SR01",
+      "capacity": 20,
+      "room_type": "Seminarraum"
+    },
+    {
+      "name": "HS01",
+      "capacity": 20,
+      "room_type": "Hörsaal"
+    },
+    {
+      "name": "HS02",
+      "capacity": 20,
+      "room_type": "Hörsaal"
+    }
+  ],
+  "events": [
+    {
+      "name": "Statistik",
+      "employees": [
+        "BOE"
+      ],
+      "participants": [
+        "B_INF"
+      ],
+      "size": 20,
+      "weekly_blocks": 1,
+      "room_type": "Hörsaal"
+    },
+    {
+      "name": "Einführung BWL",
+      "employees": [
+        "HI"
+      ],
+      "participants": [
+        "B_BWL"
+      ],
+      "size": 20,
+      "weekly_blocks": 1,
+      "room_type": "Hörsaal"
+    }
+  ],
+  "constraints": {
+    "hard": [
+      {
+        "id": "123",
+        "type": "Expression",
+        "owner": "root",
+        "inverted": false,
+        "fields": {
+              "expression": "all(on_day(event, 1) and on_timeslot(event, 7) for event in events)"
+        }
+      }
+    ],
+    "soft": []
+  }
+}

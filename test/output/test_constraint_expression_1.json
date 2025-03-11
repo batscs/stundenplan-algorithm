@@ -1,0 +1,58 @@
+{
+    "data": {
+        "timetable": [
+            {
+                "day": 2,
+                "timeslot": 1,
+                "event": "Statistik",
+                "room": "HS01",
+                "participants": [
+                    "B_INF"
+                ]
+            }
+        ],
+        "metadata": {
+            "fitness": 0,
+            "runtime": "0.02"
+        },
+        "constraints": {
+            "core": {
+                "fitness": 0,
+                "unsatisfied": {
+                    "employee_conflicts": 0,
+                    "student_conflicts": 0,
+                    "room_capacity": 0,
+                    "room_type": 0
+                },
+                "satisfied": {
+                    "employee_conflicts": 1,
+                    "student_conflicts": 1,
+                    "room_capacity": 1,
+                    "room_type": 1
+                }
+            },
+            "hard": {
+                "fitness": 0,
+                "unsatisfied": [],
+                "satisfied": [
+                    {
+                        "id": "123",
+                        "type": "Expression",
+                        "owner": "BOE",
+                        "inverted": false,
+                        "fields": {
+                            "expression": "all(not (has_employee('BOE', event) and on_day(event, 1)) for event in events)"
+                        }
+                    }
+                ]
+            },
+            "soft": {
+                "fitness": 0,
+                "unsatisfied": [],
+                "satisfied": []
+            }
+        }
+    },
+    "timestamp": "2025-03-11T11:42:58.987438",
+    "status": "success"
+}

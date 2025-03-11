@@ -26,6 +26,7 @@ def evaluate_employee_free_timeslots(constraint, solution, lessons, date_x_room)
 
     return 0
 
+
 def evaluate_employee_subsequent_timeslots(constraint, solution, lessons, date_x_room):
     employee = constraint["owner"]
     limit = constraint["fields"]["limit"]
@@ -60,6 +61,7 @@ def evaluate_employee_subsequent_timeslots(constraint, solution, lessons, date_x
                 consecutive_count = 1
 
     return -violations
+
 
 def evaluate_event_distribute_weekly_blocks(constraint, solution, lessons, date_x_room):
     # if not inverted, events with the same name must not be on the same day

@@ -1,0 +1,68 @@
+{
+  "timeslots": [
+    {
+      "day": 1,
+      "timeslot": 1
+    },
+    {
+      "day": 1,
+      "timeslot": 2
+    },
+    {
+      "day": 1,
+      "timeslot": 3
+    },
+    {
+      "day": 1,
+      "timeslot": 4
+    },
+    {
+      "day": 1,
+      "timeslot": 5
+    },
+    {
+      "day": 2,
+      "timeslot": 1
+    }
+  ],
+  "rooms": [
+    {
+      "name": "SR01",
+      "capacity": 20,
+      "room_type": "Seminarraum"
+    },
+    {
+      "name": "HS01",
+      "capacity": 20,
+      "room_type": "Hörsaal"
+    }
+  ],
+  "events": [
+    {
+      "name": "Statistik",
+      "employees": [
+        "BOE"
+      ],
+      "participants": [
+        "B_INF"
+      ],
+      "size": 20,
+      "weekly_blocks": 1,
+      "room_type": "Hörsaal"
+    }
+  ],
+  "constraints": {
+    "hard": [
+      {
+        "id": "123",
+        "type": "Expression",
+        "owner": "BOE",
+        "inverted": false,
+        "fields": {
+              "expression": "all(not (has_employee('BOE', event) and on_day(event, 1)) for event in events)"
+        }
+      }
+    ],
+    "soft": []
+  }
+}

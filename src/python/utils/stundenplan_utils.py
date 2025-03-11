@@ -99,6 +99,9 @@ def verify_input(data):
                     elif constraint["type"].lower() == "EventDistributeWeeklyBlocks".lower():
                         if "event" not in constraint["fields"]:
                             messages.append(f"Event not in EventDistributeWeeklyBlocks - id: {id}")
+                    elif constraint["type"].lower() == "Expression".lower():
+                        if "expression" not in constraint["fields"]:
+                            messages.append(f"Expression not in Constraint Fields - id: {id}")
                     else:
                         messages.append(f"constraint {id} has unknown type {constraint['type']}")
 

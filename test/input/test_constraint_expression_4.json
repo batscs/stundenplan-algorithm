@@ -1,0 +1,68 @@
+{
+  "timeslots": [
+    {
+      "day": 1,
+      "timeslot": 1
+    },
+    {
+      "day": 1,
+      "timeslot": 2
+    },
+    {
+      "day": 2,
+      "timeslot": 1
+    },
+    {
+      "day": 2,
+      "timeslot": 2
+    },
+    {
+      "day": 3,
+      "timeslot": 1
+    },
+    {
+      "day": 3,
+      "timeslot": 2
+    }
+  ],
+  "rooms": [
+    {
+      "name": "SR01",
+      "capacity": 20,
+      "room_type": "Seminarraum"
+    },
+    {
+      "name": "HS01",
+      "capacity": 20,
+      "room_type": "Hörsaal"
+    }
+  ],
+  "events": [
+    {
+      "name": "Diskrete Mathematik",
+      "employees": [
+        "IW"
+      ],
+      "participants": [
+        "B_INF"
+      ],
+      "size": 20,
+      "weekly_blocks": 4,
+      "room_type": "Hörsaal"
+    }
+  ],
+  "constraints": {
+    "hard": [
+      {
+        "id": "123",
+        "type": "Expression",
+        "owner": "root",
+        "inverted": false,
+        "fields": {
+              "expression": "all(not on_day(event, 1) for event in events_by_employee(events, 'IW')) or all(not on_day(event, 1) for event in events_by_employee(events, 'IW'))"
+        }
+      }
+    ],
+    "soft": []
+  }
+}

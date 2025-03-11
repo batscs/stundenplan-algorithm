@@ -3,12 +3,13 @@ from typing import Optional, Any, Dict, Tuple, List, Set
 from numpy.typing import NDArray
 
 from src.python.api import database
-from src.python.ga import evaluator_constraint
+from src.python.ga import evaluator_constraint, evaluator_expression
+
 
 def evaluate_constraints_core(
-    solution: NDArray[np.uint32],
-    lessons,
-    date_x_room
+        solution: NDArray[np.uint32],
+        lessons,
+        date_x_room
 ):
     """
     Evaluates core constraints like overlaps for students, teachers, and rooms.
@@ -72,6 +73,7 @@ def evaluate_constraints_core(
 
     return fitness, constraint_violations, constraints_satisfied
 
+
 def evaluate_constraint(constraint, solution, lessons, date_x_room):
     type = constraint["type"]
 
@@ -81,8 +83,12 @@ def evaluate_constraint(constraint, solution, lessons, date_x_room):
         return evaluator_constraint.evaluate_employee_subsequent_timeslots(constraint, solution, lessons, date_x_room)
     elif type.lower() == "EventDistributeWeeklyBlocks".lower():
         return evaluator_constraint.evaluate_event_distribute_weekly_blocks(constraint, solution, lessons, date_x_room)
+    elif type.lower() == "Expression".lower():
+        return evaluator_expression.evaluate_expression(constraint["fields"]["expression"], solution, lessons,
+                                                        date_x_room)
 
     return 0
+
 
 def evaluate_constraints_hard(solution: NDArray[np.uint32], lessons, date_x_room):
     violations = []
@@ -101,6 +107,7 @@ def evaluate_constraints_hard(solution: NDArray[np.uint32], lessons, date_x_room
 
     return total_fitness, violations, satisfied
 
+
 def evaluate_constraints_soft(solution: NDArray[np.uint32], lessons, date_x_room):
     violations = []
     satisfied = []
@@ -118,8 +125,9 @@ def evaluate_constraints_soft(solution: NDArray[np.uint32], lessons, date_x_room
 
     return total_fitness, violations, satisfied
 
+
 def fitness_function(
-    instance: Any, solution: NDArray[np.uint32], solution_idx: int
+        instance: Any, solution: NDArray[np.uint32], solution_idx: int
 ) -> int:
     """Fitness function to evaluate individual solutions."""
     lessons, date_x_room = instance.variables  # type: ignore
