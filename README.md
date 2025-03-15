@@ -1,15 +1,17 @@
 # Inhaltsverzeichnis
 
-1. [Setup (Endbenutzer)](#setup-endbenutzer)  
+1. [Introduction](#introduction)
+
+2. [Setup (Endbenutzer)](#setup-endbenutzer)  
    1.1 [Docker Engine bereitstellen](#1-docker-engine-bereitstellen)  
    1.2 [docker login git.fh-wedel.de](#2-docker-login-gitfh-wedelde)  
    1.3 [docker-compose.yml erstellen](#3-docker-composeyml-erstellen)  
    1.4 [docker-compose up -d](#4-docker-compose-up--d)  
    1.5 [Im Browser aufrufen](#5-im-browser-aufrufen)  
 
-2. [Endpoints](#endpoints)  
+3. [Endpoints](#endpoints)  
 
-3. [Setup (Entwickler)](#setup-entwickler)  
+4. [Setup (Entwickler)](#setup-entwickler)  
    3.1 [Mit Docker](#mit-docker)  
        - [Git Repository Clonen](#1-git-repository-clonen)  
        - [Docker-Engine bereitstellen](#2-docker-engine-bereitstellen)  
@@ -19,8 +21,17 @@
        - [Requirements installieren](#2-requirements-installieren)  
        - [Starten](#3-starten)  
 
-4. [Testen](#testen)  
+5. [Testen](#testen)  
    4.1 [Test Script ausführen](#test-script-ausführen)  
+
+# Introduction
+
+Diese Repository gehört zu dem Stundenplan Algorithmus, welcher ein Teil des Stundenplan25-Softwareprojekt der Fachhochschule Wedel ist.
+Zu dem gesamten Projekt gibt es eine ausführlichere [Documentation](docs/documentation.pdf).
+
+Diese Dokumentation ist für den Release 1.0.0 geschrieben, welches das Endprodukt für das Softwareprojekt dient.
+Die Dokumentation wird nicht für neue Releases aktualisiert, da diese nicht im Rahmen des Softwareprojekts sind.
+
 
 # Setup (Endbenutzer)
 
