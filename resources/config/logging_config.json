@@ -53,19 +53,22 @@
         "application": {
             "level": "DEBUG",
             "handlers": [
-                "logfile_application"
+                "logfile_application",
+                "console"
             ]
         },
         "database": {
             "level": "DEBUG",
             "handlers": [
-                "logfile_database"
+                "logfile_database",
+                "console"
             ]
         },
         "algorithm": {
             "level": "DEBUG",
             "handlers": [
-                "logfile_algorithm"
+                "logfile_algorithm",
+                "console"
             ]
         },
         "server": {
